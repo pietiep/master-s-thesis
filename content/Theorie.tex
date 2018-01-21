@@ -1,32 +1,61 @@
-\chapter{Theorie}
+\chapter{MCTDH Theorie}
 
 \section{Einleitung}
 
-In der theoretischen Chemie findet die MCTDH - Methode Verwendung, um quantendynamische Rechnungen effizient zu berechnen.
-Im Unterschied zu anderen quantumdynamische Methoden resultiert die Effizienz des MCTDH aus der zweischichtigen Darstellung dieser Methode.
+In der theoretischen Chemie wird die MCTDH - Methode verwendet, um quantendynamische Rechnungen effizient zu berechnen.
+Um die zeitabh"angige Schr"odingergleichung (SGL) eines mehrdimensionalen Systems zu l"osen, muss zun"achst die Wellenfunktion definiert werden.
+Diese wird in der Standardmethode durch das Produkt von mehrdimensionalen zeitabh"angigen Basisfunktionen dargestellt. Diese Basisfunktionen werden in
+einer eindimensionalen zeitunabh"angigen Basis mit den jeweiligen zeitabh"angigen Koeffizienten entwickelt.
+F"ur jeden Freiheitsgrad $f$ des Systems ergeben sich $N$ zeitunabh"angige Basisfunktionen. Somit w"achst die Anzahl der Entwicklungskoeffizienten wie $N^{f}$ und
+die Standardmethode skaliert exponentielle, sodass nur kleinere Systeme berechenbar sind. [meyer rev 2011]
+  \\ Im Unterschied zu anderen quantendynamische Methoden resultiert die Effizienz des MCTDH aus seiner Doppellayerstruktur.
 Anstelle die Wellenfunktion in einer zeitunab"angigen Basis zu entwickeln und die Zeitentwicklung durch zeitabh"angige Entwicklungskoeffizienten zu beschreiben,
-wird die Wellenfunktion als ein Satz von zeitabh"angigen Basisfunktionen dargestellt.
+wird in der MCTDH - Methode die Wellenfunktion als ein Satz von zeitabh"angigen Basisfunktionen dargestellt.
+Diese zeitabh"angigen Basisfunktionen werden Einteilchenfunktionen (SPF) genannt und in einer primitiven zeitunabh"angigen Basis dargestellt.
+Die Doppellayerstruktur des MCTDHs resultiert aus zwei Entwicklungen mit jeweils zeitabh"angigen Entwicklungskoeffiziente:
+Zum einen stellen die Entwicklungskoeffizienten mit den SPFs die korrelierte Wellenfunktion dar und bilden den oberen MCTDH -
+Layer und zum anderen k"onnen die SPFs durch die Entwicklungskoeffizienten in der primitiven zeitunabh"angigen Basis entwickelt werden. Diese Entwicklung bildet
+den unteren Layer.[Manthe, 2008 multilayer MCTDH approach]
+  \\ Die Anzahl der SPFs kann verglichen mit der primitiven Basis signifikant kleiner gew"ahlt werden.
+Dennoch ist auch das MCTDH durch eine exponentielle Skalierung limitiert.
+Um Korrelationseffekte beschreiben zu k"onnen, sind mindestens zwei SPFs pro Freiheitsgrad notwendig, sodass der numerische Aufwand mit der Anzahl der
+Freiheitsgrade $f$ zu $2^f$ skaliert. Aufgrund dieser Skalierung ko"nnen Systeme mit maximal 12 - 14 korrelierten Koordinaten behandelt werden.
+  \\ Zus"atzliche zu der Doppellayerstruktur k"onnen die Koordinaten in ,,logische`` und physikalische Koordinaten unterschieden werden und
+  verschiedene physikalischen Koordinaten werden zu einzelne logische Koordinaten kombiniert. Die logischen Koordinaten werden Partikel genannt, sodass
+  nicht die Anzahl der Freiheitsgrade der limiterende Faktor f"ur die modenkombinierte MCTDH - Rechnung ist,
+  sondern die Anzahl der Partikel $p$. [Meyer, Cederbaum, 1996 und 1998]
+
+
+\section{Layerstruktur der MCTDH - Wellenfunktion}
+
+In der Standardmethode wird die Wellenfunktion in einer zeitunabh"angigen Basis $\mathcal{X}^{\kappa}_{j}(x_{\kappa})$ entwickelt:
+
+ \begin{equation}
+ \Psi(x_{1},..., x_{f}, t)=\sum^{N_{1}}_{j_{1}=1} ... \sum^{N_{f}}_{j_{f}=1} A^{1}_{j_{1}, ..., j_{f}}(t)\cdot \mathcal{X}^{(1)}_{j_{1}}(x_{1}) \cdot ... \cdot \mathcal{X}^{(f)}_{j_{f}}(x_{f})
+ \label{Eq:Std_wave}
+ \end{equation}
+
+Im Unterschied zu Gleichung \ref{Eq:Std_wave} enth"alt die MCTDH - Wellenfunktion,
+
+ \begin{equation}
+ \Psi(x_{1},..., x_{f}, t)=\sum^{n_{1}}_{j_{1}=1} ... \sum^{n_{f}}_{j_{f}=1} A^{1}_{j_{1}, ..., j_{f}}(t)
+ \cdot \phi^{1;1}_{j_{1}}(x_{1}, t) \cdot ... \cdot \phi^{1;f}_{j_{f}}(x_{f}, t)
+ \label{Eq:mctdh_wave}
+ \end{equation}
+
+in den zeitabh"angigen SPFs $\phi^{\kappa}_{j}(x_{\kappa})$ dargestellt, die wiederum in der primitiven Basis $\mathcal{X}^{\kappa}_{j}(x_{\kappa})$ entwickelt werden:
+
+\begin{equation}
+ \phi^{1;\kappa}_{m} (x_{\kappa}, t)=\sum^{N_{\kappa}}_{j=1} A^{2;\kappa}_{m;j}(t) \cdot \mathcal{X}^{(\kappa)}_{j}(x_{1})
+ \label{Eq:Std_wave}
+ \end{equation}
+
+
 Diese Basisfunktionen, die auch Einteilchenfunktionen genannt werden, k"onnen so gew"ahlt werden, dass die Einteilchenfunktionen sich aus mehrdimensionale
 Wellenfunktionen zusammensetzen, die wiederum als MCTDH - Wellenfunktion entwickelt werden.
 Durch die rekursive Anwendung der MCTDH - Methode auf seine Einteilchenfunktionen wird ein mehrlagiges MCTDH entwickelt, dass quantumdynamische Rechnungen
-von Systemen mit bis zu 1000 Freiheitsgraden ermo"glicht. [Manthe, 2008 multilayer MCTDH approach]
+von Systemen mit bis zu 1000 Freiheitsgraden erm"oglicht. [Manthe, 2008 multilayer MCTDH approach]
 
 
 
- \begin{equation}
- F_{s}^{2}=|\Braket{\psi_{f}}{\psi_{i}}|^{2}
- \label{eq:franck1}
- \end{equation}
-a
  \subsection{Absorption und Emission}
- \begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{figures/Franck}
-\caption{Schematische Darstellung zweier Potentialkurven des elektronischen Grundzustandes und eines angeregten Zustandes mit den jeweiligen Vibrationszust�nden. Absorption (blauer Pfeil) erfolgen bei gleicher Kerngeometrie.}
-\label{fig:Franck}
-\end{figure}
- \begin{equation}
-k_{ET} \propto E^{2}\propto \frac{\mu_{D}^{2}\mu_{A}^{2}}{R_{DA}^{6}}
-\label{eq:forster2}
- \end{equation}
-  Gleichung \ref{eq:forster2} spiegelt die Abstandsabh�ngigkeit der Energietransferrate durch Coulombwechselwirkung wider.\cite{turro:1991}
