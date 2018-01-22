@@ -4,7 +4,7 @@
 
 In der theoretischen Chemie wird die MCTDH - Methode verwendet, um quantendynamische Rechnungen effizient zu berechnen.
 Um die zeitabh"angige Schr"odingergleichung (SGL) eines mehrdimensionalen Systems zu l"osen, muss zun"achst die Wellenfunktion definiert werden.
-Diese wird in der Standardmethode durch das Produkt von mehrdimensionalen zeitabh"angigen Basisfunktionen dargestellt. Diese Basisfunktionen werden in
+Diese wird in der Standardmethode durch das Produkt von mehrdimensionalen zeitabh"angigen Basisfunktionen dargestellt. Die Basisfunktionen werden in
 einer eindimensionalen zeitunabh"angigen Basis mit den jeweiligen zeitabh"angigen Koeffizienten entwickelt.
 F"ur jeden Freiheitsgrad $f$ des Systems ergeben sich $N$ zeitunabh"angige Basisfunktionen. Somit w"achst die Anzahl der Entwicklungskoeffizienten wie $N^{f}$ und
 die Standardmethode skaliert exponentielle, sodass nur kleinere Systeme berechenbar sind. [meyer rev 2011]
@@ -21,9 +21,11 @@ Dennoch ist auch das MCTDH durch eine exponentielle Skalierung limitiert.
 Um Korrelationseffekte beschreiben zu k"onnen, sind mindestens zwei SPFs pro Freiheitsgrad notwendig, sodass der numerische Aufwand mit der Anzahl der
 Freiheitsgrade $f$ zu $2^f$ skaliert. Aufgrund dieser Skalierung ko"nnen Systeme mit maximal 12 - 14 korrelierten Koordinaten behandelt werden.
   \\ Zus"atzliche zu der Doppellayerstruktur k"onnen die Koordinaten in ,,logische`` und physikalische Koordinaten unterschieden werden und
-  verschiedene physikalischen Koordinaten werden zu einzelne logische Koordinaten kombiniert. Die logischen Koordinaten werden Partikel genannt, sodass
-  nicht die Anzahl der Freiheitsgrade der limiterende Faktor f"ur die modenkombinierte MCTDH - Rechnung ist,
-  sondern die Anzahl der Partikel $p$. [Meyer, Cederbaum, 1996 und 1998]
+verschiedene physikalischen Koordinaten werden zu einzelne logische Koordinaten kombiniert. Die logischen Koordinaten werden Partikel genannt, sodass
+nicht die Anzahl der Freiheitsgrade der limiterende Faktor f"ur die modenkombinierte MCTDH - Rechnung ist,
+sondern die Anzahl der Partikel $p$. So konnten Systeme mit 15 - 24 korrelierten Freiheitsgraden behandelt werden. [Meyer, Cederbaum, 1996 und 1998]
+  \\Dennoch  bleibt das Problem der exponentielle Skalierung von $2^p$ bestehen. Dieses Problem wird mit der Erweiterung des MCTDHs auf das multilayer (ML) - MCTDH
+begegnet. 
 
 
 \section{Layerstruktur der MCTDH - Wellenfunktion}
