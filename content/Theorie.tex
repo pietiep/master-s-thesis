@@ -19,25 +19,39 @@ den unteren Layer.[Manthe, 2008 multilayer MCTDH approach]
   \\ Die Anzahl der SPFs kann verglichen mit der primitiven Basis signifikant kleiner gew"ahlt werden.
 Dennoch ist auch das MCTDH durch eine exponentielle Skalierung limitiert.
 Um Korrelationseffekte beschreiben zu k"onnen, sind mindestens zwei SPFs pro Freiheitsgrad notwendig, sodass der numerische Aufwand mit der Anzahl der
-Freiheitsgrade $f$ zu $2^f$ skaliert. Aufgrund dieser Skalierung ko"nnen Systeme mit maximal 12 - 14 korrelierten Koordinaten behandelt werden.
+Freiheitsgrade $f$ zu $2^f$ skaliert. Aufgrund dieser Skalierung k"onnen Systeme mit maximal 12 - 14 korrelierten Koordinaten behandelt werden.
   \\ Zus"atzliche zu der Doppellayerstruktur k"onnen die Koordinaten in ,,logische`` und physikalische Koordinaten unterschieden werden und
 verschiedene physikalischen Koordinaten werden zu einzelne logische Koordinaten kombiniert. Die logischen Koordinaten werden Partikel genannt, sodass
 nicht die Anzahl der Freiheitsgrade der limiterende Faktor f"ur die modenkombinierte MCTDH - Rechnung ist,
 sondern die Anzahl der Partikel $p$. So konnten Systeme mit 15 - 24 korrelierten Freiheitsgraden behandelt werden. [Meyer, Cederbaum, 1996 und 1998]
-  \\Dennoch  bleibt das Problem der exponentielle Skalierung von $2^p$ bestehen. Dieses Problem wird mit der Erweiterung des MCTDHs auf das multilayer (ML) - MCTDH
-begegnet. 
+Dennoch  bleibt das Problem der exponentielle Skalierung von $2^p$ bestehen.
+  \\Dieses Problem wird mit dem multilayer (ML) - MCTDH begegnet.
+Die SPFs k"onnen selbst als mehrdimensionale Wellenfunktionen dargestellt werden und in anderen SPF entwickelt werden.
+Bei drei Layern wird der obere Layer durch die SPF - Basis des herk"ommlichen MCTDHs gebildet. Diese Basis wird als SPFs des ersten Layers bezeichnet
+und kann selbst in der SPF - Basis des zweiten Layers entwickelt werden. Die SPF - Basis des zeiten Layers erweitert das MCTDH um einen weiteren Layer under
+wird selbst in der primitiven Basis entwickelt, die den unteren Layer bildet.
+Durch die rekursive Anwendung der MCTDH - Methode k"onnen weitere Layer zugef"ugt.
+Mit der ML - MCTDH Methode sind quantumdynamische Rechnungen von Systemen mit bis zu 1000 Freiheitsgraden m"oglich. [Manthe, 2008 multilayer MCTDH approach]
 
 
 \section{Layerstruktur der MCTDH - Wellenfunktion}
 
-In der Standardmethode wird die Wellenfunktion in einer zeitunabh"angigen Basis $\mathcal{X}^{\kappa}_{j}(x_{\kappa})$ entwickelt:
+Ziel ist es die zeitabh"angige SGL
+
+\begin{equation}
+i\dot{\Psi} = H \Psi
+\label{Eq:SGL}
+\end{equation}
+
+zu l"osen.
+  \\Zur L"osung von Gleichung \ref{Eq:SGL} kann die Wellenfunktion $\Psi$ in einer zeitunabh"angigen Basis $\mathcal{X}^{\kappa}_{j}(x_{\kappa})$ entwickelt werden:
 
  \begin{equation}
  \Psi(x_{1},..., x_{f}, t)=\sum^{N_{1}}_{j_{1}=1} ... \sum^{N_{f}}_{j_{f}=1} A^{1}_{j_{1}, ..., j_{f}}(t)\cdot \mathcal{X}^{(1)}_{j_{1}}(x_{1}) \cdot ... \cdot \mathcal{X}^{(f)}_{j_{f}}(x_{f})
  \label{Eq:Std_wave}
  \end{equation}
 
-Im Unterschied zu Gleichung \ref{Eq:Std_wave} enth"alt die MCTDH - Wellenfunktion,
+Die zeitabh"angigen Koeffizienten $A^{1}_{j_{1}, ..., j_{f}}(t)$ beschreiben die Bewegung der Wellenpakete. Im Unterschied zu Gleichung \ref{Eq:Std_wave} wird die MCTDH - Wellenfunktion,
 
  \begin{equation}
  \Psi(x_{1},..., x_{f}, t)=\sum^{n_{1}}_{j_{1}=1} ... \sum^{n_{f}}_{j_{f}=1} A^{1}_{j_{1}, ..., j_{f}}(t)
@@ -45,18 +59,20 @@ Im Unterschied zu Gleichung \ref{Eq:Std_wave} enth"alt die MCTDH - Wellenfunktio
  \label{Eq:mctdh_wave}
  \end{equation}
 
-in den zeitabh"angigen SPFs $\phi^{\kappa}_{j}(x_{\kappa})$ dargestellt, die wiederum in der primitiven Basis $\mathcal{X}^{\kappa}_{j}(x_{\kappa})$ entwickelt werden:
+in der zeitabh"angigen SPF - Basis $\phi^{\kappa}_{j}(x_{\kappa})$ entwickelt, die wiederum in der primitiven Basis $\mathcal{X}^{\kappa}_{j}(x_{\kappa})$ entwickelt wird:
 
 \begin{equation}
  \phi^{1;\kappa}_{m} (x_{\kappa}, t)=\sum^{N_{\kappa}}_{j=1} A^{2;\kappa}_{m;j}(t) \cdot \mathcal{X}^{(\kappa)}_{j}(x_{1})
- \label{Eq:Std_wave}
+ \label{Eq:SPF}
  \end{equation}
 
+Die hochgestellte Zahl $z$ der Koeffizienten $A^{z}(t)$ bezieht sich auf die Layertiefen.
+In Gleichung \ref{Eq:SPF} folgt aus $z=2$, das Gleichung \ref{Eq:SPF} den zweiten Layer darstellt.
+Gleichzeitig ist Gleichung \ref{Eq:SPF} der letzte Layer, da in der primitiven Basis entwickelt wurde.
+Das hochgestellte $\kappa$ und der Index $m$ von $A^{2;\kappa}_{m;j}(t)$ beziehen sich auf die $m$-te SPF und die $\kappa$-te Koordinate.
 
-Diese Basisfunktionen, die auch Einteilchenfunktionen genannt werden, k"onnen so gew"ahlt werden, dass die Einteilchenfunktionen sich aus mehrdimensionale
-Wellenfunktionen zusammensetzen, die wiederum als MCTDH - Wellenfunktion entwickelt werden.
-Durch die rekursive Anwendung der MCTDH - Methode auf seine Einteilchenfunktionen wird ein mehrlagiges MCTDH entwickelt, dass quantumdynamische Rechnungen
-von Systemen mit bis zu 1000 Freiheitsgraden erm"oglicht. [Manthe, 2008 multilayer MCTDH approach]
+
+
 
 
 
