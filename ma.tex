@@ -21,7 +21,7 @@
 \usepackage{xcolor}															% Farben
 \usepackage{latexsym,gensymb,textcomp,lmodern,setspace,url}		% Einige Symbole, Schriften etc.
 \usepackage[ngerman]{babel}												% Englisches Sprachpaket
-\usepackage{biblatex}
+%\usepackage{biblatex}
 \usepackage{setspace}                                 				% n�tig f�r 1.5- oder 2-fachen Zeilenabstand
 \onehalfspacing					                          			% anderthalbfacher Zeilenabstand
 %
@@ -54,7 +54,7 @@
 bpchem,																% chemische Nomenklatur (Trennung etc.)
 chemarrow}															% Darstellung komplexer Reaktionspfeile
 \usepackage[fixamsmath,disallowspaces]{mathtools}		% Fehlerbehebung in amsmath
-%\usepackage[%
+%\usepackage[version=4]{mhchem}
 %multi-part-units=brackets,										% (5\pm 3) kg statt 5 kg \pm 3 kg
 %exponent-product=\cdot,											% Schreibweise f�r 5,3*10^3
 %group-separator = {,},											% Schreibweise 123,145,175 f�r gro�e Zahlen
@@ -194,6 +194,6 @@ chemarrow}															% Darstellung komplexer Reaktionspfeile
 \backmatter % ab hier keine Nummerierung mehr
     \appendix
 %    \input{./appendix/...} % Anhangs-Kapitel
-   \bibliographystyle{apsrev} % oder anderen Stil
-    \bibliography{./general,} % bibtex-file
+%   \bibliographystyle{apsrev} % oder anderen Stil
+%    \bibliography{./general,} % bibtex-file
 \end{document}
