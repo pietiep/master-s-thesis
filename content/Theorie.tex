@@ -39,7 +39,7 @@ Bei drei Layern wird der obere Layer durch die SPF-Basis des herk"ommlichen MCTD
 Diese Basis wird als SPFs des ersten Layers bezeichnet und kann selbst in der SPF-Basis des zweiten Layers entwickelt werden.
 Die SPF-Basis des zweiten Layers erweitert das MCTDH um einen weiteren Layer und wird selbst in der primitiven Basis entwickelt, die den unteren Layer bildet.
 Durch die rekursive Anwendung der MCTDH - Methode k"onnen weitere Layer zugef"ugt.
-Mit der ML-MCTDH Methode sind quantumdynamische Rechnungen von Systemen-Bad Modellen mit bis zu 1000 korrelierten Koordinaten m"oglich,
+Mit der ML-MCTDH Methode sind quantumdynamische Rechnungen von System-Bad Modellen mit bis zu 1000 korrelierten Koordinaten m"oglich,
 in denen Elektronentransferprozesse [34-35] untersucht wurden.
  \\Um die MCTDH-Wellenfunktion propagieren zu k"onnen, m"ussen die Matrixelemente des Hamiltonoperators effizient berechnet werden.
 So lange der Hamiltonoperator der Summe von Produkten von Einteilchenoperatoren [17] entspricht, stellt die Berechnuung der Matrixelemente kein Probelm dar.
@@ -72,7 +72,9 @@ zu l"osen.
  \label{Eq:Std_wave}
  \end{equation}
 
-Die zeitabh"angigen Koeffizienten $A^{1}_{j_{1}, ..., j_{f}}(t)$ beschreiben die Bewegung der Wellenpakete. Im Unterschied zu Gleichung \ref{Eq:Std_wave} wird die MCTDH - Wellenfunktion,
+Die zeitabh"angigen Koeffizienten $A^{1}_{j_{1}, ..., j_{f}}(t)$ beschreiben die Bewegung der Wellenpakete.
+Die Darstellung der Wellenfunktion in Gleichung  \ref{Eq:Std_wave} kann auch als Einfachlayerdarstellung betrachtet werden.
+Im Unterschied zu Gleichung \ref{Eq:Std_wave} wird die MCTDH - Wellenfunktion,
 
  \begin{equation}
  \Psi(x_{1},..., x_{f}, t)=\sum^{n_{1}}_{j_{1}=1} ... \sum^{n_{f}}_{j_{f}=1} A^{1}_{j_{1}, ..., j_{f}}(t)
@@ -91,10 +93,73 @@ Die hochgestellte Zahl $z$ der Koeffizienten $A^{z}(t)$ bezieht sich auf die Lay
 In Gleichung \ref{Eq:SPF} folgt aus $z=2$, das Gleichung \ref{Eq:SPF} den zweiten Layer darstellt.
 Gleichzeitig ist Gleichung \ref{Eq:SPF} der letzte Layer, da in der primitiven Basis entwickelt wurde.
 Das hochgestellte $\kappa$ und der Index $m$ von $A^{2;\kappa}_{m;j}(t)$ beziehen sich auf die $m$-te SPF und die $\kappa$-te Koordinate.
+Die Hochzahl $s$ in $ \phi^{s;\kappa}_{m} (x_{\kappa}, t) $ entspricht dem Layer, der von $ \phi^{1;\kappa}_{m} (x_{\kappa}, t) $ dargestellt wird
+und ist durch die maximale Anzahl der Layer begrenzt.
+  \\Zur Visualisierung der Layerstruktur des MCTDHs dienen die Diagramme f"ur die unterschiedlichen Darstellungen der Wellenfunktionen in Abbildung \ref{fig:tree}.
+
+
+
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \captionsetup[subfigure]{position=top, labelfont=bf,textfont=normalfont,singlelinecheck=off,justification=raggedright}
+    \begin{subfigure}[a]{\textwidth}
+        \caption{}\label{fig:leftA}
+        \includegraphics[width=\textwidth]{figures/std_wave}
+    \end{subfigure}
+    \hfill
+    \quad
+    \begin{subfigure}[c]{\textwidth}
+        \caption{}\label{fig:leftB}
+        \includegraphics[width=\textwidth]{figures/mctdh_wave1}
+    \end{subfigure}
+  %  \caption{Left}\label{fig:left}
+\end{minipage}
+\quad
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \captionsetup[subfigure]{position=top, labelfont=bf,textfont=normalfont,singlelinecheck=off,justification=raggedright}
+    \begin{subfigure}{\textwidth}
+        \caption{}\label{fig:rightC}
+        \includegraphics[width=\textwidth]{figures/mctdh_wave2}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}{\textwidth}
+        \caption{}\label{fig:rightD}
+        \includegraphics[width=\textwidth]{figures/multi_mctdh_wave}
+    \end{subfigure}
+%    \caption{right}\label{fig:right}
+\end{minipage}
+  \caption{Unterschiedliche Darstellung von Wellenfunktionen eines siebendimensionalen Systems. Dargestellt sind: (a) Eine Standard Wellenfunktion,
+  (b) eine MCTDH-Wellenfunktion, (c) eine modenkombinierte MCTDH-Wellenfunktion und (d) eine ML-MCTDH-Wellenfunktion.}\label{fig:tree}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\begin{subfigure}[a]{0.75\textwidth}
+   \includegraphics[width=1\linewidth]{figures/std_wave}
+   \caption{}
+   \label{fig:Ng1}
+\end{subfigure}
+
+\begin{subfigure}[b]{0.55\textwidth}
+   \includegraphics[width=1\linewidth]{figures/mctdh_wave1}
+   \caption{}
+   \label{fig:Ng2}
+\end{subfigure}
+
+\caption[Two numerical solutions]{(a) Numerical solutions for the small-time system
+with a constant-curvature body shape showing the scaled leading-order veritcal
+reaction force $N_0$ versus the scaled body mass $M$ for various values of $g$.
+Again, $I=M$ for definiteness and $A=0.7$. (b) As for (a) but over a wider range of
+values of $M,I$.}
+\end{figure}
 
 
 
 
 
 
+\clearpage
  \subsection{Absorption und Emission}
