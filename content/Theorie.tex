@@ -93,10 +93,39 @@ Die hochgestellte Zahl $z$ der Koeffizienten $A^{z}(t)$ bezieht sich auf die Lay
 In Gleichung \ref{Eq:SPF} folgt aus $z=2$, das Gleichung \ref{Eq:SPF} den zweiten Layer darstellt.
 Gleichzeitig ist Gleichung \ref{Eq:SPF} der letzte Layer, da in der primitiven Basis entwickelt wurde.
 Das hochgestellte $\kappa$ und der Index $m$ von $A^{2;\kappa}_{m;j}(t)$ beziehen sich auf die $m$-te SPF und die $\kappa$-te Koordinate.
-Die Hochzahl $s$ in $ \phi^{s;\kappa}_{m} (x_{\kappa}, t) $ entspricht dem Layer, der von $ \phi^{1;\kappa}_{m} (x_{\kappa}, t) $ dargestellt wird
+Die Hochzahl $s$ in $ \phi^{s;\kappa}_{m} (x_{\kappa}, t) $ entspricht dem Layer, der durch jeweiligen SPFs representiert wird
 und ist durch die maximale Anzahl der Layer begrenzt.
   \\Zur Visualisierung der Layerstruktur des MCTDHs dienen die Diagramme f"ur die unterschiedlichen Darstellungen der Wellenfunktionen in Abbildung \ref{fig:tree}.
+Abbildung \ref{fig:std_wave} stellt die Wellenfunktion aus Gleichung \ref{Eq:Std_wave} schematisch dar, wobei alle Wellenfunktionen von Abbildung \ref{fig:std_wave}
+bis \ref{fig:multi_mctdh_wave} ein siebendimensionalen System beschreiben.
+In den Diagrammen werden die verschiedenen S"atze der A-Koeffizienten durch die ausgef"ullten schwarzen Kreise repr"asentiert.
+So kommen in Abbildung \ref{fig:std_wave} nur die Koeffizienten $A^{1}_{j_{1}, ..., j_{7}}$ vor, die durch den
+einzigen schwarzen Punkt gekennzeichnet sind.
+  \\Im Unterschied zur Wellenfunktion aus \ref{Eq:Std_wave} besitzt die MCTDH-Wellenfunktion
+in Abbildung \ref{fig:mctdh_wave} zwei Layer.
+Somit beinhaltet die Beschreibung der Wellenfunktion mehrere S"atze an A-Koeffizienten.
+Die Koeffizienten $A^{2;\kappa}_{m;j}$ werden durch alle schwarzen Punkte, die horizontal angeordnet und mit den obersten Punkt verbunden sind, dargestellt.
+Dabei sind $A^{2;\kappa}_{m;j}$ und $A^{1}_{j_{1}, ..., j_{7}}$ durch Line verbunden, die jeweils den Index $m$ repr"asentieren.
+Jede darauffolgende Linie, die die $A^{2;\kappa}_{m;j}$ mit den sieben Koordinaten $x_{1}, x_{2}, ..., x_{7}$ verbindet, entspricht einer der sieben Indizes $j$.
+Somit existieren sieben S"atze von A-Koeffizienten $A^{2;1}, A^{2;2}, ..., A^{2;7}$, den zweiten Layer beschreiben.
+In Abbildung \ref{fig:std_wave} ist der Koeffizient $A^{1}_{j_{1}, ..., j_{7}}$ direkt mit den Koordinaten verbunden.
+  \\Die Koordinaten der modenkombinierte MCTDH-Wellenfunktion werden im Gegensatz zur Doppellayerwellenfunktion \ref{Eq:mctdh_wave}  in $d$ logischen Koordinaten
+  eingeteilt, sodass mehrdimensionale SPFs verwendet werden. Die mehrdimensionalen Koordinaten $q^{1}_{1}, q^{1}_{2}, ..., q^{1}_{d}$
+  werden wie folgt definiert:
 
+
+
+\begin{align}
+\label{eqn:eqlabel}
+\begin{split}
+  q^{1}_{1} = \{q^{2;1}_{1},q^{2;1}_{2},q^{2;1}_{d_{1}}\} = \{x_{1}, x_{2}, ..., x_{d_1}\} \\
+  q^{1}_{2} = \{q^{2;2}_{1},q^{2;2}_{2},q^{2;2}_{d_{2}}\} = \{x_{d_{1}+1}, x_{d_{1}+2}, ..., x_{d_{1}+d_{2}}\} \\
+  .\\
+  .\\
+  .\\
+  q^{1}_{d} = \{q^{2;d}_{1},q^{2;d}_{2},q^{2;d}_{d_{d}}\} = \{..., x_{f}\}
+\end{split}
+\end{align}
 
 
 \begin{figure}
@@ -104,13 +133,13 @@ und ist durch die maximale Anzahl der Layer begrenzt.
     \centering
     \captionsetup[subfigure]{position=top, labelfont=bf,textfont=normalfont,singlelinecheck=off,justification=raggedright}
     \begin{subfigure}[a]{\textwidth}
-        \caption{}\label{fig:leftA}
+        \caption{}\label{fig:std_wave}
         \includegraphics[width=\textwidth]{figures/std_wave}
     \end{subfigure}
     \hfill
     \quad
     \begin{subfigure}[c]{\textwidth}
-        \caption{}\label{fig:leftB}
+        \caption{}\label{fig:mctdh_wave}
         \includegraphics[width=\textwidth]{figures/mctdh_wave1}
     \end{subfigure}
   %  \caption{Left}\label{fig:left}
@@ -125,7 +154,7 @@ und ist durch die maximale Anzahl der Layer begrenzt.
     \end{subfigure}
     \quad
     \begin{subfigure}{\textwidth}
-        \caption{}\label{fig:rightD}
+        \caption{}\label{fig:multi_mctdh_wave}
         \includegraphics[width=\textwidth]{figures/multi_mctdh_wave}
     \end{subfigure}
 %    \caption{right}\label{fig:right}
@@ -135,26 +164,7 @@ und ist durch die maximale Anzahl der Layer begrenzt.
 \end{figure}
 
 
-\begin{figure}
-\centering
-\begin{subfigure}[a]{0.75\textwidth}
-   \includegraphics[width=1\linewidth]{figures/std_wave}
-   \caption{}
-   \label{fig:Ng1}
-\end{subfigure}
 
-\begin{subfigure}[b]{0.55\textwidth}
-   \includegraphics[width=1\linewidth]{figures/mctdh_wave1}
-   \caption{}
-   \label{fig:Ng2}
-\end{subfigure}
-
-\caption[Two numerical solutions]{(a) Numerical solutions for the small-time system
-with a constant-curvature body shape showing the scaled leading-order veritcal
-reaction force $N_0$ versus the scaled body mass $M$ for various values of $g$.
-Again, $I=M$ for definiteness and $A=0.7$. (b) As for (a) but over a wider range of
-values of $M,I$.}
-\end{figure}
 
 
 
