@@ -114,18 +114,40 @@ In Abbildung \ref{fig:std_wave} ist der Koeffizient $A^{1}_{j_{1}, ..., j_{7}}$ 
   werden wie folgt definiert:
 
 
-
-\begin{align}
-\label{eqn:eqlabel}
-\begin{split}
-  q^{1}_{1} = \{q^{2;1}_{1},q^{2;1}_{2},q^{2;1}_{d_{1}}\} = \{x_{1}, x_{2}, ..., x_{d_1}\} \\
+\begin{equation}
+%\label{eqn:eqlabel}
+\begin{gathered}
+   q^{1}_{1} = \{q^{2;1}_{1},q^{2;1}_{2},q^{2;1}_{d_{1}}\} = \{x_{1}, x_{2}, ..., x_{d_1}\} \\
   q^{1}_{2} = \{q^{2;2}_{1},q^{2;2}_{2},q^{2;2}_{d_{2}}\} = \{x_{d_{1}+1}, x_{d_{1}+2}, ..., x_{d_{1}+d_{2}}\} \\
-  .\\
-  .\\
-  .\\
   q^{1}_{d} = \{q^{2;d}_{1},q^{2;d}_{2},q^{2;d}_{d_{d}}\} = \{..., x_{f}\}
-\end{split}
-\end{align}
+\end{gathered}
+\end{equation}
+
+Die logische mehrdimensionale Koordinate $ q^1_\kappa $ umfasst $d_\kappa $ Koordinaten, wobei $\kappa$ den Index der Koordinate des ersten Layers angibt
+und werden immer mit einer eins als Hochzahl angegeben, da es sich bei den logischen Koordinaten immer um Koordinaten des ersten Layers handelt.
+Enthalten in den logischen Koordinaten sind Koordinaten des zweiten Layers : $  q^{2;\kappa}_1, q^{2;\kappa}_2, ..., q^{2;\kappa}_{d_\kappa} $, auf den durch die
+zwei als Hochzahl hingewiesen wird. Alle Koordinate des zweiten Layers entsprechen den jeweiligen physikalischen Koordinaten $x_{1}, x_{2}, ...$ und $x_{f}$.
+Eine modenkombinierte MCTDH-Wellenfunktion kann dann wie folgt definiert werden:
+
+\begin{equation}
+ \Psi(q^{1}_{1},q^{1}_{2},..., q^{1}_{d}, t)=\sum^{n_{1}}_{j_{1}=1} ... \sum^{n_{d}}_{j_{d}=1} A^{1}_{j_{1}, ..., j_{d}}(t)
+ \cdot \phi^{1;1}_{j_{1}}(q^1_{1}, t) \cdot ... \cdot \phi^{1;d}_{j_{d}}(q^1_{d}, t)
+ \label{Eq:mode_comb_wave}
+ \end{equation}
+
+\begin{equation}
+  \begin{gathered}
+ \phi^{1;\kappa}_{m} (q^1_{\kappa}, t)=\sum^{N_{\alpha}}_{j=1} ... \sum^{N_{\beta}}_{j_{d_\kappa}=1} A^{2;\kappa}_{m;j_1,...,j_{d_\kappa}}(t)
+ \cdot \mathcal{X}^{(\alpha)}_{j_1}(q^{2;\kappa}_1) \cdot ... \cdot
+ \mathcal{X}^{(\beta)}_{j_{d_\kappa}}(q^{2;\kappa}_{d_\kappa})\\
+ \left( \alpha = 1 + \sum^{\kappa - 1}_{i=1}d_i \text{ and }  \beta = 1 + \sum^{\kappa}_{i=1}d_i\right)
+ \label{Eq:mode_SPF}
+\end{gathered}
+ \end{equation}
+
+In Abbildung \ref{fig:mode_wave} sind die sieben physikalischen
+Koordinaten in drei mehrdimensionale logische Koordinaten der Wellenfunktion $ \Psi(q^{1}_{1},q^{1}_{2},q^{1}_{3}, t)$ aufgeteilt: $q^{1}_{1} = \left(x_1, x_2 \right)$, $ q^{1}_{2} = \left(x_3, x_4 \right)$
+und $ q^{1}_{3} = \left(x_5, x_6, x_7 \right)$.
 
 
 \begin{figure}
@@ -149,7 +171,7 @@ In Abbildung \ref{fig:std_wave} ist der Koeffizient $A^{1}_{j_{1}, ..., j_{7}}$ 
     \centering
     \captionsetup[subfigure]{position=top, labelfont=bf,textfont=normalfont,singlelinecheck=off,justification=raggedright}
     \begin{subfigure}{\textwidth}
-        \caption{}\label{fig:rightC}
+        \caption{}\label{fig:mode_wave}
         \includegraphics[width=\textwidth]{figures/mctdh_wave2}
     \end{subfigure}
     \quad
@@ -162,6 +184,34 @@ In Abbildung \ref{fig:std_wave} ist der Koeffizient $A^{1}_{j_{1}, ..., j_{7}}$ 
   \caption{Unterschiedliche Darstellung von Wellenfunktionen eines siebendimensionalen Systems. Dargestellt sind: (a) Eine Standard Wellenfunktion,
   (b) eine MCTDH-Wellenfunktion, (c) eine modenkombinierte MCTDH-Wellenfunktion und (d) eine ML-MCTDH-Wellenfunktion.}\label{fig:tree}
 \end{figure}
+
+Anstelle die SPFs aus Gleichung \ref{Eq:mode_comb_wave} in einer primitiven Basen zu entwickeln, k"onnen die SPFs des ersten Layers
+durch SPFs eines zweiten Layers dargestellt werden. Die SPFs des ersten Layers werden analog zu einer MCTDH-Wellenfunktion entwickelt.
+Diese Entwicklung f"uhrt zu einer ML-MCTDH-Wellenfunktion:
+
+\begin{equation}
+  \begin{gathered}
+ \phi^{1;\kappa}_{m} (q^1_{\kappa}, t)=\sum^{n_{\kappa,1}}_{j=1} ... \sum^{n_{\kappa,d_\kappa}}_{j_{d_\kappa}=1} A^{2;\kappa}_{m;j_1,...,j_{d_\kappa}}(t)
+ \times \phi^{2;\kappa,1}_{j_1} (q^{2;\kappa}_{1}, t) \cdot ... \cdot
+ \phi^{2;\kappa,d_\kappa}_{j_{d_\kappa}} (q^{2;\kappa}_{d_\kappa}, t)
+\\
+ \phi^{2;\kappa, \lambda}_{m} (q^{2;\kappa}_{\lambda}, t)= \sum^{N_{\alpha}}_{j=1} A^{3;\kappa, \lambda}_{m;j}(t)
+ \mathcal{X}^{(\alpha)}_{j}(q^{2;\kappa}_\lambda)
+\\
+ \left( \text{ mit } \alpha = \lambda + \sum^{\kappa - 1}_{i=1}d_i \right)
+ \label{Eq:ml_mctdh_mode_SPF}
+\end{gathered}
+ \end{equation}
+
+Die Indizes $\kappa$ und $\lambda$ des SPFs des zweiten Layers $ \phi^{2;\kappa, \lambda}_{m}  $  sind durch die Koordinaten und deren
+Zugeh"origkeit zu den logischen Koordinate festgelegt.
+Die Koeffizienten $A^{2;\kappa}_{m;j_1,...,j_{d_\kappa}}$ definieren weiterhin die Entwicklung der SPFs des ersten Layers.
+Allerdings werden anstelle der zeitunbh"angigen primitiven Basis die zeitabh"angigen SPFs des zweiten Layers als Basis verwendet.
+Diese wiederum werden in der primitiven Basis entwickelt und diese Entwicklung wird durch den Koeffzienten  $A^{3;\kappa, \lambda}_{m;j}$
+definiert.
+  \\Die ML-MCTDH Darstellung kann auf eine beliebige Anzahl von Layern erweitert werden.
+  Dabei kann die Anzahl der Layer f"ur die jeweiligen Koordinaten variieren. So werden in Abbildung \ref{fig:multi_mctdh_wave} f"ur die Koordinaten $x_1-x_4$ drei Layer 
+  und f"ur die Koordinaten $x_5 - x_7$ zwei Layer verwendet.
 
 
 
