@@ -6,16 +6,16 @@ chemische Physik vor eine wesentliche Herausforderung.
 Der MCTDH-Ansatz \cite{MMC, MMC1} spielt eine entscheidende Rolle am Erfolg der Entwicklung quantendynamischer Rechenmethoden.
 Mit dem MCTDH-Ansatz konnten Reaktionsraten von Reaktionen mit sechs Atomen wie $H+CH_{4} \rightarrow H_{2} + CH_{3}$  \cite{HM1, HM2, HM4, WWM, WWM2}
 und $ O + CH_{4} \rightarrow OH + CH_{3} $ \cite{HM5} berechnet werden.
-Des Weiteren konnten Tunnelaufspaltungen und Schwingungszust"ande von Malonaldehyd[18paper] und dem $ H_{5}O^{+}_{2} $-Cluster[7-9paper] berechnet werden.
-Sowohl die Schwingungsdynamiken von lichtangeregten Pyrazin [19paper] und von photoionisierten Butatrien [20paper] als auch der Elektronentransfer
-aus einem angeregten Zustandes in "Ubergangsmetallen [21,22paper]  konnten mithilfe des MCTDH-Ansatzes untersucht werden.
+Des Weiteren konnten Tunnelaufspaltungen und Schwingungszust"ande von Malonaldehyd \cite{CVM} und dem $ H_{5}O^{+}_{2} $-Cluster \cite{H5O2+MCTDH, H5O2+MCTDH2, H5O2+MCTDH3} berechnet werden.
+Sowohl die Schwingungsdynamiken von lichtangeregten Pyrazin \cite{RWMC} und von photoionisierten Butatrien \cite{CWMC} [20paper] als auch der Elektronentransfer
+aus einem angeregten Zustandes in "Ubergangsmetallen \cite{WT, WT2} [21,22paper]  konnten mithilfe des MCTDH-Ansatzes untersucht werden.
 \\Um molekulare Systeme theoretisch untersuchen zu k"onnen, muss zun"achst die Schr"odingergleichung (SGL) gel"ost werde.
 Um die SGL zu l"osen, muss die Wellenfunktion, die das System beschreiben soll, definiert werden.
 Generell wird die Wellenfunktion durch das Produkt von mehrdimensionalen zeitabh"angigen Basisfunktionen dargestellt.
-Dieser Ansatz der Wellenfunktion wird in der Standardmethode verwendet. [meyer rev 2011]
+Dieser Ansatz der Wellenfunktion wird in der Standardmethode verwendet. \cite{MCTDHreview3}
  Die Basisfunktionen werden in einer eindimensionalen zeitunabh"angigen Basis mit den jeweiligen zeitabh"angigen Koeffizienten entwickelt.
 F"ur jeden Freiheitsgrad $f$ des Systems ergeben sich $N$ zeitunabh"angige Basisfunktionen. Somit w"achst die Anzahl der Entwicklungskoeffizienten um $N^{f}$ und
-die Standardmethode skaliert exponentielle, sodass nur kleinere Systeme berechenbar sind. [meyer rev 2011]
+die Standardmethode skaliert exponentielle, sodass nur kleinere Systeme berechenbar sind. \cite{MCTDHreview3}
   \\ Im Unterschied zu der Standardmethode resultiert die Effizienz des MCTDH aus der Doppellayerstruktur der verwendeten Wellenfunktion.
 Anstelle die Wellenfunktion in einer zeitunab"angigen Basis zu entwickeln und die Zeitentwicklung durch zeitabh"angige Entwicklungskoeffizienten zu beschreiben,
 wird in der MCTDH - Methode die Wellenfunktion als ein Satz von zeitabh"angigen Basisfunktionen dargestellt.
@@ -23,33 +23,34 @@ Diese zeitabh"angigen Basisfunktionen werden Einteilchenfunktionen (SPF) genannt
 Die Doppellayerstruktur des MCTDHs resultiert aus zwei Entwicklungen mit jeweils zeitabh"angigen Entwicklungskoeffiziente:
 Zum einen stellen die Entwicklungskoeffizienten mit den SPFs die korrelierte Wellenfunktion dar und bilden den oberen MCTDH -
 Layer und zum anderen k"onnen die SPFs durch die Entwicklungskoeffizienten in der primitiven zeitunabh"angigen Basis entwickelt werden. Diese Entwicklung bildet
-den unteren Layer.[Manthe, 2008 multilayer MCTDH approach]
+den unteren Layer. \cite{Mreview2}
   \\ Die Anzahl der SPFs kann verglichen mit der primitiven Basis signifikant kleiner gew"ahlt werden.
 Dennoch ist auch das MCTDH durch eine exponentielle Skalierung limitiert.
 Um Korrelationseffekte beschreiben zu k"onnen, sind mindestens zwei SPFs pro Freiheitsgrad notwendig, sodass der numerische Aufwand mit der Anzahl der
-Freiheitsgrade $f$ zu $2^f$ skaliert. Aufgrund dieser Skalierung k"onnen Systeme mit maximal 12 - 14 korrelierten Koordinaten [10-15,27,28] behandelt werden.
+Freiheitsgrade $f$ zu $2^f$ skaliert. Aufgrund dieser Skalierung k"onnen Systeme mit maximal 12 - 14 korrelierten Koordinaten \cite{HM1, HM2, HM4, WWM, WWM2, HM5,
+ WMC, BWHHM} [10-15,27,28] behandelt werden.
   \\ Zus"atzliche zu der Doppellayerstruktur k"onnen die Koordinaten in ,,logische`` und physikalische Koordinaten unterschieden werden und
 verschiedene physikalischen Koordinaten werden zu einzelne logische Koordinaten kombiniert. Die logischen Koordinaten werden Partikel genannt, sodass
 nicht die Anzahl der Freiheitsgrade der limiterende Faktor f"ur die modenkombinierte MCTDH-Rechnung ist,
-sondern die Anzahl der Partikel $p$. So konnten Systeme mit 15 - 24 korrelierten Freiheitsgraden [8,9,19,20] und System-Bad-Modelle [31-33] behandelt werden.
+sondern die Anzahl der Partikel $p$. So konnten Systeme mit 15 - 24 korrelierten Freiheitsgraden \cite{H5O2+MCTDH2, H5O2+MCTDH3, RWMC, CWMC} [8,9,19,20] und System-Bad-Modelle [31-33] behandelt werden.
 Dennoch bleibt das Problem der exponentielle Skalierung von $2^p$ bestehen.
-  \\Dieses Problem wird mit dem multilayer (ML)-MCTDH-Ansatz [34] begegnet.
+  \\Diesem Problem wird mit dem multilayer (ML)-MCTDH-Ansatz \cite{WT3} [34] begegnet.
 Die SPFs k"onnen selbst als mehrdimensionale Wellenfunktionen dargestellt werden und in anderen SPF entwickelt werden.
 Bei drei Layern wird der obere Layer durch die SPF-Basis des herk"ommlichen MCTDHs gebildet.
 Diese Basis wird als SPFs des ersten Layers bezeichnet und kann selbst in der SPF-Basis des zweiten Layers entwickelt werden.
 Die SPF-Basis des zweiten Layers erweitert das MCTDH um einen weiteren Layer und wird selbst in der primitiven Basis entwickelt, die den unteren Layer bildet.
 Durch die rekursive Anwendung der MCTDH - Methode k"onnen weitere Layer zugef"ugt.
 Mit der ML-MCTDH Methode sind quantumdynamische Rechnungen von System-Bad Modellen mit bis zu 1000 korrelierten Koordinaten m"oglich,
-in denen Elektronentransferprozesse [34-35] untersucht wurden.
+in denen Elektronentransferprozesse \cite{WT3, WST}[34-35] untersucht wurden.
  \\Um die MCTDH-Wellenfunktion propagieren zu k"onnen, m"ussen die Matrixelemente des Hamiltonoperators effizient berechnet werden.
-So lange der Hamiltonoperator der Summe von Produkten von Einteilchenoperatoren [17] entspricht, stellt die Berechnuung der Matrixelemente kein Probelm dar.
+So lange der Hamiltonoperator der Summe von Produkten von Einteilchenoperatoren \cite{MMC1} [17] entspricht, stellt die Berechnuung der Matrixelemente kein Probelm dar.
 Im Gegensatz zu vielen Modelhamiltonoperatoren k"onnen \textit{ab initio} Potentialenergiefl"achen nicht in dieser Form dargestellt werden.
 Durch die Verwendung einer spezifischen zeitabh"angigen Quadratur, die die Matrixelemente allgemeiner Potentiale effizient auswertet, k"onnen
 auch Matrixelemente solcher \textit{ab initio} Potentialenergiefl"achen effizient berechnet werden.
-Diese Vorgehensweise wird correlation discrete variable representation (CDVR) [40,41] genannt.
- \\Das urspr"ungliche Vorgehen f"ur das CDVR [40] beruht auf ein zeitabh"angiges DVR-Gitter, das direkten Produkten einer SPF-Basisfunktion entspricht.
+Diese Vorgehensweise wird correlation discrete variable representation (CDVR) \cite{M3, vHM2} [40,41] genannt.
+ \\Das urspr"ungliche Vorgehen f"ur das CDVR \cite{M3} [40] beruht auf ein zeitabh"angiges DVR-Gitter, das direkten Produkten einer SPF-Basisfunktion entspricht.
 Somit kann das Standard-CDVR weder f"ur modenkombinierte MCTDH-Rechnungen noch f"ur Berechnungen mit dem ML-MCTDH-Ansatz verwendet werden.
- \\Allerdings konnte ein CDVR , das ohne ein direktes Produktgitter auskommt, in modenkombinierte MCTDH-Rechnungen verwendet werden. [42]
+ \\Allerdings konnte ein CDVR , das ohne ein direktes Produktgitter auskommt, in modenkombinierte MCTDH-Rechnungen verwendet werden. \cite{vHM3} [42]
  Der numerische Aufwand des CDVRs h"angt linear von der Anzahl der verwendeten primitiven Gitterpunkten ab, die f"ur die Darstellung der SPFs ben"otigt werden.
 In modenkombinierte MCTDH-Rechnungen wird eine gro"se Anzahl an primitiven Gitterpunkten verwendet, sodass modenkombinierte MCTDH-Rechnungen kombiniert mit CDVR-
 Auswertung des Potentials ineffizient sind. ML-MCTDH-Rechnungen ben"otigen dagegen keine mehrdimensionalen Gitter, um die SPFs darzustellen, und bieten sich

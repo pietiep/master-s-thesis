@@ -1,0 +1,281 @@
+% Potentialflaechen
+%DEFINITIONEN
+@string{ACP={Adv. Chem. Phys.}}
+@string{ARPC={Annu. Rev. Phys. Chem.}}
+@string{CP={Chem. Phys.}}
+@string{CPL={Chem. Phys. Lett.}}
+@string{IJQC={Int. J. Quantum Chem.}}
+@string{IJQCS={Int. J. Quantum Chem. Symp.}}
+@string{JCCH={J. Comput. Chem.}}
+@string{JCP={J. Chem. Phys.}}
+@string{MP={Mol. Phys.}}
+@string{JMS={J. Mol. Struct.}}
+@string{JPC={J. Phys. Chem.}}
+@string{JPCA={J. Phys. Chem. A}}
+@string{JPCB={J. Phys. Chem. B}}
+@string{PRA={Phys. Rev. A}}
+@string{PRB={Phys. Rev. B}}
+@string{PRL={Phys. Rev. Lett.}}
+@string{TCA={Theor. Chim. Acta}}
+@string{ZPB={Z. Phys. B}}
+@string{RMP={Rev. Mod. Phys.}}
+@string{AQC={Adv. Quant. Chem.}}
+@string{PCCP={Phys. Chem. Chem. Phys.}}
+
+
+@article{TruhlarFlaeche,
+AUTHOR = {T. C. Allison and G. C. Lynch and D. G. Truhlar and M. S. Gordon},
+TITLE  = {},
+JOURNAL= {J. Phys. Chem.},
+YEAR   = {1996},
+VOLUME = {100},
+PAGES  = {13575} }
+
+@article{TruhlarRate,
+AUTHOR = {S. L. Mielke and T. C. Allison and D. G. Truhlar and D. W. Schwenke},
+TITLE  = {},
+JOURNAL= {J. Phys. Chem.},
+YEAR   = {1996},
+VOLUME = {100},
+PAGES  = {13588} }
+
+@article{ExpH2Cl1,
+AUTHOR = {A. A. Westenberg and N. de Haas},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1968},
+VOLUME = {48},
+PAGES  = {4405} }
+
+@article{ExpH2Cl2,
+AUTHOR = {J. A. Lee and J. V. Michael and W. A. Payne and L. J. Stief},
+TITLE  = {},
+JOURNAL= {J. Chem. Soc. Faraday Trans. 1},
+YEAR   = {1977},
+VOLUME = {73},
+PAGES  = {1530} }
+
+@article{ExpH2Cl3,
+AUTHOR = {J. C. Miller and R. J. Gordon},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1981},
+VOLUME = {75},
+PAGES  = {5305} }
+
+@article{ExpH2Cl4,
+AUTHOR = {D. Kita and D. H. Stedman},
+TITLE  = {},
+JOURNAL= {J. Chem. Soc. Faraday Trans. 2},
+YEAR   = {1982},
+VOLUME = {78},
+PAGES  = {1249} }
+
+@article{ExpH2Cl5,
+AUTHOR = {S. S. Kumaran and K. P. Lim and J. V. Michael},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1994},
+VOLUME = {101},
+PAGES  = {9487} }
+
+@article{StarkWerner,
+AUTHOR = {K. Stark and H.-J. Werner},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {104},
+PAGES  = {6515} }
+
+@ARTICLE{WK88,
+author="H.-J. Werner and P. J. Knowles",
+journal=JCP,
+volume=89,
+pages=5803,
+year=1988,
+}
+@ARTICLE{KW88,
+author="P. J. Knowles and H.-J. Werner",
+journal=CPL,
+volume=145,
+pages=514,
+year=1988,
+}
+
+@article{WernerKnowles,
+AUTHOR = {H.-J. Werner and P. J. Knowles},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1988},
+VOLUME = {89},
+PAGES  = {5803} }
+
+@ARTICLE{THD89,
+author="T. H. {Dunning Jr.}",
+journal=JCP,
+volume=90,
+pages=1007,
+year=1989,
+}
+
+@article{KDH92,
+AUTHOR = {R. A. Kendall and T. H. Dunning Jr. and R. H. Harrison},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1992},
+VOLUME = {96},
+PAGES  = {6796} }
+
+@article{LD74,
+AUTHOR = {S. R. Langhoff and E. R. Davidson},
+TITLE  = {},
+JOURNAL= {Int. J. Quantum Chem.},
+YEAR   = {1974},
+VOLUME = {8},
+PAGES  = {61} }
+
+@article{KSW91,
+AUTHOR = {P. J. Knowles and K. Stark and H.-J. Werner},
+TITLE  = {},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {1991},
+VOLUME = {185},
+PAGES  = {555} }
+
+@article{Aguado_Paniagua,
+AUTHOR = {A. Aguado and M. Paniagua},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1992},
+VOLUME = {96},
+PAGES  = {1265} }
+
+@article{SEC,
+AUTHOR = {R. Steckler and D. W. Schwenke and F. B. Brown and D. G. Truhlar},
+TITLE  = {},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {1985},
+VOLUME = {121},
+PAGES  = {475} }
+
+@article{h2cl_pot,
+AUTHOR = {Wensheng Bian and Hans-Joachim Werner},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {112},
+PAGES  = {220} }
+
+@article{hdcl_science,
+AUTHOR = {D. Skouteris and D. E. Manolopoulos and W. Bian and H.-J. Werner
+and L.-H. Lai and K. Liu},
+TITLE  = {},
+JOURNAL= {Science},
+YEAR   = {1999},
+VOLUME = {286},
+PAGES  = {1713} }
+
+%addition 2003
+@article{h2cl_science,
+AUTHOR = {M. H. Alexander and G. Capecchi and H.-J. Werner},
+TITLE  = {},
+JOURNAL= {Science},
+YEAR   = {2002},
+VOLUME = {296},
+PAGES  = {715} }
+
+@article{F+H2_1,
+AUTHOR = {M. H. Alexander and H.-J. Werner and D. E. Manolopopoulos},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1998},
+VOLUME = {109},
+PAGES  = {5710} }
+
+@article{F+H2_2,
+AUTHOR = {M. H. Alexander and D. E. Manolopopoulos and H.-J. Werner},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {113},
+PAGES  = {11084} }
+
+@article{LS_FH2,
+AUTHOR = {F. J. Aoiz and L. Banares and J. F. Castillo},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1999},
+VOLUME = {111},
+PAGES  = {4013} }
+
+@article{Cl+H2_exp,
+AUTHOR = {F. Dong and S.H. Lee and Kopin Liu},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {115},
+PAGES  = {1197} }
+
+@article{Cl+H2_exp2,
+AUTHOR = {M. Ferguson and G. Meloni and H. Gomez and D. M. Neumark},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2002},
+VOLUME = {117},
+PAGES  = {8181} }
+
+@article{Cl+H2_theo1,
+AUTHOR = {B.-H. Yang and H.-T. Gao and K.-L. Han and J. Z. H. Zhang},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {113},
+PAGES  = {1424} }
+
+@article{Cl+H2_theo2,
+AUTHOR = {B.-H. Yang and B.-Y. Tang and H.-M- Yin and K.-L. Han and J. Z. H. Zhang},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {113},
+PAGES  = {7182} }
+
+@article{Cl+H2_theo3,
+AUTHOR = {D. Skouteris and H.-J. Werner and F.-J. Aoiz and L. Banares and J. F. Castillo and M. Menendez and N. Balucani and L. Cartechini and P. Casavecchia},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {114},
+PAGES  = {10662} }
+
+@article{Cl+H2_theo4,
+AUTHOR = {F.-J. Aoiz and L. Banares and J. F. Castillo and M. Menendez and D. Skouteris and H.-J. Werner},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {115},
+PAGES  = {2074} }
+
+@article{H2+CL_CWpot,
+AUTHOR = {G. Capecchi and H.-J. Werner},
+TITLE  = {},
+JOURNAL= {Phys. Chem. Chem. Phys.},
+YEAR   = {2004},
+VOLUME = {000},
+PAGES  = {0000} }
+
+@INCOLLECTION{CWWEB,
+author="G. Capecchi and H.-J. Werner",
+YEAR   = {(2000)},
+ADDRESS = "{\tt http://www.theochem.uni-stuttgart.de}",
+}
+
+@article{H2+CL_dcs,
+AUTHOR = {N. Balucani and D. Skouteris and L. Cartechini and G. Capozza and E. Segoloni and P. Casavecchia and M. H. Alexander and G. Capecchi and H.-J. Werner},
+TITLE  = {Differential cross sections from quantum calculations on coupled ab initio potential energy surfaces and scattering experiments for the reaction Cl ($^2P$) + H$_2$},
+JOURNAL= {Phys. Rev. Lett.},
+YEAR   = {2003},
+VOLUME = {91},
+PAGES  = {13201} }
+
+

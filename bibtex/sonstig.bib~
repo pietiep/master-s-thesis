@@ -1,0 +1,652 @@
+@ARTICLE{Kubo,
+author="R. Kubo",
+title={Statisical-Mechanical Theory of Irreversible Processes. I.
+General Theory and Simple Applications to Mabgnetic and Conduction Problems},
+journal={J. Phys. Soc. Jpn.},
+volume={12},
+pages={570-586},
+year={1957}}
+
+@ARTICLE{THD89,
+author="T. H. \mbox{Dunning~Jr.}",
+title={GAUSSIAN-BASIS SETS FOR USE IN CORRELATED MOLECULAR CALCULATIONS .1. THE
+ ATOMS BORON THROUGH NEON AND HYDROGEN},
+journal={J. Chem. Phys.},
+volume=90,
+pages={1007-1023},
+year=1989}
+
+@ARTICLE{KDH92,
+author="R. A. Kendall and T. H. \mbox{Dunning~Jr.} and R. H. Harrison",
+title={ELECTRON-AFFINITIES OF THE 1ST-ROW ATOMS REVISITED - SYSTEMATIC
+ BASIS-SETS AND WAVE-FUNCTIONS},
+journal={J. Chem. Phys.},
+volume=96,
+year=1992,
+pages={6796-6806}}
+
+@Article{KHW93,
+title="Coupled Cluster Theory for High Spin Open Shell Reference Wavefunctions",
+author="Peter J. Knowles and Claudia Hampel and H.-J. Werner",
+journal={J. Chem. Phys.},
+volume=99,
+year=1993,
+pages="5219--5227"}
+
+@Article{KHW93e,
+title="Erratum: Coupled Cluster Theory for High Spin Open Shell Reference Wavefunctions",
+author="Peter J. Knowles and Claudia Hampel and H.-J. Werner",
+journal={J. Chem. Phys.},
+volume=112,
+year=2000,
+pages="3106-3107"}
+
+@Article{DK94,
+author="M. J. O. Deegan and P. J. Knowles",
+title={PERTURBATIVE CORRECTIONS TO ACCOUNT FOR TRIPLE EXCITATIONS IN CLOSED AND
+ OPEN-SHELL COUPLED-CLUSTER THEORIES},
+journal={Chem. Phys. Lett.},
+volume=227,
+year=1994,
+pages="321-326"}
+
+@misc{MOLPRO,
+title={MOLPRO, version 2002.6, a package of ab initio programs},
+author={
+H.-J. Werner and
+P. J. Knowles and
+R. Lindh and
+M. {Sch\"{u}tz} and
+P. Celani and
+T. Korona and
+F. R. Manby and
+G. Rauhut and
+R. D. Amos and
+A. Bernhardsson and
+A. Berning and
+D. L. Cooper and
+M. J. O. Deegan and
+A. J. Dobbyn and
+F. Eckert and
+C. Hampel and 
+G. Hetzer and
+A. W. Lloyd and
+S. J. {McNicholas} and
+W. Meyer and 
+M. E. Mura and
+A. Nicklass and
+P. Palmieri and
+R. Pitzer and
+U. Schumann and
+H. Stoll and
+A. J. Stone and
+R. Tarroni and
+T. Thorsteinsson
+},
+note={see http://www.molpro.net},
+address={Birmingham, UK},
+year=2003}
+
+@article{APH,
+AUTHOR = {R. T. Pack and G. A. Parker},
+TITLE  = {QUANTUM REACTIVE SCATTERING IN 3 DIMENSIONS USING HYPERSPHERICAL (APH) COORDINATES - THEORY},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1987},
+VOLUME = {87},
+PAGES  = {3888-3921} }
+
+@article{NOClFlaeche,
+AUTHOR = {R. Schinke and M. Nonella and H.U. Suter and J.R. Huber},
+TITLE  = {PHOTODISSOCIATION OF CINO IN THE S1 STATE - A QUANTUM-MECHANICAL
+ ABINITIO STUDY},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1990},
+VOLUME = {93},
+PAGES  = {1098-1106} }
+
+@book{SchinkeBuch,
+AUTHOR = {R. Schinke},
+TITLE  = {Photodissociation Dynamics},
+PUBLISHER= {Cambridge University Press},
+YEAR   = {1999}}
+
+%
+
+@article{rotation,
+AUTHOR = {C. F. Curtiss and J. O. Hirschfelder and F. T. Adler},
+TITLE  = {THE SEPARATION OF THE ROTATIONAL COORDINATES FROM THE N-PARTICLE
+ SCHROEDINGER EQUATION},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1950},
+VOLUME = {18},
+PAGES  = {1638-1642} }
+
+@article{Watson,
+AUTHOR = {J. K. G. Watson},
+TITLE  = {SIMPLIFICATION OF MOLECULAR VIBRATION-ROTATION HAMILTONIAN},
+JOURNAL= {Mol. Phys.},
+YEAR   = {1968},
+VOLUME = {15},
+PAGES  = {479} }
+
+@article{Jshifting,
+AUTHOR = {J. M. Bowman},
+TITLE  = {REDUCED DIMENSIONALITY THEORY OF QUANTUM REACTIVE SCATTERING},
+JOURNAL= {J. Phys. Chem.},
+YEAR   = {1991},
+VOLUME = {95},
+PAGES  = {4960-4968} }
+
+@article{CS1,
+AUTHOR = {R. T. Pack},
+TITLE  = {SPACE-FIXED VS BODY-FIXED AXES IN ATOM-DIATOMIC MOLECULE SCATTERING -
+ SUDDEN APPROXIMATIONS},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1974},
+VOLUME = {60},
+PAGES  = {633-639} }
+
+@article{CS2,
+AUTHOR = {P. McGuire and D. J. Kouri},
+TITLE  = {QUANTUM-MECHANICAL CLOSE COUPLING APPROACH TO MOLECULAR COLLISIONS -
+ JZ-CONSERVING COUPLED STATES APPROXIMATION},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1974},
+VOLUME = {60},
+PAGES  = {2488-2499} }
+
+@article{CS3,
+AUTHOR = {M. C. Colton and G. C. Schatz},
+TITLE  = {A COUPLED STATES CALCULATION OF ACCURATE QUANTUM RATE CONSTANTS FOR H +
+ H-2},
+JOURNAL= {Int. J. Chem. Kinet.},
+YEAR   = {1986},
+VOLUME = {18},
+PAGES  = {961-975} }
+
+@article{adiabrot1,
+AUTHOR = {C. W. McCurdy and W. H. Miller},
+TITLE  = {GOOD ACTION-ANGLE VARIABLES IN SEMICLASSICAL RATE CALCULATIONS},
+JOURNAL= {in {\it State-to-State Chemistry}, edited by
+P. R. Brooks and E. F. Hayes 
+(American Chemical Society, Washington, D.C., 1977)},
+YEAR   = {},
+VOLUME = {},
+PAGES  = {p. 239} }
+
+@article{adiabrot2,
+AUTHOR = {J. M. Bowman},
+TITLE  = {A TEST OF AN ADIABATIC TREATMENT OF ROTATION FOR VIBRATION/ROTATION
+ ENERGIES OF POLYATOMIC-MOLECULES},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {1994},
+VOLUME = {217},
+PAGES  = {36-40} }
+
+@article{coltonschatz,
+AUTHOR = {M. C. Colton and G. C. Schatz},
+TITLE  = {A COUPLED STATES CALCULATION OF ACCURATE QUANTUM RATE CONSTANTS FOR H +
+ H-2},
+JOURNAL= {Int. J. Chem. Kinet.},
+YEAR   = {1986},
+VOLUME = {18},
+PAGES  = {961-975} }
+
+%HFCO
+
+@article{HFCOPES,
+AUTHOR = {T. Yamamoto and S. Kato},
+TITLE  = {Theoretical study of the dissociation reaction HFCO->HF+CO: New ab
+ initio potential function and classical trajectory analysis},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1997},
+VOLUME = {107},
+PAGES  = {6114-6122} }
+
+@article{HFCOexp1,
+AUTHOR = {Y. S. Choi and C. B. Moore},
+TITLE  = {EVIDENCE FOR MODE SPECIFIC DYNAMICS IN THE STIMULATED-EMISSION PUMPING
+ SPECTRA OF HFCO},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1989},
+VOLUME = {90},
+PAGES  = {3875-3876} }
+
+@article{HFCOexp2,
+AUTHOR = {Y. S. Choi and C. B. Moore},
+TITLE  = {QUASISTABLE EXTREME MOTION VIBRATIONAL-STATES OF HFCO ABOVE ITS
+ DISSOCIATION THRESHOLD},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1991},
+VOLUME = {94},
+PAGES  = {5414-5425} }
+
+@article{HFCOexp3,
+AUTHOR = {Y. S. Choi and C. B. Moore},
+TITLE  = {STATE-SPECIFIC UNIMOLECULAR REACTION DYNAMICS OF HFCO .1. DISSOCIATION
+ RATES},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1992},
+VOLUME = {97},
+PAGES  = {1010-1021} }
+
+@article{HFCOexp4,
+AUTHOR = {Y. S. Choi and C. B. Moore},
+TITLE  = {STATE-SPECIFIC UNIMOLECULAR DISSOCIATION DYNAMICS OF HFCO .2. CO
+ ROTATIONAL DISTRIBUTION AND DOPPLER WIDTHS},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1995},
+VOLUME = {103},
+PAGES  = {9981-9988} }
+
+% Semiklassik
+
+@article{Mano,
+AUTHOR = {M. L. Brewer and J. S. Hulme and D. E. Manolopoulos},
+TITLE  = {Semiclassical dynamics in up to 15 coupled vibrational degrees of
+ freedom},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1997},
+VOLUME = {106},
+PAGES  = {4832-4839} }
+
+%
+
+@article{ManoStatist,
+AUTHOR = {E. J. Rackham  and F. Huarte-Larranaga and D. E. Manolopoulos},
+TITLE  = {Coupled-channel statistical theory of the N(D-2)+H-2 and O(D-1)+H-2
+ insertion reactions},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {2001},
+VOLUME = {343},
+PAGES  = {356-364} }
+
+%vibronic coupling
+
+@article{VibCoupReview,
+AUTHOR = {H. K\"oppel and W. Domcke and L. S. Cederbaum},
+TITLE  = {MULTIMODE MOLECULAR-DYNAMICS BEYOND THE BORN-OPPENHEIMER APPROXIMATION},
+JOURNAL= {Adv. Chem. Phys.},
+YEAR   = {1984},
+VOLUME = {57},
+PAGES  = {59-246} }
+
+% Raten in kondensierter Phase
+
+@article{Schwartz,
+AUTHOR = {S. D. Schwartz},
+TITLE  = {Quantum activated rates - An evolution operator approach},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {105},
+PAGES  = {6871-6879} }
+
+@article{Voth,
+AUTHOR = {J. Cao and G. A. Voth},
+TITLE  = {A unified framework for quantum activated rate processes .1. General
+ theory},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {105},
+PAGES  = {6856-6870} }
+
+@article{Pollak1,
+AUTHOR = {E. Pollak and J.-L. Liao},
+TITLE  = {A new quantum transition state theory},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1998},
+VOLUME = {108},
+PAGES  = {2733-2743} }
+
+@article{Pollak2,
+AUTHOR = {G. Gershinsky and E. Pollak},
+TITLE  = {Quantum harmonic transition state theory - Application to isomerization
+ of stilbene in liquid ethane},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1998},
+VOLUME = {108},
+PAGES  = {2756-2764} }
+
+%
+@article{QTST,
+AUTHOR = {D. G. Truhlar and B. C. Garret and S. J. Klippenstein},
+TITLE  = {Current status of transition-state theory},
+JOURNAL= {J. Phys. Chem.},
+YEAR   = {1996},
+VOLUME = {100},
+PAGES  = {12771-12800} }
+
+% Imaginaerzeit-Pfadintegrale
+
+@article{ImagPfad1,
+AUTHOR = {B. J. Berne and D. Thirumalai},
+TITLE  = {ON THE SIMULATION OF QUANTUM-SYSTEMS - PATH INTEGRAL METHODS},
+
+YEAR   = {1986},
+VOLUME = {37},
+PAGES  = {401-424} }
+
+@article{ImagPfad2,
+AUTHOR = {D. L. Freeman and J. D. Doll},
+TITLE  = {},
+JOURNAL= {Adv. Chem. Phys.},
+YEAR   = {1988},
+VOLUME = {70},
+PAGES  = {139} }
+
+@article{ImagPfad3,
+AUTHOR = {D. Thirumalai and B. J. Berne},
+TITLE  = {METHODS FOR SIMULATING TIME CORRELATION-FUNCTIONS IN QUANTUM-SYSTEMS},
+JOURNAL= {Computer Phys. Comm. },
+YEAR   = {1991},
+VOLUME = {63},
+PAGES  = {415-426} }
+
+@article{ImagPfad4,
+AUTHOR = {D. M. Ceperley},
+TITLE  = {PATH-INTEGRALS IN THE THEORY OF CONDENSED HELIUM},
+JOURNAL= {Rev. Mod. Phys.},
+YEAR   = {1995},
+VOLUME = {67},
+PAGES  = {279-355} }
+
+% Reviews
+
+@article{SchatzReview,
+AUTHOR = {G. C. Schatz},
+TITLE  = {Scattering theory and dynamics: Time-dependent and time-independent
+ methods},
+JOURNAL= {J. Phys. Chem.},
+YEAR   = {1996},
+VOLUME = {100},
+PAGES  = {12839-12847} }
+
+@article{ClaryReview,
+AUTHOR = {D. C. Clary},
+TITLE  = {Quantum theory of chemical reaction dynamics},
+JOURNAL= {Science},
+YEAR   = {1998},
+VOLUME = {279},
+PAGES  = {1879-1882} }
+
+% CH4
+
+@article{CH4v1,
+author              = { H.-G. Yu },
+title 		    = {Converged quantum dynamics calculations of vibrational energies of CH4
+ and CH3D using an ab initio potential},
+journal             = {J. Chem. Phys. },
+volume              = {121},
+PAGES               = {6334-6340},
+year                = {2004}
+}
+
+@article{CH4v2,
+author              = {D. W. Schwenke},
+title  		    = {Towards accurate ab initio predictions of the vibrational spectrum of
+ methane},
+journal             = {Spectrochim. Acta, Part A },
+VOLUME              = {58},
+PAGES               = {849-861} ,
+year                = {2002}
+}
+
+@article{CH4v3 ,
+author              = {X.-G. Wang and T. {Carrington~Jr.}},
+title  		    = {A contracted basis-Lanczos calculation of vibrational levels of methane:Solving the Schrodinger equation in nine dimensions},
+journal             = {J. Chem. Phys. } ,
+VOLUME              = {119},
+PAGES               = {101-117} ,
+year                = {2003}
+}
+
+% CH5+
+
+@article{CH5+ ,
+author              = {X.-G. Wang and T. {Carrington~Jr.}},
+title  		    = {Vibrational energy levels of CH5+},
+journal             = {J. Chem. Phys. } ,
+VOLUME              = {129},
+PAGES               = {234102} ,
+year                = {2008}
+}
+
+% C2H4
+@article{C2H4vib,
+Author = {Avila, Gustavo and Carrington, Jr., Tucker},
+title = {Using a pruned basis, a non-product quadrature grid, and the exact
+ Watson normal-coordinate kinetic energy operator to solve the
+ vibrational Schrodinger equation 	 for C2H4},
+Journal = {J. Chem. Phys.},
+Year = {2011},
+Volume = {135},
+Article-Number = {064101}}
+
+% H3O2-
+
+@article{H3O2-1 ,
+author              = {A. B. McCoy and X. Huang and S. Carter and J. Bowman },
+title		    = {Quantum studies of the vibrations in H3O2- and D3O2-},
+journal             = {J. Chem. Phys. },
+VOLUME              = {123},
+PAGES               = {064317},
+year                = {2005}
+}
+
+@article{H3O2-2 ,
+author              = { H.-G. Yu },
+title		    = {A rigorous full-dimensional quantum dynamics calculation of the
+ vibrational energies of H3O2-},
+journal             = { J. Chem. Phys. },
+VOLUME              = {125},
+PAGES               = {204306},
+year                = {2006}
+}
+
+% H5O2+
+
+@article{H5O2+2 ,
+author              = { A. B. McCoy and X. Huang and S. Carter and M. Y. Landeweer and J. Bowman },
+title		    = {Full-dimensional vibrational calculations for H5O2+ using an ab initio
+ potential energy surface},
+journal             = { J. Chem. Phys. },
+VOLUME              = {122},
+PAGES               = {061101},
+year                = {2005}
+}
+
+% Simultaneous diagonalization applications
+
+@article{SimulDiagApp1,
+author              = {R. Dawes and T. {Carrington~Jr.}},
+title		    = {How to choose one-dimensional basis functions so that a very efficient
+ multidimensional basis may be extracted from a direct product of the
+   one-		       dimensional functions: Energy levels of coupled systems with as many
+   as 16 coordinates},
+journal             = { J. Chem. Phys. } ,
+VOLUME              = {122},
+PAGES               = {134101} ,
+year                = {2005}
+}
+
+@article{SimulDiagApp2,
+author              = {H.-G. Yu},
+title		    = {A coherent discrete variable representation method for multidimensional
+ systems in physics},
+journal             = {J. Chem. Phys. },
+volume              = {122},
+PAGES               = {164107},
+year                = {2005}
+}
+
+@article{SimulDiagApp3,
+author              = {R. Dawes and T. {Carrington~Jr.}},
+title		    = {Using simultaneous diagonalization and trace minimization to make an
+ efficient and simple multidimensional basis for solving the vibrational
+   		       Schrodinger equation},
+journal             = { J. Chem. Phys. } ,
+VOLUME              = {124},
+PAGES               = {054102} ,
+year                = {2006}
+}
+
+@article{SimulDiagApp4,
+author              = {D. A. McCormack},
+title		    = {Dynamical pruning of static localized basis sets in time-dependent
+ quantum dynamics},
+journal             = {J. Chem. Phys.} ,
+VOLUME              = {124},
+PAGES               = {204101} ,
+year                = {2006}
+}
+
+@article{kinJalgebra,
+author              = {X.-G. Wang and T. {Carrington~Jr.}},
+title		    = {A simple method for deriving kinetic energy operators},
+journal             = {J. Chem. Phys.} ,
+VOLUME              = {113},
+PAGES               = {7097-7107} ,
+year                = {2000}
+}
+
+%@article{NO2PES,
+author              = {G. Hirsch and R. J. Buenker and C. Petrongolo },
+title		    = {ABINITIO STUDY OF NO2 .3. POTENTIAL-ENERGY FUNCTIONS FOR THE 2 LOWEST
+ 2A' STATES IN BOTH THE DIABATIC AND ADIABATIC REPRESENTATIONS},
+journal             = {Mol. Phys. } ,
+VOLUME              = {73},
+PAGES               = {1085-1099} ,
+year                = {1991}
+}
+
+@book{Zare,
+AUTHOR = {R. N. Zare},
+TITLE  = {Angular Momentum},
+PUBLISHER= {Wiley, New York},
+YEAR   = {1988}}
+
+@article{tetrahedral,
+author = {M. Geleijns and P. E. S. Wormer and  A. van~der~Avoird},
+title  = {Photodissociation of the methane-argon complex. I. Ab initio
+ intermolecular potential depending on the methane vibrational
+ coordinates},
+journal= {J. Chem. Phys.} ,
+VOLUME = {117},
+PAGES  = {7551-7561},
+year   = {2002}}
+
+@article{atomicSO,
+author = {R. Valero and D. G. Truhlar},
+title  = {A diabatic representation including both valence nonadiabatic
+ interactions and spin-orbit effects for reaction dynamics},
+journal= {J. Phys. Chem. A} ,
+VOLUME = {111},
+PAGES  = {8536-8551},
+year   = {2007}}
+
+% 
+@article{MPS1,
+author = {S. R. White},
+title  = {Density matrix formulation for quantum renormalization groups},
+journal= {Phys. Rev. Lett.},
+VOLUME = {69},
+PAGES  = {2863-2866},
+year   = {1992}}
+
+@article{MPS2,
+author = {S. \"Ostlund and S. Rommer},
+title  = {Thermodynamic limit of density matrix renormalization},
+journal= {Phys. Rev. Lett.},
+VOLUME = {75},
+PAGES  = {3537-3540},
+year   = {1995}}
+
+@article{MPS3,
+author = {U. Schollw\"ock},
+title  = {The density-matrix renormalization group in the age of matrix product states},
+journal= {Ann. Phys.},
+VOLUME = {326},
+PAGES  = {96-192},
+year   = {2011}}
+
+@article{MPS4,
+author = {C. Guo and A. Weichselbaum and J. von Delft and M. Vojta},
+title  = {Critical and Strong-Coupling Phases in One- and Two-Bath Spin-Boson Models},
+journal= {Phys. Rev. Lett.},
+VOLUME = {108},
+PAGES  = {160401},
+year   = {2012}}
+
+@article{TenEx1,
+author = {U. Benedikt and A. A. Auer and M. Espig and W. Hackbusch},
+title  = {Tensor decomposition in post-HartreeFock methods. I. two-electron integrals and MP2},
+journal= {J. Chem. Phys.},
+VOLUME = {134},
+PAGES  = {054118},
+year   = {2011}}
+
+@article{TenEx2,
+author = {V. Khoromskaia and B. N. Khoromskij},
+title  = {Tensor numerical methods in quantum chemistry: from Hartree-Fock to excitation energie},
+journal= {Phys. Chem. Chem. Phys.},
+VOLUME = {17},
+PAGES  = {31491-31509},
+year   = {2015}}
+
+@article{TenEx3,
+author = {Reinhold Schneider and Thorsten Rohwedder and Johannes Blauert},
+title  = {Direct minimization for calculating invariant subspaces in density functional computations of the electronic structure},
+journal= {J. Comp. Math.},
+VOLUME = {27},
+PAGES  = {360},
+year   = {2009}}
+
+@article{TenEx4,
+author = {M. V. Rakhuba and I. V. Oseledets},
+title  = {Grid-based electronic structure calculations: the tensor decomposition approach},
+journal= {J. Comp. Phys.},
+VOLUME = {312},
+PAGES  = {19–30},
+year   = {2016}}
+
+@article{TenEx5,
+author = {V. Khoromskaia, B. N. Khoromskij and R. Schneider},
+title  = {Tensor-structured Factorized Calculation of Two-electron Integrals in a General Basis},
+journal= {SIAM J. Sci. Comp.},
+VOLUME = {35},
+PAGES  = {987-1010},
+year   = {2013}}
+
+@article{TenEx6,
+author = {M. Rakhuba and I. Oseledets},
+title  = {Calculating vibrational spectra of molecules using 
+tensor train decomposition},
+journal= {J. Chem. Phys.},
+VOLUME = {145},
+PAGES  = {124101},
+year   = {2016}}
+
+@article{TenEx7,
+  title = {Simulating open quantum dynamics with time-dependent variational matrix product states: Towards microscopic correlation of environment dynamics and reduced system evolution},
+  author = {Schr\"oder, Florian A. Y. N. and Chin, Alex W.},
+  journal = {Phys. Rev. B},
+  volume = {93},
+  pages = {075105},
+  year = {2016},
+  doi = {10.1103/PhysRevB.93.075105}}
+
+@article{polyspheric,
+title = "Exact and constrained kinetic energy operators for polyatomic molecules: The polyspherical approach",
+journal = "Physics Reports",
+volume = "484",
+number = "1",
+pages = "1 - 69",
+year = "2009",
+issn = "0370-1573",
+doi = "https://doi.org/10.1016/j.physrep.2009.05.003",
+url = "http://www.sciencedirect.com/science/article/pii/S0370157309001793",
+author = "Fabien Gatti and Christophe Iung",
+keywords = "Quantum molecular dynamics, Curvilinear coordinates, Polyspherical coordinates, Kinetic energy operator"
+}
+                                                                              
+ 

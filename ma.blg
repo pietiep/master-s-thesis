@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ma.aux
+The style file: apsrev.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ./bibtex/eigen.bib
+"{" immediately follows a field name---line 158 of file ./bibtex/eigen.bib
+ : @article
+ :         {MM1,
+I'm skipping whatever remains of this entry
+Database file #2: ./bibtex/MCTDH.bib
+Database file #3: ./bibtex/SPP96.bib
+Repeated entry---line 185 of file ./bibtex/SPP96.bib
+ : @article{WMC
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 351 of file ./bibtex/SPP96.bib
+ : @article{MMC
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 367 of file ./bibtex/SPP96.bib
+ : @article{MMC1
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 439 of file ./bibtex/SPP96.bib
+ : @article{M3
+ :            ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 25 entries,
+            3411 wiz_defined-function locations,
+            1313 strings with 14407 characters,
+and the built_in function-call counts, 17164 in all, are:
+= -- 1004
+> -- 537
+< -- 77
++ -- 434
+- -- 130
+* -- 2321
+:= -- 1868
+add.period$ -- 25
+call.type$ -- 25
+change.case$ -- 100
+chr.to.int$ -- 21
+cite$ -- 25
+duplicate$ -- 1543
+empty$ -- 1454
+format.name$ -- 343
+if$ -- 3264
+int.to.chr$ -- 5
+int.to.str$ -- 26
+missing$ -- 240
+newline$ -- 90
+num.names$ -- 75
+pop$ -- 415
+preamble$ -- 1
+purify$ -- 100
+quote$ -- 0
+skip$ -- 633
+stack$ -- 0
+substring$ -- 631
+swap$ -- 1223
+text.length$ -- 65
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 150
+warning$ -- 0
+while$ -- 75
+width$ -- 0
+write$ -- 264
+(There were 5 error messages)

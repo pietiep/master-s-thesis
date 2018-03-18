@@ -1,0 +1,199 @@
+\begin{thebibliography}{25}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Meyer et~al.}(1990)\citenamefont{Meyer, Manthe, and
+  Cederbaum}}]{MMC}
+\bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~S.} \bibnamefont{Cederbaum}},
+  \bibinfo{journal}{Chem. Phys. Lett.} \textbf{\bibinfo{volume}{165}},
+  \bibinfo{pages}{73} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Manthe et~al.}(1992)\citenamefont{Manthe, Meyer, and
+  Cederbaum}}]{MMC1}
+\bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~S.} \bibnamefont{Cederbaum}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{97}},
+  \bibinfo{pages}{3199} (\bibinfo{year}{1992}).
+
+\bibitem[{\citenamefont{Huarte-Larra{\~n}aga and Manthe}(2000)}]{HM1}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Huarte-Larra{\~n}aga}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{113}},
+  \bibinfo{pages}{5115} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Huarte-Larra{\~n}aga and Manthe}(2001)}]{HM2}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Huarte-Larra{\~n}aga}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{J. Phys. Chem. A} \textbf{\bibinfo{volume}{105}},
+  \bibinfo{pages}{2522} (\bibinfo{year}{2001}).
+
+\bibitem[{\citenamefont{Huarte-Larra{\~n}aga and
+  Manthe}(2002{\natexlab{a}})}]{HM4}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Huarte-Larra{\~n}aga}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{116}},
+  \bibinfo{pages}{2863} (\bibinfo{year}{2002}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Wu et~al.}(2004)\citenamefont{Wu, Werner, and
+  Manthe}}]{WWM}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Wu}},
+  \bibinfo{author}{\bibfnamefont{H.-J.} \bibnamefont{Werner}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{306}},
+  \bibinfo{pages}{2227} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Wu et~al.}(2006)\citenamefont{Wu, Werner, and
+  Manthe}}]{WWM2}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Wu}},
+  \bibinfo{author}{\bibfnamefont{H.-J.} \bibnamefont{Werner}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{124}},
+  \bibinfo{pages}{164307} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Huarte-Larra{\~n}aga and
+  Manthe}(2002{\natexlab{b}})}]{HM5}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Huarte-Larra{\~n}aga}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{117}},
+  \bibinfo{pages}{4635} (\bibinfo{year}{2002}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Coutinho-Neto et~al.}(2004)\citenamefont{Coutinho-Neto,
+  Viel, and Manthe}}]{CVM}
+\bibinfo{author}{\bibfnamefont{M.~D.} \bibnamefont{Coutinho-Neto}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Viel}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{121}},
+  \bibinfo{pages}{9207} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Vendrell
+  et~al.}(2007{\natexlab{a}})\citenamefont{Vendrell, Gatti, Lauvergnat, and
+  Meyer}}]{H5O2+MCTDH}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Vendrell}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Gatti}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Lauvergnat}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}},
+  \bibinfo{journal}{Angew. Chemie Int. Ed.} \textbf{\bibinfo{volume}{46}},
+  \bibinfo{pages}{6918} (\bibinfo{year}{2007}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Vendrell
+  et~al.}(2007{\natexlab{b}})\citenamefont{Vendrell, Gatti, Lauvergnat, and
+  Meyer}}]{H5O2+MCTDH2}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Vendrell}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Gatti}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Lauvergnat}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{127}},
+  \bibinfo{pages}{184302} (\bibinfo{year}{2007}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Vendrell
+  et~al.}(2007{\natexlab{c}})\citenamefont{Vendrell, Gatti, and
+  Meyer}}]{H5O2+MCTDH3}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Vendrell}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Gatti}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{127}},
+  \bibinfo{pages}{184303} (\bibinfo{year}{2007}{\natexlab{c}}).
+
+\bibitem[{\citenamefont{Raab et~al.}(1999)\citenamefont{Raab, Worth, Meyer, and
+  Cederbaum}}]{RWMC}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Raab}},
+  \bibinfo{author}{\bibfnamefont{G.~A.} \bibnamefont{Worth}},
+  \bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~S.} \bibnamefont{Cederbaum}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{110}},
+  \bibinfo{pages}{936} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Cattarius et~al.}(2001)\citenamefont{Cattarius, Worth,
+  Meyer, and Cederbaum}}]{CWMC}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Cattarius}},
+  \bibinfo{author}{\bibfnamefont{G.~A.} \bibnamefont{Worth}},
+  \bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~S.} \bibnamefont{Cederbaum}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{115}},
+  \bibinfo{pages}{2088} (\bibinfo{year}{2001}).
+
+\bibitem[{\citenamefont{Wang and Thoss}(2002)}]{WT}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wang}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Thoss}},
+  \bibinfo{journal}{Chem. Phys. Lett.} \textbf{\bibinfo{volume}{358}},
+  \bibinfo{pages}{298} (\bibinfo{year}{2002}).
+
+\bibitem[{\citenamefont{Wang and Thoss}(2003{\natexlab{a}})}]{WT2}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wang}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Thoss}}, \bibinfo{journal}{J.
+  Phys. Chem. A} \textbf{\bibinfo{volume}{107}}, \bibinfo{pages}{2126}
+  (\bibinfo{year}{2003}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Meyer}(2012)}]{MCTDHreview3}
+\bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}},
+  \bibinfo{journal}{Wiley Interdisciplinary Reviews: Computational Molecular
+  Science} \textbf{\bibinfo{volume}{2}}, \bibinfo{pages}{351}
+  (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Manthe}(2008)}]{Mreview2}
+\bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}}, \bibinfo{journal}{The
+  Journal of Chemical Physics} \textbf{\bibinfo{volume}{128}},
+  \bibinfo{pages}{164116} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Worth et~al.}(1996)\citenamefont{Worth, Meyer, and
+  Cederbaum}}]{WMC}
+\bibinfo{author}{\bibfnamefont{G.~A.} \bibnamefont{Worth}},
+  \bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.~S.} \bibnamefont{Cederbaum}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{105}},
+  \bibinfo{pages}{4412} (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Bowman et~al.}(2001)\citenamefont{Bowman, Wang, Huang,
+  Huarte-Larra{\~n}aga, and Manthe}}]{BWHHM}
+\bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Bowman}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Huang}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Huarte-Larra{\~n}aga}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{114}},
+  \bibinfo{pages}{9683} (\bibinfo{year}{2001}).
+
+\bibitem[{\citenamefont{Wang and Thoss}(2003{\natexlab{b}})}]{WT3}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wang}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Thoss}}, \bibinfo{journal}{J.
+  Chem. Phys.} \textbf{\bibinfo{volume}{119}}, \bibinfo{pages}{1289}
+  (\bibinfo{year}{2003}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Wang et~al.}(2006)\citenamefont{Wang, Skinner, and
+  Thoss}}]{WST}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{D.~E.} \bibnamefont{Skinner}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Thoss}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{125}},
+  \bibinfo{pages}{174502} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Manthe}(1996)}]{M3}
+\bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}}, \bibinfo{journal}{J.
+  Chem. Phys.} \textbf{\bibinfo{volume}{105}}, \bibinfo{pages}{6989}
+  (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{van Harrevelt~und U.~Manthe}(2004)}]{vHM2}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{van Harrevelt~und U.~Manthe}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{121}},
+  \bibinfo{pages}{5623} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{van Harrevelt and Manthe}(2005)}]{vHM3}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{van Harrevelt}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
+  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{123}},
+  \bibinfo{pages}{064106} (\bibinfo{year}{2005}).
+
+\end{thebibliography}

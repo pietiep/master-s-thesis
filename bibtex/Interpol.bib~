@@ -1,0 +1,153 @@
+% Shepard Interpolation
+
+@article{HCH4inter,
+AUTHOR = {K. C. Thompson and M. J. T. Jordan and M. A. Collins},
+TITLE  = {},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1998},
+VOLUME = {108},
+PAGES  = {8302} }
+
+@article{Collins1,
+AUTHOR = {J. Ischtwan and M. A. Collins},
+TITLE  = {Shepard Interpolation},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1994},
+VOLUME = {100},
+PAGES  = {8080} }
+
+@article{Collins2,
+AUTHOR = {M. J. T. Jordan and K. C. Thompson and M. A. Collins},
+TITLE  = {Purpose build PES},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1995},
+VOLUME = {102},
+PAGES  = {5647} }
+
+@article{Collins3,
+AUTHOR = {M. J. T. Jordan and K. C. Thompson and M. A. Collins},
+TITLE  = {Higher orders},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1995},
+VOLUME = {103},
+PAGES  = {9669} }
+
+@article{Collins4,
+AUTHOR = {M. J. T. Jordan and M. A. Collins},
+TITLE  = {ab initio H2+OH PES},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {104},
+PAGES  = {4600} }
+
+@article{Collins5,
+AUTHOR = {K. C. Thompson and M. A. Collins},
+TITLE  = {},
+JOURNAL= {J. Chem. Soc. Faraday Trans.},
+YEAR   = {1997},
+VOLUME = {93},
+PAGES  = {871} }
+
+@article{Collins6,
+AUTHOR = {K. C. Thompson and M. J. T. Jordan and M. A. Collins},
+TITLE  = {Cartesian coordinates},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1998},
+VOLUME = {108},
+PAGES  = {564} }
+
+@article{Collins7,
+AUTHOR = {R. P. A. Bettens and M. A. Collins},
+TITLE  = {Bayesian approach},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1999},
+VOLUME = {111},
+PAGES  = {816} }
+
+% permutationally invariant polynomials
+
+@article{BowmanPES,
+AUTHOR = {B. J. Braams and J. M. Bowman},
+TITLE  = {},
+JOURNAL= {Int. Rev. Phys. Chem.},
+YEAR   = {2009},
+VOLUME = {28},
+PAGES  = {577} }
+
+% neutral network fits
+
+@article{NNPES1,
+AUTHOR = {J. Chen and X. Xu and X. Xu and D. H. Zhang},
+TITLE  = {A global potential energy surface for the $H_2+OH \to H_2O+H$ reaction using neural networks},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2013},
+VOLUME = {138},
+PAGES  = {154301} }
+
+@article{NNPES2,
+Author = {Chen, Jun and Xu, Xin and Xu, Xin and Zhang, Dong H.},
+Title = {Communication: An accurate global potential energy surface for the $OH
++ CO \to H + CO_2$ reaction using neural networks},
+Journal = {J. Chem. Phys.},
+Year = {2013},
+Volume = {138},
+PAGES = {221104},
+DOI = {10.1063/1.4811109} }
+
+@article{NNPES3,
+Author = {Jiang, Bin and Guo, Hua},
+Title = {Permutation invariant polynomial neural network approach to fitting
+   potential energy surfaces},
+Journal = {J. Chem. Phys.},
+Year = {2013},
+Volume = {139},
+PAGES = {054112},
+DOI = {10.1063/1.4817187} }
+
+@article{NNPES4,
+Author = {Li, Jun and Jiang, Bin and Guo, Hua},
+Title = {Permutation invariant polynomial neural network approach to fitting
+   potential energy surfaces. II. Four-atom systems},
+Journal = {J. Chem. Phys.},
+Year = {2013},
+Volume = {139},
+PAGES = {{204103}},
+DOI = {10.1063/1.4832697} }
+
+@article{NNPES4,
+Author = {Li, Jun and Guo, Hua},
+Title = {A nine-dimensional global potential energy surface for NH4(X(2)A(1)) and
+   kinetics studies on the H + NH3 <-> H-2 + NH2 reaction},
+Journal = {Phys. Chem. Chem. Phys.},
+Year = {2014},
+Volume = {16},
+Pages = {6753-6763},
+DOI = {10.1039/c4cp00241e} }
+
+@article{OHCH4PES,
+Author = {Li, Jun and Guo, Hua},
+Title = {Communication: An accurate full 15 dimensional permutationally invariant
+   potential energy surface for the $OH + CH_4 \to H_2O + CH_3$ reaction},
+Journal = {J. Chem. Phys.},
+Year = {2015},
+Volume = {143},
+PAGES = {{221103}},
+DOI = {10.1063/1.4937570}  }
+
+@article{NNPESrev1,
+Author = {Zhang, Dong H. and Guo, Hua},
+Title = {Recent Advances in Quantum Dynamics of Bimolecular Reactions},
+Year = {2016},
+Volume = {67},
+Pages = {135-158},
+DOI = {10.1146/annurev-physchem-040215-112016} }
+
+@article{NNPESrev2,
+AUTHOR = {B. Jiang and J. Li and H. Guo},
+TITLE  = {Potential energy surfaces from high fidelity fitting of ab initio points:
+the permuation invariant polynomial- neural network approach},
+JOURNAL= {Int. Rev. Phys. Chem.},
+YEAR   = {2016},
+VOLUME = {35},
+PAGES  = {479-506},
+DOI = {10.1080/0144235X.2016.1200347} }

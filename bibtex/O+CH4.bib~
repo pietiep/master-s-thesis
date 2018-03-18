@@ -1,0 +1,93 @@
+﻿% O+CH4
+
+@article{OCH4traj1,
+Author = {Czako, Gabor and Liu, Rui and Yang, Minghui and Bowman, Joel M. and Guo,
+   Hua},
+Title = {{Quasiclassical Trajectory Studies of the O(P-3)+CX4(v(k)=0, 1) ->
+   OX(v)+CX3(n(1)n(2)n(3)n(4)) {[}X = H and D] Reactions on an Ab Initio
+   Potential Energy Surface}},
+Journal = {{J. Phys. Chem. A}},
+Year = {{2013}},
+Volume = {{117}},
+Pages = {{6409}}}
+
+@article{OCH4red1,
+AUTHOR = {H-G. Yu and G. Nyman},
+TITLE  = {4D, RBU},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {112},
+PAGES  = {238} }
+
+@article{OCH4red2,
+AUTHOR = {J. Palma and D. C. Clary},
+TITLE  = {3D, RLA+umbrella},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {112},
+PAGES  = {1859} }
+
+@article{OCH4red3,
+AUTHOR = {J. Palma and D. C. Clary},
+TITLE  = {4D, RLA+umbrella+sym. stretch},
+JOURNAL= {Phys. Chem. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {2},
+PAGES  = {4105} }
+
+@article{OCH4red4,
+AUTHOR = {M.-L. Wang and Y.-M. Lin and J. Z. H. Zhang},
+TITLE  = {4D, SVRT},
+JOURNAL= {J. Phys. Chem. A},
+YEAR   = {2001},
+VOLUME = {105},
+PAGES  = {2530} }
+
+@article{OCH4red5,
+AUTHOR = {J. Palma and D. C. Clary},
+TITLE  = {4D, generalized transition state for k(T) approximation},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {115},
+PAGES  = {2188} }
+
+@article{OCH4red6,
+AUTHOR = {M. Yang and S.-Y. Lee and D. H. Zhang},
+TITLE  = {7D SVRT},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2007},
+VOLUME = {126},
+PAGES  = {064303} }
+
+@article{OCH4red7,
+Author = {Liu, Rui and Yang, Minghui and Czako, Gabor and Bowman, Joel M. and Li, Jun and Guo, Hua},
+Title = {Mode Selectivity for a Central Barrier Reaction: Eight-Dimensional Quantum Studies of the {O(P-3)+CH$_4$ $\to$ OH+CH$_3$} Reaction on an Ab Initio Potential Energy Surface},
+Journal = {J. Phys. Chem. Lett.},
+Year = {2012},
+Volume = {3},
+Pages = {3776-3780} }
+
+@article{OCH4PES,
+AUTHOR = {J. Espinosa-Garcia and J. C. Garcia-Bernaldez},
+TITLE  = {},
+JOURNAL= {Phys. Chem. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {2},
+PAGES  = {2345} }
+
+@article{OCH4PES2, 
+Author = {Czako, Gabor and Bowman, Joel M.},
+Title = {Dynamics of the O(P-3) + CHD3(v(CH)=0,1) reactions on an accurate ab initio potential energy surface},
+Journal = {PNAS},
+Year = {2012},
+Volume = {109},
+Pages = {7997-8001} }
+
+@article{OCH4exp1,
+Author = {Wang, F. and Liu, K.},
+Title = {Enlarging the reactive cone of acceptance by exciting the C-H
+bond in the O($^3$P)+CHD$_3$ reaction},
+Journal = {Chem. Sci.},
+Year = {2010},
+Volume = {1},
+Pages = {126-133} }

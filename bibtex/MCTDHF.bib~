@@ -1,0 +1,1156 @@
+% MCTDH Heidelberg
+
+@article{JM1,
+AUTHOR = {A. J\"ackle and H.-D. Meyer},
+TITLE  = {REACTIVE SCATTERING USING THE MULTICONFIGURATION TIME-DEPENDENT HARTREE
+ APPROXIMATION - GENERAL-ASPECTS AND APPLICATION TO THE COLLINEAR
+ H+H-2-]H-2+H REACTION},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1995},
+VOLUME = {102},
+PAGES  = {5605-5615} }
+
+@article{JM2,
+AUTHOR = {A. J\"ackle and H.-D. Meyer},
+TITLE  = {Product representation of potential energy surfaces},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {104},
+PAGES  = {7974-7984} }
+
+@article{JM3,
+AUTHOR = {A. J\"ackle and H.-D. Meyer},
+TITLE  = {Time-dependent calculation of reactive flux employing complex absorbing
+   potentials: General aspects and application within the multiconfiguration time-dependent 	  Hartree wave approach},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {105},
+PAGES  = {6778-6786} }
+
+@article{JM4,
+AUTHOR = {A. J\"ackle and H.-D. Meyer},
+TITLE  = {Calculation of H+H-2 and H+D-2 reaction probabilities within the
+ multiconfiguration time-dependent Hartree approach employing an
+ adiabatic correction scheme},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1998},
+VOLUME = {109},
+PAGES  = {2614-2623} }
+
+@article{JM5,
+AUTHOR = {A. J\"ackle and H.-D. Meyer},
+TITLE  = {Product representation of potential energy surfaces. II},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1998},
+VOLUME = {109},
+PAGES  = {3772-3779} }
+
+@article{JM6,
+AUTHOR = {A. J\"ackle and M.-C. Heitz and H.-D. Meyer},
+TITLE  = {Reaction cross sections for the H+D-2 (nu = 0,1) system for collision
+ energies up to 2.5 eV: A multiconfiguration time-dependent Hartree wave-packet propagation 	  	  study},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1999},
+VOLUME = {110},
+PAGES  = {241-248} }
+
+@article{EMC,
+AUTHOR = {M. Ehara and H.-D. Meyer and L. S. Cederbaum},
+TITLE  = {Multiconfiguration time-dependent Hartree (MCTDH) study on rotational
+ and diffractive inelastic molecule-surface scattering},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {105},
+PAGES  = {8865-8877} }
+
+@article{DichteMCTDH1,
+AUTHOR = {A. Raab and I. Burghardt and H.-D. Meyer},
+TITLE  = {The multiconfiguration time-dependent Hartree method generalized to the
+ propagation of density operators},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1999},
+VOLUME = {111},
+PAGES  = {8759-8772} }
+
+@article{DichteMCTDH2,
+AUTHOR = {A. Raab and H.-D. Meyer},
+TITLE  = {A numerical study on the performance of the multiconfiguration time-dependent Hartree method for density operators},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {112},
+PAGES  = {10718-10729} }
+
+@article{WMC,
+AUTHOR = {G. A. Worth and H.-D. Meyer and L. S. Cederbaum},
+TITLE  = {The effect of a model environment on the S-2 absorption spectrum of
+ pyrazine: A wave packet study treating all 24 vibrational modes},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {105},
+PAGES  = {4412-4426} }
+
+@article{WMC2,
+AUTHOR = {G. A. Worth and H.-D. Meyer and L. S. Cederbaum},
+TITLE  = {Relaxation of a system with a conical intersection coupled to a bath: A
+ benchmark 24-dimensional wave packet study treating the environment
+ explicitly},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1998},
+VOLUME = {109},
+PAGES  = {3518-3529} }
+
+@article{RWMC,
+AUTHOR = {A. Raab and G. A. Worth and H.-D. Meyer and L. S. Cederbaum},
+TITLE  = {Molecular dynamics of pyrazine after excitation to the S(2) electronic
+ state using a realistic 24-mode model Hamiltonian},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1999},
+VOLUME = {110},
+PAGES  = {936-946} }
+
+@article{CWMC,
+AUTHOR = {C. Cattarius and G. A. Worth and H.-D. Meyer and L. S. Cederbaum},
+TITLE  = {All mode dynamics at the conical intersection of an octa-atomic
+   molecule: Multi-configuration time-dependent Hartree (MCTDH)
+   investigation on the butatriene 	  cation},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {115},
+PAGES  = {2088-2100} }
+
+@article{NM,
+AUTHOR = {M. Nest and H.-D. Meyer},
+TITLE  = {Benchmark calculations on high-dimensional Henon-Heiles potentials with
+ the multi-configuration time dependent Hartree (MCTDH) method},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2002},
+VOLUME = {117},
+PAGES  = {10499-10505} }
+
+@article{NM2,
+AUTHOR = {M. Nest and H.-D. Meyer},
+TITLE  = {Dissipative quantum dynamics of anharmonic oscillators with the
+ multiconfiguration time-dependent Hartree method},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2003},
+VOLUME = {119},
+PAGES  = {24-33} }
+
+@article{FilterMCTDH1,
+AUTHOR = {M. H. Beck and H.-D. Meyer},
+TITLE  = {Efficiently computing bound-state spectra: A hybrid approach of the
+ multi-configuration time-dependent Hartree and filter-diagonalization
+ methods},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {114},
+PAGES  = {2036-2046} }
+
+@article{FilterMCTDH2,
+AUTHOR = {F. Gatti and M. Beck and G. A. Worth and H. -D. Meyer},
+TITLE  = {A hybrid approach of the multi-configuration time-dependent Hartree and filter-diagonalisation methods for computing bound-state spectra. Application to HO(2)},
+JOURNAL= {Phys. Chem. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {3},
+PAGES  = {1576-1582} }
+
+@article{H2H2MCTDH,
+AUTHOR = {F. Gatti and F. Otto and S. Sukiasyan and H.-D. Meyer},
+TITLE  = {Rotational excitation cross sections of para-H(2) plus para-H(2) collisions. A full-dimensional wave-packet propagation study using an
+   exact form of the kinetic 	  	  energy},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2005},
+VOLUME = {123},
+PAGES  = {174311} }
+
+@article{H2OHMCTDH,
+AUTHOR = {S. Bhattacharya and Aditya N. Panda and H.-D. Meyer},
+TITLE  = {Multiconfiguration time-dependent Hartree approach to study the OH+H-2
+ reaction},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2010},
+VOLUME = {132},
+PAGES  = {214304} }
+
+@article{ImprovedRelaxation,
+AUTHOR = {H.-D. Meyer and F. Le Quere and C. Leonard and F. Gatti},
+TITLE  = {Calculation and selective population of vibrational levels with the
+ Multiconfiguration Time-Dependent Hartree (MCTDH) algorithm},
+JOURNAL= {Chem. Phys.},
+YEAR   = {2006},
+VOLUME = {329},
+PAGES  = {179-192} }
+
+@article{PtH2MCTDH,
+AUTHOR = {Geert-Jan Kroes and Hans-Dieter Meyer},
+TITLE  = {Using n-mode potentials for reactive scattering: Application to the 6D
+ H-2+Pt(111) problem},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {2007},
+VOLUME = {440},
+PAGES  = {334-340} }
+
+@article{H5O2+MCTDH,
+AUTHOR = {Oriol Vendrell and Fabien Gatti and David Lauvergnat and Hans-Dieter Meyer},
+TITLE  = {Dynamics and infrared spectroscopy of the protonated water dimer},
+JOURNAL= {Angew. Chemie Int. Ed.},
+YEAR   = {2007},
+VOLUME = {46},
+PAGES  = {6918-6921} }
+
+@article{H5O2+MCTDH2,
+AUTHOR = {Oriol Vendrell and Fabien Gatti and David Lauvergnat and Hans-Dieter Meyer},
+TITLE  = {Full-dimensional (15-dimensional) quantum-dynamical simulation of the
+ protonated water dimer. I. Hamiltonian setup and analysis of the ground
+ vibrational state},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2007},
+VOLUME = {127},
+PAGES  = {184302} }
+
+@article{H5O2+MCTDH3,
+AUTHOR = {Oriol Vendrell and Fabien Gatti and Hans-Dieter Meyer},
+TITLE  = {Full dimensional (15-dimensional) quantum-dynamical simulation of the
+ protonated water dimer. II. Infrared spectrum and vibrational dynamics},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2007},
+VOLUME = {127},
+PAGES  = {184303} }
+
+@article{H5O2+MCTDH4,
+AUTHOR = {Oriol Vendrell and Michael Brill and Fabien Gatti and Hans-Dieter Meyer},
+TITLE  = {Full dimensional (15-dimensional) quantum-dynamical simulation of the
+   protonated water-dimer III: Mixed Jacobi-valence parametrization and
+   benchmark results for the zero point energy, vibrationally excited
+   states, and infrared spectrum},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2009},
+VOLUME = {130},
+PAGES  = {234305} }
+
+@article{H5O2+MCTDH5,
+AUTHOR = {Oriol Vendrell and Fabien Gatti and Hans-Dieter Meyer},
+TITLE  = {Full dimensional (15 dimensional) quantum-dynamical simulation of the protonated water-dimer IV: Isotope effects in the infrared spectra of
+ D(D2O)(2)(+), H(D2O)(2)(+), and D(H2O)(2)(+) isotopologues},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2009},
+VOLUME = {131},
+PAGES  = {034308} }
+
+@article{DieterMLMCTDH,
+AUTHOR = {Oriol Vendrell and Hans-Dieter Meyer},
+TITLE  = {Multilayer multiconfiguration time-dependent Hartree method: Implementation and applications to a Henon-Heiles Hamiltonian and to
+   pyrazine},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2011},
+VOLUME = {134},
+PAGES  = {044135} }
+
+@article{MAMCTDH,
+AUTHOR = {Markus Schroeder and Fabien Gatti and Hans-Dieter Meyer},
+TITLE  = {Theoretical studies of the tunneling splitting of malonaldehyde using the multiconfiguration time-dependent Hartree approach},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2011},
+VOLUME = {134},
+PAGES  = {234307} }
+
+@article{MAMCTDH2,
+AUTHOR = {Markus Schroeder and Hans-Dieter Meyer},
+TITLE  = {Calculation of the vibrational excited states of malonaldehyde and their tunneling splittings with the multi-configuration time-dependent Hartree method},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2014},
+VOLUME = {141},
+PAGES  = {034116} }
+
+@article{MCTDHIntegrator,
+AUTHOR = {M. H. Beck and H.-D. Meyer},
+TITLE  = {An efficient and robust integration scheme for the equations of motion of the multiconfiguration time-dependent Hartree (MCTDH) method},
+JOURNAL= {Z. Phys. D},
+YEAR   = {1997},
+VOLUME = {42},
+PAGES  = {113-129} }
+
+@article{MCTDHreview,
+AUTHOR = {M. H. Beck and A. J\"ackle and G. A. Worth and H.-D. Meyer},
+TITLE  = {The multiconfiguration time-dependent Hartree (MCTDH) method: a highly
+ efficient algorithm for propagating wavepackets},
+JOURNAL= {Physics Reports},
+YEAR   = {2000},
+VOLUME = {324},
+PAGES  = {1-105} }
+
+@article{MCTDHreview2,
+AUTHOR = {H.-D. Meyer and G. A. Worth},
+TITLE  = {Quantum molecular dynamics: propagating wavepackets and density
+ operators using the multiconfiguration time-dependent Hartree method},
+JOURNAL= {Theor. Chem. Acc.},
+YEAR   = {2003},
+VOLUME = {109},
+PAGES  = {251-267} }
+
+@article{MCTDHreview3,
+author={H.-D. Meyer},
+title={Studying molecular quantum dynamics with the multiconfiguration
+       time-dependent {H}artree method},
+journal={Wiley Interdisciplinary Reviews: Computational Molecular Science},
+year={2012},
+volume={2},
+pages={351}}
+
+
+@book{MCTDHbook,
+AUTHOR   = {H.-D. Meyer and F. Gatti and G. A. Worth},
+TITLE    = {Multidimensional Quantum Dynamics: MCTDH Theory and Applications},
+PUBLISHER= {Weinheim: Wiley-VCH},
+YEAR     = {2009} }
+
+% MCTDH Wang/Thoss
+
+@article{W,
+AUTHOR = {H. Wang},
+TITLE  = {Basis set approach to the quantum dissipative dynamics: Application of
+ the multiconfiguration time-dependent Hartree method to the spin-boson
+   problem},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2000},
+VOLUME = {113},
+PAGES  = {9948-9956} }
+
+@article{WTM,
+AUTHOR = {H. Wang and M. Thoss and W.H. Miller},
+TITLE  = {Systematic convergence in the dynamical hybrid approach for complex
+ systems: A numerically exact methodology},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {115},
+PAGES  = {2979-2990} }
+
+@article{WTM2,
+AUTHOR = {H. Wang and M. Thoss and W.H. Miller},
+TITLE  = {Self-consistent hybrid approach for complex systems: Application to the
+ spin-boson model with Debye spectral density},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2001},
+VOLUME = {115},
+PAGES  = {2991-3005} }
+
+@article{WT,
+AUTHOR = {H. Wang and M. Thoss},
+TITLE  = {Quantum dynamical simulation of ultrafast photoinduced electron transfer
+ processes in a mixed-valence compound},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {2002},
+VOLUME = {358},
+PAGES  = {298-306} }
+
+@article{WT2,
+AUTHOR = {H. Wang and M. Thoss},
+TITLE  = {Theoretical study of ultrafast photoinduced electron transfer processes
+ in mixed-valence systems},
+JOURNAL= {J. Phys. Chem. A},
+YEAR   = {2003},
+VOLUME = {107},
+PAGES  = {2126-2136} }
+
+@article{WT3,
+AUTHOR = {H. Wang and M. Thoss},
+TITLE  = {Multilayer formulation of the multiconfiguration time-dependent Hartree
+ theory},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2003},
+VOLUME = {119},
+PAGES  = {1289-1299} }
+
+@article{WST,
+AUTHOR = {H. Wang and D. E. Skinner and M. Thoss },
+TITLE  = {Calculation of reactive flux correlation functions for systems in a condensed phase environment: A multilayer multiconfiguration time-dependent Hartree approach},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2006},
+VOLUME = {125},
+PAGES  = {174502} }
+
+@article{WT4,
+AUTHOR = {H. Wang and M. Thoss},
+TITLE  = {Quantum-mechanical evaluation of the Boltzmann operator in correlation
+ functions for large molecular systems: A multilayer multiconfiguration
+ time-dependent Hartree 	  approach},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2006},
+VOLUME = {124},
+PAGES  = {034114} }
+
+@article{WT5,
+AUTHOR = {H. Wang and M. Thoss},
+TITLE  = {Quantum dynamical simulation of electron-transfer reactions in an
+ anharmonic environmen},
+JOURNAL= {J. Phys. Chem. A},
+YEAR   = {2007},
+VOLUME = {111},
+PAGES  = {10369-10375} }
+
+@article{KCBWT,
+AUTHOR = {I. Kondov and M. Cizek and C. Benesch and M. Thoss and H. Wang},
+TITLE  = {Quantum dynamics of photoinduced electron-transfer reactions in
+ dye-semiconductor systems: First-principles description and application
+   to coumarin 343-TiO2},
+JOURNAL= {J. Phys. Chem. C},
+YEAR   = {2007},
+VOLUME = {111},
+PAGES  = {11970-10981} }
+
+@article{CTW,
+AUTHOR = {I. R. Craig and M. Thoss and H. Wang},
+TITLE  = {Proton transfer reactions in model condensed-phase environments:
+   Accurate quantum dynamics using the multilayer multiconfiguration
+   time-dependent Hartree 	  approach},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2007},
+VOLUME = {127},
+PAGES  = {144503} }
+
+@article{MCTDHSQR,
+Author = {Wang, Haobin and Thoss, Michael},
+Title = {Numerically exact quantum dynamics for indistinguishable particles: The
+   multilayer multiconfiguration time-dependent Hartree theory in second
+   quantization representation},
+JOURNAL= {J. Chem. Phys.},
+Year = {2009},
+Volume = {131},
+DOI = {10.1063/1.3173823},
+PAGES  = {024114} }
+
+@article{CTW2,
+AUTHOR = {I. R. Craig and M. Thoss and H. Wang},
+TITLE  = {Accurate quantum-mechanical rate constants for a linear response Azzouz-Borgis proton transfer model employing the multilayer multiconfiguration time-dependent Hartree approach},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2011},
+VOLUME = {135},
+PAGES  = {064504} }
+
+@article{WPHT,
+AUTHOR = {H. Wang and I. Pshenichnyuk and R. H\"artle  and M. Thoss},
+TITLE  = {Numerically exact, time-dependent treatment of vibrationally coupled electron transport in single-molecule junctions},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {2011},
+VOLUME = {135},
+PAGES  = {244506} }
+
+@article{W1,
+Author = {Wang, Haobin},
+Title = {Iterative Calculation of Energy Eigenstates Employing the Multi layer
+   Multiconfiguration Time-Dependent Hartree Theory},
+Journal = {J. Phys. Chem. A},
+Year = {2014},
+Volume = {118},
+Pages = {9253-9261}}
+
+@misc{W2,
+Author = {Wang, Haobin},
+Note = {Discussion at the BIRS Workshop on Mathematical Methods in Quantum Molecular Dynamics, 
+Banff (Canada), 2013}}
+
+@article{Wreview,
+Author = {Wang, Haobin},
+Title = {Multilayer Multiconfiguration Time-Dependent Hartree Theory},
+Journal = {J. Phys. Chem. A},
+Year = {2015},
+Volume = {119},
+Pages = {7951-7965},
+DOI = {10.1021/acs.jpca.5b03256}}
+
+% MCTDHF
+
+@article{MCTDHF1,
+Author = {Zanghellini, J. and Kitzler, M. and Fabian, C. and Brabec, T. and Scrinzi, A.},
+Title = {An MCTDHF approach to multielectron dynamics in laser fields},
+Journal = {Laser Phys.},
+Year = {2003},
+Volume = {13},
+Pages = {1064-1068}}
+
+@article{MCTDHF2,
+Author = {T. Kato and H. Kono},
+Title = {Time-dependent multiconfiguration theory for electronic dynamics of
+   molecules in an intense laser field},
+Journal = {Chem. Phys. Lett.},
+Year = {2004},
+Volume = {392},
+Pages = {533-540},
+DOI= {10.1016/j.cplett.2004.05.106}}
+
+@article{MCTDHF3,
+Author = {M. Nest and T. Klamroth and M. Nest},
+Title = {The multiconfiguration time-dependent Hartree-Fock method for quantum
+   chemical calculations},
+Journal = {J. Chem. Phys.},
+Year = {2005},
+Volume = {122},
+Pages = {124102},
+DOI={10.1063/1.1862243}}
+
+% MCTDH for bosonic/fermion systems
+
+@article{ ISI:000289065200004,
+Author = {Cao, Lushuai and Brouzos, Ioannis and Zollner, Sascha and Schmelcher,
+   Peter},
+Title = {{Interaction-driven interband tunneling of bosons in the triple well}},
+Journal = {{NEW JOURNAL OF PHYSICS}},
+Year = {{2011}},
+Volume = {{13}},
+Month = {{MAR 21}},
+DOI = {{10.1088/1367-2630/13/3/033032}},
+Article-Number = {{033032}},
+ISSN = {{1367-2630}},
+ResearcherID-Numbers = {{Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000289065200004}},
+}
+
+@article{ ISI:000283347300012,
+Author = {Chatterjee, Budhaditya and Brouzos, Ioannis and Zollner, Sascha and
+   Schmelcher, Peter},
+Title = {{Few-boson tunneling in a double well with spatially modulated
+   interaction}},
+Journal = {{PHYSICAL REVIEW A}},
+Year = {{2010}},
+Volume = {{82}},
+Number = {{4}},
+Month = {{OCT 22}},
+DOI = {{10.1103/PhysRevA.82.043619}},
+Article-Number = {{043619}},
+ISSN = {{2469-9926}},
+EISSN = {{2469-9934}},
+ResearcherID-Numbers = {{Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000283347300012}},
+}
+
+@article{ ISI:000278140000143,
+Author = {Brouzos, Ioannis and Zollner, Sascha and Schmelcher, Peter},
+Title = {{Correlation versus commensurability effects for finite bosonic systems
+   in one-dimensional lattices}},
+Journal = {{PHYSICAL REVIEW A}},
+Year = {{2010}},
+Volume = {{81}},
+Number = {{5}},
+Month = {{MAY}},
+DOI = {{10.1103/PhysRevA.81.053613}},
+Article-Number = {{053613}},
+ISSN = {{1050-2947}},
+ResearcherID-Numbers = {{Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000278140000143}},
+}
+
+@article{ ISI:000275072500151,
+Author = {Pflanzer, Anika C. and Zoellner, Sascha and Schmelcher, Peter},
+Title = {{Interspecies tunneling in one-dimensional Bose mixtures}},
+Journal = {{PHYSICAL REVIEW A}},
+Year = {{2010}},
+Volume = {{81}},
+Number = {{2}},
+Month = {{FEB}},
+DOI = {{10.1103/PhysRevA.81.023612}},
+Article-Number = {{023612}},
+ISSN = {{2469-9926}},
+EISSN = {{2469-9934}},
+ResearcherID-Numbers = {{Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000275072500151}},
+}
+
+@article{ ISI:000272077100002,
+Author = {Pflanzer, Anika C. and Zollner, Sascha and Schmelcher, Peter},
+Title = {{Material-barrier tunnelling in one-dimensional few-boson mixtures}},
+Journal = {{JOURNAL OF PHYSICS B-ATOMIC MOLECULAR AND OPTICAL PHYSICS}},
+Year = {{2009}},
+Volume = {{42}},
+Number = {{23}},
+Month = {{DEC 14}},
+DOI = {{10.1088/0953-4075/42/23/231002}},
+Article-Number = {{231002}},
+ISSN = {{0953-4075}},
+ResearcherID-Numbers = {{Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000272077100002}},
+}
+
+@article{ ISI:000267949600013,
+Author = {Tempfli, Emmerich and Zoellner, Sascha and Schmelcher, Peter},
+Title = {{Binding between two-component bosons in one dimension}},
+Journal = {{NEW JOURNAL OF PHYSICS}},
+Year = {{2009}},
+Volume = {{11}},
+Month = {{JUL 3}},
+DOI = {{10.1088/1367-2630/11/7/073015}},
+Article-Number = {{073015}},
+ISSN = {{1367-2630}},
+ResearcherID-Numbers = {{Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000267949600013}},
+}
+
+@article{ ISI:000263041100010,
+Author = {Eckart, M. and Walser, R. and Schleich, W. P. and Zoellner, S. and
+   Schmelcher, P.},
+Title = {{The granularity of weakly occupied bosonic fields beyond the local
+   density approximation}},
+Journal = {{NEW JOURNAL OF PHYSICS}},
+Year = {{2009}},
+Volume = {{11}},
+Month = {{FEB 4}},
+DOI = {{10.1088/1367-2630/11/2/023010}},
+Article-Number = {{023010}},
+ISSN = {{1367-2630}},
+ResearcherID-Numbers = {{Schmelcher, Peter/D-9592-2014}},
+ORCID-Numbers = {{Schmelcher, Peter/0000-0002-2637-0937}},
+Unique-ID = {{ISI:000263041100010}},
+}
+
+@article{ ISI:000260759300005,
+Author = {Tempfli, Emmerich and Zoellner, Sascha and Schmelcher, Peter},
+Title = {{Excitations of attractive 1D bosons: binding versus fermionization}},
+Journal = {{NEW JOURNAL OF PHYSICS}},
+Year = {{2008}},
+Volume = {{10}},
+Month = {{OCT 16}},
+DOI = {{10.1088/1367-2630/10/10/103021}},
+Article-Number = {{103021}},
+ISSN = {{1367-2630}},
+ResearcherID-Numbers = {{Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000260759300005}},
+}
+
+@article{ ISI:000258180300185,
+Author = {Zoellner, Sascha and Meyer, Hans-Dieter and Schmelcher, Peter},
+Title = {{Composite fermionization of one-dimensional Bose-Bose mixtures}},
+Journal = {{PHYSICAL REVIEW A}},
+Year = {{2008}},
+Volume = {{78}},
+Number = {{1}},
+Month = {{JUL}},
+DOI = {{10.1103/PhysRevA.78.013629}},
+Article-Number = {{013629}},
+ISSN = {{2469-9926}},
+EISSN = {{2469-9934}},
+ResearcherID-Numbers = {{Meyer, Hans-Dieter/B-5611-2008
+   Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Meyer, Hans-Dieter/0000-0003-1365-0144
+   Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000258180300185}},
+}
+
+@article{ ISI:000252863400001,
+Author = {Zoellner, Sascha and Meyer, Hans-Dieter and Schmelcher, Peter},
+Title = {{Few-boson dynamics in double wells: From single-atom to correlated pair
+   tunneling}},
+Journal = {{PHYSICAL REVIEW LETTERS}},
+Year = {{2008}},
+Volume = {{100}},
+Number = {{4}},
+Month = {{FEB 1}},
+DOI = {{10.1103/PhysRevLett.100.040401}},
+Article-Number = {{040401}},
+ISSN = {{0031-9007}},
+ResearcherID-Numbers = {{Meyer, Hans-Dieter/B-5611-2008
+   Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Meyer, Hans-Dieter/0000-0003-1365-0144
+   Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000252863400001}},
+}
+
+@article{ ISI:000249154900113,
+Author = {Matthies, Christian and Zoellner, Sascha and Meyer, Hans-Dieter and
+   Schmelcher, Peter},
+Title = {{Quantum dynamics of two bosons in an anharmonic trap: Collective versus
+   internal excitations}},
+Journal = {{PHYSICAL REVIEW A}},
+Year = {{2007}},
+Volume = {{76}},
+Number = {{2}},
+Month = {{AUG}},
+DOI = {{10.1103/PhysRevA.76.023602}},
+Article-Number = {{023602}},
+ISSN = {{1050-2947}},
+ResearcherID-Numbers = {{Meyer, Hans-Dieter/B-5611-2008
+   Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Meyer, Hans-Dieter/0000-0003-1365-0144
+   Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000249154900113}},
+}
+
+@article{ ISI:000243166700122,
+Author = {Zoellner, Sascha and Meyer, Hans-Dieter and Schmelcher, Peter},
+Title = {{Correlations in ultracold trapped few-boson systems: Transition from
+   condensation to fermionization}},
+Journal = {{PHYSICAL REVIEW A}},
+Year = {{2006}},
+Volume = {{74}},
+Number = {{6}},
+Month = {{DEC}},
+DOI = {{10.1103/PhysRevA.74.063611}},
+Article-Number = {{063611}},
+ISSN = {{1050-2947}},
+ResearcherID-Numbers = {{Meyer, Hans-Dieter/B-5611-2008
+   Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Meyer, Hans-Dieter/0000-0003-1365-0144
+   Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000243166700122}},
+}
+
+@article{ ISI:000242408900127,
+Author = {Zoellner, Sascha and Meyer, Hans-Dieter and Schmelcher, Peter},
+Title = {{Ultracold few-boson systems in a double-well trap}},
+Journal = {{PHYSICAL REVIEW A}},
+Year = {{2006}},
+Volume = {{74}},
+Number = {{5}},
+Month = {{NOV}},
+DOI = {{10.1103/PhysRevA.74.053612}},
+Article-Number = {{053612}},
+ISSN = {{1050-2947}},
+ResearcherID-Numbers = {{Meyer, Hans-Dieter/B-5611-2008
+   Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Meyer, Hans-Dieter/0000-0003-1365-0144
+   Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000242408900127}},
+}
+
+@article{ ISI:000232228300127,
+Author = {Zollner, S and Meyer, HD and Schmelcher, P},
+Title = {{N-electron giant dipole states in crossed electric and magnetic fields}},
+Journal = {{PHYSICAL REVIEW A}},
+Year = {{2005}},
+Volume = {{72}},
+Number = {{3}},
+Month = {{SEP}},
+DOI = {{10.1103/PhysRevA.72.033416}},
+Article-Number = {{033416}},
+ISSN = {{1050-2947}},
+EISSN = {{1094-1622}},
+ResearcherID-Numbers = {{Meyer, Hans-Dieter/B-5611-2008
+   Schmelcher, Peter/D-9592-2014
+   }},
+ORCID-Numbers = {{Meyer, Hans-Dieter/0000-0003-1365-0144
+   Schmelcher, Peter/0000-0002-2637-0937
+   Zollner, Sascha/0000-0002-0166-7929}},
+Unique-ID = {{ISI:000232228300127}},
+}
+
+@article{ ISI:000231108800006,
+Author = {Zollner, S and Meyer, HD and Schmelcher, P},
+Title = {{Multi-electron giant dipole resonances of atoms in crossed electric and
+   magnetic fields}},
+Journal = {{EUROPHYSICS LETTERS}},
+Year = {{2005}},
+Volume = {{71}},
+Number = {{3}},
+Pages = {{373-379}},
+Month = {{AUG}},
+DOI = {{10.1209/epl/i2005-10090-6}},
+ISSN = {{0295-5075}},
+ResearcherID-Numbers = {{Meyer, Hans-Dieter/B-5611-2008
+   Schmelcher, Peter/D-9592-2014}},
+ORCID-Numbers = {{Meyer, Hans-Dieter/0000-0003-1365-0144
+   Schmelcher, Peter/0000-0002-2637-0937}},
+Unique-ID = {{ISI:000231108800006}},
+}
+
+% MCTDHB
+
+@article{MCTDHB_1,
+Author = {Streltsov, Alexej I. and Alon, Ofir E. and Cederbaum, Lorenz S.},
+Title = {{Role of excited states in the splitting of a trapped interacting
+   Bose-Einstein condensate by a time-dependent barrier}},
+Journal = {{Phys. Rev. Lett}},
+Year = {{2007}},
+Volume = {{99}},
+DOI = {{10.1103/PhysRevLett.99.030402}},
+Pages = {{030402}}}
+
+@article{MCTDHB_2,
+Author = {Alon, Ofir E. and Streltsov, Alexej I. and Cederbaum, Lorenz S.},
+Title = {{Multiconfigurational time-dependent Hartree method for bosons: Many-body
+   dynamics of bosonic systems}},
+Journal = {{Phys. Rev. A}},
+Year = {{2008}},
+Volume = {{77}},
+DOI = {{10.1103/PhysRevA.77.033613}},
+Pages = {{033613}}}
+
+@article{MCTDHBF_1,
+Author = {Alon, Ofir E. and Streltsov, Alexej I. and Cederbaum, Lorenz S.},
+Title = {{Unified view on multiconfigurational time propagation for systems
+   consisting of identical particles}},
+Journal = {{J. Chem. Phys.}},
+Year = {{2007}},
+Volume = {{127}},
+Number = {{15}},
+DOI = {{10.1063/1.2771159}},
+Pages = {{154103}}}
+
+@article{MCTDHBF_2,
+Author = {Alon, Ofir E. and Streltsov, Alexej I. and Cederbaum, Lorenz S.},
+Title = {{Multiconfigurational time-dependent Hartree method for mixtures
+   consisting of two types of identical particles}},
+Journal = {{Phys. Rev. A}},
+Year = {{2007}},
+Volume = {{76}},
+DOI = {{10.1103/PhysRevA.76.062501}},
+Pages = {{062501}}}
+
+@article{MCTDHconv,
+Author = {Alon, Ofir E. and Streltsov, Alexej I. and Cederbaum, Lorenz S.},
+Title = {{Many-body theory for systems with particle conversion: Extending the
+   multiconfigurational time-dependent Hartree method}},
+Journal = {{Phys. Rev. A}},
+Year = {{2009}},
+Volume = {{79}},
+Number = {{2}},
+Month = {{FEB}},
+DOI = {{10.1103/PhysRevA.79.022503}},
+Pages = {{022503}},
+}
+
+% MCTDH Jansen
+
+@article{Jansen,
+AUTHOR = {A. P. J. Jansen},
+TITLE  = {A MULTICONFIGURATION TIME-DEPENDENT HARTREE APPROXIMATION BASED ON
+ NATURAL SINGLE-PARTICLE STATES},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1993},
+VOLUME = {99},
+PAGES  = {4055-4063} }
+
+@article{Jansen2,
+AUTHOR = {A. Capellini and A. P. J. Jansen},
+TITLE  = {Convergence study of multi-configuration time-dependent Hartree
+ simulations: H-2 scattering from LiF(001)},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1996},
+VOLUME = {104},
+PAGES  = {3366-3372} }
+
+% MCTDH Guo
+
+@article{FangGuo1,
+AUTHOR = {J. Y. Fang and H. Guo},
+TITLE  = {MULTICONFIGURATION TIME-DEPENDENT HARTREE STUDIES OF THE CH3I/MGO
+ PHOTODISSOCIATION DYNAMICS}},
+JOURNAL= {J. Chem. Phys.},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1994},
+VOLUME = {101},
+PAGES  = {5831-5840} }
+
+@article{FangGuo2,
+AUTHOR = {J. Y. Fang and H. Guo},
+TITLE  = {MULTICONFIGURATION TIME-DEPENDENT HARTREE STUDIES OF THE CL2NE
+ VIBRATIONAL PREDISSOCIATION DYNAMICS},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1995},
+VOLUME = {102},
+PAGES  = {1944-1954} }
+
+@article{FangGuo3,
+AUTHOR = {L. Liu and J. Y. Fang and H. Guo},
+TITLE  = {HOW MANY CONFIGURATIONS ARE NEEDED IN A TIME-DEPENDENT HARTREE TREATMENT
+ OF THE PHOTODISSOCIATION OF ICN},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1995},
+VOLUME = {102},
+PAGES  = {2404-2412} }
+
+% mathematical analysis
+
+@article{Lubich,
+Author = {Conte, Dajana and Lubich, Christian},
+Title = {An error analysis of the multi-configuration time-dependent Hartree
+method of quantum dynamics},
+Journal = {ESAIM Math. Mod. Num. Anal.},
+Year = {2010},
+Volume = {44},
+Pages = {759-780}}
+
+@article{Lubich2,
+Author = {Lubich, Christian},
+Title = {Time integration in the multiconfiguration time-dependent Hartree method 
+of molecular quantum dynamics},
+Journal = {Appl. Math. Res. Express},
+Year = {2015},
+Volume = {~},
+Pages = {311-328}}
+
+@article{MCTDHBunocc,
+Author = {Lee, Kang-Soo and Fischer, Uwe R.},
+Title = {Truncated many-body dynamics of interacting bosons:
+A variational principle with error monitoring},
+Journal = {Int. J. Mod. Phys. B},
+Year = {2014},
+Volume = {28},
+Pages = {1550021}}
+
+
+% recent examples
+
+@article{MCTDHex1,
+Author = {Worth, G. A. and Meyer, H. -D. and Koeppel, H. and Cederbaum, L. S. and Burghardt, I.},
+Title = {Using the MCTDH wavepacket propagation method to describe multimode non-adiabatic dynamics},
+Journal = {Int. Rev. Phys. Chem.},
+Year = {2008},
+Volume = {27},
+Pages = {569-606} }
+
+@article{MCTDHex2,
+Author = {Wilner, Eli Y. and Wang, Haobin and Thoss, Michael and Rabani, Eran},
+Title = {Nonequilibrium quantum systems with electron-phonon interactions:
+   Transient dynamics and approach to steady state},
+Journal = {Phys. Rev. B},
+Year = {2014},
+Volume = {89},
+Pages = {205129}}
+
+@article{MCTDHex4,
+Author = {Balzer, Karsten and Li, Zheng and Vendrell, Oriol and Eckstein, Martin},
+Title = {Multiconfiguration time-dependent Hartree impurity solver for
+   nonequilibrium dynamical mean-field theory},
+Journal = {Phys. Rev. B},
+Year = {2015},
+Volume = {91},
+Pages = {045136}}
+
+@article{MCTDHex5,
+Author = {Schroeter, M. and Kuehn, O.},
+Title = {Interplay Between Nonadiabatic Dynamics and Frenkel Exciton Transfer in
+   Molecular Aggregates: Formulation and Application to a Perylene Bismide
+   Model},
+Journal = {J.  Phys. Chem. A},
+Year = {2013},
+Volume = {117},
+Number = {32},
+Pages = {7580-7588}}
+
+@article{MCTDHex6,
+Author = {Saab, Mohamad and Sala, Matthieu and Lasorne, Benjamin and Gatti, Fabien
+   and Guerin, Stephane},
+Title = {Full-dimensional control of the radiationless decay in pyrazine using
+   the dynamic Stark effect},
+Journal = {J. Chem. Phys.},
+Year = {2014},
+Volume = {141},
+Pages = {134114}}
+
+@article{MCTDHex7,
+Author = {Lopez-Lopez, S. and Martinazzo, R. and Nest, M.},
+Title = {Benchmark calculations for dissipative dynamics of a system coupled to
+   an anharmonic bath with the multiconfiguration time-dependent Hartree
+   method},
+Journal = {J. Chem. Phys.},
+Year = {2011},
+Volume = {134},
+Number = {9},
+Pages = {094102}}
+
+@article{MCTDHex8,
+Author = {Bouakline, Foudhil and Lueder, Franziska and Martinazzo, Rocco and
+   Saalfrank, Peter},
+Title = {Reduced and Exact Quantum Dynamics of the Vibrational Relaxation of a
+   Molecular System Interacting with a Finite-Dimensional Bath},
+Journal = {J. Phys. Chem. A},
+Year = {2012},
+Volume = {116},
+Number = {46},
+Pages = {11118-11127}}
+
+@article{MCTDHex9,
+Author = {Uranga-Pina, L. and Meier, C. and Rubayo-Soneira, J.},
+Title = {Ultrafast, correlated multidimensional shell dynamics of neon matrices
+   after photoexcitation of an NO impurity: An MCTDH approach},
+Journal = {Chem. Phys. Lett.},
+Year = {2012},
+Volume = {543},
+Pages = {12-18}}
+
+@article{MCTDHex10,
+Author = {Moix Teixidor, Marc and Huarte-Larranaga, Fermin},
+Title = {Methane dissociation on Ni(111): Reaction probabilities using direct and
+   initial state selected approaches},
+Journal = {Chem. Phys.},
+Year = {2012},
+Volume = {399},
+Pages = {264-271}}
+
+@article{MCTDHex11,
+Author = {Wahl, Jan and Binder, Robert and Burghardt, Irene},
+Title = {Quantum dynamics of ultrafast exciton relaxation on a minimal lattice},
+Journal = {Comp. Theo. Chem.},
+Year = {2014},
+Volume = {1040},
+Pages = {167-176}}
+
+@article{MCTDHex12,
+Author = {Schurer, J. M. and Schmelcher, P. and Negretti, A.},
+Title = {Ground-state properties of ultracold trapped bosons with an immersed
+   ionic impurity},
+Journal = {Phys. Rev. A},
+Year = {2014},
+Volume = {90},
+Pages = {033601}}
+
+@article{MCTDHex13,
+Author = {Reddy, V. Sivaranjana and Camacho, Cristopher and Xia, Jianlong and
+   Jasti, Ramesh and Irle, Stephan},
+Title = {Quantum Dynamics Simulations Reveal Vibronic Effects on the Optical
+   Properties of [n]Cycloparaphenylenes},
+Journal = {J. Chem. Theo. Comp.},
+Year = {2014},
+Volume = {10},
+Pages = {4025-4036}}
+
+@article{MCTDHex14,
+Author = {Eisfeld, Wolfgang and Vieuxmaire, Olivier and Viel, Alexandra},
+Title = {Full-dimensional diabatic potential energy surfaces including
+   dissociation: The E$_2$' state of NO$_3$},
+Journal = {J. Chem. Phys.},
+Year = {2014},
+Volume = {140},
+Pages = {224109}}
+
+@article{MCTDHex15,
+Author = {Valdes, Alvaro and Prosmiti, Rita},
+Title = {Theoretical Investigation of the Infrared Spectra of the H-5(+) and
+   D-5(+) Cations},
+Journal = {J. Phys. Chem. A},
+Year = {2013},
+Volume = {117},
+Number = {39},
+Pages = {9518-9524}}
+
+@article{MCTDHex16,
+Author = {Mondal, T. and Reddy, S. Rajagopala and Mahapatra, S.},
+Title = {Photophysics of fluorinated benzene. III. Hexafluorobenzene},
+Journal = {J. Chem. Phys.},
+Year = {2012},
+Volume = {137},
+Number = {5},
+Pages = {054311}}
+
+@article{MCTDHex17,
+Author = {Skouteris, Dimitrios and Lagana, Antonio},
+Title = {MCTDH calculations on the rigid OH radical moving along a (10,0) carbon
+   nanotube},
+Journal = {Chem. Phys. Lett.},
+Year = {2013},
+Volume = {575},
+Pages = {18-22}}
+
+@article{MCTDHex18,
+Author = {Zhao, Bin and Zhang, Dong-H and Lee, Soo-Y and Sun, Zhigang},
+Title = {Calculation of state-to-state cross sections for triatomic reaction by
+   the multi-configuration time-dependent Hartree method},
+Journal = {J. Chem. Phys.},
+Year = {2014},
+Volume = {140},
+Pages = {164108}}
+
+% MCTDSCF
+
+@article{MCTDSCF1,
+AUTHOR = {N. Makri and W. H. Miller},
+TITLE  = {TIME-DEPENDENT SELF-CONSISTENT FIELD (TDSCF) APPROXIMATION FOR A
+ REACTION COORDINATE COUPLED TO A HARMONIC BATH - SINGLE AND MULTIPLE
+ CONFIGURATION TREATMENTS},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1987},
+VOLUME = {87},
+PAGES  = {5781-5787} }
+
+@article{MCTDSCF2,
+AUTHOR = {R. Kosloff},
+TITLE  = {TIME-DEPENDENT QUANTUM-MECHANICAL METHODS FOR MOLECULAR-DYNAMICS},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1988},
+VOLUME = {92},
+PAGES  = {2087-2100} }
+
+@article{MCTDSCF3,
+AUTHOR = {Z. Kotler and A. Nitzan and R. Kosloff},
+TITLE  = {MULTICONFIGURATION TIME-DEPENDENT SELF-CONSISTENT FIELD APPROXIMATION
+ FOR CURVE CROSSING IN PRESENCE OF A BATH - A FAST FOURIER-TRANSFORM
+ STUDY},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {1988},
+VOLUME = {153},
+PAGES  = {483-489} }
+
+@article{MCTDSCF4,
+AUTHOR = {J. Campos-Martinez and R. D. Coalson},
+TITLE  = {ADDING CONFIGURATION-INTERACTION TO THE TIME-DEPENDENT HARTREE GRID
+ APPROXIMATION},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1990},
+VOLUME = {93},
+PAGES  = {4740-4749} }
+
+@article{MCTDSCF5,
+AUTHOR = {J. R. Waldeck and J. Campos-Martinez and R. D. Coalson},
+TITLE  = {APPLICATION OF A COUPLED-SURFACE TIME-DEPENDENT HARTREE GRID METHOD TO
+ EXCITED-STATE OPTICAL SPECTROSCOPY},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1991},
+VOLUME = {94},
+PAGES  = {2773-2780} }
+
+@article{MCTDSCF6,
+AUTHOR = {A. D. Hammerich and R. Kosloff and M. A. Ratner},
+TITLE  = {QUANTUM-MECHANICAL REACTIVE SCATTERING BY A MULTICONFIGURATIONAL
+ TIME-DEPENDENT SELF-CONSISTENT FIELD (MCTDSCF) APPROACH},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {1990},
+VOLUME = {171},
+PAGES  = {97-108} }
+
+@article{MCTDSCF7,
+AUTHOR = {R. B. Gerber and R. Alimi},
+TITLE  = {QUANTUM MOLECULAR-DYNAMICS BY A PERTURBATION-CORRECTED TIME-DEPENDENT
+ SELF-CONSISTENT-FIELD METHOD},
+JOURNAL= {Chem. Phys. Lett.},
+YEAR   = {1991},
+VOLUME = {184},
+PAGES  = {69-75} }
+
+@article{MCTDSCF8,
+AUTHOR = {B. Jackson},
+TITLE  = {MULTICONFIGURATION SELF-CONSISTENT-FIELD MODELS FOR GAS-SURFACE
+ SCATTERING},
+JOURNAL= {J. Chem. Phys.},
+YEAR   = {1993},
+VOLUME = {99},
+PAGES  = {8299-8307} }
+
