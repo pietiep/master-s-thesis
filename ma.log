@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  18 MAR 2018 16:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  19 MAR 2018 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -956,29 +956,35 @@ File: figures/multi_mctdh_wave.png Graphic file (type png)
 Package pdftex.def Info: figures/multi_mctdh_wave.png used on input line 181.
 (pdftex.def)             Requested size: 201.65755pt x 168.14468pt.
  [6] [7 <./figures/std_wave.png (PNG copy)> <./figures/mctdh_wave1.png> <./figu
-res/mctdh_wave2.png> <./figures/multi_mctdh_wave.png>] [8]) [9
+res/mctdh_wave2.png> <./figures/multi_mctdh_wave.png>]
+Overfull \hbox (45.74432pt too wide) in paragraph at lines 207--226
+\T1/lmr/m/n/12 Fol-gen-den nützliche No-ta-tio-nen einge-führt. Statt den SPFs 
+können die MCTDH-Wellenfunktionen
+ []
 
-] (./ma.bbl [10
+[8] [9]) [10
+
+] (./ma.bbl [11
 
 
 
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
- [11]
+ [12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
  (./ma.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `ma.out' has not changed.
-(rerunfilecheck)             Checksum: 251900CF38B3D6B263B3F8D8D25180B2;428.
+(rerunfilecheck)             Checksum: 1DA19494694168A4E7896EAF26292D09;425.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
  ) 
 Here is how much of TeX's memory you used:
- 12232 strings out of 494820
- 184168 string characters out of 3178049
+ 12238 strings out of 494820
+ 184252 string characters out of 3178049
  306401 words of memory out of 3000000
- 15099 multiletter control sequences out of 15000+200000
+ 15102 multiletter control sequences out of 15000+200000
  77642 words of font info for 60 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  48i,11n,68p,706b,561s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -999,10 +1005,10 @@ ve/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.p
 fb>
-Output written on ma.pdf (15 pages, 354287 bytes).
+Output written on ma.pdf (16 pages, 358977 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
  82 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -211,8 +211,32 @@ Allerdings werden anstelle der zeitunbh"angigen primitiven Basis die zeitabh"ang
 Diese wiederum werden in der primitiven Basis entwickelt und diese Entwicklung wird durch den Koeffzienten  $A^{3;\kappa, \lambda}_{m;j}$
 definiert.
   \\Die ML-MCTDH Darstellung kann auf eine beliebige Anzahl von Layern erweitert werden.
-  Dabei kann die Anzahl der Layer f"ur die jeweiligen Koordinaten variieren. So werden in Abbildung \ref{fig:multi_mctdh_wave} f"ur die Koordinaten $x_1-x_4$ drei Layer
-  und f"ur die Koordinaten $x_5 - x_7$ zwei Layer verwendet.
+Dabei kann die Anzahl der Layer f"ur die jeweiligen Koordinaten variieren.
+So werden in Abbildung \ref{fig:multi_mctdh_wave} f"ur die Koordinaten $x_1-x_4$ drei Layer und f"ur die Koordinaten $x_5 - x_7$ zwei Layer verwendet.
+F"ur die Berechnung gr"o"serer Systeme hat das modenkombinierte MCTDH eine entscheidende Rolle gespielt, allerdings sind im Allgemeinen die Kombinationen
+durch den exponentielle Anstieg des Teilchengitters auf die dritte Ordnung begrenzt. \cite{MCTDHreview3}
+  \\Im Gegensatz zum modenkombinierte MCTDH skaliert das ML-MCTDH nicht exponentielle.
+So skaliert die Gesamtanzahl der $A$-Koeffizienten bei einem $f=2^l$-dimensionalen System mit $l=3$ Layern mit einem Faktor von $(a^4n^{3}/4)f^{3\log_{2}a}$
+(f"ur $a>2^{1/3}$). Im untersten Layer werden pro Koordinate $n$ SPFs angenommen, die sich pro Layer um den Faktor $a$ erh"ohen.
+Es werden $N$ Basisfunktionen f"ur die primitive Basisdarstellung verwendet verwendet.
+Da der numerische Aufwand des ML-MCTDHs n"ahrungsweise proportional zu der Anzahl der A-Koeffzienten ist, steigt der numerische Aufwand polynomisch
+mit einem maximalen Exponenten von $3\log_{2}a$.\cite{Mreview2}
+  \\F"ur die Herleitung der Bewegungsgleichungen im n"achsten Abschnitt \ref{sec:Bewegungsgleichungen} werden im Folgenden n"utzliche Notationen eingef"uhrt.
+Statt den SPFs k"onnen die MCTDH-Wellenfunktionen durch Einlochfunktionen (SHF) \cite{Mreview2, MCTDHreview3} beschreiben werden:
+
+ \begin{equation}
+ \Psi=\sum^{n_{\kappa_1,\kappa_2,...,\kappa_l}}_{i=1} \Psi^{l;\kappa_1,\kappa_2,...,\kappa_l}_{i} \cdot  \phi^{l;\kappa_1,\kappa_2,...,\kappa_l}_{i}
+ \label{Eq:MCTDH_SHF}
+ \end{equation}
+
+ mit
+
+ \begin{equation}
+   \Psi^{l;\kappa_1,\kappa_2,...,\kappa_l}_{i} = < \phi^{l;\kappa_1,\kappa_2,...,\kappa_l}_{i} | \Psi >
+ \label{Eq:SHF}
+ \end{equation}
+
+
 
 
 
@@ -223,4 +247,5 @@ definiert.
 
 
 \clearpage
- \subsection{Absorption und Emission}
+ \subsection{Bewegungsgleichungen}
+ \label{sec:Bewegungsgleichungen}
