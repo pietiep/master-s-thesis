@@ -242,7 +242,7 @@ Die Konfigurationen des l-ten Layers $ \Phi^{\kappa_1,\kappa_2,...,\kappa_{l-1}}
  \begin{equation}
    \Phi^{\kappa_1,\kappa_2,...,\kappa_{l-1}}_{j_1,...,j_{d_{\kappa_1,..,\kappa_{l-1}}}} = \prod_{\kappa_l}^{d_{\kappa_1,...,\kappa_{l}}}
    \phi^{\kappa_1,\kappa_2,...,\kappa_{l-1},\kappa_l}_{j_{\kappa_l}}.
- \label{Eq:bla}
+ \label{Eq:notation}
  \end{equation}
 
  Mithilfe des Superindexes $ J = (j_1, j_2,...) $ k"onnen die SPFs wie folgt notiert werden:
@@ -250,22 +250,44 @@ Die Konfigurationen des l-ten Layers $ \Phi^{\kappa_1,\kappa_2,...,\kappa_{l-1}}
  \begin{equation}
    \phi^{\kappa_1,\kappa_2,...,\kappa_{l}}_i = \sum_J A^{l+1;\kappa_1,\kappa_2,...,\kappa_l}_{i;J}
    \cdot \phi^{l+1;\kappa_1,\kappa_2,...,\kappa_{l}}_J
- \label{Eq:bla}
+ \label{Eq:superindex}
  \end{equation}
 
  Des Weiteren wird f"ur die zeitunbh"angigen Basisfunktionen des untersten Layer nicht mehr das Symbol $ \chi_{j_m} $ verwendet.
  Stattdessen werden im folgenden die Basisfunktionen ebenfalls durch die korrespondierenden SPFs $ \phi^{l;\kappa_1,\kappa_2,...,\kappa_{l},m}_{j_m} $
  gekennzeichnet.
-
-
-
-
-
-
-
-
-
+  \\Bevor die Bewegungsgleichungen f"ur die MCTDH-Methode hergeleited werden, wird die Standardmethode der Propagation der Wellenfunktion betrachtet.
 
 \clearpage
- \subsection{Bewegungsgleichungen}
+ \section{Standardpropagationsmethode}
+ \label{sec:Standardpropagationsmethode}
+
+ In der Standardmethode wird die Wellenfunktion aus Gleichung \ref{Eq:Std_wave} verwendet.
+ Die Bewegungsgleichungen k"onnen mithilfe des Dirac-Frenkel Variationsprinzip hergeleitet werden:
+
+
+\begin{equation}
+  <\delta\Phi|H-i\partial_t|\Phi> = 0,
+ \label{Eq:Dirac-Frenkel}
+ \end{equation}
+
+wobei $ \partial_t $ die partielle Zeitableitung darstellt.
+Umgestellt und nach Einsetzen der Wellenfunktion ergibt Gleichung \ref{Eq:Dirac-Frenkel}
+
+ \begin{equation}
+  i\dot{A_J} = \sum_{L} H_{JL}A_L .
+ \label{Eq:A_punkt}
+ \end{equation}
+
+$ H_{JL} $ stellt die Matrixelemente des Hamiltonoperators dar: $ <\chi_J|H|\chi_L> $.
+Die Basisfunktionen $\chi_J$ bilden den Produktbasissatz ${\chi^{\kappa}_{j_{\kappa}}}$.
+Gleichung \ref{Eq:A_punkt} bildet ein System aus gekoppelten, linearen gew"ohnlichen Differentialgleichungen erster Ordnung.
+Der numerische Aufwand w"achst exponetiell mit Anzahl der Freiheitsgrade $ f $.
+Um dieses exponentielle Wachstum zu veranschaulichen, wird vereinfacht angenommen, dass die gleiche Anzahl $N=N_1=...=N_f$
+an Basisfunktionen f"ur jeden Freiheits verwendet wird.
+Der numerische Aufwand f"ur die Berechnung von $ \sum_{L} H_{JL}A_L $ is proportional zu $fN^{f+1}$.
+Das Skalierverhalten schr"ankt die Standardmethode auf Systeme mit weniger als sechs Freiheitsgrade ein. \cite{MCTDHreview}
+
+
+ \section{Bewegungsgleichungen}
  \label{sec:Bewegungsgleichungen}

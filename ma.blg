@@ -28,45 +28,45 @@ Repeated entry---line 439 of file ./bibtex/SPP96.bib
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 25 entries,
+You've used 26 entries,
             3411 wiz_defined-function locations,
-            1313 strings with 14407 characters,
-and the built_in function-call counts, 17164 in all, are:
-= -- 1004
-> -- 537
-< -- 77
-+ -- 434
-- -- 130
-* -- 2321
-:= -- 1868
-add.period$ -- 25
-call.type$ -- 25
-change.case$ -- 100
-chr.to.int$ -- 21
-cite$ -- 25
-duplicate$ -- 1543
-empty$ -- 1454
-format.name$ -- 343
-if$ -- 3264
+            1320 strings with 14628 characters,
+and the built_in function-call counts, 17942 in all, are:
+= -- 1044
+> -- 570
+< -- 81
++ -- 464
+- -- 138
+* -- 2433
+:= -- 1948
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 104
+chr.to.int$ -- 22
+cite$ -- 26
+duplicate$ -- 1615
+empty$ -- 1516
+format.name$ -- 362
+if$ -- 3406
 int.to.chr$ -- 5
-int.to.str$ -- 26
-missing$ -- 240
-newline$ -- 90
-num.names$ -- 75
-pop$ -- 415
+int.to.str$ -- 27
+missing$ -- 251
+newline$ -- 93
+num.names$ -- 78
+pop$ -- 435
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 104
 quote$ -- 0
-skip$ -- 633
+skip$ -- 659
 stack$ -- 0
-substring$ -- 631
-swap$ -- 1223
-text.length$ -- 65
+substring$ -- 648
+swap$ -- 1283
+text.length$ -- 69
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
+type$ -- 156
 warning$ -- 0
-while$ -- 75
+while$ -- 78
 width$ -- 0
-write$ -- 264
+write$ -- 274
 (There were 5 error messages)
