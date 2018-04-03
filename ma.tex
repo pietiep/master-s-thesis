@@ -55,6 +55,7 @@ bpchem,																% chemische Nomenklatur (Trennung etc.)
 chemarrow}															% Darstellung komplexer Reaktionspfeile
 \usepackage[fixamsmath,disallowspaces]{mathtools}		% Fehlerbehebung in amsmath
 \usepackage{nccmath}
+\usepackage{braket}
 %\usepackage[version=4]{mhchem}
 %multi-part-units=brackets,										% (5\pm 3) kg statt 5 kg \pm 3 kg
 %exponent-product=\cdot,											% Schreibweise f�r 5,3*10^3
@@ -132,11 +133,11 @@ chemarrow}															% Darstellung komplexer Reaktionspfeile
 %\def\Bra#1{\left\langle#1\right|}
 %\def\Ket#1{\left|#1\right\rangle}
 
-\newcommand{\Bra}[1]{\ensuremath{\left\bra #1\right|}}
-\newcommand{\Ket}[1]{\ensuremath{\left| #1\right\ket}}
+%\newcommand{\Bra}[1]{\ensuremath{\left\bra #1\right|}}
+%\newcommand{\Ket}[1]{\ensuremath{\left| #1\right\ket}}
 
-\newcommand{\Braket}[2]{\left\langle #1 \middle| #2\right\rangle}
-{\catcode`\|=\active \gdef|{\egroup\,\vrule\,\bgroup}}
+%\newcommand{\Braket}[2]{\left\langle #1 \middle| #2\right\rangle}
+%{\catcode`\|=\active \gdef|{\egroup\,\vrule\,\bgroup}}
 %Der vertikale Strich ist aktiv, also
 %  \Braket{g|e}
 %  \Braket{g|H|e}

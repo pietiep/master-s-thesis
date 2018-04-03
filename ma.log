@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  2 APR 2018 17:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  3 APR 2018 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -435,6 +435,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 Package: nccmath 2005/02/21 v1.2 Additional Math Commands (NCC)
 \NCC@fracrulewidth=\dimen126
 )
+(/raid/home/protassow/texmf/tex/braket.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen127
@@ -524,7 +525,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count126
 \LT@p@ftn=\toks22
 )
-Class scrbook Info: longtable captions redefined on input line 70.
+Class scrbook Info: longtable captions redefined on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -576,7 +577,7 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@height=\dimen157
 \Gin@req@width=\dimen158
 )
-Package caption Info: We need package `newfloat' on input line 75.
+Package caption Info: We need package `newfloat' on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/newfloat.sty
 Package: newfloat 2013/02/03 v1.0-62 Defining new floating environments (AR)
@@ -704,15 +705,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip66
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 119.
-Package hyperref Info: Option `raiselinks' set `true' on input line 119.
-Package hyperref Info: Option `breaklinks' set `true' on input line 119.
-Package hyperref Info: Option `linktocpage' set `true' on input line 119.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 119.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 119.
+Package hyperref Info: Option `colorlinks' set `true' on input line 120.
+Package hyperref Info: Option `raiselinks' set `true' on input line 120.
+Package hyperref Info: Option `breaklinks' set `true' on input line 120.
+Package hyperref Info: Option `linktocpage' set `true' on input line 120.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 120.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 120.
 
-Package hyperref Info: Option `plainpages' set `false' on input line 119.
-Package hyperref Info: Option `pageanchor' set `true' on input line 119.
+Package hyperref Info: Option `plainpages' set `false' on input line 120.
+Package hyperref Info: Option `pageanchor' set `true' on input line 120.
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/varioref.sty
 Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
@@ -720,29 +721,29 @@ Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
 ) (./ma.aux)
 \openout1 = `ma.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 171.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 171.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 172.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 172.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 171.
-LaTeX Font Info:    ... okay on input line 171.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 171.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
+LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 172.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -763,15 +764,15 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmr/m/n --> TS1/lmr/bx/n on input line 171.
-Package gensymb Info: Math companion symbols declared on input line 171.
-LaTeX Info: Redefining \degree on input line 171.
-LaTeX Info: Redefining \celsius on input line 171.
+(Font)                  TS1/lmr/m/n --> TS1/lmr/bx/n on input line 172.
+Package gensymb Info: Math companion symbols declared on input line 172.
+LaTeX Info: Redefining \degree on input line 172.
+LaTeX Info: Redefining \celsius on input line 172.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 171.
-LaTeX Info: Redefining \ohm on input line 171.
-Package gensymb Info: Using \textohm for \ohm on input line 171.
-Package gensymb Info: Using \textmu for \micro on input line 171.
+erthousand on input line 172.
+LaTeX Info: Redefining \ohm on input line 172.
+Package gensymb Info: Using \textohm for \ohm on input line 172.
+Package gensymb Info: Using \textmu for \micro on input line 172.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -799,7 +800,7 @@ Package scrpage2 Warning: seems you are using a very small headheight.
 (scrpage2)                A better solution would be to use typearea package.
 
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring ON on input line 171.
+Package hyperref Info: Link coloring ON on input line 172.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -809,15 +810,15 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \c@section@level=\count148
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 171.
-LaTeX Info: Redefining \pageref on input line 171.
-LaTeX Info: Redefining \nameref on input line 171.
+LaTeX Info: Redefining \ref on input line 172.
+LaTeX Info: Redefining \pageref on input line 172.
+LaTeX Info: Redefining \nameref on input line 172.
 
 (./ma.out) (./ma.out)
 \@outlinefile=\write3
 \openout3 = `ma.out'.
 
-LaTeX Info: Redefining \Ref on input line 171.
+LaTeX Info: Redefining \Ref on input line 172.
  (./title/title.tex
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 46.
 
@@ -970,21 +971,21 @@ en die MCTDH-Wellenfunktionen
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
  [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
  (./ma.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
 Package rerunfilecheck Info: File `ma.out' has not changed.
 (rerunfilecheck)             Checksum: 47B3243EEB46BF6B30E0E8E11BE943A5;493.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
  ) 
 Here is how much of TeX's memory you used:
- 12252 strings out of 494820
- 184473 string characters out of 3178049
- 306401 words of memory out of 3000000
- 15110 multiletter control sequences out of 15000+200000
+ 12278 strings out of 494820
+ 184845 string characters out of 3178049
+ 306622 words of memory out of 3000000
+ 15132 multiletter control sequences out of 15000+200000
  74874 words of font info for 59 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  48i,11n,68p,706b,561s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1005,7 +1006,7 @@ ve/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy6.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on ma.pdf (16 pages, 368288 bytes).
+Output written on ma.pdf (16 pages, 369004 bytes).
 PDF statistics:
  316 PDF objects out of 1000 (max. 8388607)
  272 compressed objects within 3 object streams
