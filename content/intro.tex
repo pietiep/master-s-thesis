@@ -1,8 +1,28 @@
 \chapter{Einleitung}
 
-In der Physik und theoretischen Chemie hat sich die multiconfigurational time-dependent Hartree (MCTDH)-Methode
-als effizienter Algorithmus zur L"osung der zeitabh"angige Schr"odingergleichung etabliert.
-Um mit der MCTDH-Methode arbeiten zu k"onnen, sind bisher fortgeschrittene Programmierkenntnissen Voraussetzung.\\
-Um das Arbeiten mit der MCTDH-Methode auch anderen Wissenschaftlern mit wenig Programmiererfahrung zu erm"oglichen,
-soll in dieser Arbeit eine grafische Oberfl"ache (GUI) implementiert werden.
-Es wurde existierender MCTDH-C++ Code gewrappt. Der gewrappte Code wurde f"ur den Aufbau der GUI verwendet.
+Das zeitabh"angige Multikonfiguration-Hartree-Verfahren (MCTDH) 
+\cite{MMC, MMC1} und seine Multilayererweiterung (ml-MCTDH)
+\cite{WT3, Mreview2} 
+sind effiziente Verfahren f"ur genaue mehrdimensionale Quantendynamiksimulationen,
+die von mehreren Forschungsgruppen verwendet werden. 
+\cite{MCTDHex1, WestPNM, MCTDHex2, W1, MCTDHex4, MCTDHex5, MCTDHex6, MCTDHex7, MCTDHex8,
+MCTDHex9, MCTDHex10, MCTDHex11, MCTDHex12, MCTDHex13, MCTDHex14, MCTDHex15, MCTDHex16, MCTDHex17,MCTDHex18} 
+Beispiele f"ur hochdimensionale 
+Benchmark-Anwendungen sind die 21-dimensionalen Rechnungen, in denen die Tunnelaufspaltung des
+Grundzustands \cite{CVM, HCVM, HaM1, MAMCTDH, HaM2, MAMCTDH2} und der angeregten \cite{HCVM, HaM1, MAMCTDH, HaM2, MAMCTDH2}
+Schwingungszust"ande von Malonaldehyd erforscht wird. 
+Au"serdem wurden in 15-dimen\-sio\-nalen Rechnungen die Schwingungszust"ande von protonierten 
+Wasserdimeren \cite{H5O2+MCTDH, H5O2+MCTDH2, H5O2+MCTDH3, H5O2+MCTDH4, H5O2+MCTDH5} untersucht. 
+Schlie"s\-lich wurde in 12-dimensionalen Rechnungen die thermischen 
+Geschwindig\-keitskonstanten \cite{HM1, HM2, WWM, SM, vHNM,NvHM}, anfangszustandsausgew"ahlte Reaktionswahrscheinlichkeiten
+\cite{SM02, SM04, WeM5, WeM6, WeM8} und die 
+state-to-state Reaktionswahrscheinlichkeiten \cite{WeM7} f"ur die Reaktion von Methan mit Wasserstoff 
+untersucht. In diesen Rechnungen werden detaillierte \textit{ab initio} berechneten
+Potentialfl"achen verwendet. Signifikant h"ohere Dimensionen wurden in MCTDH-Rechungen mit 
+Modelhamiltonoperatoren in Betracht gezogen. So wurde in wegweisende Rechnungen, in denen  
+die nichtadibatischen Dynamiken von Pyrazin erforscht wurden, ein 24-moden 
+schwingungsgekoppelter Hamiltonoperator \cite{WMC, WMC2, RWMC} verwendet. Multilayer-MCTDH Simulationen von typischen
+physikalischen Modellen \cite{WT3, W1, WST, KCBWT, CTW2, WPHT} zu kondensierter Materie schlie"sen "ublich tausende Freiheitsgrade ein.
+F"ur die Untersuchung eines Model von Photodissoziation in einem Wirt-Gast-Komplex wurden 189-
+dimensionale ml-MCTDH Rechnungen \cite{WBRSM} durchgef"uhrt. F"ur Rezessionen, die das MCTDH-Verfahren und
+seine Anwendungen diskutieren, siehe Refs. \cite{MCTDHreview, MCTDHreview2, HMreview1, MCTDHbook,Mreview2011, MCTDHreview3} .    

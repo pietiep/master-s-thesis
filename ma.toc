@@ -1,9 +1,6 @@
 \select@language {ngerman}
-\contentsline {chapter}{Danksagung}{III}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}MCTDH Theorie}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Einleitung}{2}{section.2.1}
 \contentsline {section}{\numberline {2.2}Layerstruktur der MCTDH - Wellenfunktion}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Standardpropagationsmethode}{10}{section.2.3}
-\contentsline {section}{\numberline {2.4}Bewegungsgleichungen}{10}{section.2.4}
-\contentsline {chapter}{Literaturverzeichnis}{11}{appendix*.4}
+\contentsline {chapter}{Literaturverzeichnis}{10}{appendix*.3}
