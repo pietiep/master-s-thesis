@@ -17,7 +17,7 @@ Schlie"s\-lich wurde in 12-dimensionalen Rechnungen die thermischen
 Geschwindig\-keitskonstanten \cite{HM1, HM2, WWM, SM, vHNM,NvHM}, anfangszustandsausgew"ahlte Reaktionswahrscheinlichkeiten
 \cite{SM02, SM04, WeM5, WeM6, WeM8} und die 
 state-to-state Reaktionswahrscheinlichkeiten \cite{WeM7} f"ur die Reaktion von Methan mit Wasserstoff 
-untersucht. In diesen Rechnungen werden detaillierte \textit{ab initio} berechneten
+untersucht. In diesen Rechnungen wurden detaillierte \textit{ab initio} berechneten
 Potentialfl"achen verwendet. Signifikant h"ohere Dimensionen wurden in MCTDH-Rechungen mit 
 Modelhamiltonoperatoren in Betracht gezogen. So wurde in wegweisende Rechnungen, in denen  
 die nichtadibatischen Dynamiken von Pyrazin erforscht wurden, ein 24-moden 
@@ -25,4 +25,24 @@ schwingungsgekoppelter Hamiltonoperator \cite{WMC, WMC2, RWMC} verwendet. Multil
 physikalischen Modellen \cite{WT3, W1, WST, KCBWT, CTW2, WPHT} zu kondensierter Materie schlie"sen "ublich tausende Freiheitsgrade ein.
 F"ur die Untersuchung eines Model von Photodissoziation in einem Wirt-Gast-Komplex wurden 189-
 dimensionale ml-MCTDH Rechnungen \cite{WBRSM} durchgef"uhrt. F"ur Rezessionen, die das MCTDH-Verfahren und
-seine Anwendungen diskutieren, siehe Refs. \cite{MCTDHreview, MCTDHreview2, HMreview1, MCTDHbook,Mreview2011, MCTDHreview3} .    
+seine Anwendungen diskutieren, siehe Refs. \cite{MCTDHreview, MCTDHreview2, HMreview1, MCTDHbook,Mreview2011, MCTDHreview3}.
+\\ Im Rahmen dieser Masterarbeit wurde ein Python-Schnittstelle f"ur MCTDH entwickelt.
+Python wurde als Anf"angerprogrammiersprache konzipiert, hat sich f"ur das schnelle Entwickeln von Anwendungssoftware bew"ahrt und wird zum 
+Erstellen von Skript-Programmen verwendet. \cite{PyBook} 
+\\\textit{Low-level} Sprachen sind streng typisiert, um komplexe Aufgaben bew"ahltigen zu k"onnen. 
+Auf der anderen Seite sind Skriptsprachen typenlos, wodurch die Verbindung von verschiedenen \textit{low-level} Komponenten erleichtern werden soll. \cite{PyBook2} 
+Skript-Programme werden nicht kompiliert, sondern von einem Interpreter interpretiert. 
+Der Speicher muss nicht vom Programmierer verwaltet werden. F"ur die Speicherverwaltung ist ein
+\textit{Garbage collegtor} zust"andig.
+ Mit Skript-Programme kann auf Module zugegriffen werden, die in \textit{low-level} Sprachen,
+ wie C geschrieben sind. \cite{PyKana}     
+ \\Der MCTDH-Quellcode besteht aus mehreren Komponenten, die in den Programmiersprachen Fortran77 und C++ geschrieben sind.
+ Da Python sich insbesondere f"ur Programmier\-einsteiger eignet, wurde Python als Skriptsprache gew"ahlt, um Teile des MCTDH Quellcodes in Python aufrufen
+zu k"onnen. Um den Rahmen dieser Arbeit nicht zu sprengen, wurde sich auf das Importieren von Objekttypen beschr"ankt, 
+die die MCTDH Basis einlie"st. Die Basis des MCTDHs wird durch eine Baumstruktur angegeben, die nun in Python eingelesen werden kann.
+\\Die MCTDH-Objekttypen, die in Python importiert wurden, wurden f"ur ein graphisches Benutzeroberfl"ache verwendet, das ebenfalls in
+Python geschrieben wurde und die Eingabe der MCTDH-Basis erleichtern soll. Des Weiteren wurde eine "ubersichtliche Projektverwaltung 
+von MCTDH-Rechnungen geschaffen.  
+\\Diese Arbeit ist wie folgt gegliedert. In Kapitel 2 wird der Ansatz der MCTDH-Wellenfunktion beschrieben. Es werden die Unterschiede zum ml-MCTDH herausgestellt.
+Kapitel 3 stellt den Methodenteil dieser Arbeit dar und ist untergliedert in die Beschreibung der Python-Schnittstelle und der graphischen Benutzeroberfl"ache.     
+Schlie"slich wird in Kapitel 4 eine Fazit gezogen und ein Ausblick gegeben.     
