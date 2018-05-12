@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  9 MAY 2018 10:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  11 MAY 2018 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -868,7 +868,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<./figures/Uni-Logo.pdf, id=32, 137.51375pt x 54.2025pt>
+<./figures/Uni-Logo.pdf, id=36, 137.51375pt x 54.2025pt>
 File: ./figures/Uni-Logo.pdf Graphic file (type pdf)
 
 <use ./figures/Uni-Logo.pdf>
@@ -926,56 +926,47 @@ Ansatz der MCTDH-Wellenfunktion
 ] [2]
 Kapitel 2.
 
-Overfull \hbox (4.89316pt too wide) in paragraph at lines 4--59
-\T1/lmr/m/n/12 Physik vor eine wesentliche Her-aus-forderung. Der MCTDH-Ansatz$
-[]$ spielt eine entschei-
+Overfull \hbox (1.8424pt too wide) in paragraph at lines 4--56
+\T1/lmr/m/n/12 graden$[]$ und System-Bad-Modelle$[]$ durch das MCTDH-Moden-Komb
+inations-
  []
 
 
-Overfull \hbox (7.03494pt too wide) in paragraph at lines 4--59
-\T1/lmr/m/n/12 gle-ichung (SGL) gelöst wer-den. Zu-vor wird die Wellen-funk-tio
-n, die das Sys-tem beschreiben
- []
-
-
-Overfull \hbox (16.13399pt too wide) in paragraph at lines 4--59
-\T1/lmr/m/n/12 Zusätzliche zu der Dop-pel-lay-er-struk-tur können die Ko-or-di-
-nat-en in ,,lo-gis-che`` und physikalis-
+Overfull \hbox (20.60153pt too wide) in paragraph at lines 4--56
+\T1/lmr/m/n/12 durch das mul-ti-lay-er (ml)-MCTDH-Verfahren$[]$ überwun-den wer
+-den. Die SPFs des MCTDH-
  []
 
 [3
 
 
-] [4] [5] [6] <figures/std_wave.png, id=230, 1014.79124pt x 573.14125pt>
-File: figures/std_wave.png Graphic file (type png)
+] [4] [5]
+Overfull \hbox (18.82072pt too wide) in paragraph at lines 89--90
+[]\T1/lmr/m/n/12 Anschlieÿend wer-den diese SPFs in-ner-halb der zeitun-ab-häng
+ige prim-i-tive Ba-sis dargestellt: 
+ []
 
-<use figures/std_wave.png>
-Package pdftex.def Info: figures/std_wave.png used on input line 161.
-(pdftex.def)             Requested size: 201.65755pt x 113.8916pt.
+[6]
 
-<figures/mctdh_wave1.png, id=231, 787.44188pt x 544.28343pt>
-File: figures/mctdh_wave1.png Graphic file (type png)
+LaTeX Warning: Reference `fig:mode_wave' on page 7 undefined on input line 158.
 
-<use figures/mctdh_wave1.png>
-Package pdftex.def Info: figures/mctdh_wave1.png used on input line 167.
-(pdftex.def)             Requested size: 201.65755pt x 139.38425pt.
 
-<figures/mctdh_wave2.png, id=232, 1049.9225pt x 725.71124pt>
-File: figures/mctdh_wave2.png Graphic file (type png)
+<figures/treeDiagramms.pdf, id=215, 396.28049pt x 477.76494pt>
+File: figures/treeDiagramms.pdf Graphic file (type pdf)
 
-<use figures/mctdh_wave2.png>
-Package pdftex.def Info: figures/mctdh_wave2.png used on input line 177.
-(pdftex.def)             Requested size: 201.65755pt x 139.38148pt.
+<use figures/treeDiagramms.pdf>
+Package pdftex.def Info: figures/treeDiagramms.pdf used on input line 185.
+(pdftex.def)             Requested size: 448.13095pt x 540.31279pt.
 
-<figures/multi_mctdh_wave.png, id=233, 761.09344pt x 634.62094pt>
-File: figures/multi_mctdh_wave.png Graphic file (type png)
 
-<use figures/multi_mctdh_wave.png>
-Package pdftex.def Info: figures/multi_mctdh_wave.png used on input line 182.
-(pdftex.def)             Requested size: 201.65755pt x 168.14468pt.
- [7] [8 <./figures/std_wave.png (PNG copy)> <./figures/mctdh_wave1.png> <./figu
-res/mctdh_wave2.png> <./figures/multi_mctdh_wave.png>] [9]) (./content/Methods.
-tex [10]
+LaTeX Warning: Float too large for page by 25.1017pt on input line 190.
+
+[7]
+
+LaTeX Warning: Reference `fig:multi_mctdh_wave' on page 8 undefined on input li
+ne 218.
+
+[8] [9 <./figures/treeDiagramms.pdf>]) (./content/Methods.tex [10]
 Kapitel 3.
 ) [11
 
@@ -993,38 +984,42 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 202.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 202.
 Package rerunfilecheck Info: File `ma.out' has not changed.
-(rerunfilecheck)             Checksum: 66CC8A673D494963D9A60754FE4C32A2;423.
+(rerunfilecheck)             Checksum: C1758E6FD95626A03A8EC8E9B0147918;507.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 202.
  ) 
 Here is how much of TeX's memory you used:
- 12477 strings out of 494820
- 187526 string characters out of 3178049
- 307268 words of memory out of 3000000
- 15281 multiletter control sequences out of 15000+200000
+ 12465 strings out of 494820
+ 187125 string characters out of 3178049
+ 306275 words of memory out of 3000000
+ 15272 multiletter control sequences out of 15000+200000
  74874 words of font info for 59 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 48i,11n,68p,706b,649s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,10n,68p,706b,649s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
-exlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/f
-onts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
-lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</
-usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/lm/lmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/lm/lmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy6.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on ma.pdf (19 pages, 381260 bytes).
+exlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dv
+ips/lm/lm-rm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</
+usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/lm/lmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/lm/lmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/lm/lmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pf
+b>
+Output written on ma.pdf (19 pages, 1931018 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
- 117 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

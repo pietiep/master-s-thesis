@@ -29,45 +29,45 @@ I'm skipping whatever remains of this entry
 Database file #4: ./bibtex/python.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 76 entries,
+You've used 75 entries,
             3411 wiz_defined-function locations,
-            1606 strings with 23878 characters,
-and the built_in function-call counts, 53350 in all, are:
-= -- 3077
-> -- 1752
-< -- 247
-+ -- 1421
-- -- 424
-* -- 7267
-:= -- 5738
-add.period$ -- 76
-call.type$ -- 76
-change.case$ -- 305
+            1601 strings with 23822 characters,
+and the built_in function-call counts, 52802 in all, are:
+= -- 3039
+> -- 1743
+< -- 244
++ -- 1416
+- -- 422
+* -- 7196
+:= -- 5676
+add.period$ -- 75
+call.type$ -- 75
+change.case$ -- 301
 chr.to.int$ -- 67
-cite$ -- 76
-duplicate$ -- 4779
-empty$ -- 4500
-format.name$ -- 1106
-if$ -- 10148
-int.to.chr$ -- 10
-int.to.str$ -- 77
-missing$ -- 743
-newline$ -- 243
-num.names$ -- 228
-pop$ -- 1295
+cite$ -- 75
+duplicate$ -- 4728
+empty$ -- 4451
+format.name$ -- 1095
+if$ -- 10041
+int.to.chr$ -- 9
+int.to.str$ -- 76
+missing$ -- 735
+newline$ -- 240
+num.names$ -- 225
+pop$ -- 1281
 preamble$ -- 1
-purify$ -- 304
+purify$ -- 300
 quote$ -- 0
-skip$ -- 1994
+skip$ -- 1976
 stack$ -- 0
-substring$ -- 1927
-swap$ -- 3812
-text.length$ -- 212
+substring$ -- 1906
+swap$ -- 3772
+text.length$ -- 211
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 450
+type$ -- 444
 warning$ -- 0
-while$ -- 224
+while$ -- 221
 width$ -- 0
-write$ -- 771
+write$ -- 761
 (There were 5 error messages)
