@@ -2,6 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ma.aux
 The style file: apsrev.bst
+White space in argument---line 105 of file ma.aux
+ : \bibdata{./bibtex/eigen,./bibtex/MCTDH,./bibtex/SPP96,./bibtex/python,
+ :                                                                        ./bibtex/PyQt}
+I'm skipping whatever remains of this command
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ./bibtex/eigen.bib
 "{" immediately follows a field name---line 158 of file ./bibtex/eigen.bib
@@ -27,47 +31,49 @@ Repeated entry---line 439 of file ./bibtex/SPP96.bib
  :            ,
 I'm skipping whatever remains of this entry
 Database file #4: ./bibtex/python.bib
+Warning--entry type for "Qt" isn't style-file defined
+--line 35 of file ./bibtex/python.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 75 entries,
+You've used 78 entries,
             3411 wiz_defined-function locations,
-            1601 strings with 23822 characters,
-and the built_in function-call counts, 52802 in all, are:
-= -- 3039
-> -- 1743
-< -- 244
-+ -- 1416
-- -- 422
-* -- 7196
-:= -- 5676
-add.period$ -- 75
-call.type$ -- 75
-change.case$ -- 301
-chr.to.int$ -- 67
-cite$ -- 75
-duplicate$ -- 4728
-empty$ -- 4451
-format.name$ -- 1095
-if$ -- 10041
+            1618 strings with 24123 characters,
+and the built_in function-call counts, 54494 in all, are:
+= -- 3130
+> -- 1799
+< -- 252
++ -- 1466
+- -- 436
+* -- 7419
+:= -- 5860
+add.period$ -- 78
+call.type$ -- 78
+change.case$ -- 314
+chr.to.int$ -- 70
+cite$ -- 80
+duplicate$ -- 4886
+empty$ -- 4604
+format.name$ -- 1127
+if$ -- 10358
 int.to.chr$ -- 9
-int.to.str$ -- 76
-missing$ -- 735
-newline$ -- 240
-num.names$ -- 225
-pop$ -- 1281
+int.to.str$ -- 79
+missing$ -- 759
+newline$ -- 249
+num.names$ -- 231
+pop$ -- 1329
 preamble$ -- 1
-purify$ -- 300
+purify$ -- 312
 quote$ -- 0
-skip$ -- 1976
+skip$ -- 2040
 stack$ -- 0
-substring$ -- 1906
-swap$ -- 3772
-text.length$ -- 211
+substring$ -- 1948
+swap$ -- 3887
+text.length$ -- 218
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 444
+type$ -- 460
 warning$ -- 0
-while$ -- 221
+while$ -- 226
 width$ -- 0
-write$ -- 761
-(There were 5 error messages)
+write$ -- 789
+(There were 6 error messages)

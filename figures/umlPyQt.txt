@@ -1,0 +1,47 @@
+@startuml
+mctdh.mctdhNode --> ModelTree
+mctdh.physCoor--> ModelTree
+mctdh.Tdim --> ModelTree
+
+ModelTree --> View
+ModelTree --> Tree
+ModelTree --> LogicalNodes
+ModelTree --> dialogA
+
+LogicalNodes --> Tree
+LogicalNodes --> dialogA
+LogicalNodes --> View
+
+networkx.diGraph --> LogicalNodes
+networkx.diGraph --> View
+networkx.graphviz_layout --> View
+
+matplotlib.pyplot --> View
+
+Tree --> dialogA
+LogicalNodes --> dialogA
+View --> dialogA
+SceneGraphModel --> dialogA
+
+Node --> SceneGraphModel
+BottomNode --> SceneGraphModel
+Node --|> BottomNode
+
+dialogA --> Main
+ListModel --> Main
+ListModel2 --> Main
+dialogC --> Main
+
+PyQt.QtCore.QAbstractListModel --|> SceneGraphModel
+PyQt.QtCore.QAbstractListModel --|> ListModel
+PyQt.QtCore.QAbstractListModel --|> ListModel2
+
+
+
+PyQt.QtGui.QMainWindow --|> Main
+PyQt.QtGui.QDialog --|> dialogA
+PyQt.QtGui.QDialog --|> dialogC
+
+
+
+@enduml
