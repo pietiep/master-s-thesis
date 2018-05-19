@@ -9,19 +9,23 @@ ModelTree --> LogicalNodes
 ModelTree --> dialogA
 
 LogicalNodes --> Tree
-LogicalNodes --> dialogA
 LogicalNodes --> View
 
 networkx.diGraph --> LogicalNodes
 networkx.diGraph --> View
+networkx.diGraph --> Tree
 networkx.graphviz_layout --> View
 
 matplotlib.pyplot --> View
 
 Tree --> dialogA
+Tree --> SceneGraphModel
 LogicalNodes --> dialogA
 View --> dialogA
 SceneGraphModel --> dialogA
+
+Node --> Tree
+BottomNode --> Tree
 
 Node --> SceneGraphModel
 BottomNode --> SceneGraphModel

@@ -46,19 +46,75 @@ In Abbildung \ref{fig:uml_PyQt} sind die wichtigen Klasse aufgef"uhrt, die f"ur 
 Die Klassen, die in Rechtecken zusammengefasst wurden, entstammen aus Python-Modulen, deren Namen links "uber den Rechtecken angegeben sind.
 Bei den Modulen handelt es sich um die PyQt4-Module \textit{QtCore} und \textit{QtGui}. F"ur die graphisch Darstellung der MCTDH-Baumdiagramme
 wurden die Module \textit{matplotlib} und \textit{networkx} verwendet. Die Klassen, die in Abschnitt \ref{sec:PyInterface} vorgestellt wurden,
-sind im Modul \textit{mctdh} enthalten. Die Pfeile mit den ausgef"ullten Pfeilk"opfen  f"uhren von Klassen, die in anderen Klassen verwendet werden,
-auf die der Pfeil zeigt.
+sind im Modul \textit{mctdh} enthalten. 
+
+Alle \textit{mctdh}-Klassen werden in ModelTree verwendet, um alle Informationen zum MCTDH-Baum zu erhalten. Die Information wird an die
+Klasse \textit{LogicalNodes} "ubergeben und es werden in dem Datentyp \textit{Dictionary} die Knoten des Baums mit den SPFs und f"ur den 
+untersten Layers mit den Moden gespeichert. Speziell f"ur die Visualisierung von Baumdiagramme existiert das Python-Modul \textit{networkx}, 
+aus dem die Klasse \textit{diGraph} verwendet wird, in der die Knoten gespeichert werden. Das Baumdiagramm wird in der Klasse \textit{View}
+in einem \textit{png}-File mithilfe des Moduls \textit{matplotlib} gespeichert, das f"ur die Erzeugung von Diagrammen entwickelt wurde.
+Das \textit{png}-File wird anschlie"send in der GUI verwendet. Die Informationen "uber den MCTDH-Baum wird von \textit{LogicalNodes}
+auch an die Klasse \textit{Tree} "ubergeben.
+
+Die Pfeile mit den ausgef"ullten Pfeilk"opfen  f"uhren von Klassen, die in anderen Klassen verwendet werden,
+auf die die Pfeilspitze zeigt. 
 Auf die Klassen, die durch Vererbung erstellt wurden, zeigen rot umrandete Pfeilspitzen. Beispielswei"se f"uhren diese Pfeile von allen angegeben PyQt-Klassen
 , von denen geerbt wird.
 Sowohl von \textit{QDialog} als auch \textit{QMainWindow} werden durch Vererbung Unterklassen generiert: \textit{dialogA, dialogc} und \textit{Main}. 
+Allerdings wurden diese drei Klassen in Qt-Designer erzeugt, in dem die jeweiligen Fenster mit den ben"otigten Steuerungselementen zusammengestellt werden 
+k"onnen. So k"onnen die Gr"o"sen der Steuerungselemente ohne Programmierung per Maus festgelegt werden. Die Informationen "uber 
+die jeweiligen Fenster werden in \textit{ui}-Dateien gespeichert. Mit PyQt k"onnen diese Dateien eingelesen werden und aus den Daten die entsprechenden 
+Klassen erstellt und beliebig erweitert werden.
 Die beiden Klassen\textit{QDialog} und \textit{QMainWindow} stammen von \textit{QWidget} ab. \textit{QWidget}, \textit{QDialog} und \textit{QMainWindow}
-sind Steuerungselement, mit denen der Benutzer durch die Tastatur und Maus interagieren kann, die sich in ihren Merkmalen unterscheiden: So ist
-schlie"st das Dialogfenster, wenn der Benutzer den X-Knopf klickt. Wenn ein Widget geschlossen wird, ist es lediglich versteckt. \cite{PyQt}
+sind Steuerungselement, mit denen der Benutzer durch die Tastatur und Maus interagieren kann. \cite{PyQt}
+
+Die Klasse \textit{Main} stellt das Hauptfenster der GUI dar, von dem aus neue Projektordner erstellt, umbenannt oder gel"oscht werden k"onnen.
+In diesen Ordner finden sich wiederum Ordner, die Einstellungen unterschiedlicher Rechnungen enthalten. Schlie"slich k"onnen aus
+dem Hauptfenster neben der Ordernderverwaltung MCT\-DH-Rechnungen gestartet werden.
+Die Klasse \textit{dialogC} generiert eine Fenster, in dem die Ordnernamen eingetragen werden k"onnen, um entweder neue Ordner zu erstellen
+oder alte Ordner um zu benennen.
+Die Einstellungsparameter einer MCTDH-Rechnung werden in der Klasse \textit{dialogA} angegeben. Bereits existierende MCTDH-Basisfiles werden
+eingelesen und im \textit{dialogA}-Fenster dargestellt.
+
+
+Alle Steuerungselement wie Kn"opfe, Checkboxen oder Elemente innerhalb eines Fensters emittieren Signale aus, die Aktionen des Benutzers
+zugeordnet werden k"onnen. Aktionen k"onnen das Einmal- oder Doppeltklicken, das Bewegen des Mauszeigers oder das Bet"attigen der Entertaste sein.
+Einzelne Steuerungselemente k"onnen zusammen mit einer bestimmten Aktion mit einer Klassenmethode bzw. Funktion verbunden werden, die die Klassenmethoden ausl"osen. 
+  
+
 Qt enth"alt Klassen, mit denen beliebig viele Elemente dargestellt werden k"onnen. Diesen Klassen liegt eine Model/View-Aufbau zugrunde,
  der das Datenmodel von der Darstellung der Daten trennt. 
 Ein Datenmodel ist die Klasse \textit{QAbstractListModel}, in die die Daten eingelesen, bearbeitet und gel"oscht werden k"onnen.
 Die Daten k"onnen wiederum in den Klassen \textit{QListView} und \textit{QTreeView} dargestellt werden. 
 Die Trennung zwischen dem Datenmodel und der graphischen Darstellung der Daten beruht auf dem Model-View-Controller (MVC) Paradigma.\cite{Qt}  
+
+Bei der MVC-Programmierung werden verschiedener Klassen erstellt. Jede dieser Klassen erf"ullt unterschiedliche Aufgaben:
+die Verarbeitung von Daten innerhalb der
+Anwendungssoftware (Model), die Visualisierung des aktuellen Systemzustandes (View) und die Interaktion zwischen Benutzer und Programm (Controller). \cite{MVC}
+
+In Qt wurden der Controller und View kombiniert, sodass die Speicherung und Bearbeitung der Daten  von der Datenvisualisierung  
+getrennt wurde. Die gleichen Daten k"onnen in verschieden Ansichten dargestellt werden. 
+Die Implementierung neuer Darstellungsarten "andert nicht die darunterliegende Datenstruktur.\cite{Qt} 
+Der Vorteil der Model/View-Architektur ist, dass die Element, die die visualisierten Daten des Models darstellen, nicht jeweils mit einer
+Funktion gekoppelt werden muss wie bei anderen Steuerungselementen. So k"onnen Aktionen beliebig vieler Elemente 
+mit nur einer Funktion verbunden werden. Dabei wird nur das Steuerungselement, das die Daten darstellt, mit den gew"unschten
+Aktionen verbunden, wobei Aktionen auf ein beliebiges Element innerhalb der Steuerungselemente Informationen "uber dieses Element 
+in Bezug auf das Datenmodel an die Funktion "ubertr"agt.
+
+Qt besitzt f"ur die Model/View-Architektur Standardmodel, allerdings k"onnen die Modelle durch die Vererbung
+von QAbstractListModel ver"andert und angepasst werden. So bekommt \textit{SceneGraphModel} keine Liste als Eingabetype wie die Klassen \textit{ListModel} und
+\textit{ListModel2},
+sondern Objekte der Klassen \textit{Node} und \textit{BottomNode}. 
+Die Klasse \textit{BottomNode} erbt von \textit{Node} und enth"alt zus"atzlich Informationen zu den Moden der untersten Knoten. 
+\textit{Node}-Objekte spiegeln bestimmte Knoten des
+MCTDH-Baums wieder, in denen Informationen zu Elternknoten und Kinderknoten gespeichert sind. Diese Objekte werden
+in der Klasse \textit{Tree} in einem \textit{Dictionary} zum Baum zusammengefasst. 
+Die Daten des Models aus \textit{SceneGraphModel} werden "uber die PyQt-Klasse QTreeView in \textit{dialogA} visualisiert.
+\textit{ListModel} und \textit{ListModel2} enth"alt eine Liste der Projektordner und der Ordner verschiedener Rechnungen innerhalb der Projekte.
+Diese Daten werden in zwei getrennten QListView dargestellt und k"onnen mithilfe des Models aktualisiert werden.
+
+
+
 
   
 

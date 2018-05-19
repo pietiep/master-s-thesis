@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  17 MAY 2018 16:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  19 MAY 2018 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,23 +974,29 @@ einem
 [12
 
 
-] <figures/umlPyQt.png, id=278, 1085.05376pt x 708.6475pt>
+] <figures/umlPyQt.png, id=278, 1473.505pt x 833.1125pt>
 File: figures/umlPyQt.png Graphic file (type png)
 
 <use figures/umlPyQt.png>
 Package pdftex.def Info: figures/umlPyQt.png used on input line 40.
-(pdftex.def)             Requested size: 448.13095pt x 292.67754pt.
+(pdftex.def)             Requested size: 448.13095pt x 253.36798pt.
 
 
 LaTeX Warning: Float too large for page by 45.6542pt on input line 43.
 
 [13 <./figures/sequenceDiagram.png (PNG copy)>] [14 <./figures/umlPyQt.png (PNG
- copy)>]) [15] (./ma.bbl [16
+ copy)>] [15]
+Overfull \hbox (16.46852pt too wide) in paragraph at lines 95--103
+\T1/lmr/m/n/12 lungsarten ändert nicht die darun-ter-liegende Daten-struk-tur.$
+[]$ Der Vorteil der Model/View-
+ []
+
+[16]) [17] (./ma.bbl [18
 
 
 
 
-] [17] [18] [19]
+] [19] [20] [21]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 598.
 
 
@@ -1004,7 +1010,7 @@ lmtt/m/n/12 http : / / doc . qt . io / qt-[]5 /
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
- [20]
+ [22]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
  (./ma.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
@@ -1014,10 +1020,10 @@ Package rerunfilecheck Info: File `ma.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
  ) 
 Here is how much of TeX's memory you used:
- 12540 strings out of 494820
- 188310 string characters out of 3178049
- 307930 words of memory out of 3000000
- 15331 multiletter control sequences out of 15000+200000
+ 12546 strings out of 494820
+ 188365 string characters out of 3178049
+ 307966 words of memory out of 3000000
+ 15334 multiletter control sequences out of 15000+200000
  75192 words of font info for 60 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  48i,15n,68p,706b,649s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1038,10 +1044,10 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ma.pdf (23 pages, 2046554 bytes).
+Output written on ma.pdf (25 pages, 2070790 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 459 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
+ 129 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 

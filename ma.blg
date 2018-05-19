@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ma.aux
 The style file: apsrev.bst
-White space in argument---line 105 of file ma.aux
+White space in argument---line 107 of file ma.aux
  : \bibdata{./bibtex/eigen,./bibtex/MCTDH,./bibtex/SPP96,./bibtex/python,
  :                                                                        ./bibtex/PyQt}
 I'm skipping whatever remains of this command
@@ -35,45 +35,45 @@ Warning--entry type for "Qt" isn't style-file defined
 --line 35 of file ./bibtex/python.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 78 entries,
+You've used 79 entries,
             3411 wiz_defined-function locations,
-            1618 strings with 24123 characters,
-and the built_in function-call counts, 54494 in all, are:
-= -- 3130
-> -- 1799
-< -- 252
-+ -- 1466
-- -- 436
-* -- 7419
-:= -- 5860
-add.period$ -- 78
-call.type$ -- 78
-change.case$ -- 314
-chr.to.int$ -- 70
-cite$ -- 80
-duplicate$ -- 4886
-empty$ -- 4604
-format.name$ -- 1127
-if$ -- 10358
+            1623 strings with 24290 characters,
+and the built_in function-call counts, 55039 in all, are:
+= -- 3163
+> -- 1816
+< -- 255
++ -- 1480
+- -- 440
+* -- 7490
+:= -- 5922
+add.period$ -- 79
+call.type$ -- 79
+change.case$ -- 319
+chr.to.int$ -- 71
+cite$ -- 81
+duplicate$ -- 4937
+empty$ -- 4646
+format.name$ -- 1140
+if$ -- 10455
 int.to.chr$ -- 9
-int.to.str$ -- 79
-missing$ -- 759
-newline$ -- 249
-num.names$ -- 231
-pop$ -- 1329
+int.to.str$ -- 80
+missing$ -- 767
+newline$ -- 252
+num.names$ -- 234
+pop$ -- 1348
 preamble$ -- 1
-purify$ -- 312
+purify$ -- 316
 quote$ -- 0
-skip$ -- 2040
+skip$ -- 2058
 stack$ -- 0
-substring$ -- 1948
-swap$ -- 3887
-text.length$ -- 218
+substring$ -- 1961
+swap$ -- 3927
+text.length$ -- 220
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 460
+type$ -- 466
 warning$ -- 0
-while$ -- 226
+while$ -- 228
 width$ -- 0
-write$ -- 789
+write$ -- 799
 (There were 6 error messages)
