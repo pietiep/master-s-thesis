@@ -4,60 +4,44 @@
 Das zeitabh"angige Multikonfiguration-Hartree-Verfahren (MCTDH) 
 \cite{MMC, MMC1} und seine Multilayererweiterung (ml-MCTDH)
 \cite{WT3, Mreview2} 
-sind effiziente Verfahren f"ur genaue mehrdimensionale Quantendynamiksimulationen,
-die von mehreren Forschungsgruppen verwendet werden. 
+sind effiziente Verfahren zur genauen Simulation mehrdimensionaler Quantendynamik,
+die von mehreren Forschungsgruppen verwendet werden 
 \cite{MCTDHex1, WestPNM, MCTDHex2, W1, MCTDHex4, MCTDHex5, MCTDHex6, MCTDHex7, MCTDHex8,
-MCTDHex9, MCTDHex10, MCTDHex11, MCTDHex12, MCTDHex13, MCTDHex14, MCTDHex15, MCTDHex16, MCTDHex17,MCTDHex18} 
+MCTDHex9, MCTDHex10, MCTDHex11, MCTDHex12, MCTDHex13, MCTDHex14, MCTDHex15, MCTDHex16, MCTDHex17,MCTDHex18}. 
 Beispiele f"ur hochdimensionale 
-Benchmark-Anwendungen sind die 21-dimensionalen Rechnungen, in denen die Tunnelaufspaltung des
+Benchmark-Anwendungen sind die 21-dimen\-sio\-nalen Rechnungen, in denen die Tunnelaufspaltung des
 Grundzustands \cite{CVM, HCVM, HaM1, MAMCTDH, HaM2, MAMCTDH2} und der angeregten \cite{HCVM, HaM1, MAMCTDH, HaM2, MAMCTDH2}
-Schwingungszust"ande von Malonaldehyd erforscht wird. 
+Schwingungszust"ande von Malonaldehyd erforscht wurde. 
 Au"serdem wurden in 15-dimen\-sio\-nalen Rechnungen die Schwingungszust"ande von protonierten 
 Wasserdimeren \cite{H5O2+MCTDH, H5O2+MCTDH2, H5O2+MCTDH3, H5O2+MCTDH4, H5O2+MCTDH5} untersucht. 
-Schlie"s\-lich wurde in 12-dimensionalen Rechnungen die thermischen 
+Zudem wurde in 12-dimensionalen Rechnungen die thermischen 
 Geschwindig\-keitskonstanten \cite{HM1, HM2, WWM, SM, vHNM,NvHM}, anfangszustandsausgew"ahlte Reaktionswahrscheinlichkeiten
 \cite{SM02, SM04, WeM5, WeM6, WeM8} und die 
 state-to-state Reaktionswahrscheinlichkeiten \cite{WeM7} f"ur die Reaktion von Methan mit Wasserstoff 
-untersucht. In diesen Rechnungen wurden detaillierte \textit{ab initio} berechneten
+untersucht. In diesen Rechnungen wurden detaillierte \textit{ab initio} 
 Potentialfl"achen verwendet. Signifikant h"ohere Dimensionen wurden in MCTDH-Rechungen mit 
-Modelhamiltonoperatoren in Betracht gezogen. So wurde in wegweisende Rechnungen, in denen  
-die nichtadibatischen Dynamiken von Pyrazin erforscht wurden, ein 24-moden 
-schwingungsgekoppelter Hamiltonoperator \cite{WMC, WMC2, RWMC} verwendet. Multilayer-MCTDH Simulationen von typischen
+Modelhamiltonoperatoren untersucht. So wurde in wegweisenden Rechnungen  
+die nichtadibatischen Dynamiken von Pyrazin erforscht, in denen ein 24-moden 
+schwingungsgekoppelter Hamiltonoperator \cite{WMC, WMC2, RWMC} verwendet wurde.
+Multilayer-MCTDH Simulationen von typischen
 physikalischen Modellen \cite{WT3, W1, WST, KCBWT, CTW2, WPHT} zu kondensierter Materie schlie"sen "ublich tausende Freiheitsgrade ein.
-F"ur die Untersuchung eines Model von Photodissoziation in einem Wirt-Gast-Komplex wurden 189-
-dimensionale ml-MCTDH Rechnungen \cite{WBRSM} durchgef"uhrt. F"ur Rezessionen, die das MCTDH-Verfahren und
+F"ur die Untersuchung eines Photodissoziationsmodel wurden in einem Wirt-Gast-Komplex 189-
+dimensionale ml-MCTDH Rechnungen  durchgef"uhrt\cite{WBRSM}. F"ur weitere Literatur zum MCTDH-Verfahren und
 seine Anwendungen diskutieren, siehe Refs. \cite{MCTDHreview, MCTDHreview2, HMreview1, MCTDHbook,Mreview2011, MCTDHreview3}.
-\\ Im Rahmen dieser Masterarbeit wurde ein Python-Schnittstelle f"ur MCTDH entwickelt.
-Python wurde als Anf"angerprogrammiersprache konzipiert, hat sich f"ur das schnelle Entwickeln von Anwendungssoftware bew"ahrt und wird zum 
-Erstellen von Skript-Program\-men verwendet. \cite{PyBook} 
-\\\textit{Low-level} Sprachen sind streng typisiert, um komplexe Aufgaben bew"ahltigen zu k"onnen. 
-Auf der anderen Seite sind Skriptsprachen typenlos, wodurch die Verbindung von verschiedenen \textit{low-level} Komponenten erleichtern werden soll. \cite{PyBook2} 
-Skript-Programme werden nicht kompiliert, sondern von einem Interpreter interpretiert. 
-Der Speicher muss nicht vom Programmierer verwaltet werden. F"ur die Speicherverwaltung ist ein
-\textit{Garbage collegtor} zust"andig.
- Mit Skript-Programme kann auf Module zugegriffen werden, die in \textit{low-level} Sprachen,
- wie C geschrieben sind. \cite{PyKana}     
+Bisher ist die Bedienung des vorliegenden MCTDH-Programmpakets Spezialisten vorenthalten und 
+ein tiefgreifendes Verst"andnis des Codes erfordert. 
+
+
+Im Rahmen dieser Masterarbeit wurden zwei wesentliche Verbesserungen unternommen: Zum eine wurde eine Eingabe-GUI implementiert, die Wissenschaftlern
+ohne Programmierkenntnissen den Zugang zu eigenst"andigen MCTDH-Rechnungen erm"oglicht.
+Des Weiteren wurde eine Python-Schnittstelle f"ur MCTDH entwickelt, sodass eine abstrakte Bedienung des MCTDH-Programmpakets in Python
+realisiert werden konnte. Der MCTDH-Quellcode besteht aus mehreren Komponenten, die in den Programmiersprachen Fortran77 und C++ geschrieben sind und
+ MCTDH-Routinen k"onnen nun in Python aufgerufen und benutzt werden ohne deren genaue Funktionsweise zu kennen.
+ Python ist durch Zugriff auf verschiedene Python-Module wie TensorFlow \cite{TensorFlow} und SciPy\cite{SciPy} sehr verbreitet.
  
- Der MCTDH-Quellcode besteht aus mehreren Komponenten, die in den Programmiersprachen Fortran77 und C++ geschrieben sind.
- Da Python sich insbesondere f"ur Programmier\-einsteiger eignet, wurde Python als Skriptsprache gew"ahlt, um Teile des MCTDH Quellcodes in Python aufrufen
-zu k"onnen.
-
-Aufgrund der gro"sen Menge an existierenden und gepr"uften Quellcode in Fortran und C, w"are das Umschreiben des Codes in Python
-ein Verlust an wertvollen Ressourcen. In der Wissenschaft hat Python u. a. an Bedeutung gewonnen, da man 
-mit Python in der Lage ist, existierende Komponenten in Python einzubetten, als diese neu schreiben zu m"ussen.
-So besteht die Python-Bibliothek SciPy aus mehr als 200.00 Zeilen C++ Code, 60.000 Zeilen C Code und 75.000 Zeilen Fortran Code.
-Dagegen umfasst der Python Code nur 70.000 Zeilen. \cite{PyArt} 
-F"ur das Importieren von C, C++ und Fortran Code in Python eignet sich die Programmiersprache Cython, da sie eine Flachelernkurve
-f"ur Python und C, C++ oder Fortran-Programmierer.
-Anstelle eines Python-Interpreters wird der Cython-Code compiliert und in C-Code "ubersetzt.
-Objekttypen aus C++ werden vom Cython-Compiler erkannt und der compilierte Cython-Code kann
-einfach in Python importiert werden. \cite{PyArt}  
-
- Um den Rahmen dieser Arbeit nicht zu sprengen, wurde sich auf das Importieren von Objekttypen beschr"ankt, 
-die die MCTDH Basis einlie"st. Die Basis des MCTDHs wird durch eine Baumstruktur angegeben, die nun in Python eingelesen werden kann.
-\\Die MCTDH-Objekttypen, die in Python importiert wurden, wurden f"ur ein graphisches Benutzeroberfl"ache verwendet, das ebenfalls in
-Python geschrieben wurde und die Eingabe der MCTDH-Basis erleichtern soll. Des Weiteren wurde eine "ubersichtliche Projektverwaltung 
-von MCTDH-Rechnungen geschaffen.  
+ Im Rahmen dieser Arbeit wurde kann "uber die GUI
+ die MCTDH Basis eingelesen werden. Die Basis des MCTDHs wird durch eine Baumstruktur angegeben, die nun in Python bearbeitete werden kann.
+ Des Weiteren wurde eine "ubersichtliche Projektverwaltung  von MCTDH-Rechnungen geschaffen.  
 \\Diese Arbeit ist wie folgt gegliedert. In Kapitel 2 wird der Ansatz der MCTDH-Wellenfunk\-tion beschrieben. Es werden die Unterschiede zum ml-MCTDH herausgestellt.
-Kapitel 3 stellt den Methodenteil dieser Arbeit dar und ist untergliedert in die Beschreibung der Python-Schnittstelle und der graphischen Benutzeroberfl"ache.     
+In Kapitel 3 wird die Python-Schnittstelle und die graphischen Benutzeroberfl"ache beschrieben.     
 Schlie"slich wird in Kapitel 4 eine Fazit gezogen und ein Ausblick gegeben.     
