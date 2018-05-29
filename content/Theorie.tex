@@ -1,7 +1,8 @@
-\chapter{MCTDH Theorie}
+\chapter{Theorie}
 
-\section{MCTDH}
-Die Effizienz des MCTDH-Verfahrens resultiert aus der Doppellayerstruktur der verwendeten Wellenfunktion. In anderen Wellenpaktendynamikverfahren, 
+%\section{MCTDH}
+
+ Die Effizienz des MCTDH-Verfahrens resultiert aus der Doppellayerstruktur der verwendeten Wellenfunktion. In anderen Wellenpaktendynamikverfahren, 
 wie der Standardmethode \cite{MCTDHreview3} wird die Wellenfunktion direkt in einer zeitunabh"angigen Basis oder einem zeitunabh"angigen Gitter entwickelt. 
 Anstelle die Wellenfunktion in einer zeitunab"angigen Basis zu entwickeln,
 wird im MCTDH-Verfahren das korrelierte mehrdimensionale Wellenpaket als ein Satz von zeitabh"angigen Basisfunktionen dargestellt.
@@ -10,16 +11,18 @@ Das MCTDH-Verfahren kann als eine Zweilayerdarstellung angesehen werden:
 So bilden die Entwicklungskoeffizienten, die genutzt werden, um die korrelierte Wellenfunktion in dem Satz der SPF-Basis darzustellen, den oberen Layer der Darstellung.
 Die zeitabh"angigen Entwicklungskoeffizienten, die die zeitabh"angigen SPFs in der primitiven zeitunabh"angigen Basis oder Gitter darstellt, bilden den unteren Layer.
 Die Bewegungsgleichungen, durch die gleichzeitig die optimale Entwicklungskoeffizienten f"ur beide Layer bestimmt werden, ergeben sich aus dem Dirac-Frenkel Variationsprinzip.
-   \\ Dennoch ist auch das MCTDH durch die Anzahl der korrelierten Koordinaten limitiert. 
-Die Effizienz des MCTDH-Verfahrens resultiert aus der Gr"o"se der SPF-Basis, die verglichen mit der primitiven Basis signifikant kleiner gew"ahlt werden.
-Allerdings skaliert der numerische Aufwand des MCTDH-Verfahrens exponentielle mit der Anzahl der korrelierten Koordinaten.
+   
+Dennoch ist auch das MCTDH durch die Anzahl der korrelierten Koordinaten limitiert. 
+Die Effizienz des MCTDH-Verfahrens resultiert aus der Gr"o"se der SPF-Basis, die, verglichen mit der primitiven Basis, signifikant kleiner gew"ahlt werden.
+Aller\-dings skaliert der numerische Aufwand des MCTDH-Verfahrens exponentiell mit der Anzahl der kor\-relierten Koordinaten.
 Um Korrelationseffekte beschreiben zu k"onnen, sind mindestens zwei SPFs in jeder dieser Koordinaten notwendig.
 Die Anzahl der Konfigurationen, die in der MCTDH-Wellenfunktion enthalten ist, betr"agt bei $ f $ korrelierten Koordinaten $ 2^f $ Konfigurationen.
 Aufgrund dieser Limitierung konnten mit dem MCTDH-Verfahren Systeme mit maximal 12 - 14 korrelierten Koordinaten  berechnet werden.\cite{HM1, HM2, HM4, WWM, WWM2, HM5,
  WMC, BWHHM}
-  \\ Das Moden-Kombinationsverfahren wurde von Meyer und seinen Mitarbeitern eingef"uhrt \cite{EMC, WMC2}, das die Anzahl der Konfigurationen reduziert.
+  
+Das Moden-Kombinationsverfahren wurde von Meyer und seinen Mitarbeitern eingef"uhrt \cite{EMC, WMC2}, das die Anzahl der Konfigurationen reduziert.
 Im Moden\-Kombinations\-verfah\-ren werden die ,,logische`` Koordinaten, die in der MCTDH-Darstellung verwendet werden, von physikalischen Koordinaten unterschieden. 
-Es werden verschiedene physikalische Koordinaten werden zu einzelnen logischen Koordinaten kombiniert.
+Es werden verschiedene physikalische Koordinaten zu einzelnen logischen Koordinaten kombiniert.
 Analog zur Theorie der Elektronenstruktur werden diese mehrdimensionalen logischen Koordinaten Partikel genannt. 
 Folglich sind die MCTDH Rechnung statt der korrelierten Koordinaten durch die Partikel limitiert. 
 So konnten Systeme mit 15 - 24 korrelierten Freiheitsgraden \cite{H5O2+MCTDH2, H5O2+MCTDH3, RWMC, CWMC}
@@ -29,41 +32,42 @@ Zwar konnte durch dieses Verfahren Grenz zu h"oherer Dimensionalit"at verwschobe
  Partikel widergibt. Die Anzahl an physikalischen Koordinaten, die zu logische Koordinaten zusammengefasst werden k"onnen, ist begrenzt, da die SPFs
  nun mehrdimensionale Wellenfunktionen darstellen. F"ur molekulare Systeme stellte sich heraus, dass die Kombination von mehr als drei bis vier Koordinaten in einem Partikel
 ineffizient ist.
- \\Die Begrenzung durch die Anzahl der korrelierten Koordinaten bzw. Partikel konnte durch das multilayer (ml)-MCTDH-Verfahren \cite{WT3} "uberwunden werden.
+
+Die Begrenzung durch die Anzahl der korrelierten Koordinaten bzw. Partikel konnte durch das multilayer (ml)-MCTDH-Verfahren \cite{WT3} "uberwunden werden.
 Die SPFs des MCTDH-Verfahrens k"onnen ebenfalls als MCTDH-Wellenfunktion dargestellt werden.
 Im daraus resultierende Zweilayer-MCTDH wird eine Dreilayerdarstellung der Wellenfunktion genutzt.:
-Der obersten Layer wird durch die zeitabh"angigen Entwicklungskoeffizienten gebildet. Die Wellenfunktion wird in der ersten Layer-SPF-Basis dargestellt, d.h.
-SPFs des einfachen MCTDHs. Der mittlere Layer wird durch die zeitabh"angigen Entwicklungskoeffizienten gebilde, die SPFs des ersten Layers in der
-SPF-Basis des zweiten Layers darstellen. Die zweite Layer-SPF-Basis ist der zus"atzliche Layer, der im ml-MCTDH-Verfahren dazugekommen ist.
-Schlie"slich wird der unterste Layer durch die zeitabh"angigen Entwicklungskoeffizienten gebildet, die die zweite Layer-SPF-Basis in der 
-primitiven zeitunabh"angigen Basis oder Gitter dargestellt.
+Der obersten Layer wird durch die zeitabh"angigen Entwicklungskoeffizienten gebildet. Die Wellenfunktion wird in der SPF-Basis des ersten Layers dargestellt, d.h.
+SPFs des einfachen MCTDHs. Der mittlere Layer wird durch die zeitabh"angigen Entwicklungskoeffizienten gebildet, die SPFs des ersten Layers in der
+SPF-Basis des zweiten Layers darstellen. Die zweite Layer-SPF-Basis ist der zus"atzliche Layer, der im ml-MCTDH-Verfahren hinzugekommen ist.
+Schlie"slich werden im unterste Layer die SPFs des zweite Layers in der primitiven zeitunabh"angigen Basis oder Gitter dargestellt.
 Durch eine rekursive Anwendung der MCTDH-Verfahrens k"onnen weitere Layer hinzugef"ugt werden.
-Mit dem ml-MCTDH-Verfahren sind quantumdynamische Rechnungen von System-Bad Modellen mit bis zu 1000 korrelierten Koordinaten m"oglich,
+Mit dem ml-MCTDH-Verfahren waren quantumdynamische Rechnungen von System-Bad Modellen mit bis zu 1000 korrelierten Koordinaten m"oglich,
 in denen Elektronentransferprozesse \cite{WT3, WST} untersucht wurden.
- \\Um die MCTDH-Wellenfunktion propagieren zu k"onnen, m"ussen die Matrixelemente des Hamiltonoperators effizient berechnet werden.
+
+Die Propagation der MCTDH-Wellenfunktion setzt die effiziente Berechnung der Matrixelemente des Hamiltonoperators voraus.
 So lange der Hamiltonoperator der Summe von Produkten von Einteilchenoperatoren \cite{MMC1} entspricht, stellt die Berechnung der Matrixelemente kein Problem dar.
-Im Gegensatz zu vielen Modelhamiltonoperatoren k"onnen \textit{ab initio} Potentialenergiefl"achen aber nicht in dieser Form dargestellt werden.
+Im Gegensatz zu vielen Modelhamiltonoperatoren k"onnen \textit{ab initio} Potentialenergiefl"achen aber nicht immer in dieser Form dargestellt werden.
 Durch die Verwendung einer spezifischen zeitabh"angigen Quadratur, die die Matrixelemente allgemeiner Potentiale effizient auswertet, k"onnen
 auch Matrixelemente solcher \textit{ab initio} Potentialenergiefl"achen effizient berechnet werden.
 Diese Vorgehensweise wird correlation discrete variable representation (CDVR) \cite{M3, vHM2} genannt.
- \\Das urspr"ungliche Vorgehen f"ur das CDVR \cite{M3} beruht auf ein zeitabh"angiges DVR-Gitter, das einer SPF-Basis entspricht.
+
+Das urspr"ungliche Vorgehen f"ur das CDVR \cite{M3} beruht auf einem zeitabh"angiges DVR-Gitter, das einer SPF-Basis entspricht.
 Somit kann das Standard-CDVR weder f"ur modenkombinierte MCTDH-Rechnungen noch f"ur Berechnungen mit dem ML-MCTDH-Ansatz verwendet werden.
- \\Allerdings konnte ein CDVR , das ohne ein direktes Produktgitter auskommt, in modenkombinierte MCTDH-Rechnungen verwendet werden. \cite{vHM3}
+
+Allerdings konnte ein CDVR , das ohne ein direktes Produktgitter auskommt, in modenkombinierte MCTDH-Rechnungen verwendet werden. \cite{vHM3}
  Der numerische Aufwand des CDVRs h"angt linear von der Anzahl der verwendeten primitiven Gitterpunkten ab, die f"ur die Darstellung der SPFs ben"otigt werden.
 In modenkombinierte MCTDH-Rechnungen wird eine gro"se Anzahl an primitiven Gitterpunkten verwendet, sodass modenkombinierte MCTDH-Rechnungen kombiniert mit CDVR-
 Auswertung des Potentials ineffizient sind. ML-MCTDH-Rechnungen ben"otigen dagegen keine mehrdimensionalen Gitter, um die SPFs darzustellen, und bieten sich
 daher in Kombination mit dem CDVR an.
 
 
-
-
-
 \section{Ansatz der ml-MCTDH-Wellenfunktion}
 Zun"achst  werden die Wellenfunktionen der Standardmethode, des Zweilayer-MCTDHs und des moden\-kombi\-nierten MCTDH betrachtet,
  um anschlie"send den Ansatz der ml-MCTDH-Wellenfunktion
 stufenweise vorzustellen.
-\\In der Standardmethode wird die Wellenfunktion in einer zeitunabh"angigen Basis bzw. zeitunabh"angigen Gitter dargestellt.
-Durch das direkten Produktes von eindimensionalen Basisfunktionen $\phi^{\kappa}_{j}(x_{\kappa})$ wird die mehrdimensionale Wellenfunktion wie folgt 
+
+In der Standardmethode wird die Wellenfunktion in einer zeitunabh"angigen Basis bzw. zeitunabh"angigen Gitter dargestellt.
+Die mehrdimensionale Wellenfunktion wird durch das direkte Produkt von eindimensionalen Basisfunktionen $\phi^{\kappa}_{j}(x_{\kappa})$ wie folgt 
 dargestellt:
 
  \begin{equation}
@@ -93,18 +97,15 @@ Anschlie"send werden diese SPFs innerhalb der zeitunabh"angige primitive Basis d
  \label{Eq:SPF}
  \end{equation}
 
-Gleichung \ref{Eq:SPF} beinhaltete einen Satz zus"atzlichen Entwicklungskoeffizienten, $ A^{2;\kappa}_{m;j}(t) $ , der die zeitabh"angigen SPFs
+Gleichung \ref{Eq:SPF} beinhaltete einen Satz zus"atzlichen Entwicklungskoeffizienten, $ A^{2;\kappa}_{m;j}(t) $, der die zeitabh"angigen SPFs
 in der zeitunabh"anigen primitiven Basis darstellt.
 Die hochgestellte Zahl $z$ der Koeffizienten $A^{z}(t)$ bezieht sich auf die Layertiefen.
 In Gleichung \ref{Eq:SPF} folgt aus $z=2$, das Gleichung \ref{Eq:SPF} den zweiten Layer darstellt.
 Das hochgestellte $\kappa$ und der Index $m$ von $A^{2;\kappa}_{m;j}(t)$ beziehen sich auf die $m$-te SPF der $\kappa$-te Koordinate.
-Die Hochzahl $s$ in $ \phi^{s;\kappa}_{m} (x_{\kappa}, t) $ wurde zus"atzlich eingef"uhrt und
-war in den vorherigen MCTDH-Notationen \cite{MMC1} noch nicht vorhanden. Dieser neue Index wird hilfreich sein, wenn ml-MCTDH
-sp"ater in dieser Arbeit behandelt wird.  
 
 Zur Visualisierung der Layerstruktur des MCTDHs dienen die Diagramme f"ur die unterschiedlichen Darstellungen der Wellenfunktionen in Abbildung \ref{fig:tree}.
-Als Beispiel soll ein siebendimensionalen System dienen.
-Die Standardwellenpaketdarstellung aus Gleichung \ref{Eq:Std_wave} und die MCTDH-Darstellung sind in Abbildung \ref{fig:a} und \ref{fig:b} schematisch dargestellt.
+Als Beispiel soll ein siebendimensionales System dienen.
+Die Standardwellenpaketdarstellung aus Glei\-chung \ref{Eq:Std_wave} und die MCTDH-Darstellung sind in Abbildung \ref{fig:a} und \ref{fig:b} schematisch dargestellt.
 In den Diagrammen sind die verschiedenen S"atze der A-Koeffizienten durch ausgef"ullten schwarzen Kreise gekennzei\-chnet.
 So kommt in Abbildung \ref{fig:a} ein Satz von Koeffizienten $A^{1}_{j_{1}, ..., j_{7}}$ vor, der durch den
 einzigen schwarzen Punkt gekennzei\-chnet ist. 
@@ -113,15 +114,15 @@ Wert des Indexes an, d.h. die jeweilige Basisgr"o"se. Die tieferliegende primiti
 Beispielsweise ist der Koeffizienten $A^{2;1}_{m;j}$, der durch die SPFs $ \phi^{1;1}_{m} (x_{1}, t) $ dargestell ist, mit dem 
 Koeffizienten $A^1$ "uber eine Linie, die f"ur den $m$-ten Index steht, verbunden. "Uber eine weitere Linie, die den $j$-ten Index darstellt,
 ist  $A^{2;1}_{m;j}$ mit dem Koordinatdeskriptor $x_1$ verbunden.
-In Abbildung \ref{fig:a} ist der Koeffizient $A^{1}_{j_{1}, ..., j_{7}}$  durch sieben Linien mit der entsprechenden Indexierung von 
+In Abbildung \ref{fig:a} ist der Koeffizient $A^{1}_{j_{1}, ..., j_{7}}$  durch sieben Linien mit den entsprechenden Indizes von 
 $j_1$ bis $j_7$ direkt mit den sieben Koordinatdeskriptoren $x_1,x_2,...,x_7$ verbunden und in Abbildung \ref{fig:b}. ist $A^{1}_{j_{1}, ..., j_{7}}$
 mit den sieben S"atzen an A-Koeffizienten $A^{2;1},A^{2;1},...,A^{2;1}$ verbunden.
 Die Wellenfunktion aus Abbildung \ref{fig:a} ist direkt 
-in der zeitunabh"angigen primitiven Basis dargestellt. In Abbildung \ref{fig:b} gibt es einen dazwischenliegenden Layer an zeitabh"angigen SPFs. 
+in der zeitunabh"angigen primitiven Basis dargestellt. In Abbildung \ref{fig:b} gibt es einen intermedi"aren Layer an zeitabh"angigen SPFs. 
 
 W"ahrend in den Gleichungen \ref{Eq:mctdh_wave} und \ref{Eq:SPF} nur eindimensionale SPFs vorkommen, werden im modenkombinierte MCTDH-Verfahren
 mehrdimensionale SPFs verwendet. 
-Hierf"ur werden die $f$ physikalischen Koordinaten $x_{1}, x_{2}, ..., x_{f}$  in $d$ logische Gruppen zugeordnet, die Partikel genannt werden.
+Hier\-f"ur werden die $f$ physikalischen Koordinaten $x_{1}, x_{2}, ..., x_{f}$  in $d$ logische Gruppen zugeordnet, die Partikel genannt werden.
 Die mehrdimensionalen Koordinaten $q^{1}_{1}, q^{1}_{2}, ..., q^{1}_{d}$ sind wie folgt definiert:
 
 
@@ -140,7 +141,7 @@ Die logische mehrdimensionale Koordinate $ q^1_\kappa $ umfasst $d_\kappa $ Koor
 Die Hochzahl 1 und 2 in dieser Notation zeigt, ob die Koordinate eine mehrdimensionale Koordinate des ersten Layers ist oder einer Koordinate
 des zweiten Layers entspricht. F"ur die Koordinate des zweiten Layers gibt der zus"atzliche hochgestellter Index $\kappa$
 den Index der Koordinate des ersten Layers an.
-Eine modenkombinierte MCTDH-Wellenfunktion wird $d$ logischen Koordinaten wie folgt definiert werden:
+Eine modenkombinierte MCTDH-Wellenfunktion mit $d$ logischen Koordinaten wird wie folgt definiert:
 
 \begin{equation}
  \Psi(q^{1}_{1},q^{1}_{2},..., q^{1}_{d}, t)=\sum^{n_{1}}_{j_{1}=1} ... \sum^{n_{d}}_{j_{d}=1} A^{1}_{j_{1}, ..., j_{d}}(t)
@@ -161,8 +162,8 @@ Eine modenkombinierte MCTDH-Wellenfunktion wird $d$ logischen Koordinaten wie fo
 In Abbildung \ref{fig:c} ist das entsprechende Diagramm der Wellenfunktion eines siebendimensionales System, dessen Koordinaten 
 in logischen Koordinaten zusammengefasst wurden, dargestellt.
 Die physikalischen Koordinaten bilden in Abbildung \ref{fig:c} drei mehrdimensionale logische Koordinaten:
- $q^{1}_{1} = \left(x_1, x_2 \right)$, $ q^{1}_{2} = \left(x_3, x_4 \right)$
-und $ q^{1}_{3} = \left(x_5, x_6, x_7 \right)$.
+ $q^{1}_{1} = \{x_1, x_2\}$, $ q^{1}_{2} = \{x_3, x_4\}$
+und $ q^{1}_{3} = \{x_5, x_6, x_7\}$.
 
 
 \begin{figure}
@@ -188,7 +189,8 @@ und $ q^{1}_{3} = \left(x_5, x_6, x_7 \right)$.
         \vspace*{-4cm}\includegraphics[width=\textwidth]{figures/treeDiagramms}
     \end{subfigure}
     \caption{Unterschiedliche Darstellung von Wellenfunktionen eines siebendimensionalen Systems. Dargestellt sind: (a) Eine Darstellung eines Standardwellenpakets,
-      (b) eine MCTDH-Wellenfunktion, (c) eine modenkombinierte MCTDH-Wellenfunktion, [(d)-(f)] eine ML-MCTDH-Wellenfunktion.}\label{fig:tree}
+      (b) eine MCTDH-Wellenfunktion, (c) eine modenkombinierte MCTDH-Wellenfunktion, [(d)-(f)] eine ML-MCTDH-Wellenfunktion. Die Diagramme wurden aus Ref.\cite{Mreview2} 
+      entnommen.} \label{fig:tree}
 \end{figure}
 
 Im einfachtesten Fall kommen im ml-MCTDH zwei Layer von SPFs vor.
@@ -225,11 +227,11 @@ gegeben.
 
 In Gleichung \ref{Eq:ml_mctdh_mode_SPF} ist $ \phi^{2;\kappa, \lambda}_{m}  $ 
 mit der dazugeh"origen Koordinate $q^{2;\kappa}_\lambda$ ein SPF des zweiten Layers.
-Die Hochzahlen 2 bezieht sich auf die Layertiefe, sodass der SPF zum zweiten Layer geh"ohrt
-, wobei $\kappa$ und $\lambda$ die dazugeh"origen Koordinate kennzeichnen.
-Die Entwicklungskoeffizienten $A^{3;\kappa, \lambda}_{m;j}(t) $ werden verwendet, um dieses SPF darzustellen.
-Hingegen wird durch die Entwicklungskoeffizienten $A^{2;\kappa}_{m;j_1,...,j_{d_\kappa}}(t)$ nun die Entwicklung der SPFs des ersten Layers
-in der zweiten Layer-SPF-Basis definieren.
+Die Hochzahlen 2 bezieht sich auf die Layertiefe, sodass der SPF zum zweiten Layer geh"ort, 
+wobei $\kappa$ und $\lambda$ die dazugeh"origen Koordinaten kennzeichnen.
+Die Ent\-wicklungskoeffizienten $A^{3;\kappa, \lambda}_{m;j}(t) $ werden verwendet, um dieses SPF darzustellen
+und die Entwicklungskoeffizienten $A^{2;\kappa}_{m;j_1,...,j_{d_\kappa}}(t)$ definieren die Entwicklung der SPFs des ersten Layers, die
+in der SPF-Basis des zweiten Layers entwickelt werden.
 In Gleichung \ref{Eq:SPF} definierten diese Entwicklungskoeffizienten die SPFs des ersten Layers in der primitiven zeitunabh"angigen Basis.
 Abbildung \ref{fig:d} zeigt das entsprechende Diagramm f"ur ein siebendimensionales System in ml-MCTDH-Darstellung.
 
@@ -238,68 +240,15 @@ wie in Abbildung \ref{fig:tree}
 als Diagramm anzugeben. Da jedes Diagramm die Wellenfunktionen eindeutig definert, k"onnen aus den Diagrammen die entsprechenden
 Gleichunge der Wellenfunktionen abgeleitet werden.
 Die Notation f"ur die SPFs, A-Koeffizienten und (mehrdimensionalen) Koordinaten, die oben in den Gleichungen angegeben wurde,
-kann einfach f"ur beliebige Multilayer erweitert werden. Zum Beispiel
-entspricht die SPF $ \phi^{3;\kappa, \lambda, \mu}_{m}  $  der SPF des dritten Layers, die von der Koordinate $q^{3;\kappa, \lambda}_\mu$
-abh"angt. Diese SPF ist eine Basisfunktion in der Entwicklung, die die Koeffizienten $A^{2;\kappa, \lambda}_{l;j_1,...,j_{\mu-1},m,
-,j_{\mu+1},...,j_{d_{\kappa,\lambda}}}$ benutzen und selbst durch die Entwicklung spezifiziert ist, 
-in der der Koeffizient $A^{3;\kappa, \lambda,\mu}_{m;i_l,...,i_{d_{\kappa, \lambda,\mu}}}$ verwendet wird.
+kann einfach f"ur beliebige Multilayer erweitert werden. 
 
-Die ml-MCTDH-Darstellung kann mit eine beliebige Anzahl von Layern verallgemeinert werden.
+Die ml-MCTDH-Darstellung kann mit einer beliebige Anzahl von Layern verallgemeinert werden.
 Daraus resultieren baumf"ormige Strukturen.
-Ein Beispiel dieser Strukturen ist in Abbildung \ref{fig:e} zu sehen. Man kann erkennen, dass 
-die Anzahl der Layer f"ur die jeweiligen Koordinaten bis zur primitiven Darstellung von 
-Koordinate zu Koordinate variieren kann.
+Ein Beispiel dieser Strukturen ist in Abbildung \ref{fig:e} dargestellt. 
+Die Anzahl der Layer f"ur die jeweiligen Koordinaten kann bis zur primitiven Darstellung von 
+Koordinate zu Koordinate variieren.
 So wird in Abbildung \ref{fig:e} das Baumdiagramm einer ml-MCTDH-Wellfunktion gezeigt, 
-in der f"ur die Koordinaten $ x_1-x_4 $ drei MCTDH-Layer (, d.h. insgesamt eine Vier-Layer-Darstellung) verwendet werden
-und f"ur die Koordinaten $ x_5 - x_7 $  werden zwei MCTDH-Layer(, d.h. eine Drei-Layer-Darstellung) verwendt.
+in der f"ur die Koordinaten $ x_1-x_4 $ drei MCTDH-Layer verwendet werden 
+(d.h. insgesamt eine Vier-Layer-Darstellung)
+und f"ur die Koordinaten $ x_5 - x_7 $  werden zwei MCTDH-Layer verwendt (d.h. eine Drei-Layer-Darstellung).
 
-Im Folgenden soll der numerische Aufwand des ml-MCTDH gesch"atzt werden. 
-Eine allgemeine Formel, die alle M"oglichkeit genau abdeckt, w"are zu kompliziert,
-sodass sich auf ein einfaches Beispiel von einem $f=2^l$-dimensionalen System mit 
-$l$ symmetrischen Layern. Dieser Fall f"ur drei Layern ist in Abbildung \ref{fig:f} dargestellt
-Des Weiteren wird angenommen, dass im untersten Layer $n$ SPFs verwendet werden und dass die Anzahl der SPFs in
-h"oheren Layern mit dem Faktor von $a$ pro Layer steigt.
-$N$ Basisfunktionen werden in der primitiven Darstellung verwendet. Dann skaliert die Gesamtanzahl der A-Koeffizienten
-wie $(a^4n^{3}/4)f^{3\log_{2}a}$ (f"ur $a>2^{1/3}$). 
-Da der numerische Aufwand des ML-MCTDHs n"ahrungsweise proportional zu der Anzahl der A-Koeffzienten ist, steigt der numerische Aufwand polynomisch
-mit einem maximalen Exponenten von $3\log_{2}a$.\cite{Mreview2}
-Im modenkombinierte MCTDH-Rechnungen entspricht die Anzahl an SPFs der Summe der SPFs, die in einer nicht modenkombinierte
-Darstellung verwendet werden, was einem $a-$Wert von 2 entspricht.
-So bietet das ml-MCTDH-Verfahren eine realistische Perspektive f"ur extreme Quantendynamikrechnungen mit einer viel besseren Skalierung als 
-der exponentiellen Skalierung bzgl. der Dimensionalit"at.
-
-F"ur die Herleitung der Bewegungsgleichungen im n"achsten Abschnitt werden folgende Notationen eingef"uhrt.
-Statt den SPFs k"onnen die MCTDH-Wellenfunktionen durch Einlochfunktionen (SHF) \cite{Mreview2, MCTDHreview3} beschreiben werden:
-
- \begin{equation}
- \Psi=\sum^{n_{\kappa_1,\kappa_2,...,\kappa_l}}_{i=1} \Psi^{l;\kappa_1,\kappa_2,...,\kappa_l}_{i} \cdot  \phi^{l;\kappa_1,\kappa_2,...,\kappa_l}_{i}
- \label{Eq:MCTDH_SHF}
- \end{equation}
-
- mit
-
- \begin{equation}
-   \Psi^{l;\kappa_1,\kappa_2,...,\kappa_l}_{i} =  \Braket {\phi^{l;\kappa_1,\kappa_2,...,\kappa_l}_{i} | \Psi}
- \label{Eq:SHF}
- \end{equation}
-
-
-Die Konfigurationen des l-ten Layers $ \Phi^{\kappa_1,\kappa_2,...,\kappa_{l-1}}_j $ werden durch das Produkt der SPFs definiert:
-
- \begin{equation}
-   \Phi^{\kappa_1,\kappa_2,...,\kappa_{l-1}}_{j_1,...,j_{d_{\kappa_1,..,\kappa_{l-1}}}} = \prod_{\kappa_l}^{d_{\kappa_1,...,\kappa_{l}}}
-   \phi^{\kappa_1,\kappa_2,...,\kappa_{l-1},\kappa_l}_{j_{\kappa_l}}.
- \label{Eq:notation}
- \end{equation}
-
- Durch den Superindexes $ J = (j_1, j_2,...) $ ergibt sich folgende Notation:
-
- \begin{equation}
-   \phi^{\kappa_1,\kappa_2,...,\kappa_{l}}_i = \sum_J A^{l+1;\kappa_1,\kappa_2,...,\kappa_l}_{i;J}
-   \cdot \phi^{l+1;\kappa_1,\kappa_2,...,\kappa_{l}}_J
- \label{Eq:superindex}
- \end{equation}
-
- Des Weiteren wird f"ur die zeitunbh"angigen Basisfunktionen des untersten Layer nicht mehr das Symbol $ \chi_{j_m} $ verwendet.
- Stattdessen werden im folgenden die Basisfunktionen ebenfalls durch die korrespondierenden SPFs $ \phi^{l;\kappa_1,\kappa_2,...,\kappa_{l},m}_{j_m} $
- gekennzeichnet.
