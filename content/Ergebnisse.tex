@@ -8,23 +8,79 @@ Es wurden eine Programmierschnittstelle (englisch \textit{application programmin
 Im Rahmen dieser Arbeit wurde sich auf Klassen beschr"ankt, welche f"ur das Einlesen der baumf"ormig strukturierten MCTDH-Basis zust"andig sind.
 Die Klassen und Methoden, die "uber Python aufgerufen werden k"onnen, sind in Abbildung \ref{fig:uml_Cython} dargestellt. 
 Jede Klasse der API wird in Abbildung \ref{fig:uml_Cython} durch einen Kasten repr"asentiert. Im oberen Teil des Kastens ist der Klassenname
-angegeben und im unteren Teil sind die Methoden der Klasse aufgelistet. 
+angegeben und im unteren Teil sind die Methoden der Klasse aufgelistet. Die Anordnung der K"asten gibt die Abh"angigkeit der Klassen zueinander wieder.
+So muss er ein Objekte von der Klasse \textit{ControlParameter} initialisiert sein, bevor Methoden der Klasse
+\textit{mctdhBasis} verwendet werden k"onnen. Analog h"angen die Klassen \textit{Tdim} und \textit{physCoor} von der Klasse
+\textit{mctdhNode} ab.
 \textit{ControlParameter} und \textit{mctdhBasis} sind die Klassen, die die Konfigurations- und Basisdatei einlesen. 
 In der Klasse \textit{mctdhBasis} kann die Anzahl der Knoten des MCTDH-Baums aus dem Basisdatei ausgegeben werden.
 Knoteneigenschaften k"onnen "uber die Klasse \textit{mctdhNode}  ermittelt werden. Dabei stellt ein Objekte dieser Klasse
 eine Knoten dar.
 So kann festgestellt werden, ob ein Knoten den obersten Knoten darstellt oder zu den untersten Knoten geh"ohrt und mit wieviel weiteren Knoten er verbunden ist.
 Die Knotenobjekte k"onnen in Nachbarknoten "uberf"uhrt werden.
-Die SPFs eines Knoten wird in der Klasse \textit{Tdim} ermittelt. Die  in die Klassen \textit{physCoor}. Mit diesen Klassen k"onnen
-die Schwingungsmoden, der untersten Knoten, sowie die SPFs der jeweiligen Knoten ermittelt werden. 
+Die SPFs eines Knoten wird in der Klasse \textit{Tdim} ermittelt. Mit der Klassen \textit{physCoor} k"onnen
+die Schwingungsmoden, der untersten Knoten bestimmt werden. 
 
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.6]{figures/sequenceDiagram}
-    \caption{Alle Klassen, die in Cython erstellt wurden, sind mit einem ,,C'' gekennzeichnet. Die jeweiligen Klassenmethoden sind mit einem
-    gr"unen Punkt gekennzeichnet.}\label{fig:uml_Cython}
-\end{figure}
-Die in Abbildung \ref{fig:uml_Cython} k"onnen mit folgenden Befehl in Python aufgerufen werden:
+
+Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen die Gr"o"se einer MCTDH-Wellenfunktion berechnet wird:
+\newpage
+\begin{verbatim}
+import mctdh
+
+config = mctdh.controlParameters()
+config.initialize(mctdh.config)
+basis = mctdh.MctdhBasis()
+basis.initialize('basis.txt', config)
+
+maxNodes = basis.NmctdhNodes()
+
+nodes_spf = {}
+sumBottomNode = {}
+remnantNodeList = []
+
+def get_SPFs():
+    SumTopNode = 0
+    remnantNode = 0
+
+    for i in range(maxNodes):
+        node = basis.MCTDHnode(i)
+        tdim = node.t_dim()
+        nodes_spf[i] = tdim.GetnTensor() 
+    mode_spf = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
+                range(maxNodes) if \
+                basis.MCTDHnode(i).Bottomlayer() == True}
+
+    for key in mode_spf:
+        sumBottomNode[key] = mode_spf[key] + nodes_spf[key]
+    BottomSum = sum([l_[1] for l_ in sumBottomNode.items()])
+
+    for i in range(maxNodes):
+        if basis.MCTDHnode(i).Toplayer() == True:
+                children = basis.MCTDHnode(i).NChildren()
+
+                for j in range(children):
+                    SumTopNode += basis.MCTDHnode(i).down(j).t_dim().GetnTensor()
+                SumTopNode += basis.MCTDHnode(i).t_dim().GetnTensor()
+
+    for i in range(maxNodes):
+        if basis.MCTDHnode(i).Toplayer() == False and \
+        basis.MCTDHnode(i).Bottomlayer() == False:
+                children = basis.MCTDHnode(i).NChildren()
+                parent = basis.MCTDHnode(i).t_dim().GetnTensor()
+                for j in range(children):
+                    remnantNode += basis.MCTDHnode(i).down(j).t_dim().GetnTensor() 
+                remnantNode += parent
+                remnantNodeList.append(remnantNode)
+                remnantNode = 0
+    remnantSum = sum(remnantNodeList)
+
+    return BottomSum + SumTopNode + remnantSum
+
+print get_SPFs()
+\end{verbatim}
+
+
+Die in Abbildung \ref{fig:uml_Cython} dargestellte Klassen k"onnen mit folgenden Befehl in Python aufgerufen werden:
 
 \begin{verbatim}
 import mctdh
@@ -43,35 +99,22 @@ config.initialize('mctdh.config')
 basis.initialize('basis.txt', config)
 \end{verbatim}
 
-Mithilfe des Objektes \textit{basis} k"onnen weitere Objekte anderer Klassen generiert werden.
-In den folgenden Python-Funktionen werden Objekte der Klasse \textit{MctdhNode(), PhysCoor()} und \textit{Tdim()} erzeugt. 
-
+Mithilfe des Objektes \textit{basis} kann die Anzahl der Knoten des eingelesenen MCTDH-Baums bestimmt werden:
 \begin{verbatim}
-    def getBottomlayer():
-        bottom_list = []
-        for i in range(basis.NmctdhNodes()):
-            node = basis.MCTDHnode(i)
-            if node.Bottomlayer() == True:
-                bottom_list.append(i)
-        return bottom_list
-    
-    def getPhysCoord():
-        mode_list = []
-        for i in range(basis.NmctdhNodes()):
-            node = basis.MCTDHnode(i)
-            if node.Bottomlayer() == True:
-                phys = node.phys_coor()
-                mode_list.append(phys.mode()) 
-        return mode_list
-    
-    def get_SPFs():
-        nodes_spf = {}
-        for i in range(basis.NmctdhNodes()):
-            node = basis.MCTDHnode(i)
-            tdim = node.t_dim()
-            nodes_spf[i] = tdim.GetnTensor() 
-        return nodes_spf
+maxNodes = basis.NmctdhNodes()
 \end{verbatim}
+
+Um die Gr"o"se der Wellenfunktion berechnen zuk"onnen, wird die Anzahl der SPFs eines Knotens
+und die Anzahl der SPFs aller Nachbarknoten multipliziert.
+Alle SPFs werden in den Dictionary-Datentyp \textit{nodes_spf} gespeichert. 
+Anschlie"send wird die Summe aller SPFs-Produkte gebildet.
+Hierf"ur werden die Summen der Produkte vom oberen Knoten, von den unteren Knoten und von denen
+restlichen Knoten separat gebildet. 
+
+
+
+In den folgenden Python-Funktionen werden Objekte der Klasse \textit{PhysCoor()}, \textit{MctdhNode()}und \textit{Tdim()} erzeugt. 
+
 
 In der ersten Funktion wird eine Liste zur"uckgegeben, die die unteresten Knoten des eingelesenen MCTDH-Baums enth"alt.
 Dabei werden die Methoden \textit{NmctdhNodes()} und \textit{Bottomlayer()} verwendet, um die Anzahle sowie die Lage der Knoten
@@ -88,6 +131,12 @@ tdim = mctdh.Tdim()
 
 initialisiert werden k"onnen. 
     
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{figures/sequenceDiagram}
+    \caption{Alle Klassen, die in Cython erstellt wurden, sind mit einem ,,C'' gekennzeichnet. Die jeweiligen Klassenmethoden sind mit einem
+    gr"unen Punkt gekennzeichnet.}\label{fig:uml_Cython}
+\end{figure}
 
 \section{Graphische Benutzeroberfl"ache f"ur MCTDH}
 
