@@ -23,60 +23,63 @@ die Schwingungsmoden, der untersten Knoten bestimmt werden.
 
 
 Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen die Gr"o"se einer MCTDH-Wellenfunktion berechnet wird:
+
 \newpage
+
 \begin{verbatim}
-import mctdh
+    import mctdh
 
-config = mctdh.controlParameters()
-config.initialize(mctdh.config)
-basis = mctdh.MctdhBasis()
-basis.initialize('basis.txt', config)
-
-maxNodes = basis.NmctdhNodes()
-
-nodes_spf = {}
-sumBottomNode = {}
-remnantNodeList = []
-
-def get_SPFs():
-    SumTopNode = 0
-    remnantNode = 0
-
-    for i in range(maxNodes):
-        node = basis.MCTDHnode(i)
-        tdim = node.t_dim()
-        nodes_spf[i] = tdim.GetnTensor() 
-    mode_spf = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
-                range(maxNodes) if \
-                basis.MCTDHnode(i).Bottomlayer() == True}
-
-    for key in mode_spf:
-        sumBottomNode[key] = mode_spf[key] + nodes_spf[key]
-    BottomSum = sum([l_[1] for l_ in sumBottomNode.items()])
-
-    for i in range(maxNodes):
-        if basis.MCTDHnode(i).Toplayer() == True:
-                children = basis.MCTDHnode(i).NChildren()
-
-                for j in range(children):
-                    SumTopNode += basis.MCTDHnode(i).down(j).t_dim().GetnTensor()
-                SumTopNode += basis.MCTDHnode(i).t_dim().GetnTensor()
-
-    for i in range(maxNodes):
-        if basis.MCTDHnode(i).Toplayer() == False and \
-        basis.MCTDHnode(i).Bottomlayer() == False:
-                children = basis.MCTDHnode(i).NChildren()
-                parent = basis.MCTDHnode(i).t_dim().GetnTensor()
-                for j in range(children):
-                    remnantNode += basis.MCTDHnode(i).down(j).t_dim().GetnTensor() 
-                remnantNode += parent
-                remnantNodeList.append(remnantNode)
-                remnantNode = 0
-    remnantSum = sum(remnantNodeList)
-
-    return BottomSum + SumTopNode + remnantSum
-
-print get_SPFs()
+    config = mctdh.controlParameters()
+    config.initialize('mctdh.config')
+    basis = mctdh.MctdhBasis()
+    basis.initialize('basis.txt', config)
+    
+    maxNodes = basis.NmctdhNodes()
+    
+    nodes_spf = {}
+    ProdBottomNode = {}
+    remnantNodeList = []
+    
+    def get_SPFs():
+        TopNode = 0
+        remnant = 0
+    
+        for i in range(maxNodes):
+            node = basis.MCTDHnode(i)
+            tdim = node.t_dim()
+            nodes_spf[i] = tdim.GetnTensor() 
+    
+        primitivB = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
+                    range(maxNodes) if \
+                    basis.MCTDHnode(i).Bottomlayer() == True}
+                    
+        for key in primitivB:
+            ProdBottomNode[key] = primitivB[key] * nodes_spf[key]
+        ProdBottom = sum([l_[1] for l_ in ProdBottomNode.items()])
+    
+        for i in range(maxNodes):
+            if basis.MCTDHnode(i).Toplayer() == True:
+                    children = basis.MCTDHnode(i).NChildren()
+                    for j in range(children):
+                        TopNode *= basis.MCTDHnode(i).down(j).t_dim().GetnTensor()
+                    TopNode *= basis.MCTDHnode(i).t_dim().GetnTensor()
+    
+        for i in range(maxNodes):
+            if basis.MCTDHnode(i).Toplayer() == False and \
+            basis.MCTDHnode(i).Bottomlayer() == False:
+                    children = basis.MCTDHnode(i).NChildren()
+                    parent = basis.MCTDHnode(i).t_dim().GetnTensor()
+                    for j in range(children):
+                        remnant *= basis.MCTDHnode(i).down(j).t_dim().GetnTensor() 
+                        
+                    remnant *= parent
+                    remnantNodeList.append(remnant)
+                    remnant = 0
+        remnantSum = sum(remnantNodeList)
+    
+        return ProdBottom + TopNode + remnantSum
+    
+    print get_SPFs()
 \end{verbatim}
 
 
@@ -86,7 +89,8 @@ Die in Abbildung \ref{fig:uml_Cython} dargestellte Klassen k"onnen mit folgenden
 import mctdh
 \end{verbatim}
 
-Um in Python die MCTDH-Klassen verwenden zu k"onnen, gen"ugt es \textit{mctdh} dem Klassennamen voranzustellen und durch eine Punkt zu trennen.
+Um in Python die MCTDH-Klassen verwenden zu k"onnen, gen"ugt es \textit{mctdh} dem Klassennamen voranzustellen und durch einen
+Punkt zu trennen.
 
 \begin{verbatim}
 config = mctdh.controlParameters()
@@ -106,10 +110,44 @@ maxNodes = basis.NmctdhNodes()
 
 Um die Gr"o"se der Wellenfunktion berechnen zuk"onnen, wird die Anzahl der SPFs eines Knotens
 und die Anzahl der SPFs aller Nachbarknoten multipliziert.
-Alle SPFs werden in den Dictionary-Datentyp \textit{nodes_spf} gespeichert. 
+Alle SPFs werden in den Dictionary-Datentyp \textit{nodes\_spf} gespeichert. 
 Anschlie"send wird die Summe aller SPFs-Produkte gebildet.
 Hierf"ur werden die Summen der Produkte vom oberen Knoten, von den unteren Knoten und von denen
-restlichen Knoten separat gebildet. 
+restlichen Knoten separat gebildet und in einem Dictionary bzw. einer Liste gespeichert:
+
+\begin{verbatim}
+nodes_spf = {}
+ProdBottomNode = {}
+remnantNodeList = []
+\end{verbatim}
+
+Der Datentyp Dictionary wird mit geschweiften Klammern und der 
+Datentyp Liste wird mit eckigen Klammern deklariert.
+Die Berechnung der Gr"o"se der Wellenfunktion wird in einer Funktion vorgenommen:
+
+\begin{verbatim}
+def get_SPFs()
+\end{verbatim}
+
+Die Anzahl der SPFs und primitiven Basis werden jeweils in verschiedene Dictionaries gespei\-chert:
+
+\begin{verbatim}
+for i in range(maxNodes):
+    node = basis.MCTDHnode(i)
+    tdim = node.t_dim()
+    nodes_spf[i] = tdim.GetnTensor() 
+
+primitivB = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
+            range(maxNodes) if \
+            basis.MCTDHnode(i).Bottomlayer() == True}
+\end{verbatim}
+
+In der for-Schleife werden alle Knoten des Baums erfasst und f"ur jeden i-ten Knoten 
+wird die Anzahl an SPFs in \textit{nodes\_spf} gespeichert.
+Um \textit{primitivB} zu erstellen, wurde “Dict Comprehension” benutzt.
+
+
+
 
 
 

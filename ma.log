@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  5 JUN 2018 15:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  5 JUN 2018 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1028,56 +1028,56 @@ Kapitel 4.
 
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 27.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [13]
-Overfull \hbox (52.0443pt too wide) in paragraph at lines 82--82
-[]                    \T1/lmtt/m/n/12 SumTopNode += basis.MCTDHnode(i).down(j).
-t_dim().GetnTensor()[] 
- []
-
-
-Overfull \hbox (58.2193pt too wide) in paragraph at lines 82--82
-[]                    \T1/lmtt/m/n/12 remnantNode += basis.MCTDHnode(i).down(j)
+)
+Overfull \hbox (58.2193pt too wide) in paragraph at lines 83--83
+[]                        \T1/lmtt/m/n/12 TopNode *= basis.MCTDHnode(i).down(j)
 .t_dim().GetnTensor()[] 
  []
 
-[14] <figures/sequenceDiagram.png, id=276, 275.0275pt x 534.99875pt>
+[13]
+Overfull \hbox (58.2193pt too wide) in paragraph at lines 83--83
+[]                        \T1/lmtt/m/n/12 remnant *= basis.MCTDHnode(i).down(j)
+.t_dim().GetnTensor()[] 
+ []
+
+[14] [15] <figures/sequenceDiagram.png, id=280, 275.0275pt x 534.99875pt>
 File: figures/sequenceDiagram.png Graphic file (type png)
 
 <use figures/sequenceDiagram.png>
-Package pdftex.def Info: figures/sequenceDiagram.png used on input line 135.
+Package pdftex.def Info: figures/sequenceDiagram.png used on input line 171.
 (pdftex.def)             Requested size: 165.01776pt x 321.00172pt.
 
-Underfull \hbox (badness 1655) in paragraph at lines 137--137
+Underfull \hbox (badness 1655) in paragraph at lines 173--173
 \T1/lmr/m/n/12 gekennze-ich-net. Die jew-eili-gen Klassen-meth-o-d-en sind mit 
 einem
  []
 
-[15] [16 <./figures/sequenceDiagram.png (PNG copy)>]
-<figures/umlPyQt.png, id=287, 1473.505pt x 833.1125pt>
+[16] [17 <./figures/sequenceDiagram.png (PNG copy)>]
+<figures/umlPyQt.png, id=291, 1473.505pt x 833.1125pt>
 File: figures/umlPyQt.png Graphic file (type png)
 
 <use figures/umlPyQt.png>
-Package pdftex.def Info: figures/umlPyQt.png used on input line 148.
+Package pdftex.def Info: figures/umlPyQt.png used on input line 184.
 (pdftex.def)             Requested size: 448.13095pt x 253.36798pt.
 
 
-LaTeX Warning: Float too large for page by 45.6542pt on input line 151.
+LaTeX Warning: Float too large for page by 45.6542pt on input line 187.
 
-[17] [18 <./figures/umlPyQt.png (PNG copy)>]
-Overfull \hbox (16.46852pt too wide) in paragraph at lines 203--211
+[18] [19 <./figures/umlPyQt.png (PNG copy)>]
+Overfull \hbox (16.46852pt too wide) in paragraph at lines 239--247
 \T1/lmr/m/n/12 lungsarten ändert nicht die darun-ter-liegende Daten-struk-tur.$
 []$ Der Vorteil der Model/View-
  []
 
-[19]) [20] (./ma.bbl [21
+[20]) [21] (./ma.bbl [22
 
 
 
 
-] [22] [23] [24]
+] [23] [24] [25]
 Underfull \hbox (badness 10000) in paragraph at lines 579--581
 []\T1/lmr/m/it/12 Model/view pro-gram-ming \T1/lmr/m/n/12 (2018), URL [][]$\T1/
 lmtt/m/n/12 http : / / doc . qt . io / qt-[]5 /
@@ -1085,7 +1085,7 @@ lmtt/m/n/12 http : / / doc . qt . io / qt-[]5 /
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
- [25]
+ [26]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
  (./ma.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
@@ -1095,8 +1095,8 @@ Package rerunfilecheck Info: File `ma.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
  ) 
 Here is how much of TeX's memory you used:
- 12594 strings out of 494820
- 189073 string characters out of 3178049
+ 12595 strings out of 494820
+ 189080 string characters out of 3178049
  308036 words of memory out of 3000000
  15378 multiletter control sequences out of 15000+200000
  75192 words of font info for 60 fonts, out of 3000000 for 9000
@@ -1119,10 +1119,10 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.p
 fb>
-Output written on ma.pdf (28 pages, 2067848 bytes).
+Output written on ma.pdf (29 pages, 2069955 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 405 compressed objects within 5 object streams
- 126 named destinations out of 1000 (max. 500000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
+ 127 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
