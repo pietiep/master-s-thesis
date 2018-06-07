@@ -1,4 +1,4 @@
-\begin{thebibliography}{77}
+\begin{thebibliography}{76}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -517,14 +517,6 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
   \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{114}},
   \bibinfo{pages}{9683} (\bibinfo{year}{2001}).
-
-\bibitem[{\citenamefont{Ehara et~al.}(1996)\citenamefont{Ehara, Meyer, and
-  Cederbaum}}]{EMC}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Ehara}},
-  \bibinfo{author}{\bibfnamefont{H.-D.} \bibnamefont{Meyer}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{L.~S.} \bibnamefont{Cederbaum}},
-  \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{105}},
-  \bibinfo{pages}{8865} (\bibinfo{year}{1996}).
 
 \bibitem[{\citenamefont{Cattarius et~al.}(2001)\citenamefont{Cattarius, Worth,
   Meyer, and Cederbaum}}]{CWMC}

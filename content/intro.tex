@@ -13,36 +13,38 @@ Benchmark-Anwendungen sind die 21-dimen\-sio\-nalen Rechnungen, in denen die Tun
 Grundzustands \cite{CVM, HCVM, HaM1, MAMCTDH, HaM2, MAMCTDH2} und der angeregten \cite{HCVM, HaM1, MAMCTDH, HaM2, MAMCTDH2}
 Schwingungszust"ande von Malonaldehyd erforscht wurde. 
 Es wurden in 15-dimen\-sio\-nalen Rechnungen die Schwingungszust"ande von protonierten 
-Wasserdimeren \cite{H5O2+MCTDH, H5O2+MCTDH2, H5O2+MCTDH3, H5O2+MCTDH4, H5O2+MCTDH5} untersucht. 
+Wasserdi\-meren  \cite{H5O2+MCTDH, H5O2+MCTDH2, H5O2+MCTDH3, H5O2+MCTDH4, H5O2+MCTDH5} untersucht. 
 Au"serdem wurde in 12-dimensionalen Rechnungen die thermischen 
-Geschwindig\-keitskonstanten \cite{HM1, HM2, WWM, SM, vHNM,NvHM}, anfangszustandsausgew"ahlte Reaktionswahrscheinlichkeiten
+Geschwindig\-keitskonstanten \cite{HM1, HM2, WWM, SM, vHNM,NvHM}, anfangszustandsausgew"ahlte Reaktionswahr\-scheinlichkeiten
 \cite{SM02, SM04, WeM5, WeM6, WeM8} und die 
 state-to-state Reaktionswahrscheinlichkeiten \cite{WeM7} f"ur die Reaktion von Methan mit Wasserstoff 
 untersucht. In diesen Rechnungen wurden detaillierte \textit{ab initio} 
 Potentialfl"achen verwendet. Signifikant h"ohere Dimensionen wurden in MCTDH-Rechungen mit 
 Modelhamiltonoperatoren untersucht. So wurde in wegweisenden Rechnungen  
-die nichtadibatischen Dynamiken von Pyrazin erforscht, in denen ein 24-moden 
+die nichtadibatischen Dynamiken von Pyrazin erforscht, in denen ein 24 - Moden 
 schwingungsgekoppelter Hamiltonoperator \cite{WMC, WMC2, RWMC} verwendet wurde.
 Multilayer-MCTDH Simulationen von typischen
-physikalischen Modellen \cite{WT3, W1, WST, KCBWT, CTW2, WPHT} zu kondensierter Materie schlie"sen "ublich tausende Freiheitsgrade ein.
-F"ur die Untersuchung eines Photodissoziationsmodel wurden in einem Wirt-Gast-Komplex 189-
-dimensionale ml-MCTDH Rechnungen  durchgef"uhrt\cite{WBRSM}. F"ur weitere Literatur zum MCTDH-Verfahren und
+physikalischen Modellen \cite{WT3, W1, WST, KCBWT, CTW2, WPHT} kondensierter Materie schlie"sen "ublich tausende Freiheitsgrade ein.
+F"ur die Untersuchung eines Photodissoziationsmodels wurden in einem Wirt-Gast-Komplex 189 -
+dimensionale Multilayer-MCTDH Rechnungen  durchgef"uhrt\cite{WBRSM}. F"ur weitere Literatur, die das MCTDH-Verfahren und
 seine Anwendungen diskutieren, siehe Refs. \cite{MCTDHreview, MCTDHreview2, HMreview1, MCTDHbook,Mreview2011, MCTDHreview3}.
 
 Das MCTDH-Programmpaket, welches zur Berechnung und Simulation der oben genannten Systeme wird, bietet die M"oglichkeit
-zur hocheffizienten Propagation von Wellenfunktionen und der Berechnung von Dichtematrizen und Eigenzust"anden.
+Wellenfunktionen und Dichtematrizen hocheffizient zu propagieren, sowie Eigenzust"ande zu berechnen.
 Bisher ist die Bedienung des vorliegenden MCTDH-Programmpakets selbst bei Standardaufgaben Spezialisten vorenthalten und 
-ein tiefgreifendes Verst"andnis des Codes ist erforderlich. 
+ein tiefgreifendes Verst"andnis der Programmstruktur ist erforderlich. 
 Im Rahmen dieser Masterarbeit wurden zwei wesentliche Verbesserungen unternommen: 
-Zum einen wurde eine Benutzeroberfl"ache (GUI) erstellt, die Wissenschaftlern
+Zum einen wurde eine Benutzeroberfl"ache (von englisch graphical user interface, GUI) erstellt, die Wissenschaftlern
 ohne Programmierkenntnissen die Bedienung des Programms bei Standardaufgaben erm"oglicht.
 Des Weiteren wurde eine Python-Schnittstelle f"ur MCTDH entwickelt,
 die es erlaubt komplizierte Aufgaben mithilfe von Skripten zu bew"altigen.
-
-Python hat sich als einsteigerfreundliche Programmiersprache erwiesen. F"ur viele h"aufig genutzte und komplexe numerische Programm-Codes
-existiert bereits ein in Python verfasstes Programminterface, welches die Nutzung des Codes erm"oglicht, ohne dass die Programmstruktur
-des zugrundeliegenden Programms verstanden werden muss (TensorFlow \cite{TensorFlow}, SciPy \cite{SciPy} u.w.).
+Python hat sich als einsteigerfreundliche Programmiersprache erwiesen. Vergleichbare Python-Schnittstellen existieren auch f"ur viele andere bekannte und h"aufig genutzte 
+numerische Programmpakete(TensorFlow \cite{TensorFlow}, SciPy \cite{SciPy} u.w.).
+Diese Schnittstelle erm"oglicht die Nutzung des
+des zugrundeliegenden Programms verstanden werden muss.
  
-Diese Arbeit ist wie folgt gegliedert. In Kapitel 2 wird der Ansatz der MCTDH-Wellenfunk\-tion beschrieben. Es werden die Unterschiede zum ml-MCTDH herausgestellt.
-In Kapitel 3 wird die Python-Schnittstelle und die graphischen Benutzeroberfl"ache beschrieben.     
-Schlie"slich wird in Kapitel 4 eine Fazit gezogen und ein Ausblick gegeben.     
+Diese Arbeit ist wie folgt gegliedert. In Kapitel 2 wird der Ansatz der MCTDH-Wellenfunk\-tion beschrieben. 
+Es werden die Unterschiede zum Multilayer-MCTDH herausgestellt. Die Technische Beschreibung
+der GUI erfolgt in Kapitel drei.
+In Kapitel 4 wird die Python-Schnittstelle und die graphischen Benutzeroberfl"ache beschrieben.     
+Schlie"slich wird in Kapitel 5 eine Fazit gezogen und ein Ausblick gegeben.     

@@ -4,23 +4,20 @@
 \label{sec:PyInterface}
 
 
-Es wurden eine Programmierschnittstelle (englisch \textit{application programming interface}, API) f"ur das MCTDH-Programmpaket erstellt.
+Es wurde eine Programmierschnittstelle (von englisch \textit{application programming interface}, API) f"ur das MCTDH-Programmpaket erstellt.
 Im Rahmen dieser Arbeit wurde sich auf Klassen beschr"ankt, welche f"ur das Einlesen der baumf"ormig strukturierten MCTDH-Basis zust"andig sind.
 Die Klassen und Methoden, die "uber Python aufgerufen werden k"onnen, sind in Abbildung \ref{fig:uml_Cython} dargestellt. 
 Jede Klasse der API wird in Abbildung \ref{fig:uml_Cython} durch einen Kasten repr"asentiert. Im oberen Teil des Kastens ist der Klassenname
 angegeben und im unteren Teil sind die Methoden der Klasse aufgelistet. Die Anordnung der K"asten gibt die Abh"angigkeit der Klassen zueinander wieder.
-So muss er ein Objekte von der Klasse \textit{ControlParameter} initialisiert sein, bevor Methoden der Klasse
-\textit{mctdhBasis} verwendet werden k"onnen. Analog h"angen die Klassen \textit{Tdim} und \textit{physCoor} von der Klasse
-\textit{mctdhNode} ab.
-\textit{ControlParameter} und \textit{mctdhBasis} sind die Klassen, die die Konfigurations- und Basisdatei einlesen. 
-In der Klasse \textit{mctdhBasis} kann die Anzahl der Knoten des MCTDH-Baums aus dem Basisdatei ausgegeben werden.
-Knoteneigenschaften k"onnen "uber die Klasse \textit{mctdhNode}  ermittelt werden. Dabei stellt ein Objekte dieser Klasse
-eine Knoten dar.
-So kann festgestellt werden, ob ein Knoten den obersten Knoten darstellt oder zu den untersten Knoten geh"ohrt und mit wieviel weiteren Knoten er verbunden ist.
+So muss ein Objekte von der Klasse \textit{ControlParameter} generiert werden, um Objekte der Klasse
+\textit{mctdhBasis} erzeugen zu k"onnen. Analog h"angen die Klassen \textit{Tdim} und \textit{physCoor} von der Klasse \textit{mctdhNode} ab.
+\textit{ControlParameter} und \textit{mctdhBasis} sind die Klassen, die die Konfigurations- und Basisdatei einlesen
+und die Genauigkeitsparameter und die MCTDH-Basis verwalten. Dagegen wird in der Klasse \textit{mctdhNode} die lokale Information
+eines Knotens verwaltet.
+So  k"onnen Knoteneigenschaften "uber die Klasse \textit{mctdhNode} ermittelt werden. 
 Die Knotenobjekte k"onnen in Nachbarknoten "uberf"uhrt werden.
 Die SPFs eines Knoten wird in der Klasse \textit{Tdim} ermittelt. Mit der Klassen \textit{physCoor} k"onnen
 die Schwingungsmoden, der untersten Knoten bestimmt werden. 
-
 
 Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen die Gr"o"se einer MCTDH-Wellenfunktion berechnet wird:
 
