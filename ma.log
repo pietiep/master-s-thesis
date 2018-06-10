@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  8 JUN 2018 19:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  10 JUN 2018 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -916,21 +916,21 @@ ngen sind die 21-dimen-
  []
 
 
-Overfull \hbox (0.22298pt too wide) in paragraph at lines 33--46
-\T1/lmr/m/n/12 nann-ten Sys-teme ver-wen-det wird, bi-etet die Möglichkeit, Wel
-len-funk-tio-nen und Dichtem-
+Overfull \hbox (14.54802pt too wide) in paragraph at lines 4--32
+\T1/lmr/m/n/12 ein 24-modenschwingungsgekoppelter Hamilton-op-er-a-tor$[]$ ver-
+wen-det wurde. Multilayer-
  []
 
 
-Overfull \hbox (4.82088pt too wide) in paragraph at lines 33--46
-\T1/lmr/m/n/12 di-enung des vor-liegen-den MCTDH-Programmpakets selb-st bei Sta
-n-dar-d-auf-gaben Spezial-
+Overfull \hbox (22.74442pt too wide) in paragraph at lines 4--32
+\T1/lmr/m/n/12 sozi-a-tion-s-mod-els wur-den in einem Wirt-Gast-Komplex 189-dim
+ensionale Multilayer-MCTDH
  []
 
 
-Overfull \hbox (0.98476pt too wide) in paragraph at lines 33--46
-\T1/lmr/m/n/12 genutzte nu-merische Pro-gramm-pakete(TensorFlow$[]$, SciPy$[]$ 
-u.w.). Diese Schnittstelle
+Overfull \hbox (5.39203pt too wide) in paragraph at lines 4--32
+\T1/lmr/m/n/12 Rech-nun-gen durchge-führt$[]$. Für weit-er-führende Lit-er-atur
+, in der das MCTDH-Verfahren
  []
 
 [1
@@ -939,39 +939,13 @@ u.w.). Diese Schnittstelle
 
 ]) (./content/Theorie.tex [2]
 Kapitel 2.
-
-Overfull \hbox (17.52278pt too wide) in paragraph at lines 24--37
-\T1/lmr/m/n/12 nten Sys-teme mit 15-24 ko-r-re-lierten Frei-heits-graden$[]$ un
-d System-Bad-Modelle$[]$
- []
-
 [3
 
 
-] [4]
-Overfull \hbox (24.16905pt too wide) in paragraph at lines 69--72
-\T1/lmr/m/n/12 und des moden-kombi-nierten MCT-DH be-tra-chtet, um an-schlieÿen
-d den Ansatz der Multilayer-
- []
-
-
-Overfull \hbox (35.85083pt too wide) in paragraph at lines 82--89
-\T1/lmr/m/n/12 pakete. Die Darstel-lung der Wellen-funk-tion in Gle-ichung [][]
-2.1[][] kann auch als Ein-Lagendarstellung
- []
-
-
-Overfull \hbox (1.76076pt too wide) in paragraph at lines 82--89
-\T1/lmr/m/n/12 ange-se-hen wer-den und die Hochzahl 1 von $\OML/lmm/m/it/12 A[]
-\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 t\OT1/lmr/m/n/12 )$ \T1/lmr/m/n/12 soll da-ra
-uf hin-weisen, dass $\OML/lmm/m/it/12 A[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 t\OT
-1/lmr/m/n/12 )$
- []
-
-[5]
-Overfull \hbox (25.34871pt too wide) in paragraph at lines 97--98
+] [4] [5]
+Overfull \hbox (0.47807pt too wide) in paragraph at lines 97--98
 []\T1/lmr/m/n/12 Anschlieÿend wer-den diese SPFs in-ner-halb der zeitun-ab-häng
-i-gen prim-i-tive Ba-sis dargestellt: 
+i-gen prim-i-tive Ba-sis darge-
  []
 
 
@@ -1018,13 +992,7 @@ Underfull \hbox (badness 1454) in paragraph at lines 199--199
 
 LaTeX Warning: Float too large for page by 39.6017pt on input line 200.
 
-[7] [8 <./figures/treeDiagramms.pdf>]
-Overfull \hbox (7.87474pt too wide) in paragraph at lines 232--241
-\T1/lmr/m/n/12 Lage, die in der SPF-Basis der zweit-en Lage en-twick-elt wer-de
-n. In Gle-ichung [][]2.3[][] definierten
- []
-
-[9]) (./content/Methoden.tex [10]
+[7] [8 <./figures/treeDiagramms.pdf>] [9]) (./content/Methoden.tex [10]
 Kapitel 3.
 <figures/umlPyQt.png, id=255, 1473.505pt x 833.1125pt>
 File: figures/umlPyQt.png Graphic file (type png)
@@ -1127,16 +1095,16 @@ Package pdftex.def Info: figures/screenWidgetA.pdf used on input line 295.
 
 LaTeX Warning: Float too large for page by 15.71819pt on input line 297.
 
-<figures/screenWidgetAexample.pdf, id=339, 1326.88876pt x 727.37543pt>
+<figures/screenWidgetAexample.pdf, id=339, 1327.17621pt x 726.93378pt>
 File: figures/screenWidgetAexample.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetAexample.pdf>
 Package pdftex.def Info: figures/screenWidgetAexample.pdf used on input line 30
 0.
-(pdftex.def)             Requested size: 1326.88554pt x 727.37366pt.
+(pdftex.def)             Requested size: 1327.17297pt x 726.932pt.
 
 
-LaTeX Warning: Float too large for page by 29.59442pt on input line 303.
+LaTeX Warning: Float too large for page by 29.72377pt on input line 303.
 
 ) (./content/Fazit.tex [23 <./figures/screenMain.pdf>] [24 <./figures/screenMai
 nFile.pdf>] [25 <./figures/screenMainProject.pdf>] [26 <./figures/screenWidgetA
@@ -1192,7 +1160,7 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.p
 fb>
-Output written on ma.pdf (36 pages, 2733231 bytes).
+Output written on ma.pdf (36 pages, 2725873 bytes).
 PDF statistics:
  576 PDF objects out of 1000 (max. 8388607)
  488 compressed objects within 5 object streams
