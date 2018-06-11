@@ -1,4 +1,4 @@
-\begin{thebibliography}{76}
+\begin{thebibliography}{73}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -561,20 +561,5 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{Manthe}},
   \bibinfo{journal}{J. Chem. Phys.} \textbf{\bibinfo{volume}{123}},
   \bibinfo{pages}{064106} (\bibinfo{year}{2005}).
-
-\bibitem[{\citenamefont{Summerfield}(2008)}]{PyQt}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Summerfield}},
-  \emph{\bibinfo{title}{Rapid GUI Programming with Python and Qt}}
-  (\bibinfo{publisher}{Prentice Hall}, \bibinfo{year}{2008}).
-
-\bibitem[{Qt(2018)}]{Qt}
-\emph{\bibinfo{title}{Model/view programming}} (\bibinfo{year}{2018}),
-  \urlprefix\url{http://doc.qt.io/qt-5/model-view-programming.html}.
-
-\bibitem[{\citenamefont{Krasner and Pope}(2002)}]{MVC}
-\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Krasner}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Pope}}, \bibinfo{type}{Tech.
-  Rep.}, \bibinfo{institution}{ParcPlace Systems, Mountain View, Calif.}
-  (\bibinfo{year}{2002}).
 
 \end{thebibliography}

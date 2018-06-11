@@ -34,52 +34,47 @@ Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithil
     maxNodes = basis.NmctdhNodes()
     
     nodes_spf = {}
+    for i in range(maxNodes):
+        node = basis.MCTDHnode(i)
+        tdim = node.t_dim()
+        nodes_spf[i] = tdim.GetnTensor() 
+    
+    primitivB = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
+                range(maxNodes) if \
+                basis.MCTDHnode(i).Bottomlayer() == True
     ProdBottomNode = {}
+    for key in primitivB:
+        ProdBottomNode[key] = primitivB[key] * nodes_spf[key]
+    ProdBottom = sum([l_[1] for l_ in ProdBottomNode.items()])
+
+    print ProdBottom
+
+    TopNode = 0
+    for i in range(maxNodes):
+        if basis.MCTDHnode(i).Toplayer() == True:
+                children = basis.MCTDHnode(i).NChildren()
+                for j in range(children):
+                    TopNode *= basis.MCTDHnode(i).down(j).t_dim().GetnTensor()
+                TopNode *= basis.MCTDHnode(i).t_dim().GetnTensor()
+
+    print TopNode
+    
     remnantNodeList = []
+    remnant = 0
+    for i in range(maxNodes):
+        if basis.MCTDHnode(i).Toplayer() == False and \
+        basis.MCTDHnode(i).Bottomlayer() == False:
+                children = basis.MCTDHnode(i).NChildren()
+                parent = basis.MCTDHnode(i).t_dim().GetnTensor()
+                for j in range(children):
+                    remnant *= basis.MCTDHnode(i).down(j).t_dim().GetnTensor() 
+                remnant *= parent
+                remnantNodeList.append(remnant)
+                remnant = 0
+    remnantSum = sum(remnantNodeList)
     
-    def get_SPFs():
-        TopNode = 0
-        remnant = 0
+    print remnantSum
     
-        for i in range(maxNodes):
-            node = basis.MCTDHnode(i)
-            tdim = node.t_dim()
-            nodes_spf[i] = tdim.GetnTensor() 
-    
-        primitivB = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
-                    range(maxNodes) if \
-                    basis.MCTDHnode(i).Bottomlayer() == True}
-                    
-        for key in primitivB:
-            ProdBottomNode[key] = primitivB[key] * nodes_spf[key]
-        ProdBottom = sum([l_[1] for l_ in ProdBottomNode.items()])
-    
-
-
-
-
-        for i in range(maxNodes):
-            if basis.MCTDHnode(i).Toplayer() == True:
-                    children = basis.MCTDHnode(i).NChildren()
-                    for j in range(children):
-                        TopNode *= basis.MCTDHnode(i).down(j).t_dim().GetnTensor()
-                    TopNode *= basis.MCTDHnode(i).t_dim().GetnTensor()
-    
-        for i in range(maxNodes):
-            if basis.MCTDHnode(i).Toplayer() == False and \
-            basis.MCTDHnode(i).Bottomlayer() == False:
-                    children = basis.MCTDHnode(i).NChildren()
-                    parent = basis.MCTDHnode(i).t_dim().GetnTensor()
-                    for j in range(children):
-                        remnant *= basis.MCTDHnode(i).down(j).t_dim().GetnTensor() 
-                    remnant *= parent
-                    remnantNodeList.append(remnant)
-                    remnant = 0
-        remnantSum = sum(remnantNodeList)
-    
-        return ProdBottom + TopNode + remnantSum
-    
-    print get_SPFs()
 \end{verbatim}
 
 

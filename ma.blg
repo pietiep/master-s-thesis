@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ma.aux
 The style file: apsrev.bst
-White space in argument---line 113 of file ma.aux
+White space in argument---line 103 of file ma.aux
  : \bibdata{./bibtex/eigen,./bibtex/MCTDH,./bibtex/SPP96,./bibtex/python,
  :                                                                        ./bibtex/PyQt}
 I'm skipping whatever remains of this command
@@ -31,53 +31,51 @@ Repeated entry---line 439 of file ./bibtex/SPP96.bib
  :            ,
 I'm skipping whatever remains of this entry
 Database file #4: ./bibtex/python.bib
-Warning--entry type for "Qt" isn't style-file defined
---line 35 of file ./bibtex/python.bib
 Warning--entry type for "SciPy" isn't style-file defined
 --line 51 of file ./bibtex/python.bib
 Warning--entry type for "TensorFlow" isn't style-file defined
 --line 58 of file ./bibtex/python.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 76 entries,
+You've used 73 entries,
             3411 wiz_defined-function locations,
-            1604 strings with 23883 characters,
-and the built_in function-call counts, 52652 in all, are:
-= -- 3051
-> -- 1721
-< -- 240
-+ -- 1406
-- -- 416
-* -- 7157
-:= -- 5658
-add.period$ -- 76
-call.type$ -- 76
-change.case$ -- 308
-chr.to.int$ -- 68
-cite$ -- 82
-duplicate$ -- 4713
-empty$ -- 4445
-format.name$ -- 1083
-if$ -- 10018
+            1590 strings with 23566 characters,
+and the built_in function-call counts, 51376 in all, are:
+= -- 2972
+> -- 1697
+< -- 235
++ -- 1386
+- -- 410
+* -- 7006
+:= -- 5505
+add.period$ -- 73
+call.type$ -- 73
+change.case$ -- 294
+chr.to.int$ -- 65
+cite$ -- 77
+duplicate$ -- 4590
+empty$ -- 4323
+format.name$ -- 1065
+if$ -- 9779
 int.to.chr$ -- 9
-int.to.str$ -- 77
-missing$ -- 727
-newline$ -- 243
-num.names$ -- 219
-pop$ -- 1282
+int.to.str$ -- 74
+missing$ -- 708
+newline$ -- 234
+num.names$ -- 213
+pop$ -- 1238
 preamble$ -- 1
-purify$ -- 304
+purify$ -- 292
 quote$ -- 0
-skip$ -- 1976
+skip$ -- 1928
 stack$ -- 0
-substring$ -- 1910
-swap$ -- 3741
-text.length$ -- 208
+substring$ -- 1873
+swap$ -- 3662
+text.length$ -- 205
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 452
+type$ -- 436
 warning$ -- 0
-while$ -- 216
+while$ -- 212
 width$ -- 0
-write$ -- 769
+write$ -- 741
 (There were 6 error messages)

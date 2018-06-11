@@ -1,10 +1,10 @@
 @startuml
-ControlParameter - mctdhBasis
+mctdhBasis - ControlParameter
 mctdhBasis -- mctdhNode
 mctdhNode -- physCoor
 mctdhNode -- Tdim
 
-ControlParameter : +Initialize(mctdh.config)
+ControlParameter : +Initialize(ConfigFile)
 mctdhBasis : +Initialize(ControlParameterObj, BasisFile)
 mctdhBasis : +MCTDHNode(nodeAdress)
 mctdhBasis : +NmctdhNode()

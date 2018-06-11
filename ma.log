@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  10 JUN 2018 18:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  11 JUN 2018 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -876,7 +876,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<./figures/Uni-Logo.pdf, id=40, 137.51375pt x 54.2025pt>
+<./figures/Uni-Logo.pdf, id=36, 137.51375pt x 54.2025pt>
 File: ./figures/Uni-Logo.pdf Graphic file (type pdf)
 
 <use ./figures/Uni-Logo.pdf>
@@ -977,7 +977,7 @@ it/12 q[] \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/12 x[]; x[]; x[]\OM
 S/lmsy/m/n/12 g$\T1/lmr/m/n/12 . 
  []
 
-<figures/treeDiagramms.pdf, id=216, 396.28049pt x 477.76494pt>
+<figures/treeDiagramms.pdf, id=211, 396.28049pt x 477.76494pt>
 File: figures/treeDiagramms.pdf Graphic file (type pdf)
 
 <use figures/treeDiagramms.pdf>
@@ -992,154 +992,126 @@ Underfull \hbox (badness 1454) in paragraph at lines 199--199
 
 LaTeX Warning: Float too large for page by 39.6017pt on input line 200.
 
-[7] [8 <./figures/treeDiagramms.pdf>] [9]) (./content/Methoden.tex [10]
+[7] [8 <./figures/treeDiagramms.pdf>] [9]) (./content/Ergebnisse.tex [10]
 Kapitel 3.
-<figures/umlPyQt.png, id=255, 1473.505pt x 833.1125pt>
-File: figures/umlPyQt.png Graphic file (type png)
-
-<use figures/umlPyQt.png>
-Package pdftex.def Info: figures/umlPyQt.png used on input line 9.
-(pdftex.def)             Requested size: 448.13095pt x 253.36798pt.
-
-
-LaTeX Warning: Float too large for page by 45.6542pt on input line 12.
-
 [11
-
-
-] [12 <./figures/umlPyQt.png (PNG copy)>]
-Overfull \hbox (16.46852pt too wide) in paragraph at lines 64--72
-\T1/lmr/m/n/12 lungsarten ändert nicht die darun-ter-liegende Daten-struk-tur.$
-[]$ Der Vorteil der Model/View-
- []
-
-[13]) (./content/Ergebnisse.tex [14]
-Kapitel 4.
-[15
 
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 26.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [16]
-Overfull \hbox (58.2193pt too wide) in paragraph at lines 83--83
-[]                        \T1/lmtt/m/n/12 TopNode *= basis.MCTDHnode(i).down(j)
-.t_dim().GetnTensor()[] 
+)
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 78--78
+[]                    \T1/lmtt/m/n/12 TopNode *= basis.MCTDHnode(i).down(j).t_d
+im().GetnTensor()[] 
  []
 
-
-Overfull \hbox (58.2193pt too wide) in paragraph at lines 83--83
-[]                        \T1/lmtt/m/n/12 remnant *= basis.MCTDHnode(i).down(j)
-.t_dim().GetnTensor()[] 
+[12]
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 78--78
+[]                    \T1/lmtt/m/n/12 remnant *= basis.MCTDHnode(i).down(j).t_d
+im().GetnTensor()[] 
  []
 
-[17] [18]
-Overfull \hbox (8.81927pt too wide) in paragraph at lines 176--176
+[13] [14]
+Overfull \hbox (8.81927pt too wide) in paragraph at lines 171--171
 []                \T1/lmtt/m/n/12 TopNode *= basis.MCTDHnode(i).down(j).t_dim()
 .GetnTensor()[] 
  []
 
 
-Overfull \hbox (33.51929pt too wide) in paragraph at lines 196--196
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 191--191
 []                    \T1/lmtt/m/n/12 remnant *= basis.MCTDHnode(i).down(j).t_d
 im().GetnTensor()[] 
  []
 
-[19] <figures/sequenceDiagram.png, id=309, 275.0275pt x 534.99875pt>
+[15] <figures/sequenceDiagram.png, id=274, 363.3575pt x 412.54124pt>
 File: figures/sequenceDiagram.png Graphic file (type png)
 
 <use figures/sequenceDiagram.png>
-Package pdftex.def Info: figures/sequenceDiagram.png used on input line 215.
-(pdftex.def)             Requested size: 165.01776pt x 321.00172pt.
+Package pdftex.def Info: figures/sequenceDiagram.png used on input line 210.
+(pdftex.def)             Requested size: 218.01617pt x 247.52666pt.
 
-Underfull \hbox (badness 1655) in paragraph at lines 217--217
+Underfull \hbox (badness 1655) in paragraph at lines 212--212
 \T1/lmr/m/n/12 gekennze-ich-net. Die jew-eili-gen Klassen-meth-o-d-en sind mit 
 einem
  []
 
-[20] [21 <./figures/sequenceDiagram.png (PNG copy)>]
-<figures/screenMain.pdf, id=318, 649.46074pt x 550.24976pt>
+<figures/screenMain.pdf, id=275, 649.46074pt x 550.24976pt>
 File: figures/screenMain.pdf Graphic file (type pdf)
 
 <use figures/screenMain.pdf>
-Package pdftex.def Info: figures/screenMain.pdf used on input line 234.
+Package pdftex.def Info: figures/screenMain.pdf used on input line 229.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
-
-<figures/screenMainFile.pdf, id=321, 649.46074pt x 550.24976pt>
+ [16 <./figures/sequenceDiagram.png (PNG copy)>]
+<figures/screenMainFile.pdf, id=283, 649.46074pt x 550.24976pt>
 File: figures/screenMainFile.pdf Graphic file (type pdf)
 
 <use figures/screenMainFile.pdf>
-Package pdftex.def Info: figures/screenMainFile.pdf used on input line 249.
+Package pdftex.def Info: figures/screenMainFile.pdf used on input line 244.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
-<figures/screenMainProject.pdf, id=325, 646.00961pt x 551.14886pt>
+<figures/screenMainProject.pdf, id=287, 646.00961pt x 551.14886pt>
 File: figures/screenMainProject.pdf Graphic file (type pdf)
 
 <use figures/screenMainProject.pdf>
-Package pdftex.def Info: figures/screenMainProject.pdf used on input line 260.
+Package pdftex.def Info: figures/screenMainProject.pdf used on input line 255.
 (pdftex.def)             Requested size: 323.00401pt x 275.57375pt.
 
-Overfull \hbox (5.11667pt too wide) in paragraph at lines 264--291
+Overfull \hbox (5.11667pt too wide) in paragraph at lines 259--286
 \T1/lmr/m/n/12 wird, wird überprüft, ob der gewählte Name dem Na-men ein-er an-
 dere Rech-nung entspricht
  []
 
-[22] <figures/screenWidgetA.pdf, id=338, 1328.27492pt x 729.13107pt>
+[17 <./figures/screenMain.pdf>] [18 <./figures/screenMainFile.pdf>]
+<figures/screenWidgetA.pdf, id=330, 1328.27492pt x 729.13107pt>
 File: figures/screenWidgetA.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetA.pdf>
-Package pdftex.def Info: figures/screenWidgetA.pdf used on input line 295.
+Package pdftex.def Info: figures/screenWidgetA.pdf used on input line 290.
 (pdftex.def)             Requested size: 1328.27168pt x 729.12929pt.
 
 
-LaTeX Warning: Float too large for page by 15.71819pt on input line 297.
+LaTeX Warning: Float too large for page by 15.71819pt on input line 292.
 
-<figures/screenWidgetAexample.pdf, id=339, 1327.17621pt x 726.93378pt>
+<figures/screenWidgetAexample.pdf, id=331, 1327.17621pt x 726.93378pt>
 File: figures/screenWidgetAexample.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetAexample.pdf>
-Package pdftex.def Info: figures/screenWidgetAexample.pdf used on input line 30
-0.
+Package pdftex.def Info: figures/screenWidgetAexample.pdf used on input line 29
+5.
 (pdftex.def)             Requested size: 1327.17297pt x 726.932pt.
 
 
-LaTeX Warning: Float too large for page by 29.72377pt on input line 303.
+LaTeX Warning: Float too large for page by 29.72377pt on input line 298.
 
-) (./content/Fazit.tex [23 <./figures/screenMain.pdf>] [24 <./figures/screenMai
-nFile.pdf>] [25 <./figures/screenMainProject.pdf>] [26 <./figures/screenWidgetA
-.pdf>] [27 <./figures/screenWidgetAexample.pdf>]
-Kapitel 5.
-) [28
+) (./content/Fazit.tex [19 <./figures/screenMainProject.pdf>] [20 <./figures/sc
+reenWidgetA.pdf>] [21 <./figures/screenWidgetAexample.pdf>]
+Kapitel 4.
+) [22
 
 
-] (./ma.bbl [29
-
+] (./ma.bbl [23
 
 
 
-] [30] [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 571--573
-[]\T1/lmr/m/it/12 Model/view pro-gram-ming \T1/lmr/m/n/12 (2018), URL [][]$\T1/
-lmtt/m/n/12 http : / / doc . qt . io / qt-[]5 /
- []
 
-)
+] [24] [25] [26])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
- [33]
+ [27]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (./ma.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `ma.out' has not changed.
-(rerunfilecheck)             Checksum: 632B6BB78C8DBD44B60161A12A7FD61D;571.
+(rerunfilecheck)             Checksum: 03B203465E09A883A70B04FE3663C7F7;511.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 12644 strings out of 494820
- 190163 string characters out of 3178049
- 307418 words of memory out of 3000000
- 15407 multiletter control sequences out of 15000+200000
+ 12609 strings out of 494820
+ 189677 string characters out of 3178049
+ 307204 words of memory out of 3000000
+ 15387 multiletter control sequences out of 15000+200000
  75192 words of font info for 60 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  48i,15n,68p,474b,645s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1160,10 +1132,10 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.p
 fb>
-Output written on ma.pdf (36 pages, 2725873 bytes).
+Output written on ma.pdf (30 pages, 2628876 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
- 488 compressed objects within 5 object streams
- 139 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 530 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
