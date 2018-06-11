@@ -7,7 +7,7 @@ Es wurde eine Programmierschnittstelle (von englisch \textit{application program
 welche es erlaubt Klassen und Funktionen des in C++ verfassten MCTDH Codes in Python-Skripten zu verwenden.
 Die Schnittstelle umfasst Klassen und Methoden, die zur Verwaltung der MCTDH Basis dienen.
 Die Erweiterung auf andere Klassen kann nach einem einfachen Schema erfolgen.
-Abbildung \ref{fig:uml_Cython} zeigt ein Klassendiagramm aller Klassen, welche über die API aufgerufen werden k"onnen.
+Abbildung \ref{fig:uml_Cython} zeigt ein Klassendiagramm aller Klassen, welche "uber die API aufgerufen werden k"onnen.
 Jede Klasse der API wird in Abbildung \ref{fig:uml_Cython} durch ein Rechteck repr"asentiert.
 Im oberen Teil des Rechtecks ist der Klassenname angegeben und im unteren Teil sind die Methoden der Klasse aufgelistet.
 Die baumartige Anordnung der Rechtecke repr"asentiert die Abh"angigkeit der Klassen zueinander. Eine Klasse h"angt von
@@ -15,13 +15,14 @@ allen Klassen ab, die sich im Diagramm unterhalb der betrachteten Klasse befinde
 In der Klasse \textit{Controlparameters} werden die Genauigkeitsparameter der MCTDH Rechnung verwaltet. 
 Die Klasse \textit{physCoor} verwaltet Informationen einer Koordinate und enth"alt das primitive Gitter oder
 die primitive Basis. Sie ist ein Memberobjekt der Klasse \textit{mctdhNode}, welche einen Knoten im MCTDH Baum 
-repr"asentiert. In der Klasse \textit{mctdhNode} wird die lokale Konnektivit"at des Knoten, sowie dessen
+repr"asentiert. In der Klasse \textit{mctdhNode} wird die lokale Konnektivit"at des Knoten, sowie dessen Satz von
 Entwicklungskoeffizienten verwaltet. Die Dimensionen der Entwicklungskoeffizienten sind in Objekten der Klasse
 \textit{Tdim} gespeichert. Die Klasse \textit{mctdhBasis} enth"alt alle Objekte, die dem Management der MCTDH-Basis
 dienen.
 
-Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen die Gr"o"se einer
-MCTDH-Wellenfunktion berechnet wird:
+Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen Dimensionsinformation
+einer Multilayer-MCTDH-Wellenfunktion berechnet werden k"onnen. Zuerst wird das Skript vorgestellt und 
+anschlie"send wird es abschnittsweise erkl"art.
 
 \newpage
 
@@ -44,12 +45,12 @@ MCTDH-Wellenfunktion berechnet wird:
     primitivB = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
                 range(maxNodes) if \
                     basis.MCTDHnode(i).Bottomlayer() == True}
-    NCoefProdBottomNode = {}
+    NCoefBottomNode = {}
     for key in primitivB:
-        NCoefProdBottomNode[key] = primitivB[key] * nodes_spf[key]
-    NCoefProdBottom = sum([l_[1] for l_ in NCoefProdBottomNode.items()])
+        NCoefBottomNode[key] = primitivB[key] * nodes_spf[key]
+    NCoefBottom = sum([l_[1] for l_ in NCoefBottomNode.items()])
     
-    print NCoefProdBottom
+    print NCoefBottom
 
     NCoefTopNode = 0
     for i in range(maxNodes):
@@ -122,8 +123,8 @@ primitivB = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
 Daraufhin wird die Anzahl aller Entwicklungskoeffizienten des Bottomlayer berechnet durch
 \begin{verbatim}
 for key in primitivB:
-    NCoefProdBottomNode[key] = primitivB[key] * nodes_spf[key]
-NCoefProdBottom = sum([l_[1] for l_ in NCoefProdBottomNode.items()])
+    NCoefBottomNode[key] = primitivB[key] * nodes_spf[key]
+NCoefBottom = sum([l_[1] for l_ in NCoefBottomNode.items()])
 \end{verbatim}
 
 Die Anzahl der Entwicklungskoeffizienten der obersten Lage wird durch den folgenden Code-Abschnitt berechnet:
@@ -154,10 +155,10 @@ for i in range(maxNodes):
     NCoefRemnant = sum(remnantNodeList)
 \end{verbatim}
 
-Schlie"slich wird die kumulierte Anzahl aller Entwicklungskoeffizienten der unteren Knoten, des oberen Knoten
+Schlie"slich wird die Anzahl aller Entwicklungskoeffizienten der unteren Knoten, des oberen Knoten
 und der restlichen Knoten berechnet und ausgegeben:
 \begin{verbatim}
- print NCoefProdBottom 
+ print NCoefBottom 
  print NCoefTopNode 
  print NCoefRemnant
 \end{verbatim}
@@ -165,22 +166,18 @@ und der restlichen Knoten berechnet und ausgegeben:
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{figures/sequenceDiagram}
-    \caption{Alle Klassen, die in Cython erstellt wurden, sind mit einem ,,C'' gekennzeichnet. Die jeweiligen Klassenmethoden sind mit einem
-    gr"unen Punkt gekennzeichnet.}\label{fig:uml_Cython}
+    \caption{Klassendiagramm der Programmierschnittstelle (API). Die Rechtecke repr"asentieren jeweils eine Klasse.
+    Im oberen Bereich des Rechtecks befindet sich der Name der Klasse und im unteren Bereich eine Liste aller
+    Memberfunktionen. F"ur eine detaillierte Beschreibung siehe Text.}\label{fig:uml_Cython}
 \end{figure}
-
-
-
-
-
 
 
 
 \section{Graphische Benutzeroberfl"ache f"ur MCTDH}
 
 Zur Demonstration der graphischen Benutzeroberfl"ache wird im folgenden das Vorgehen zum Starten einer 
-MCTDH Simulation vorgef"uhrt. Als Beispiel dient die Realzeitpropagation eines Wellenpakets auf dem
-dissoziativen $S_1$ angeregten Zustandes von NOCl.
+MCTDH Simulation vorgef"uhrt. Als Beispiel dient die Realzeitpro\-pagation eines Wellenpakets auf dem
+ersten elektronisch angeregten Zustands ($S_1$) von NOCl.
 
 \begin{figure}
     \centering
@@ -193,7 +190,7 @@ In Liste \textbf{1} sind alle vorhandenen Projekte aufgef"uhrt.
 Nach Auswahl eines Projekts erscheinen in Liste \textbf{2} alle dem Projekt zugeoredneten Rechnungen.
 Durch die Schaltfl"achen ,,+'' und ,,-'' k"onnen Projekte sowie Rechnungen jeweils hinzugef"ugt bzw.
 entfernt werde.
-Im ,,File'' \textbf{3} befinden sich zus"atzliche Optionen zur Projektverwaltung (siehe Abbildung \ref{fig:workflow2}).
+Im Reiter ,,File'' \textbf{3} befinden sich zus"atzliche Optionen zur Projektverwaltung (siehe Abbildung \ref{fig:workflow2}).
 Durch Klicken der Schaltfl"ache \textbf{5} wird ein neues Projekt erstellt. Externe Projekte werden durch die 
 Schaltfl"ache \textbf{6} geladen. Bet"atigung der Schaltfl"ache \textbf{7} beendet die Benutzeroberfl"ache.
 
@@ -206,7 +203,7 @@ Schaltfl"ache \textbf{6} geladen. Bet"atigung der Schaltfl"ache \textbf{7} beend
 
 Zum Starten einer neuen Rechnung wird zuerst der Reiter ,,Project'' (Abbildung \ref{fig:workflow1} \textbf{4}) 
 ausgew"ahlt. Zwei neue Buttons erscheinen (Abbildung \ref{fig:workflow3}). Durch Klicken von \textbf{8} 
-erscheint ein neues Fenster ,,MCTDH calculation'' (siehe Abbildung \ref{fig:workflow4}). 
+erscheint ein neues Fenster mit dem Namen ,,MCTDH calculation'' (siehe Abbildung \ref{fig:workflow4}). 
 In diesem Fenster wird die neue MCTDH Rechnung spezifiziert.
 
 \begin{figure}
@@ -219,34 +216,39 @@ In diesem Fenster wird die neue MCTDH Rechnung spezifiziert.
 In dem Eingabefenster ,,MCTDH calculation'' kann im Feld \textbf{10} der Name der Rechnung angegeben werden. 
 Sollte beim Speichern (Abbildung \ref{fig:workflow4} \textbf{18}) des MCTDH-Baums und der Einstellungsparameter 
 kein Name angegeben sein, wird der Benutzer 
-aufgefordert einen Name f"ur die Rechnung zu w"ahlen. Bevor die Rechnung gespeichert wird, 
-wird "uberpr"uft, ob der gew"ahlte Name dem Namen einer andere Rechnung entspricht und, ob diese 
-dann gegebenfalls "uberschrieben werden soll.
-In Liste \textbf{11} wird der entsprechende Summe-von-Produkten Operator f"ur das gegebene System ausgew"ahlt.
-"Uber die Kn"opfe \textbf{12} ,,on'' und ,,off'' wird gesteuert, ob eine Potentialfl"achenauswertung mittels 
+aufgefordert einen Name f"ur die Rechnung zu w"ahlen. 
+%Bevor die Rechnung gespeichert wird, 
+%wird "uberpr"uft, ob der gew"ahlte Name dem Namen einer andere Rechnung entspricht und, ob diese 
+%dann gegebenfalls "uberschrieben werden soll.
+Beim Speichern der Rechnung wird "uberpr"uft, ob eine Rechnung mit dem ausgew"ahlten Namen existiert,
+um ein unabsichtliches "Uberschreiben zu verhindern.
+In Liste \textbf{11} wird der entsprech\-ende Summe-von-Produkten Operator f"ur das gegebene System ausgew"ahlt.
+"Uber die Kn"opfe  ,,on'' und ,,off'' (\textbf{12}) wird gesteuert, ob eine Potentialfl"achenauswertung mittels 
 CDVR erfolgt.
 Ist der ,,off'' Knopf aktiviert, werden keine Potentiale in der Liste \textbf{13} angezeigt.
-Bei der Standardeinstellung der GUI ist der ,,on''-Knopf aktiviert und es k"onnen Potentiale durch Klicken
+Bei der Standardeinstellung der GUI ist der Knopf ,,on'' aktiviert und es k"onnen Potentiale durch Klicken
 auf die Elemente der Liste \textbf{13} ausgew"ahlt werden. Im vorliegenden Beispiel wird die Option ,,off''
 ausgew"ahlt.
 Die Erweiterung der Summe-von-Produkten Operatoren und Potentialfl"achen kann schematisch erfolgen.
-Mithilfe der MCTDH GUI k"onnen vier verschiedene Operationen durchgef"uhrt werden \textbf{14}:
+
+Mithilfe der MCTDH GUI k"onnen vier verschiedene Operationen durchgef"uhrt werden (\textbf{14}):
 ,,real-time propagation'', ,,imaginary-time propagation'', ,,Eigenstate calculation'' und ,,Thermal flux eigenstate calculation''.
 Hier wird die Option ,,real-time propagation'' ausgew"ahlt.
 Des Weiteren werden unter \textbf{15} Steuerungsparameter f"ur den Integrator ausgew"ahlt. Dazu geh"oren die Anfangszeit, die Endzeit,
 der initiale Zeitschritt und (f"ur die Operationen ,,Eigenstate calculation'' und ,,Thermal flux eigenstate calculation'')
-die Anzahl an Iterationen.. Alle Parameter werden automatisch geladen, indem eine System aus
+die Anzahl an Iterationen.. Alle Parameter werden automatisch geladen, indem ein System aus
 Liste \textbf{11} ausgew"ahlt wird oder eine Eingabe-Datei durch 
 die ,,Load'' Schaltfl"alche \textbf{19} eingelesen wird. 
-Der MCTDH-Baum, welcher die aktuell gew"ahlte Basis repr"asentiert, wird unter \textbf{16} als Listendiagramm angezeigt. 
-Zus"atzlich wird der MCTDH-Baum in Form eines Diagramms in \textbf{17} angezeigt. In \textbf{16}
+Der MCTDH-Baum, welcher die aktuell gew"ahlte Basis repr"asentiert, wird unter \textbf{16} 
+als Listendiagramm angezeigt. Hier
 kann durch Doppelklick die Anzahl der SPFs, der primitiven Basis und der Moden ver"andert werden.
-Die "Anderung wird sofort im Bild \textbf{17} angezeigt.
+Zus"atzlich wird der MCTDH-Baum in Form eines Diagramms in \textbf{17} angezeigt. 
 Die Schaltfl"ache ,,Cancel'' \textbf{21} beendet das Eingabefenster
-und die Schaltfl"ache ,,Start calculation'' \textbf{20} beginnt die MCTDH Simulation.
-Alternativ kann die MCTDH Simulation auch aus dem Hauptfenster gestartet werden (siehe Abbildung \ref{fig:workflow3}).
-Durch Klicken der Schaltfl"ache ,,Run MCTDH on existing job'' \textbf{9} kann ebenfalls
-eine MCTDH Simulation gestartet.
+und die Schaltfl"ache ,,Start calculation'' (\textbf{20}) beginnt die MCTDH Simulation.
+Alternativ kann die MCTDH Simulation auch aus dem Hauptfenster gestartet werden,
+indem Schaltfl"ache ,,Run MCTDH on existing job'' (\textbf{9}) bet"atigt wird (siehe Abbildung \ref{fig:workflow3}).
+%Durch Klicken der Schaltfl"ache ,,Run MCTDH on existing job'' (\textbf{9}) kann ebenfalls eine MCTDH Simulation gestartet.
+
 In Abbildung \ref{fig:workflow5} wurde das System NOCl mit sinnvollen Eingabeparametern geladen,
 indem auf ,,NOCl'' aus Liste \textbf{11} geklickt wurde.
 
