@@ -7,4 +7,5 @@
 \contentsline {section}{\numberline {4.1}Python-Interface f"ur MCTDH}{12}{section.4.1}
 \contentsline {section}{\numberline {4.2}Graphische Benutzeroberfl"ache f"ur MCTDH}{18}{section.4.2}
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{25}{chapter.5}
-\contentsline {chapter}{Literaturverzeichnis}{26}{appendix*.9}
+\contentsline {chapter}{Anhang}{26}{appendix*.9}
+\contentsline {chapter}{Literaturverzeichnis}{82}{appendix*.10}
