@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  12 JUN 2018 17:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  12 JUN 2018 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,28 +910,22 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (./content/intro.tex
 Kapitel 1.
 
-Overfull \hbox (3.51106pt too wide) in paragraph at lines 4--32
+Overfull \hbox (3.51106pt too wide) in paragraph at lines 4--34
 \T1/lmr/m/n/12 wer-den$[]$. Beispiele für hochdi-men-sion-ale Benchmark-Anwendu
 ngen sind die 21-dimen-
  []
 
 
-Overfull \hbox (8.15878pt too wide) in paragraph at lines 33--47
-\T1/lmr/m/n/12 sich als ein-steiger-fre-undliche Pro-gram-mier-sprache er-wiese
-n. Ver-gle-ich-bare Python-Schnitt-
+Overfull \hbox (7.46463pt too wide) in paragraph at lines 35--44
+\T1/lmr/m/n/12 die Nutzung des Pro-gramms selb-st bei ver-gle-ich-sweise ein-fa
+chen Auf-gaben bis-lang grundle-
  []
 
 [1
 
 
 
-]) (./content/Theorie.tex
-Overfull \hbox (6.40202pt too wide) in paragraph at lines 48--1
-\T1/lmr/m/n/12 den die Python-Schnittstelle und die graphis-che Be-nutze-r-ober
--fläche vorgestellt. Schlieÿlich
- []
-
-[2]
+]) (./content/Theorie.tex [2]
 Kapitel 2.
 
 Overfull \hbox (2.86967pt too wide) in paragraph at lines 26--39
@@ -1038,21 +1032,21 @@ File: figures/sequenceDiagram.png Graphic file (type png)
 Package pdftex.def Info: figures/sequenceDiagram.png used on input line 169.
 (pdftex.def)             Requested size: 218.01617pt x 261.98077pt.
  [16] [17 <./figures/sequenceDiagram.png (PNG copy)>] <figures/screenMain.pdf, 
-id=306, 649.46074pt x 550.24976pt>
+id=305, 649.46074pt x 550.24976pt>
 File: figures/screenMain.pdf Graphic file (type pdf)
 
 <use figures/screenMain.pdf>
 Package pdftex.def Info: figures/screenMain.pdf used on input line 185.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
-<figures/screenMainFile.pdf, id=309, 649.46074pt x 550.24976pt>
+<figures/screenMainFile.pdf, id=308, 649.46074pt x 550.24976pt>
 File: figures/screenMainFile.pdf Graphic file (type pdf)
 
 <use figures/screenMainFile.pdf>
 Package pdftex.def Info: figures/screenMainFile.pdf used on input line 200.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
-<figures/screenMainProject.pdf, id=313, 646.00961pt x 551.14886pt>
+<figures/screenMainProject.pdf, id=312, 646.00961pt x 551.14886pt>
 File: figures/screenMainProject.pdf Graphic file (type pdf)
 
 <use figures/screenMainProject.pdf>
@@ -1694,13 +1688,13 @@ Package rerunfilecheck Info: File `ma.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 12686 strings out of 494820
- 190420 string characters out of 3178049
- 309826 words of memory out of 3000000
- 15396 multiletter control sequences out of 15000+200000
+ 12691 strings out of 494820
+ 190503 string characters out of 3178049
+ 308889 words of memory out of 3000000
+ 15400 multiletter control sequences out of 15000+200000
  75192 words of font info for 60 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 48i,15n,68p,478b,647s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,15n,68p,478b,646s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
 ve/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/f
 onts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
@@ -1718,10 +1712,10 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.p
 fb>
-Output written on ma.pdf (89 pages, 4341251 bytes).
+Output written on ma.pdf (89 pages, 4342618 bytes).
 PDF statistics:
  813 PDF objects out of 1000 (max. 8388607)
  668 compressed objects within 7 object streams
- 189 named destinations out of 1000 (max. 500000)
+ 190 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
