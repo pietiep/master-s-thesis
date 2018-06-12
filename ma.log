@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  12 JUN 2018 13:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  12 JUN 2018 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,20 +983,15 @@ it/12 q[] \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/12 x[]; x[]; x[]\OM
 S/lmsy/m/n/12 g$\T1/lmr/m/n/12 . 
  []
 
-<figures/treeDiagramms.pdf, id=220, 396.28049pt x 477.76494pt>
+<figures/treeDiagramms.pdf, id=220, 396.28052pt x 476.58104pt>
 File: figures/treeDiagramms.pdf Graphic file (type pdf)
 
 <use figures/treeDiagramms.pdf>
 Package pdftex.def Info: figures/treeDiagramms.pdf used on input line 196.
-(pdftex.def)             Requested size: 448.13095pt x 540.31279pt.
-
-Underfull \hbox (badness 1454) in paragraph at lines 200--200
-\T1/lmr/m/n/12 Stan-dard-wellen-pakets, (b) eine MCTDH-Wellenfunktion, (c) eine
-
- []
+(pdftex.def)             Requested size: 448.13095pt x 538.97389pt.
 
 
-LaTeX Warning: Float too large for page by 39.6017pt on input line 201.
+LaTeX Warning: Float too large for page by 38.2628pt on input line 201.
 
 [7] [8] [9 <./figures/treeDiagramms.pdf>]) (./content/Methoden.tex [10]
 Kapitel 3.
@@ -1036,28 +1031,28 @@ Overfull \hbox (33.51929pt too wide) in paragraph at lines 157--157
 im().GetnTensor()[] 
  []
 
-<figures/sequenceDiagram.png, id=282, 363.3575pt x 436.63126pt>
+<figures/sequenceDiagram.png, id=290, 363.3575pt x 436.63126pt>
 File: figures/sequenceDiagram.png Graphic file (type png)
 
 <use figures/sequenceDiagram.png>
 Package pdftex.def Info: figures/sequenceDiagram.png used on input line 169.
 (pdftex.def)             Requested size: 218.01617pt x 261.98077pt.
  [16] [17 <./figures/sequenceDiagram.png (PNG copy)>] <figures/screenMain.pdf, 
-id=292, 649.46074pt x 550.24976pt>
+id=300, 649.46074pt x 550.24976pt>
 File: figures/screenMain.pdf Graphic file (type pdf)
 
 <use figures/screenMain.pdf>
 Package pdftex.def Info: figures/screenMain.pdf used on input line 185.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
-<figures/screenMainFile.pdf, id=295, 649.46074pt x 550.24976pt>
+<figures/screenMainFile.pdf, id=303, 649.46074pt x 550.24976pt>
 File: figures/screenMainFile.pdf Graphic file (type pdf)
 
 <use figures/screenMainFile.pdf>
 Package pdftex.def Info: figures/screenMainFile.pdf used on input line 200.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
-<figures/screenMainProject.pdf, id=299, 646.00961pt x 551.14886pt>
+<figures/screenMainProject.pdf, id=307, 646.00961pt x 551.14886pt>
 File: figures/screenMainProject.pdf Graphic file (type pdf)
 
 <use figures/screenMainProject.pdf>
@@ -1075,7 +1070,7 @@ Overfull \hbox (3.93529pt too wide) in paragraph at lines 253--255
 vollen Eingabepa-ram-e-tern geladen,
  []
 
-<figures/screenWidgetA.pdf, id=363, 1328.27492pt x 729.13107pt>
+<figures/screenWidgetA.pdf, id=371, 1328.27492pt x 729.13107pt>
 File: figures/screenWidgetA.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetA.pdf>
@@ -1085,7 +1080,7 @@ Package pdftex.def Info: figures/screenWidgetA.pdf used on input line 258.
 
 LaTeX Warning: Float too large for page by 15.71819pt on input line 260.
 
-<figures/screenWidgetAexample.pdf, id=364, 1327.17621pt x 726.93378pt>
+<figures/screenWidgetAexample.pdf, id=372, 1327.17621pt x 726.93378pt>
 File: figures/screenWidgetAexample.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetAexample.pdf>
@@ -1127,11 +1122,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
 Here is how much of TeX's memory you used:
  12621 strings out of 494820
  189846 string characters out of 3178049
- 309822 words of memory out of 3000000
+ 308826 words of memory out of 3000000
  15392 multiletter control sequences out of 15000+200000
  75192 words of font info for 60 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
- 48i,15n,68p,474b,645s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,15n,68p,478b,645s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
 ve/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/f
 onts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
@@ -1149,10 +1144,10 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.p
 fb>
-Output written on ma.pdf (33 pages, 2633061 bytes).
+Output written on ma.pdf (33 pages, 4285163 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 466 compressed objects within 5 object streams
+ 558 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
  132 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
