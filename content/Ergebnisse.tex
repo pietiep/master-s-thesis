@@ -1,26 +1,27 @@
 \chapter{Ergebnisse}
+\label{ch:Ergebnisse}
 
 \section{Python-Interface f"ur MCTDH}
 \label{sec:PyInterface}
 
 Es wurde eine Programmierschnittstelle (von englisch \textit{application programming interface}, API) f"ur das MCTDH-Programmpaket erstellt,
-welche es erlaubt Klassen und Funktionen des in C++ verfassten MCTDH Codes in Python-Skripten zu verwenden.
-Die Schnittstelle umfasst Klassen und Methoden, die zur Verwaltung der MCTDH Basis dienen.
+welche es erlaubt Klassen und Funktionen des in C++ verfassten MCTDH-Codes in Python-Skripten zu verwenden.
+Die Schnittstelle umfasst Klassen und Methoden, die zur Verwaltung der MCTDH-Basis dienen.
 Die Erweiterung auf andere Klassen kann nach einem einfachen Schema erfolgen.
 Abbildung \ref{fig:uml_Cython} zeigt ein Klassendiagramm aller Klassen, welche "uber die API aufgerufen werden k"onnen.
 Jede Klasse der API wird in Abbildung \ref{fig:uml_Cython} durch ein Rechteck repr"asentiert.
 Im oberen Teil des Rechtecks ist der Klassenname angegeben und im unteren Teil sind die Methoden der Klasse aufgelistet.
 Die baumartige Anordnung der Rechtecke repr"asentiert die Abh"angigkeit der Klassen zueinander. Eine Klasse h"angt von
 allen Klassen ab, die sich im Diagramm unterhalb der betrachteten Klasse befinden und zu denen eine Verbindung besteht.
-In der Klasse \textit{Controlparameters} werden die Genauigkeitsparameter der MCTDH Rechnung verwaltet. 
+In der Klasse \textit{Controlparameters} werden die Genauigkeitsparameter der MCTDH-Rechnung verwaltet. 
 Die Klasse \textit{physCoor} verwaltet Informationen einer Koordinate und enth"alt das primitive Gitter oder
-die primitive Basis. Sie ist ein Memberobjekt der Klasse \textit{mctdhNode}, welche einen Knoten im MCTDH Baum 
+die primitive Basis. Sie ist ein Memberobjekt der Klasse \textit{mctdhNode}, welche einen Knoten im MCTDH-Baum 
 repr"asentiert. In der Klasse \textit{mctdhNode} wird die lokale Konnektivit"at des Knoten, sowie dessen Satz von
 Entwicklungskoeffizienten verwaltet. Die Dimensionen der Entwicklungskoeffizienten sind in Objekten der Klasse
 \textit{Tdim} gespeichert. Die Klasse \textit{mctdhBasis} enth"alt alle Objekte, die dem Management der MCTDH-Basis
 dienen.
 
-Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen Dimensionsinformation
+Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen Dimensionsinformationen
 einer Multilayer-MCTDH-Wellenfunktion berechnet werden k"onnen. Zuerst wird das Skript vorgestellt und 
 anschlie"send wird es abschnittsweise erkl"art.
 
@@ -120,7 +121,7 @@ primitivB = {i: basis.MCTDHnode(i).t_dim().active(0) for i in \
             basis.MCTDHnode(i).Bottomlayer() == True}
 \end{verbatim}
 
-Daraufhin wird die Anzahl aller Entwicklungskoeffizienten des Bottomlayer berechnet durch
+Daraufhin wird die Anzahl aller Entwicklungskoeffizienten der untersten Lage berechnet durch
 \begin{verbatim}
 for key in primitivB:
     NCoefBottomNode[key] = primitivB[key] * nodes_spf[key]
@@ -177,7 +178,7 @@ und der restlichen Knoten berechnet und ausgegeben:
 
 Zur Demonstration der graphischen Benutzeroberfl"ache wird im folgenden das Vorgehen zum Starten einer 
 MCTDH Simulation vorgef"uhrt. Als Beispiel dient die Realzeitpro\-pagation eines Wellenpakets auf dem
-ersten elektronisch angeregten Zustands ($S_1$) von NOCl.
+ersten elektronisch angeregten Zustand ($S_1$) von NOCl.
 
 \begin{figure}
     \centering
@@ -190,7 +191,7 @@ In Liste \textbf{1} sind alle vorhandenen Projekte aufgef"uhrt.
 Nach Auswahl eines Projekts erscheinen in Liste \textbf{2} alle dem Projekt zugeoredneten Rechnungen.
 Durch die Schaltfl"achen ,,+'' und ,,-'' k"onnen Projekte sowie Rechnungen jeweils hinzugef"ugt bzw.
 entfernt werde.
-Im Reiter ,,File'' \textbf{3} befinden sich zus"atzliche Optionen zur Projektverwaltung (siehe Abbildung \ref{fig:workflow2}).
+Im Reiter ,,File'' (\textbf{3}) befinden sich zus"atzliche Optionen zur Projektverwaltung (siehe Abbildung \ref{fig:workflow2}).
 Durch Klicken der Schaltfl"ache \textbf{5} wird ein neues Projekt erstellt. Externe Projekte werden durch die 
 Schaltfl"ache \textbf{6} geladen. Bet"atigung der Schaltfl"ache \textbf{7} beendet die Benutzeroberfl"ache.
 
@@ -236,7 +237,7 @@ Mithilfe der MCTDH GUI k"onnen vier verschiedene Operationen durchgef"uhrt werde
 Hier wird die Option ,,real-time propagation'' ausgew"ahlt.
 Des Weiteren werden unter \textbf{15} Steuerungsparameter f"ur den Integrator ausgew"ahlt. Dazu geh"oren die Anfangszeit, die Endzeit,
 der initiale Zeitschritt und (f"ur die Operationen ,,Eigenstate calculation'' und ,,Thermal flux eigenstate calculation'')
-die Anzahl an Iterationen.. Alle Parameter werden automatisch geladen, indem ein System aus
+die Anzahl an Iterationen. Alle Parameter werden automatisch geladen, indem ein System aus
 Liste \textbf{11} ausgew"ahlt wird oder eine Eingabe-Datei durch 
 die ,,Load'' Schaltfl"alche \textbf{19} eingelesen wird. 
 Der MCTDH-Baum, welcher die aktuell gew"ahlte Basis repr"asentiert, wird unter \textbf{16} 

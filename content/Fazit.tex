@@ -1,15 +1,23 @@
-\chapter{Fazit und Ausblick}
+\chapter{Zusammenfassung und Ausblick}
+\label{cha:fazit}
 
-In dieser Arbeit wurde ein MCTDH-Python-Modul erstellt, das Klassen des MCTDH-Codes in Python nutzbar macht.
-In Zukunft k"onnten weitere Teile des MCTDH-Codes in Python zug"anglich gemacht werden, sodass weitere Funktionen
-des MCTDH-Codes in Python verwendet werden k"onnen.
+In dieser Arbeit wurde eine Pythonschnittstelle f"ur den in C++ verfassten MCTDH-Code erstellt, 
+welche es erlaubt Klassen in Python-Skripten zu nutzen, die der Verwaltung der MCTDH-Basis dienen. 
+In Zukunft kann die Schnittstelle um weitere Klassen des MCTDH-Codes erg"anzt werden, sodass sie
+vielseitig eingesetzt werden kann.
 
+Eine graphische Benutzeroberfl"ache wurde erstellt, welche es Nutzern ohne Programmierkenntnisse
+erlaubt MCTDH-Rechnungen zu starten. Im Rahmen dieser Arbeit wurde in der GUI eine Auswahl von
+Summe-von-Produkten Operatoren, sowie von \textit{ab initio} Potentialfl"achen bereitgestellt.
+Diese Auswahl kann in Zukunft erweitert werden. Zudem w"are eine Funktion zum Erstellen von
+benutzerdefinierten Operatoren mittels Drag\&Drop hilfreich. Die Struktur der MCTDH-Basis
+wird aktuell "uber externe Dateien eingelesen; auch hier w"are es sinnvoll eine Funktion zum
+Erstellen und Modifizieren der Multilayer-MCTDH Basisstruktur mittels Drag\&Drop bereitzustellen.
 
-Die MCTDH-GUI kann erweitert werden. Eine Auswahl an Basisdateien f"ur verschiedene Hamiltonoperatoren existiert bereits. Der n"achste Schritt
-w"are die M"oglichkeit, dass der Benutzer die Hamiltonoperatoren durch das Anklicken vorgegebener Terme selber erstellt. 
-Des Weiteren k"onnte ein Ausgabefenster erstellt werden, das die Zwischenergebnisse w"ahrend der MCTDH-Rechnung graphisch darstellt.
-Die Drag\&Drop-Funktion k"onnte f"ur das Baumdiagramm in Abbildung \ref{fig:workflow4} hinzugef"ugt werden, sodass die MCTDH-B"aum
-graphisch erstellt werden k"onnten.
-Schlie"slich w"are auch das Implementieren der MCTDH-GUI als App auf Smartphones f"ur die Benutzer hilf\-reich, 
-von denen sie die laufenden Rechnungen
-"uberpr"ufen k"onnten. 
+Die Funktionen der GUI konzentriert sich bisher auf das Erstellen und Verwalten von
+projektbezogenen Rechnungen. Es w"are n"utzlich die Funktionen auf das Verfolgen und Visualisieren
+laufender oder beendeter Rechnungen auszuweiten. Dazu ist es sinnvoll f"ur die Ausgabe des C++ 
+MCTDH-Programms ein standardisiertes Protokollformat zu entwickeln, welches von externen Programmen eingelesen
+und interpretiert werden kann. Somit w"are beispielsweise ein Einbinden von Smartphones und Tabletts
+denkbar, um laufende Rechnungen unkompliziert und leicht verfolgen zu k"onnen.
+

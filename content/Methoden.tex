@@ -1,20 +1,21 @@
 \chapter{Technische Details}
+\label{cha:Tech}
 
-Die Python-Schnittstelle f"ur MCTDH wurde in Cython erstellt. 
-Die Programmiersprache Cython stellt eine Hybridprogrammiersprache dar,
+Die Python-Schnittstelle f"ur MCTDH wurde in der Programmiersprache Cython erstellt. 
+Cython stellt eine Hybridprogrammiersprache dar,
 die Python und C\textbackslash C++ kombiniert. Im Gegensatz zu Python
 wird Cython kompiliert, wobei die Cythonsyntax der Pythonsyntax "ahnlich ist.
 In Cython kann C++ Code verwendet werden, der beim Erstellen der Cython-Programme ebenfalls kompiliert wird.
 Auf diese Weise wurden mehrere \textit{mctdh}-Klassen auf Basis von C++ Klassen erstellt.
 
-Die graphisch Benutzeroberfl"ache (GUI) f"ur MCTDH-Rechnungen wurde in Python und Qt implementiert.
+Die GUI f"ur die MCTDH-Rechnungen wurde in Python und Qt implementiert.
 Der Zugriff auf die Qt-Bibliothek erfolgt "uber die Python-Bibliothek PyQt4. 
 Das Design der einzelnen GUI-Fenster erfolgte in Qt-Designer. Die Informationen "uber 
-die jeweiligen Fenster werden in \textit{ui}-Dateien gespeichert. Mit PyQt k"onnen diese Dateien eingelesen werden und aus den Dateien die entsprechenden 
-Klassen erstellt und beliebig erweitert werden. So k"onnen
-verschiedene Fenster in Qt-Designer erstellt werden und in PyQt miteinander verkn"upft werden.
+die jeweiligen Fenster werden in \textit{ui}-Dateien gespeichert. Mit PyQt k"onnen diese Dateien eingelesen werden und die entsprechenden 
+Klassen erstellt und beliebig erweitert werden.
+Die in Qt-Designer erstellten Fenster werden in PyQt miteinander verkn"upft.
 
-Neben PyQt wurden die Python-Modul \textit{networkx} und \textit{matplotlib} verwendet.
+Neben PyQt wurden die Python-Module \textit{networkx} und \textit{matplotlib} verwendet.
 Mithilfe von Klassen aus \textit{networkx} und \textit{matplotlib} konnten Baumdiagramme erstellt und gespei\-chert werden, die in der GUI zur 
 Visualisierung des MCTDH-Baums verwendet wurden.
 
