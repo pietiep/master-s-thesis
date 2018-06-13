@@ -8,13 +8,12 @@ Cython stellt eine Hybridprogrammiersprache dar,
 die Python und C\textbackslash C++ kombiniert. Im Gegensatz zu Python
 wird Cython kompiliert, wobei die Cythonsyntax der Pythonsyntax "ahnlich ist.
 In Cython kann C++ Code verwendet werden, der beim Erstellen der Cython-Programme ebenfalls kompiliert wird.
-Auf diese Weise wurden mehrere Klassen in Python auf Basis von C++ Klassen erstellt.
 
 Die GUI f"ur die MCTDH-Rechnungen wurde in Python mithilfe der Qt-Bibliothek implementiert.
 Der Zugriff auf die Qt-Bibliothek \cite{Qt} erfolgt "uber die Python-Bibliothek PyQt4 \cite{PyQt}. 
-Das Design der einzelnen GUI-Fenster erfolgte in Qt-Designer \cite{Qt-Designer}. Die Informationen "uber 
-die jeweiligen Fenster werden in \textit{ui}-Dateien gespeichert. Mit PyQt k"onnen diese Dateien eingelesen werden und die entsprechenden 
+Mit PyQt k"onnen die Informationen zu den GUI-Fenstern eingelesen werden und entsprechende 
 Klassen erstellt und beliebig erweitert werden.
+Das Design der einzelnen GUI-Fenster erfolgte in Qt-Designer \cite{Qt-Designer}. 
 Die in Qt-Designer erstellten Fenster werden in PyQt miteinander verkn"upft.
 
 Neben PyQt wurden die Python-Module \textit{networkx} \cite{SciPyProceedings_11} und \textit{matplotlib} \cite{Hunter:2007} verwendet.
@@ -25,10 +24,13 @@ Visualisierung des MCTDH-Baums verwendet wurden.
 \label{sec:PyInterface}
 
 Es wurde eine Programmierschnittstelle (von englisch \textit{application programming interface}, API) f"ur das MCTDH-Programmpaket erstellt,
-welche es erlaubt den C++ MCTDH-Codes in Python-Skripten zu verwenden und in Python-Klassen zusammenzufassen.
-Die Schnittstelle umfasst Klassen und Methoden, die zur Verwaltung der Darstellung der MCTDH-Wellenfunktion dienen.
+welche es erlaubt Funktionen des C++ MCTDH-Codes in Python-Skripten zu verwenden.
+%Die Schnittstelle umfasst Klassen und Methoden, die zur Verwaltung der Darstellung der MCTDH-Wellenfunktion dienen.
+Dazu wurden neue Klassen in Python erstellt, welche Klassen des C++ Code repr"asentieren 
+und einen eingeschr"ankten Satz an Funktionen bereitstellen.
+Im Rahmen dieser Arbeit wurden Klassen erstellt, die der Verwaltung der Darstellung der MCTDH-Wellenfunktion dienen.
 Die Erweiterung auf andere Klassen kann nach einem einfachen Schema erfolgen.
-Abbildung \ref{fig:uml_Cython} zeigt ein Klassendiagramm aller Klassen, welche "uber die API aufgerufen werden k"onnen.
+Abbildung \ref{fig:uml_Cython} zeigt ein Klassendiagramm aller in Cython erstellter Klassen der API.
 Jede Klasse der API wird in Abbildung \ref{fig:uml_Cython} durch ein Rechteck repr"asentiert.
 Im oberen Teil des Rechtecks ist der Klassenname angegeben und im unteren Teil sind die Methoden der Klasse aufgelistet.
 Die baumartige Anordnung der Rechtecke repr"asentiert die Abh"angigkeit der Klassen zueinander. Eine Klasse h"angt von
@@ -38,8 +40,8 @@ Die Klasse \textit{physCoor} verwaltet Informationen einer Koordinate und enth"a
 die primitive Basis. Sie ist ein Memberobjekt der Klasse \textit{mctdhNode}, welche einen Knoten im MCTDH-Baum 
 repr"asentiert. In der Klasse \textit{mctdhNode} wird die lokale Konnektivit"at des Knoten, sowie dessen Satz von
 Entwicklungskoeffizienten verwaltet. Die Dimensionen der Entwicklungskoeffizienten sind in Objekten der Klasse
-\textit{Tdim} gespeichert. Die Klasse \textit{mctdhBasis} enth"alt alle Objekte, die dem Management der MCTDH-Basis
-dienen.
+\textit{Tdim} gespeichert. Die Klasse \textit{mctdhBasis} enth"alt alle Objekte, die dem Management der Darstellung der
+MCTDH-Wellenfunktion dienen.
 
 Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen Dimensionsinformationen
 einer Multilayer-MCTDH-Wellenfunktion berechnet werden k"onnen. Zuerst wird das Skript vorgestellt und 
@@ -117,16 +119,16 @@ config.initialize('mctdh.config')
 basis.initialize('basis.txt', config)
 \end{verbatim}
 initialisiert, wobei \textit{mctdh.config} und \textit{basis.txt} Dateinamen von Dateien sind, 
-welche die Genauigkeitsparameter, bzw. die Basis-Definition enthalten.
+welche die Genauigkeitsparameter, bzw. die Definition der Darstellung der MCTDH-Wellenfunktion enthalten.
 
 %Mithilfe des Objektes \textit{basis} kann die Anzahl der Knoten des eingelesenen MCTDH-Baums bestimmt werden:
 Die Anzahl der Knoten im MCTDH-Baum wird mit dem folgenden Befehl bestimmt:
 \begin{verbatim}
 maxNodes = basis.NmctdhNodes()
 \end{verbatim}
-Danach wird die Anzahl der Tensoren f"ur jeden Knoten bestimmt.
-Die entsprechenden Dimensionen sind Member der Klasse \textit{Tdim}, welche in den repr"asentativen
-Knotenobjekten gespeichert sind. Sie werden ermittelt und in dem Dictionary \textit{nodes\_spf} gespeichert:
+Danach wird der Maximalwert der $m$-Indizes der Entwicklungskoeffizienten $A^{l;\kappa_{1},...,\kappa_{l-1}}_{m;j_1,...,j_{d_{\kappa}}}(t)$ bestimmt.
+Die entsprechenden Werte sind Member der Objekte der Klasse \textit{Tdim}.
+Sie werden ermittelt und in dem Dictionary \textit{nodes\_spf} gespeichert:
 \begin{verbatim}
 for i in range(maxNodes):
     node = basis.MCTDHnode(i)
@@ -198,7 +200,14 @@ und der restlichen Knoten berechnet und ausgegeben:
 
 Zur Demonstration der graphischen Benutzeroberfl"ache wird im folgenden das Vorgehen zum Starten einer 
 MCTDH Simulation vorgef"uhrt. Als Beispiel dient die Realzeitpro\-pagation eines Wellenpakets auf dem
-ersten elektronisch angeregten Zustand ($S_1$) von NOCl.
+ersten elektronisch angeregten Zustand ($S_1$) von NOCl, um die Photodissoziation von NOCl zu simulieren \cite{MMC1}.  
+Die MCTDH-Wellenfunktion f"ur NOCl ist in Abbildung \ref{fig:NOCl} dargestellt. 
+
+\begin{figure}
+    \centering
+%    \includegraphics[scale=0.5]{figures/screenMain}
+    \caption{Darstellung der MCTDH-Wellenfunktion von NOCl.}\label{fig:NOCl}
+\end{figure}
 
 \begin{figure}
     \centering
@@ -252,14 +261,14 @@ auf die Elemente der Liste \textbf{13} ausgew"ahlt werden. Im vorliegenden Beisp
 ausgew"ahlt.
 Die Erweiterung der Summe-von-Produkten Operatoren und Potentialfl"achen kann schematisch erfolgen.
 
-Mithilfe der MCTDH GUI k"onnen vier verschiedene Operationen durchgef"uhrt werden (\textbf{14}):
-,,real-time propagation'', ,,imaginary-time propagation'', ,,Eigenstate calculation'' und ,,Thermal flux eigenstate calculation''.
-Hier wird die Option ,,real-time propagation'' ausgew"ahlt.
-Des Weiteren werden unter \textbf{15} Steuerungsparameter f"ur den Integrator ausgew"ahlt. Dazu geh"oren die Anfangszeit, die Endzeit,
-der initiale Zeitschritt und (f"ur die Operationen ,,Eigenstate calculation'' und ,,Thermal flux eigenstate calculation'')
-die Anzahl an Iterationen. Alle Parameter werden automatisch geladen, indem ein System aus
+Mithilfe der MCTDH GUI k"onnen verschiedene Operationen durchgef"uhrt werden (\textbf{14})
+Hier wird die Option ,,real-time propagation'' (f"ur die Realzeitpropagation) ausgew"ahlt.
+Des Weiteren sind unter \textbf{15} Steuerungsparameter f"ur den Integrator angegeben. Dazu geh"oren die Anfangszeit, die Endzeit,
+der initiale Zeitschritt und die Anzahl an Iterationen. 
+Alle Parameter werden automatisch geladen, indem ein System aus
 Liste \textbf{11} ausgew"ahlt wird oder eine Eingabe-Datei durch 
-die ,,Load'' Schaltfl"alche \textbf{19} eingelesen wird. 
+die ,,Load'' Schaltfl"alche \textbf{19} eingelesen wird. Dabei sind die primitiven Basisparameter f"ur jedes System festgelegt und werden 
+ebenfalls geladen. 
 Der MCTDH-Baum, welcher die aktuell gew"ahlte Basis repr"asentiert, wird unter \textbf{16} 
 als Listendiagramm angezeigt. Hier
 kann durch Doppelklick die Anzahl der SPFs, der primitiven Basis und der Moden ver"andert werden.
@@ -270,7 +279,7 @@ Alternativ kann die MCTDH Simulation auch aus dem Hauptfenster gestartet werden,
 indem Schaltfl"ache ,,Run MCTDH on existing job'' (\textbf{9}) bet"atigt wird (siehe Abbildung \ref{fig:workflow3}).
 %Durch Klicken der Schaltfl"ache ,,Run MCTDH on existing job'' (\textbf{9}) kann ebenfalls eine MCTDH Simulation gestartet.
 
-In Abbildung \ref{fig:workflow5} wurde das System NOCl mit sinnvollen Eingabeparametern geladen,
+In Abbildung \ref{fig:workflow5} wurde das System NOCl mit Eingabeparametern geladen,
 indem auf ,,NOCl'' aus Liste \textbf{11} geklickt wurde.
 
 \begin{figure}
