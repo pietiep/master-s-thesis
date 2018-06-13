@@ -2,10 +2,10 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Theorie}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Ansatz der Multilayer-MCTDH-Wellenfunktion}{5}{section.2.1}
-\contentsline {chapter}{\numberline {3}Technische Details}{11}{chapter.3}
-\contentsline {chapter}{\numberline {4}Ergebnisse}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Python-Interface f"ur MCTDH}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Graphische Benutzeroberfl"ache f"ur MCTDH}{18}{section.4.2}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{25}{chapter.5}
-\contentsline {chapter}{Anhang}{26}{appendix*.9}
-\contentsline {chapter}{Literaturverzeichnis}{82}{appendix*.10}
+\contentsline {chapter}{\numberline {3}Implementation}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Sprachen und Bibliotheken}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Python-Interface f"ur MCTDH}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Graphische Benutzeroberfl"ache f"ur MCTDH}{17}{section.3.3}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{24}{chapter.4}
+\contentsline {chapter}{Anhang}{25}{appendix*.9}
+\contentsline {chapter}{Literaturverzeichnis}{81}{appendix*.10}

@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ma.aux
 The style file: apsrev.bst
 I couldn't open database file ./bibtex/PyQt.bib
----line 115 of file ma.aux
+---line 117 of file ma.aux
  : \bibdata{./bibtex/eigen,./bibtex/MCTDH,./bibtex/SPP96,./bibtex/python,./bibtex/PyQt
  :                                                                                    ,./bibtex/sonstig}
 I'm skipping whatever remains of this command
@@ -32,51 +32,55 @@ Repeated entry---line 439 of file ./bibtex/SPP96.bib
  :            ,
 I'm skipping whatever remains of this entry
 Database file #4: ./bibtex/python.bib
+Warning--entry type for "Qt" isn't style-file defined
+--line 35 of file ./bibtex/python.bib
+Warning--entry type for "Qt-Designer" isn't style-file defined
+--line 42 of file ./bibtex/python.bib
 Warning--entry type for "SciPy" isn't style-file defined
---line 51 of file ./bibtex/python.bib
-Warning--entry type for "TensorFlow" isn't style-file defined
 --line 58 of file ./bibtex/python.bib
+Warning--entry type for "TensorFlow" isn't style-file defined
+--line 65 of file ./bibtex/python.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 74 entries,
+You've used 79 entries,
             3411 wiz_defined-function locations,
-            1597 strings with 23738 characters,
-and the built_in function-call counts, 52097 in all, are:
-= -- 3010
-> -- 1730
-< -- 239
-+ -- 1416
-- -- 418
-* -- 7111
-:= -- 5579
-add.period$ -- 74
-call.type$ -- 74
-change.case$ -- 300
-chr.to.int$ -- 66
-cite$ -- 78
-duplicate$ -- 4656
-empty$ -- 4377
-format.name$ -- 1084
-if$ -- 9907
+            1626 strings with 24356 characters,
+and the built_in function-call counts, 55000 in all, are:
+= -- 3171
+> -- 1813
+< -- 253
++ -- 1489
+- -- 439
+* -- 7489
+:= -- 5888
+add.period$ -- 79
+call.type$ -- 79
+change.case$ -- 322
+chr.to.int$ -- 71
+cite$ -- 87
+duplicate$ -- 4936
+empty$ -- 4646
+format.name$ -- 1133
+if$ -- 10458
 int.to.chr$ -- 9
-int.to.str$ -- 75
-missing$ -- 717
-newline$ -- 237
-num.names$ -- 216
-pop$ -- 1256
+int.to.str$ -- 80
+missing$ -- 758
+newline$ -- 252
+num.names$ -- 226
+pop$ -- 1340
 preamble$ -- 1
-purify$ -- 296
+purify$ -- 316
 quote$ -- 0
-skip$ -- 1951
+skip$ -- 2058
 stack$ -- 0
-substring$ -- 1888
-swap$ -- 3716
-text.length$ -- 209
+substring$ -- 1970
+swap$ -- 3923
+text.length$ -- 222
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 442
+type$ -- 470
 warning$ -- 0
-while$ -- 214
+while$ -- 224
 width$ -- 0
-write$ -- 751
+write$ -- 798
 (There were 6 error messages)

@@ -56,16 +56,6 @@ Durch die Verwendung einer spezifischen zeitabh"angigen Quadratur, welche die Ma
 auch Matrixelemente resultierend aus \textit{ab initio} Potentialenergiefl"achen effizient berechnet werden.
 Dieses Verfahren wird correlation discrete variable representation (CDVR) \cite{M3, vHM2} genannt.
 
-Das urspr"ungliche Vorgehen f"ur das CDVR \cite{M3} beruht auf einem zeitabh"angigen DVR-Gitter, das einer SPF-Basis entspricht.
-Somit kann das Standard-CDVR weder f"ur modenkombinierte MCTDH-Rechnungen noch f"ur Berechnungen mit dem Multilayer-MCTDH-Ansatz verwendet werden.
-%Allerdings konnte ein CDVR , das ohne ein direktes Produktgitter auskommt, in modenkombinierte MCTDH-Rechnungen verwendet werden. \cite{vHM3}
-Hingegen ist das mehrdimensionales CDVR-Verfah\-ren mit dem modenkombinierten MCTDH-Verfahren kompatibel. \cite{vHM3}
-Der numerische Auf\-wand des CDVRs h"angt linear von der Anzahl der verwendeten primitiven Gitterpunkten ab, die f"ur die Darstellung der SPFs ben"otigt werden.
-In modenkombinierten MCTDH-Rechnungen wird eine gro"se Anzahl an primitiven Gitterpunkten verwendet, sodass modenkombinierte MCTDH-Rechnungen kombiniert mit der 
-CDVR-Auswertung des Potentials ineffizient sind. Multilayer-MCTDH-Rechnungen ben"otigen dagegen keine mehrdimensionalen Gitter, um die SPFs darzustellen und bieten sich
-daher in Kombination mit dem CDVR an.
-
-
 \section{Ansatz der Multilayer-MCTDH-Wellenfunktion}
 Zun"achst  werden die Ans"atze der Wellenfunktionen der Standardmethode, des Zweilagen-MCTDHs und des moden\-kombi\-nierten MCTDH betrachtet,
  um anschlie"send den Ansatz der Multi\-layer-MCTDH-Wellenfunktion
@@ -109,16 +99,16 @@ In Glei\-chung \ref{Eq:SPF} folgt aus $z=2$, dass Gleichung \ref{Eq:SPF} die zwe
 Das hochgestellte $\kappa$ und der Index $m$ von $A^{2;\kappa}_{m;j}(t)$ beziehen sich auf die $m$-te SPF der $\kappa$-ten Koordinate.
 
 %Zur Visualisierung der Lagenstruktur des MCTDHs dienen die Diagramme f"ur die unterschiedlichen Darstellungen der Wellenfunktionen in Abbildung \ref{fig:tree}.
-Zur Visualisierung unterschiedlicher MCTDH-Wellenfunktionen, f"ur die unterschiedlich viele Lagen verwendet wurden, dienen Baumdiagramme,
+Zur Visualisierung unterschiedlicher MCTDH-Wellenfunktionen, f"ur die unterschiedlich viele Lagen verwendet wurden, dienen Baumdiagramme \cite{Mreview2},
 wie sie in Abbildung \ref{fig:tree} gezeigt werden.
 Als Beispiel soll ein siebendimensionales System dienen.
 Die Standardwellenpaketdarstellung aus Glei\-chung \ref{Eq:Std_wave} und die MCTDH-Darstellung sind in Abbildung \ref{fig:a} und \ref{fig:b} schematisch dargestellt.
 In den Diagrammen sind die verschiedenen S"atze der A-Koeffizienten durch die ausgef"ullten schwarzen Kreise gekennzei\-chnet.
 So kommt in Abbildung \ref{fig:a} ein Satz von Koeffizienten $A^{1}_{j_{1}, ..., j_{7}}$ vor, der durch den
 einzigen schwarzen Punkt gekennzei\-chnet ist. 
-Jede Linie, die von solchen Kreisen f"uhrt, entspricht einem tiefgestellten Index aus $ A^{2;1}_{m;j} $ und die Zahl neben einer Linie gibt den maximalen
+Jede Linie, die von solchen Kreisen f"uhrt, entspricht einem tiefgestellten Index aus $ A^{1}_{j_1...j_i} $ und die Zahl neben einer Linie gibt den maximalen
 Wert des Indexes an, d.h. die jeweilige Basisgr"o"se. Die tieferliegende primitive Darstellung wird durch den Koordinatdeskriptor $x_n$ hervorgehoben.
-Beispielsweise ist der Koeffizient $A^{2;1}_{m;j}$, der durch die SPFs $ \phi^{1;1}_{j_1} (x_{1}, t) $ dargestellt wird, mit dem 
+Beispielsweise ist der Koeffizient $A^{2;1}_{m;j}$ in Gleichung \ref{Eq:SPF}, der die SPFs $ \phi^{1;1}_{j_1} (x_{1}, t) $ spezifiziert, in Abbildung \ref{fig:b} mit dem 
 Koeffizienten $A^1$ "uber eine Linie verbunden, die den $m$-ten Index darstellt. "Uber eine weitere Linie, die f"ur den $j$-ten Index steht,
 ist  $A^{2;1}_{m;j}$ mit dem Koordinatdeskriptor $x_1$ verbunden.
 In Abbildung \ref{fig:a} ist der Koeffizient $A^{1}_{j_{1}, ..., j_{7}}$  durch sieben Linien mit den entsprechenden Indizes von 
@@ -240,7 +230,7 @@ in der SPF-Basis der zweiten Lage entwickelt werden.
 In Gleichung \ref{Eq:SPF} definier\-ten diese Entwicklungskoeffizienten die SPFs der ersten Lage in der primitiven zeitunabh"angigen Basis.
 Abbildung \ref{fig:d} zeigt das entsprechende Diagramm f"ur ein siebendimensionales System in Multilayer-MCTDH-Darstellung.
 
-Da die Gleichungen der Multilayer-MCTDH-Wellenfunktion schnell unhandlich werden, ist es einfacher statt der Gleichungen die Wellenfunktionen 
+Da die Gleichungen der Multilayer-MCTDH-Wellenfunktion schnell unhandlich werden, ist es einfacher, statt der Gleichungen die Wellenfunktionen 
 wie in Abbildung \ref{fig:tree}
 als Diagramm anzugeben. Jedes Diagramm definert die Wellenfunktionen eindeutig, sodass aus den Diagrammen die entsprechenden
 Gleichunge der Wellenfunktionen abgelei\-tet werden k"onnen.
