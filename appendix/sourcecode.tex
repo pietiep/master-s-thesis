@@ -69,7 +69,8 @@ class ListAbstrModel(QtCore.QAbstractListModel):
             return value
 
     def flags(self, index):
-        return QtCore.Qt.ItemIsEditable |QtCore.Qt.ItemIsEnabled |QtCore.Qt.ItemIsSelectable
+        return QtCore.Qt.ItemIsEditable |QtCore.Qt.ItemIsEnabled 
+        |QtCore.Qt.ItemIsSelectable
 
     def setData(self, index, value, role=QtCore.Qt.EditRole):
         if role == QtCore.Qt.EditRole:
@@ -285,13 +286,15 @@ class SceneGraphModel(QtCore.QAbstractItemModel):
         if oldNode.typeInfo() == 'NODE':
             self.addNode(oldNode.name(), oldNode.name(), None)    
         if oldNode.typeInfo() == 'Bottom':
-            self.addBottomNode(oldNode.name(), oldNode.name(), None, oldNode.physcoor())
+            self.addBottomNode(oldNode.name(), oldNode.name(), None, \
+            oldNode.physcoor())
         self.copyNode(self._child)
 
         self.beginInsertRows(parent, position, position+rows-1)
 
         for row in range(rows):
-            success = parentNode.insertChild(position, self._dictNodes[oldNode.name()])  
+            success = parentNode.insertChild(position, \
+            self._dictNodes[oldNode.name()])  
 
         self.endInsertRows()
 
@@ -343,9 +346,11 @@ class SceneGraphModel(QtCore.QAbstractItemModel):
         if children:
             for oldchild in children:
                 if oldchild.typeInfo() == "NODE":
-                    self.addNode(oldchild.name(), oldchild.name(), self._dictNodes[oldNode.name()])
+                    self.addNode(oldchild.name(), oldchild.name(), \
+                    self._dictNodes[oldNode.name()])
                 if oldchild.typeInfo() == "Bottom":
-                    self.addBottomNode(oldchild.name(), oldchild.name(), self._dictNodes[oldNode.name()], oldchild.physcoor())
+                    self.addBottomNode(oldchild.name(), oldchild.name(), \
+                    self._dictNodes[oldNode.name()], oldchild.physcoor())
                 self.copyNode(oldchild)
     
     def addNode(self, obj, SPF, parent):
@@ -480,7 +485,8 @@ main.py:
     
             self._model1.removeRows(rowNum,1, self._itemIndex1)
     
-            if self._model1._messageBu == 'OK' and delFolder != self._startingPath and delFolder != startingpath2:
+            if self._model1._messageBu == 'OK' and delFolder != self._startingPath 
+            and delFolder != startingpath2:
                 shutil.rmtree(self._startingPath+'/'+key)
     
                 maxRow = self._model2.rowCount(self._itemIndex2)
@@ -527,7 +533,8 @@ main.py:
             self._WidgetA.setSessionName(sessionFolder)
             self._WidgetA.start()
             self._WidgetA.removeContent()
-            SESfiles = os.walk(self._startingPath+'/'+self._ProjectName+'/'+sessionFolder).next()[2]
+            SESfiles = os.walk(self._startingPath+'/'+self._ProjectName+'/'
+            +sessionFolder).next()[2]
             if SESfiles:
                 for f_ in SESfiles:
                     if 'txt' in f_:
@@ -554,7 +561,8 @@ main.py:
             if not indices:
                 index = self._model2.index(0,0)
                 self._itemIndex2 = index
-                self.uiSessions.selectionModel().select(index, QtGui.QItemSelectionModel.Select)
+                self.uiSessions.selectionModel().select(index, /
+                QtGui.QItemSelectionModel.Select)
                 self._path2 = str(self._itemIndex2.data().toString())
     
         def setList(self):
@@ -569,7 +577,8 @@ main.py:
                 self._WidgetA._ProjectName = self._ProjectName
                 self._itemIndex1 = index
                 self._itemProxyIndex1 = index
-                self.uiProjects.selectionModel().select(index, QtGui.QItemSelectionModel.Select)
+                self.uiProjects.selectionModel().select(index, /
+                QtGui.QItemSelectionModel.Select)
     
         def getdirs(self):
                 directories = os.walk(self._startingPath).next()[1]
@@ -586,7 +595,8 @@ main.py:
             print self._path2
     
             if str(dialogC._cancel) != 'Cancel':
-                path = self._startingPath + '/' + self._ProjectName + '/' + self._path2
+                path = self._startingPath + '/' + self._ProjectName + '/' 
+                + self._path2
                 if not os.path.exists(path):
                     try:
                         os.chdir(self._startingPath+'/'+self._ProjectName)
@@ -649,7 +659,8 @@ main.py:
             filePathList = []
             self.getContent()
             self._proContent
-            for root, dirs, files in os.walk(self._startingPath+'/'+self._ProjectName):
+            for root, dirs, files in os.walk(self._startingPath+'/'
+            +self._ProjectName):
                 for name in files:
                     filePathList.append(os.path.join(root, name))
             filePathList = [p_ for p_ in filePathList if '.in' in p_]
@@ -664,7 +675,8 @@ main.py:
             dialog = self._dialogD
             self._dialogD._model = QtGui.QStandardItemModel(self._dialogD.uiRunList)
             self._dialogD.uiRunList.setModel(self._dialogD._model)
-            self._dialogD.uiRunList.setEditTriggers(QtGui.QAbstractItemView.NoEditTriggers)
+            self._dialogD.uiRunList.setEditTriggers(QtGui.QAbstractItemView.
+            NoEditTriggers)
             inputList = self.getRunInput()
     
             for calc in inputList:
@@ -676,7 +688,8 @@ main.py:
             
     
         def on_item_select2(self, index):
-            inputFile = self._startingPath+'/'+self._ProjectName+'/'+str(index.data().toString())
+            inputFile = self._startingPath+'/'+self._ProjectName+'/'
+            +str(index.data().toString())
     
             self.process = QtCore.QProcess()
             self.process.setProcessChannelMode(QtCore.QProcess.MergedChannels)
@@ -759,7 +772,6 @@ ModelTree.py:
                     self.mode_list.append(self.phys.mode()) #append Modes to list
     
         def nlayer(self, i):
-            """Recursion function that goes from the i-th node up to the top layer of the tree"""
             self.node = self.basis.MCTDHnode(i) #i-th Node
             self.layer_list.append(i)
             if self.node.Toplayer() == False:
@@ -769,12 +781,12 @@ ModelTree.py:
             return new_list
     
         def getLayerMatr(self):
-            """Takes all bottom nodes and returns for each a list of the path to the top node"""
-            self.layer_matr = [list(reversed(self.nlayer(b_))) for b_ in self.getBottomlayer()]
+            self.layer_matr = 
+            [list(reversed(self.nlayer(b_))) for b_ in self.getBottomlayer()]
     
         def modeToGetLayer(self):
-            """Combines layer_matr with mode_list"""
-            self.lay_matr_mode = [l_ + [100 + i] for i,l_ in enumerate(self.layer_matr)]
+            self.lay_matr_mode = 
+            [l_ + [100 + i] for i,l_ in enumerate(self.layer_matr)]
             self.lay_matr_mode = [["Top"] + l_ for l_ in self.lay_matr_mode]
             #concatinates two lists
             self.label_mode = [100 + i for i in range(len(self.mode_list))]
@@ -863,7 +875,7 @@ Node.py:
                             try:
                                 para = text.next()
                                 if bool(re.search(r'\d', para)):
-                                    para = para.split()     #if para contains numbers
+                                    para = para.split()     
                                     self._paralist.append(para)
                             except StopIteration:
                                 pass
@@ -890,8 +902,8 @@ Node.py:
                 for line in text:
                     if para in line:
                         try:
-                            pos = line.index('=')     # get Index
-                            self._paradict[para] = line[pos+1:].strip()  # removes whitestripes
+                            pos = line.index('=')     
+                            self._paradict[para] = line[pos+1:].strip()  
                         except ValueError:
                             pass
     
@@ -941,7 +953,8 @@ Node.py:
         def formatparameter(self):
             output = ""
             A = self._parameters        
-            output = '\n'.join(['    '.join(['{:4}'.format(item) for item in row]) for row in A])
+            output = '\n'.join(['    '.
+            join(['{:4}'.format(item) for item in row]) for row in A])
             return output
     
         def bringAllTogether(self):
@@ -1013,7 +1026,8 @@ Node.py:
         def formatparameter(self):
             output = ""
             A = self._parameters        
-            output = '\n'.join(['    '.join(['{:4}'.format(item) for item in row]) for row in A])
+            output = '\n'.join(['    '.
+            join(['{:4}'.format(item) for item in row]) for row in A])
     
             return output
     
@@ -1028,7 +1042,8 @@ Node.py:
             self._G = logical.G
             self._elder = None
             self.getElder()
-            self.addNode(self._elder, str(self._G.nodes[self._elder]['SPF']), self._rootNode0)
+            self.addNode(self._elder, str(self._G.nodes[self._elder]['SPF']), 
+            self._rootNode0)
             self.readTree()
     
             self._rootNode = self._dictNodes[self._elder]
@@ -1045,9 +1060,13 @@ Node.py:
             for suc_ in nx.bfs_successors(self._G, self._elder):
                 for brothers in suc_[1]:
                     if 'Mode' in self._G.nodes[brothers].keys():
-                        self.addBottomNode(brothers, str(self._G.nodes[brothers]['SPF']), self._dictNodes[suc_[0]], str(self._G.nodes[brothers]['Mode']))
+                        self.addBottomNode(brothers, 
+                        str(self._G.nodes[brothers]['SPF']), 
+                        self._dictNodes[suc_[0]], 
+                        str(self._G.nodes[brothers]['Mode']))
                     else:
-                        self.addNode(brothers, str(self._G.nodes[brothers]['SPF']), self._dictNodes[suc_[0]]) #Label, SPF, parent_obj
+                        self.addNode(brothers, str(self._G.nodes[brothers]['SPF']), 
+                        self._dictNodes[suc_[0]]) #Label, SPF, parent_obj
     
         def setRootNode(self, rootNode):
             self._rootNode = rootNode
@@ -1172,7 +1191,8 @@ Node.py:
             for i in range(tabLevel):
                 output += "   "
             if self.childcount() == 0:
-                output += self._name + "  " + str(self.childcount()) + "   " + self._physcoor + "\n"
+                output += self._name + "  " + str(self.childcount()) + 
+                "   " + self._physcoor + "\n"
             else:
                 output += self._name + " -" + str(self.childcount()) + "\n"
     
@@ -1202,11 +1222,13 @@ View.py:
             self._G = nx.DiGraph()
         def Display(self, G):
             top = ['Top']
-            rest_nodes = [l_ for l_ in self.nodes_spf.keys() if l_ not in self.label_mode.keys()]
+            rest_nodes = [l_ for l_ in self.nodes_spf.keys() 
+            if l_ not in self.label_mode.keys()]
             pos = graphviz_layout(G, prog='dot')
             nx.draw(G, pos, with_labels=False, arrows=False, node_color='w')
             nx.draw_networkx_nodes(G, pos, nodelist=top, node_color='w', alpha=1)
-            nx.draw_networkx_nodes(G, pos, nodelist=rest_nodes, node_color='r', alpha=1)
+            nx.draw_networkx_nodes(G, pos, nodelist=rest_nodes, node_color='r', 
+            alpha=1)
     
             pos_lower = {}
             x_off = 0
@@ -1264,7 +1286,8 @@ widgetA.py:
     
     
             self._dictHamil = {'CH3Quasie_exact': '1', 'CH4_rst': '2', 'NOCl': '9'}
-            self._dictPES = {'CH3Potential': '1', 'PES_CH4': '2', 'PES_HCH4_Zang': '4'}
+            self._dictPES = {'CH3Potential': '1', 'PES_CH4': '2', 
+            'PES_HCH4_Zang': '4'}
             self._potential = 'no Potential'
     
             self._mctdhConfig = None 
@@ -1290,7 +1313,8 @@ widgetA.py:
                 item = QtGui.QStandardItem(key)
                 self._model.appendRow(item)
             self.listHamilton.setModel(self._model)
-            self.listHamilton.setEditTriggers(QtGui.QAbstractItemView.NoEditTriggers)
+            self.listHamilton.setEditTriggers(QtGui.QAbstractItemView.
+            NoEditTriggers)
             self.listHamilton.clicked.connect(self.on_item_select1)
     
             #####RadioButtonsPES#####
@@ -1379,15 +1403,22 @@ widgetA.py:
     
             sysTreeFile = self.Finder(path, 'txt')
         
-            self._mctdhConfig = self._HamiltonianDir + '/' + key + '/' + 'mctdh.config'
-            self._sysTreeFile  = self._HamiltonianDir + '/' + key + '/' + sysTreeFile
+            self._mctdhConfig = self._HamiltonianDir + '/' + key + '/' 
+            + 'mctdh.config'
+            self._sysTreeFile  = self._HamiltonianDir + '/' + key + '/' 
+            + sysTreeFile
     
             ###Files for SES calculations####
             if self._ProjectName != None:
                 if self._SessionName != None:
-                    self._SESmctdhConfig = self._startingPath + '/' + self._ProjectName +'/' + self._SessionName + '/' + 'mctdh.config'
-                    self._SESsysTreeFile  = self._startingPath + '/' + self._ProjectName + '/' + self._SessionName + '/' + sysTreeFile
-                    self._SESinputFile = self._startingPath + '/' + self._ProjectName + '/' + self._SessionName + '/' + DotIn
+                    self._SESmctdhConfig = self._startingPath + '/' 
+                    + self._ProjectName +'/' + self._SessionName + '/' 
+                    + 'mctdh.config'
+                    self._SESsysTreeFile  = self._startingPath + '/' 
+                    + self._ProjectName + '/' + self._SessionName + '/' 
+                    + sysTreeFile
+                    self._SESinputFile = self._startingPath + '/'
+                     + self._ProjectName + '/' + self._SessionName + '/' + DotIn
     
         def editSession(self, name):
             self.uiProjectName.blockSignals(True)
@@ -1426,7 +1457,8 @@ widgetA.py:
             msg.setIcon(QtGui.QMessageBox.Information)
     
             msg.setText(Stringmes)
-            msg.setStandardButtons(QtGui.QMessageBox.Save | QtGui.QMessageBox.Cancel)
+            msg.setStandardButtons(QtGui.QMessageBox.Save | 
+            QtGui.QMessageBox.Cancel)
     
             msg.buttonClicked.connect(self.msgbtn)
             msg.exec_()
@@ -1454,7 +1486,8 @@ widgetA.py:
     
         def managefolder(self):
     
-            if self._inputFile != None or self._sysTreeFile != None or self._mctdhConfig != None:
+            if self._inputFile != None or self._sysTreeFile != None or 
+            self._mctdhConfig != None:
     
                 shutil.copy2(self._mctdhConfig, self._TMPmctdhConfig)
                 shutil.copy2(self._sysTreeFile, self._TMPsysTreeFile)
@@ -1463,7 +1496,7 @@ widgetA.py:
                 pass
     
         def changeNode(self, my_index):
-                topNode = self.modelTree.getNode2(my_index).child(0) #modelTree from SceneGraphModel
+                topNode = self.modelTree.getNode2(my_index).child(0)
                 self._tree.setRootNode(topNode)
                 
                 self.PicGenerate()
@@ -1474,12 +1507,15 @@ widgetA.py:
     
             ####Pic with MCTDH Code and Networkx####
             if os.path.exists(self._TMPmctdhConfig):
-                self.ModelTree = ModelTree(self._TMPmctdhConfig, self._TMPsysTreeFile)
+                self.ModelTree = ModelTree(self._TMPmctdhConfig, 
+                self._TMPsysTreeFile)
             else:
                 print 'Error'
-            self.LogicalNodes = LogicalNodes(self.ModelTree.lay_matr_mode, self._TMPmctdhConfig, self._TMPsysTreeFile) #object
-            self.View = View(self.ModelTree.label_mode, self.ModelTree.nodes_spf) #object
-            self.View.Display(self.LogicalNodes.G) #View method Display() generated .png file
+            self.LogicalNodes = LogicalNodes(self.ModelTree.lay_matr_mode, 
+            self._TMPmctdhConfig, self._TMPsysTreeFile) #object
+            self.View = View(self.ModelTree.label_mode, 
+            self.ModelTree.nodes_spf) #object
+            self.View.Display(self.LogicalNodes.G) 
     
             ####QGraphicsView###
             pixmap = QtGui.QPixmap('nx_test.png')
@@ -1500,17 +1536,23 @@ widgetA.py:
     
             if self._ProjectName != None:
                 if self._SessionName != None:
-                    self._SESmctdhConfig = self._startingPath + '/' + self._ProjectName +'/' + self._SessionName + '/' + 'mctdh.config'
-                    self._SESsysTreeFile  = self._startingPath + '/' + self._ProjectName + '/' + self._SessionName + '/' + sysTreeFile
-                    self._SESinputFile = self._startingPath + '/' + self._ProjectName + '/' + self._SessionName + '/' + DotIn
+                    self._SESmctdhConfig = self._startingPath + '/' + 
+                    self._ProjectName +'/' + self._SessionName + '/' + 
+                    'mctdh.config'
+                    self._SESsysTreeFile  = self._startingPath + '/' + 
+                    self._ProjectName + '/' + self._SessionName + '/' + sysTreeFile
+                    self._SESinputFile = self._startingPath + '/' + 
+                    self._ProjectName + '/' + self._SessionName + '/' + DotIn
     
         def saveProject(self):
             name = str(self.uiProjectName.text())
             self._SessionName = name
             self.SESfiles()
-            Profiles = os.walk(self._startingPath+'/'+self._ProjectName+'/').next()[1]
+            Profiles = os.walk(self._startingPath+'/'
+            +self._ProjectName+'/').next()[1]
             if name in Profiles:
-                SESfiles = os.walk(self._startingPath+'/'+self._ProjectName+'/'+name).next()[2]
+                SESfiles = os.walk(self._startingPath+'/'+
+                self._ProjectName+'/'+name).next()[2]
     
                 ###Checks if SES contains files###        
                 if SESfiles:
@@ -1518,12 +1560,13 @@ widgetA.py:
                     if 'Yes' in self._messagebut:
                         self.output()  
                         self.fromTMPToSES()
-                        ###Saves all Parameter and Tree to *.in and tree only to *.txt### 
+                        
                         self.esc()
                     else:
                         pass
                 else:
-                    TMPfiles = os.walk(self._startingPath+'/'+self._ProjectName+'/tmp').next()[2]
+                    TMPfiles = os.walk(self._startingPath+'/'
+                    +self._ProjectName+'/tmp').next()[2]
                     if TMPfiles:
                         self.output()
                         self.fromTMPToSES()
@@ -1601,7 +1644,8 @@ widgetA.py:
             self.genereInput(self._TMPinputFile)
             self.makeParaDict()
             pathTMP = self._startingPath + '/' + self._ProjectName + '/tmp'
-            outobj = OutPut2(self._paradict, self._treeFromLoad, self._TMPinputFile, pathTMP)
+            outobj = OutPut2(self._paradict, self._treeFromLoad, self._TMPinputFile,
+             pathTMP)
             outobj.savefile()
             outobj.savefile2()
             ###Tree will be constructed from parameters###
@@ -1780,14 +1824,21 @@ widgetA.py:
             self._SessionName = name
             #### if SES contains files, these files will be copied to TMP
             try:
-                filenames = os.walk(self._startingPath+'/'+self._ProjectName+'/'+self._SessionName).next()[2]
+                filenames = os.walk(self._startingPath+'/'+self._ProjectName+'/'
+                +self._SessionName).next()[2]
                 for val in filenames:
                     if 'txt' in val:
                         sysTreeFile = val
     
-                self._SESmctdhConfig = self._startingPath + '/' + self._ProjectName +'/' + self._SessionName + '/' + 'mctdh.config'
-                self._SESsysTreeFile  = self._startingPath + '/' + self._ProjectName + '/' + self._SessionName + '/' + sysTreeFile
-                self._SESinputFile = self._startingPath + '/' + self._ProjectName + '/' + self._SessionName + '/' + 'InPut.in'
+                self._SESmctdhConfig = self._startingPath + '/' + 
+                self._ProjectName +'/' + self._SessionName + '/' + 
+                'mctdh.config'
+                self._SESsysTreeFile  = self._startingPath + '/' + 
+                self._ProjectName + '/' + self._SessionName + '/' + 
+                sysTreeFile
+                self._SESinputFile = self._startingPath + '/' + 
+                self._ProjectName + '/' + self._SessionName + '/' 
+                + 'InPut.in'
     
                 ###copies files from SES to TMP
                 self.fromSESToTMP(sysTreeFile)
@@ -1799,8 +1850,6 @@ widgetA.py:
                 self.TreeOnly()
     
             except (StopIteration, UnboundLocalError):
-                ###when UnboundLocalError is raised then there are no files in SES###
-                # -> deleteing tmp
                 self.removeContent()
                 self.clearTree()
         
@@ -1865,7 +1914,8 @@ widgetA.py:
             """Class OutPut takes all parameters and saves them in File by creating
          the object of this class"""
             self.makeParaDict()
-            outobj = OutPut(self._tree, self._paradict, self._TMPsysTreeFile, self._TMPinputFile)
+            outobj = OutPut(self._tree, self._paradict, self._TMPsysTreeFile, 
+            self._TMPinputFile)
             outobj.savefile()
             outobj.savefile2()
     
@@ -1874,7 +1924,8 @@ widgetA.py:
             self.process = QtCore.QProcess()
             self.process.setProcessChannelMode(QtCore.QProcess.MergedChannels)
             self.process.readyReadStandardOutput.connect(self.mctdhOut)
-            inputFile = self._startingPath+'/'+self._ProjectName+'/'+self._SessionName
+            inputFile = self._startingPath+'/'+self._ProjectName+'/'
+            +self._SessionName
             DotIn = self.Finder(inputFile, 'in')
             inputFile = inputFile+'/'+DotIn
             self.results(inputFile)
