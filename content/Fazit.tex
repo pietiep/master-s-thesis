@@ -1,26 +1,33 @@
 \chapter{Zusammenfassung und Ausblick}
 \label{cha:fazit}
 
-Bisher wurden MCTDH-Algorithmen in FORTRAN77 programmiert. Eine entwickler- und nutzerfreundlichere Alternative
-konnte in C++ realisiert werden. 
-Allerdings sind f"ur dessen Nutzung fortgeschrittene C++ Kenntnisse erforderlich. 
-Die M"oglichkeit des MCTDH-Programmpaketes "uber eine graphische Oberfl"ache zu bedienen,
-stellt somit eine sinnvolle Erweiterung des MCTDH-Programmpaketes dar. 
-Die Verf"ugbarkeit des MCTDH-Algorithmus in Python soll die Nutzung des MCTDH-Programmpaketes
-erlei\-chtern.
+In dieser Arbeit wurden zentrale Schritte ergriffen, um die MCTDH-Methode, welche bisher gr"o"stenteils
+Spezialisten vorenthalten war, f"ur einen gr"o"seren Anwenderkreis nutz\-bar zu machen.
+Zuerst wurde aus den vielseitigen Anwendungsgebieten der MCTDH-Methode ein Satz generischer
+Operationen ermittelt, deren Nutzbarmachung f"ur eine breitere Anwendergruppe sinnvoll ist.
+Dann wurden zwei wesentliche Schritte ergriffen, um diese Operationen auch
+Wissenschaftlern zug"anglich zu machen, die keine tiefere Kenntnis der Methode und
+"uber keine, oder nur eingeschr"ankte Programmierkenntnisse verf"ugen.
 
-In dieser Arbeit wurde eine Pythonschnittstelle f"ur den in C++ verfassten MCTDH-Code erstellt, 
+Zum einen wurde eine graphische Benutzeroberfl"ache erstellt, welche es Nutzern ohne
+Programmierkenntnisse erlaubt MCTDH-Rechnungen zu starten. Dazu steht eine Aus\-wahl
+von Summe-von-Produkten Operatoren, sowie von \textit{ab initio} Potentialfl"achen bereit.
+Mithilfe der GUI k"onnen Wellenpaketspropagationen, sowie die Berechnung von Eigenzust"anden
+und thermischen Flusseigenzust"anden durchgef"uhrt werden, was vielseitige Einsatzm"oglichkeiten
+zul"asst. Dazu z"ahlen unter anderem die Berechnung von Photodissoziationsspektren, 
+Schwingungsenergien, thermischen Raten und vielem mehr.
+
+Zum anderen wurde eine Pythonschnittstelle f"ur den in C++ verfassten MCTDH-Code erstellt, 
 welche es erlaubt Klassen in Python-Skripten zu nutzen, die der Verwaltung der MCTDH-Basis dienen. 
-In Zukunft kann die Schnittstelle um weitere Klassen des MCTDH-Codes erg"anzt werden, sodass sie
-vielseitig eingesetzt werden kann.
+Dadurch k"onnen Informationen zur Darstellung der MCTDH-Wellenfunktionen (z.B. Skalierungseigenschaften
+einer geplanten Rechnungen) mithilfe von Python-Skripten berechnet werden.
 
-Eine graphische Benutzeroberfl"ache wurde erstellt, welche es Nutzern ohne Programmierkenntnisse
-erlaubt MCTDH-Rechnungen zu starten. Im Rahmen dieser Arbeit wurde in der GUI eine Auswahl von
-Summe-von-Produkten Operatoren, sowie von \textit{ab initio} Potentialfl"achen bereitgestellt.
-Diese Auswahl kann in Zukunft erweitert werden. Zudem w"are eine Funktion zum Erstellen von
-benutzerdefinierten Operatoren mittels Drag\&Drop hilfreich. Die Struktur der MCTDH-Basis
-wird aktuell "uber externe Dateien eingelesen; auch hier w"are es sinnvoll eine Funktion zum
-Erstellen und Modifizieren der Multilayer-MCTDH Basisstruktur mittels Drag\&Drop bereitzustellen.
+Die in dieser Arbeit erstellte GUI bietet viele sinnvolle Ankn"upfungspunkte zur Erweiterung.
+Die Auswahl der Summe-von-Produkten-Operatoren, sowie der \textit{ab initio} Potentialfl"achen kann in Zukunft
+erweitert werden. Zudem w"are eine Funktion zum Erstellen von benutzerdefinierten Operatoren
+hilfreich, um die Simulation neuer Systeme zuzulassen. Momentan wird die Baumstruktur der Darstellung der MCTDH-Wellenfunk\-tion
+"uber externe Dateien eingelesen; auch hier w"are es sinnvoll eine Funktion zum
+Erstellen und Modifizieren der Multilayer-MCTDH Basisstruktur (zum Beispiel mit\-tels Drag\&Drop) bereitzustellen.
 
 Die Funktionen der GUI konzentriert sich bisher auf das Erstellen und Verwalten von
 projektbezogenen Rechnungen. Es w"are n"utzlich die Funktionen auf das Verfolgen und Visualisieren
@@ -29,3 +36,7 @@ MCTDH-Programms ein standardisiertes Protokollformat zu entwickeln, welches von 
 und interpretiert werden kann. Somit w"are beispielsweise ein Einbinden von Smartphones und Tabletts
 denkbar, um laufende Rechnungen unkompliziert und leicht verfolgen zu k"onnen.
 
+In Zukunft kann die Python-Schnittstelle um weitere Klassen des MCTDH-Codes erg"anzt werden, sodass diese
+vielseitiger eingesetzt werden k"onnen. Ein sinnvoller erster Schritt w"are die Erweiterung auf Klassen,
+welche der Verwaltung der MCTDH-Wellenfunktion dienen. Dadurch w"aren beispielsweise Modifikation der
+Darstellung der Wellenfunktion m"oglich.

@@ -1,4 +1,4 @@
-\chapter{Implementation}
+\chapter{Implementation und Demonstration}
 \label{cha:Implementation}
 
 \section{Sprachen und Bibliotheken}
@@ -9,12 +9,10 @@ die Python und C\textbackslash C++ kombiniert. Im Gegensatz zu Python
 wird Cython kompiliert, wobei die Cythonsyntax der Pythonsyntax "ahnlich ist.
 In Cython kann C++ Code verwendet werden, der beim Erstellen der Cython-Programme ebenfalls kompiliert wird.
 
-Die GUI f"ur die MCTDH-Rechnungen wurde in Python mithilfe der Qt-Bibliothek implementiert.
-Der Zugriff auf die Qt-Bibliothek \cite{Qt} erfolgt "uber die Python-Bibliothek PyQt4 \cite{PyQt}. 
-Mit PyQt k"onnen die Informationen zu den GUI-Fenstern eingelesen werden und entsprechende 
-Klassen erstellt und beliebig erweitert werden.
+Die GUI f"ur die MCTDH-Rechnungen wurde in Python mithilfe der Qt-Bibliothek \cite{Qt} implementiert.
+Der Zugriff auf die Qt-Bibliothek  erfolgt "uber die Python-Bibliothek PyQt4 \cite{PyQt}. 
 Das Design der einzelnen GUI-Fenster erfolgte in Qt-Designer \cite{Qt-Designer}. 
-Die in Qt-Designer erstellten Fenster werden in PyQt miteinander verkn"upft.
+Die in Qt-Designer erstellten Fenster werden in Python miteinander verkn"upft.
 
 Neben PyQt wurden die Python-Module \textit{networkx} \cite{SciPyProceedings_11} und \textit{matplotlib} \cite{Hunter:2007} verwendet.
 Mithilfe von Klassen aus \textit{networkx} und \textit{matplotlib} konnten Baumdiagramme erstellt und gespei\-chert werden, die in der GUI zur 
@@ -26,8 +24,8 @@ Visualisierung des MCTDH-Baums verwendet wurden.
 Es wurde eine Programmierschnittstelle (von englisch \textit{application programming interface}, API) f"ur das MCTDH-Programmpaket erstellt,
 welche es erlaubt Funktionen des C++ MCTDH-Codes in Python-Skripten zu verwenden.
 %Die Schnittstelle umfasst Klassen und Methoden, die zur Verwaltung der Darstellung der MCTDH-Wellenfunktion dienen.
-Dazu wurden neue Klassen in Python erstellt, welche Klassen des C++ Code repr"asentieren 
-und einen eingeschr"ankten Satz an Funktionen bereitstellen.
+Dazu wurden neue Klassen in Python erstellt, welche stellvertretende Klassen des C++ Codes sind 
+und die einen eingeschr"ankten Satz an Funktionen bereitstellen.
 Im Rahmen dieser Arbeit wurden Klassen erstellt, die der Verwaltung der Darstellung der MCTDH-Wellenfunktion dienen.
 Die Erweiterung auf andere Klassen kann nach einem einfachen Schema erfolgen.
 Abbildung \ref{fig:uml_Cython} zeigt ein Klassendiagramm aller in Cython erstellter Klassen der API.
@@ -46,8 +44,6 @@ MCTDH-Wellenfunktion dienen.
 Zur Demostration der API wird im folgenden ein Python-Skript vorgestellt, mithilfe dessen Dimensionsinformationen
 einer Multilayer-MCTDH-Wellenfunktion berechnet werden k"onnen. Zuerst wird das Skript vorgestellt und 
 anschlie"send wird es abschnittsweise erkl"art.
-
-\newpage
 
 \begin{verbatim}
     import mctdh
@@ -72,7 +68,6 @@ anschlie"send wird es abschnittsweise erkl"art.
     for key in primitivB:
         NCoefBottomNode[key] = primitivB[key] * nodes_spf[key]
     NCoefBottom = sum([l_[1] for l_ in NCoefBottomNode.items()])
-    
     print NCoefBottom
 
     NCoefTopNode = 0
@@ -82,7 +77,6 @@ anschlie"send wird es abschnittsweise erkl"art.
                 for j in range(children):
                     NCoefTopNode *= basis.MCTDHnode(i).down(j).t_dim().GetnTensor()
                 NCoefTopNode *= basis.MCTDHnode(i).t_dim().GetnTensor()
-    
     print NCoefTopNode
     
     remnantNodeList = []
@@ -98,7 +92,6 @@ anschlie"send wird es abschnittsweise erkl"art.
                 remnantNodeList.append(remnant)
                 remnant = 0
     NCoefRemnant = sum(remnantNodeList)
-    
     print NCoefRemnant
     
 \end{verbatim}
@@ -126,7 +119,8 @@ Die Anzahl der Knoten im MCTDH-Baum wird mit dem folgenden Befehl bestimmt:
 \begin{verbatim}
 maxNodes = basis.NmctdhNodes()
 \end{verbatim}
-Danach wird der Maximalwert der $m$-Indizes der Entwicklungskoeffizienten $A^{l;\kappa_{1},...,\kappa_{l-1}}_{m;j_1,...,j_{d_{\kappa}}}(t)$ bestimmt.
+Danach wird der Maximalwert der $m$-Indizes der Entwicklungskoeffizienten $A^{l;\kappa_{1},...,\kappa_{l-1}}_{m;j_1,...,j_{d_{\kappa}}}(t)$ 
+bestimmt (vergleiche Gleichung \ref{Eq:ml_mctdh_mode_SPF}).
 Die entsprechenden Werte sind Member der Objekte der Klasse \textit{Tdim}.
 Sie werden ermittelt und in dem Dictionary \textit{nodes\_spf} gespeichert:
 \begin{verbatim}
@@ -198,14 +192,18 @@ und der restlichen Knoten berechnet und ausgegeben:
 
 \section{Graphische Benutzeroberfl"ache f"ur MCTDH}
 
+Es wurde eine GUI erstellt, von der aus MCTDH-Rechnungen gestartet werden k"onnen. 
 Zur Demonstration der graphischen Benutzeroberfl"ache wird im folgenden das Vorgehen zum Starten einer 
 MCTDH Simulation vorgef"uhrt. Als Beispiel dient die Realzeitpro\-pagation eines Wellenpakets auf dem
-ersten elektronisch angeregten Zustand ($S_1$) von NOCl, um die Photodissoziation von NOCl zu simulieren \cite{MMC1}.  
-Die MCTDH-Wellenfunktion f"ur NOCl ist in Abbildung \ref{fig:NOCl} dargestellt. 
+ersten elektronisch angeregten Zustand ($S_1$) von NOCl. 
+Diese Rechnung ist zentraler Bestandteil bei der Berechnung der Photodissoziation von NOCl \cite{MMC1}.
+Es werden das gleiche Koordinatensystem, die gleiche Potentialfl"ache, sowie die gleiche numerischen Parameter wie in
+[{\color{darkblue} 2}] benutzt.
+Die Darstellung der MCTDH-Wellenfunktion ist in Abbildung \ref{fig:NOCl} dargestellt. 
 
 \begin{figure}
     \centering
-%    \includegraphics[scale=0.5]{figures/screenMain}
+    \includegraphics[scale=0.5]{figures/NOCl}
     \caption{Darstellung der MCTDH-Wellenfunktion von NOCl.}\label{fig:NOCl}
 \end{figure}
 
@@ -253,6 +251,7 @@ aufgefordert einen Name f"ur die Rechnung zu w"ahlen.
 Beim Speichern der Rechnung wird "uberpr"uft, ob eine Rechnung mit dem ausgew"ahlten Namen existiert,
 um ein unabsichtliches "Uberschreiben zu verhindern.
 In Liste \textbf{11} wird der entsprech\-ende Summe-von-Produkten Operator f"ur das gegebene System ausgew"ahlt.
+Dabei werden die primitiven Basisparameter festgelegt.
 "Uber die Kn"opfe  ,,on'' und ,,off'' (\textbf{12}) wird gesteuert, ob eine Potentialfl"achenauswertung mittels 
 CDVR erfolgt.
 Ist der ,,off'' Knopf aktiviert, werden keine Potentiale in der Liste \textbf{13} angezeigt.
@@ -261,14 +260,16 @@ auf die Elemente der Liste \textbf{13} ausgew"ahlt werden. Im vorliegenden Beisp
 ausgew"ahlt.
 Die Erweiterung der Summe-von-Produkten Operatoren und Potentialfl"achen kann schematisch erfolgen.
 
-Mithilfe der MCTDH GUI k"onnen verschiedene Operationen durchgef"uhrt werden (\textbf{14})
-Hier wird die Option ,,real-time propagation'' (f"ur die Realzeitpropagation) ausgew"ahlt.
-Des Weiteren sind unter \textbf{15} Steuerungsparameter f"ur den Integrator angegeben. Dazu geh"oren die Anfangszeit, die Endzeit,
+%Mithilfe der MCTDH-GUI k"onnen verschiedene Operationen durchgef"uhrt werden (\textbf{14}).
+In Liste \textbf{14} wird die Art der Rechnung ausgew"ahlt. Im vorliegenden Beispiel wird ,,real-time propagation'' 
+zum Durchf"uhren einer Realzeitpropagation ausgew"ahlt.
+Weite\-re M"oglichkeiten sind ,,imaginary-time propagation'' zum Durchf"uhren einer Imagin"arzeitpropagation 
+sowie ,,Eigenstate calculation'' zum Berechnen von Eigenzust"anden und 
+,,Thermal flux eigenstate calculation'' zur Berechnung von thermischen Flusseigenzust"anden \cite{thermalflux}.
+Des Weiteren k"onnen unter \textbf{15} Steuerungsparameter f"ur den Integrator angegeben werden. Dazu geh"oren die Anfangszeit, die Endzeit,
 der initiale Zeitschritt und die Anzahl an Iterationen. 
-Alle Parameter werden automatisch geladen, indem ein System aus
-Liste \textbf{11} ausgew"ahlt wird oder eine Eingabe-Datei durch 
-die ,,Load'' Schaltfl"alche \textbf{19} eingelesen wird. Dabei sind die primitiven Basisparameter f"ur jedes System festgelegt und werden 
-ebenfalls geladen. 
+Alle Parameter werden automatisch geladen, indem eine Eingabe-Datei durch 
+die ,,Load'' Schaltfl"alche \textbf{19} eingelesen wird. 
 Der MCTDH-Baum, welcher die aktuell gew"ahlte Basis repr"asentiert, wird unter \textbf{16} 
 als Listendiagramm angezeigt. Hier
 kann durch Doppelklick die Anzahl der SPFs, der primitiven Basis und der Moden ver"andert werden.
@@ -279,8 +280,8 @@ Alternativ kann die MCTDH Simulation auch aus dem Hauptfenster gestartet werden,
 indem Schaltfl"ache ,,Run MCTDH on existing job'' (\textbf{9}) bet"atigt wird (siehe Abbildung \ref{fig:workflow3}).
 %Durch Klicken der Schaltfl"ache ,,Run MCTDH on existing job'' (\textbf{9}) kann ebenfalls eine MCTDH Simulation gestartet.
 
-In Abbildung \ref{fig:workflow5} wurde das System NOCl mit Eingabeparametern geladen,
-indem auf ,,NOCl'' aus Liste \textbf{11} geklickt wurde.
+Abbildung \ref{fig:workflow5} zeigt das Eingabefenster, in dem nach Auswahl aller Parameter die oben genannte Rechnung 
+durch das Klicken auf Schaltfl"ache \textbf{20} gestartet wird.
 
 \begin{figure}
     \centering

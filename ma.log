@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  13 JUN 2018 19:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  14 JUN 2018 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,13 +910,13 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (./content/intro.tex
 Kapitel 1.
 
-Overfull \hbox (3.51106pt too wide) in paragraph at lines 4--34
+Overfull \hbox (3.51106pt too wide) in paragraph at lines 4--33
 \T1/lmr/m/n/12 wer-den$[]$. Beispiele für hochdi-men-sion-ale Benchmark-Anwendu
 ngen sind die 21-dimen-
  []
 
 
-Overfull \hbox (7.46463pt too wide) in paragraph at lines 35--44
+Overfull \hbox (7.46463pt too wide) in paragraph at lines 34--43
 \T1/lmr/m/n/12 die Nutzung des Pro-gramms selb-st bei ver-gle-ich-sweise ein-fa
 chen Auf-gaben bis-lang grundle-
  []
@@ -977,7 +977,7 @@ it/12 q[] \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/12 x[]; x[]; x[]\OM
 S/lmsy/m/n/12 g$\T1/lmr/m/n/12 . 
  []
 
-<figures/treeDiagramms.pdf, id=233, 396.28052pt x 476.58104pt>
+<figures/treeDiagramms.pdf, id=231, 396.28052pt x 476.58104pt>
 File: figures/treeDiagramms.pdf Graphic file (type pdf)
 
 <use figures/treeDiagramms.pdf>
@@ -992,107 +992,121 @@ Kapitel 3.
 [10
 
 
-] [11]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 52.
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 48.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \hbox (64.3943pt too wide) in paragraph at lines 104--104
+) [11]
+Overfull \hbox (64.3943pt too wide) in paragraph at lines 97--97
 []                    \T1/lmtt/m/n/12 NCoefTopNode *= basis.MCTDHnode(i).down(j
 ).t_dim().GetnTensor()[] 
  []
 
-[12]
-Overfull \hbox (33.51929pt too wide) in paragraph at lines 104--104
+
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 97--97
 []                    \T1/lmtt/m/n/12 remnant *= basis.MCTDHnode(i).down(j).t_d
 im().GetnTensor()[] 
  []
 
-[13]
-Overfull \hbox (39.69429pt too wide) in paragraph at lines 162--162
+[12] [13]
+Overfull \hbox (39.69429pt too wide) in paragraph at lines 156--156
 []                \T1/lmtt/m/n/12 NCoefTopNode *= basis.MCTDHnode(i).down(j).t_
 dim().GetnTensor()[] 
  []
 
-[14]
-Overfull \hbox (33.51929pt too wide) in paragraph at lines 179--179
+
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 173--173
 []                    \T1/lmtt/m/n/12 remnant *= basis.MCTDHnode(i).down(j).t_d
 im().GetnTensor()[] 
  []
 
-<figures/sequenceDiagram.png, id=313, 363.3575pt x 436.63126pt>
+<figures/sequenceDiagram.png, id=307, 363.3575pt x 436.63126pt>
 File: figures/sequenceDiagram.png Graphic file (type png)
 
 <use figures/sequenceDiagram.png>
-Package pdftex.def Info: figures/sequenceDiagram.png used on input line 191.
+Package pdftex.def Info: figures/sequenceDiagram.png used on input line 185.
 (pdftex.def)             Requested size: 218.01617pt x 261.98077pt.
- [15] [16 <./figures/sequenceDiagram.png (PNG copy)>]
-Overfull \hbox (0.37172pt too wide) in paragraph at lines 201--205
-\T1/lmr/m/n/12 NO-Cl, um die Pho-todis-sozi-a-tion von NO-Cl zu simulieren$[]$.
- Die MCTDH-Wellenfunktion
+ [14] [15 <./figures/sequenceDiagram.png (PNG copy)>]
+Overfull \hbox (0.51414pt too wide) in paragraph at lines 195--203
+\T1/lmr/m/n/12 sowie die gle-iche nu-merischen Pa-ram-e-ter wie in [[]2[]] be-n
+utzt. Die Darstel-lung der MCTDH-
  []
 
-<figures/screenMain.pdf, id=325, 649.46074pt x 550.24976pt>
+<figures/NOCl.pdf, id=319, 462.52802pt x 346.89601pt>
+File: figures/NOCl.pdf Graphic file (type pdf)
+ <use figures/NOCl.pdf>
+Package pdftex.def Info: figures/NOCl.pdf used on input line 206.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+<figures/screenMain.pdf, id=320, 649.46074pt x 550.24976pt>
 File: figures/screenMain.pdf Graphic file (type pdf)
 
 <use figures/screenMain.pdf>
-Package pdftex.def Info: figures/screenMain.pdf used on input line 214.
+Package pdftex.def Info: figures/screenMain.pdf used on input line 212.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
-<figures/screenMainFile.pdf, id=328, 649.46074pt x 550.24976pt>
+<figures/screenMainFile.pdf, id=323, 649.46074pt x 550.24976pt>
 File: figures/screenMainFile.pdf Graphic file (type pdf)
 
 <use figures/screenMainFile.pdf>
-Package pdftex.def Info: figures/screenMainFile.pdf used on input line 229.
+Package pdftex.def Info: figures/screenMainFile.pdf used on input line 227.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
-<figures/screenMainProject.pdf, id=332, 646.00961pt x 551.14886pt>
+<figures/screenMainProject.pdf, id=327, 646.00961pt x 551.14886pt>
 File: figures/screenMainProject.pdf Graphic file (type pdf)
 
 <use figures/screenMainProject.pdf>
-Package pdftex.def Info: figures/screenMainProject.pdf used on input line 241.
+Package pdftex.def Info: figures/screenMainProject.pdf used on input line 239.
 (pdftex.def)             Requested size: 323.00401pt x 275.57375pt.
 
-Underfull \hbox (badness 1231) in paragraph at lines 243--243
+Underfull \hbox (badness 1231) in paragraph at lines 241--241
 \T1/lmr/m/n/12 Es ste-hen Op-tio-nen zum Er-stellen und Starten ein-er MCTDH-
  []
 
-[17] [18 <./figures/screenMain.pdf>] [19 <./figures/screenMainFile.pdf>]
-[20 <./figures/screenMainProject.pdf>]
-<figures/screenWidgetA.pdf, id=396, 1328.27492pt x 729.13107pt>
+[16] [17 <./figures/NOCl.pdf> <./figures/screenMain.pdf
+
+pdfTeX warning: pdflatex (file ./figures/screenMain.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>] [18 <./figures/screenMainFile.pdf>] [19 <./figures/screenMainProject.pdf>]
+Overfull \hbox (4.11864pt too wide) in paragraph at lines 264--282
+\T1/lmr/m/n/12 re Möglichkeit-en sind ,,imaginary-time prop-a-ga-tion'' zum Dur
+ch-führen ein-er Imag-inärzeit-
+ []
+
+
+Overfull \hbox (31.99889pt too wide) in paragraph at lines 264--282
+\T1/lmr/m/n/12 ,,Ther-mal flux eigen-state cal-cu-la-tion'' zur Berech-nung von
+ ther-mis-chen Flus-seigen-zuständen$[]$.
+ []
+
+<figures/screenWidgetA.pdf, id=402, 1328.27492pt x 729.13107pt>
 File: figures/screenWidgetA.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetA.pdf>
-Package pdftex.def Info: figures/screenWidgetA.pdf used on input line 287.
+Package pdftex.def Info: figures/screenWidgetA.pdf used on input line 288.
 (pdftex.def)             Requested size: 1328.27168pt x 729.12929pt.
 
 
-LaTeX Warning: Float too large for page by 15.71819pt on input line 289.
+LaTeX Warning: Float too large for page by 15.71819pt on input line 290.
 
-<figures/screenWidgetAexample.pdf, id=397, 1327.17621pt x 726.93378pt>
+<figures/screenWidgetAexample.pdf, id=403, 1327.17621pt x 726.93378pt>
 File: figures/screenWidgetAexample.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetAexample.pdf>
 Package pdftex.def Info: figures/screenWidgetAexample.pdf used on input line 29
-2.
+3.
 (pdftex.def)             Requested size: 1327.17297pt x 726.932pt.
 
 
-LaTeX Warning: Float too large for page by 29.72377pt on input line 295.
+LaTeX Warning: Float too large for page by 29.72377pt on input line 296.
 
-) (./content/Fazit.tex [21] [22 <./figures/screenWidgetA.pdf>] [23 <./figures/s
+) (./content/Fazit.tex [20] [21 <./figures/screenWidgetA.pdf>] [22 <./figures/s
 creenWidgetAexample.pdf>]
 Kapitel 4.
-
-Overfull \hbox (0.73616pt too wide) in paragraph at lines 17--24
-\T1/lmr/m/n/12 mierken-nt-nisse er-laubt MCTDH-Rechnungen zu starten. Im Rah-me
-n dieser Ar-beit wurde
- []
-
-) [24
+[23
 
 
-] (./appendix/sourcecode.tex [25
+]) [24] (./appendix/sourcecode.tex [25
 
 
 
@@ -1685,14 +1699,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `ma.out' has not changed.
-(rerunfilecheck)             Checksum: 4C9F80FA7B0A3C691133C662AF0B3293;701.
+(rerunfilecheck)             Checksum: 90E72125661C7F19CB310B0F9E2DF35C;719.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
- 12710 strings out of 494820
- 190808 string characters out of 3178049
- 311137 words of memory out of 3000000
- 15416 multiletter control sequences out of 15000+200000
+ 12719 strings out of 494820
+ 190972 string characters out of 3178049
+ 312189 words of memory out of 3000000
+ 15423 multiletter control sequences out of 15000+200000
  75192 words of font info for 60 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  48i,15n,68p,478b,646s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1713,10 +1727,10 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ma.pdf (88 pages, 4349379 bytes).
+Output written on ma.pdf (88 pages, 4363023 bytes).
 PDF statistics:
- 840 PDF objects out of 1000 (max. 8388607)
- 695 compressed objects within 7 object streams
- 196 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 852 PDF objects out of 1000 (max. 8388607)
+ 702 compressed objects within 8 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
