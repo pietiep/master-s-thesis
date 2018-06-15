@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  15 JUN 2018 11:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.1.26)  15 JUN 2018 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1027,13 +1027,19 @@ File: figures/sequenceDiagram.png Graphic file (type png)
 Package pdftex.def Info: figures/sequenceDiagram.png used on input line 185.
 (pdftex.def)             Requested size: 369.37909pt x 436.63019pt.
  [14] [15 <./figures/sequenceDiagram.png (PNG copy)>]
-Overfull \hbox (4.85565pt too wide) in paragraph at lines 195--203
+Overfull \hbox (0.19632pt too wide) in paragraph at lines 195--200
+\T1/lmr/m/n/12 mus' haben. Hi-er-für ste-ht dem Nutzer der GUI eine Pro-jek-tve
+r-wal-tung und Eingabefelder
+ []
+
+
+Overfull \hbox (4.85565pt too wide) in paragraph at lines 201--208
 \T1/lmr/m/n/12 ziation von NO-Cl$[]$. Es wer-den das gle-iche Ko-or-di-naten-sy
 s-tem, die gle-iche Po-ten-tialfläche,
  []
 
 
-Overfull \hbox (7.04213pt too wide) in paragraph at lines 195--203
+Overfull \hbox (7.04213pt too wide) in paragraph at lines 201--208
 \T1/lmr/m/n/12 sowie die gle-ichen nu-merischen Pa-ram-e-ter wie in [[]2[]] be-
 nutzt. Die Darstel-lung der MCTDH-
  []
@@ -1041,31 +1047,31 @@ nutzt. Die Darstel-lung der MCTDH-
 <figures/NOCl.pdf, id=319, 462.52802pt x 346.89601pt>
 File: figures/NOCl.pdf Graphic file (type pdf)
  <use figures/NOCl.pdf>
-Package pdftex.def Info: figures/NOCl.pdf used on input line 206.
+Package pdftex.def Info: figures/NOCl.pdf used on input line 211.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
 
 <figures/screenMain.pdf, id=320, 649.46074pt x 550.24976pt>
 File: figures/screenMain.pdf Graphic file (type pdf)
 
 <use figures/screenMain.pdf>
-Package pdftex.def Info: figures/screenMain.pdf used on input line 212.
+Package pdftex.def Info: figures/screenMain.pdf used on input line 217.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
 <figures/screenMainFile.pdf, id=323, 649.46074pt x 550.24976pt>
 File: figures/screenMainFile.pdf Graphic file (type pdf)
 
 <use figures/screenMainFile.pdf>
-Package pdftex.def Info: figures/screenMainFile.pdf used on input line 227.
+Package pdftex.def Info: figures/screenMainFile.pdf used on input line 232.
 (pdftex.def)             Requested size: 324.72957pt x 275.12419pt.
 
 <figures/screenMainProject.pdf, id=327, 646.00961pt x 551.14886pt>
 File: figures/screenMainProject.pdf Graphic file (type pdf)
 
 <use figures/screenMainProject.pdf>
-Package pdftex.def Info: figures/screenMainProject.pdf used on input line 239.
+Package pdftex.def Info: figures/screenMainProject.pdf used on input line 244.
 (pdftex.def)             Requested size: 323.00401pt x 275.57375pt.
 
-Underfull \hbox (badness 1231) in paragraph at lines 241--241
+Underfull \hbox (badness 1231) in paragraph at lines 246--246
 \T1/lmr/m/n/12 Es ste-hen Op-tio-nen zum Er-stellen und Starten ein-er MCTDH-
  []
 
@@ -1074,13 +1080,13 @@ Underfull \hbox (badness 1231) in paragraph at lines 241--241
 pdfTeX warning: pdflatex (file ./figures/screenMain.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >] [18 <./figures/screenMainFile.pdf>] [19 <./figures/screenMainProject.pdf>]
-Overfull \hbox (4.11864pt too wide) in paragraph at lines 264--282
+Overfull \hbox (4.11864pt too wide) in paragraph at lines 269--287
 \T1/lmr/m/n/12 re Möglichkeit-en sind ,,imaginary-time prop-a-ga-tion'' zum Dur
 ch-führen ein-er Imag-inärzeit-
  []
 
 
-Overfull \hbox (2.07596pt too wide) in paragraph at lines 264--282
+Overfull \hbox (2.07596pt too wide) in paragraph at lines 269--287
 \T1/lmr/m/n/12 den$[]$. Des Weit-eren können unter \T1/lmr/bx/n/12 15 \T1/lmr/m
 /n/12 Steuerungspa-ram-e-ter für den In-te-gra-tor angegeben
  []
@@ -1089,22 +1095,22 @@ Overfull \hbox (2.07596pt too wide) in paragraph at lines 264--282
 File: figures/screenWidgetA.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetA.pdf>
-Package pdftex.def Info: figures/screenWidgetA.pdf used on input line 288.
+Package pdftex.def Info: figures/screenWidgetA.pdf used on input line 293.
 (pdftex.def)             Requested size: 1328.27168pt x 729.12929pt.
 
 
-LaTeX Warning: Float too large for page by 15.71819pt on input line 290.
+LaTeX Warning: Float too large for page by 15.71819pt on input line 295.
 
-<figures/screenWidgetAexample.pdf, id=403, 1327.17621pt x 726.93378pt>
+<figures/screenWidgetAexample.pdf, id=403, 1327.17621pt x 728.03242pt>
 File: figures/screenWidgetAexample.pdf Graphic file (type pdf)
 
 <use figures/screenWidgetAexample.pdf>
 Package pdftex.def Info: figures/screenWidgetAexample.pdf used on input line 29
-3.
-(pdftex.def)             Requested size: 1327.17297pt x 726.932pt.
+8.
+(pdftex.def)             Requested size: 1327.17297pt x 728.03065pt.
 
 
-LaTeX Warning: Float too large for page by 29.72377pt on input line 296.
+LaTeX Warning: Float too large for page by 29.72377pt on input line 301.
 
 ) (./content/Fazit.tex [20] [21 <./figures/screenWidgetA.pdf>] [22 <./figures/s
 creenWidgetAexample.pdf>]
@@ -1124,343 +1130,343 @@ Overfull \hbox (1.90793pt too wide) in paragraph at lines 20--24
 
 
 ] [26] [27]
-Overfull \hbox (33.51929pt too wide) in paragraph at lines 176--176
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 180--180
 []        \T1/lmtt/m/n/12 msg.setStandardButtons(QtGui.QMessageBox.Ok| QtGui.QM
 essageBox.Cancel)[] 
  []
 
 [28] [29] [30] [31] [32] [33] [34]
-Overfull \hbox (8.81927pt too wide) in paragraph at lines 361--361
+Overfull \hbox (8.81927pt too wide) in paragraph at lines 365--365
 []                    \T1/lmtt/m/n/12 self.addBottomNode(oldchild.name(), oldch
 ild.name(), \[] 
  []
 
 
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 361--361
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 365--365
 []                    \T1/lmtt/m/n/12 self._dictNodes[oldNode.name()], oldchild
 .physcoor())[] 
  []
 
 [35] [36]
-Overfull \hbox (27.34428pt too wide) in paragraph at lines 722--722
+Overfull \hbox (27.34428pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 self.uiProjects.customContextMenuRequested.connec
 t(self.openMenu)[] 
  []
 
 
-Overfull \hbox (33.51929pt too wide) in paragraph at lines 722--722
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 self.uiSessions.customContextMenuRequested.connec
 t(self.openMenu0)[] 
  []
 
 [37]
-Overfull \hbox (64.3943pt too wide) in paragraph at lines 722--722
+Overfull \hbox (64.3943pt too wide) in paragraph at lines 726--726
 []                \T1/lmtt/m/n/12 shutil.rmtree(self._startingPath+'/'+self._Pr
 ojectName+'/'+session)[] 
  []
 
 [38]
-Overfull \hbox (58.2193pt too wide) in paragraph at lines 722--722
+Overfull \hbox (58.2193pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 if self._model1._messageBu == 'OK' and delFolder 
 != self._startingPath[] 
  []
 
 
-Overfull \hbox (58.2193pt too wide) in paragraph at lines 722--722
+Overfull \hbox (58.2193pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 msg.setStandardButtons(QtGui.QMessageBox.Ok| QtGu
 i.QMessageBox.Cancel)[] 
  []
 
 [39]
-Overfull \hbox (14.99428pt too wide) in paragraph at lines 722--722
+Overfull \hbox (14.99428pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 SESfiles = os.walk(self._startingPath+'/'+self._P
 rojectName+'/'[] 
  []
 
 [40]
-Overfull \hbox (8.81927pt too wide) in paragraph at lines 722--722
+Overfull \hbox (8.81927pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 self._model2 = ListModel2(self._ProjectName, self
 ._proContent)[] 
  []
 
 [41]
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 722--722
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 726--726
 []                \T1/lmtt/m/n/12 path = self._startingPath + '/' + self._Proje
 ctName + '/'[] 
  []
 
 
-Overfull \hbox (8.81927pt too wide) in paragraph at lines 722--722
+Overfull \hbox (8.81927pt too wide) in paragraph at lines 726--726
 []                        \T1/lmtt/m/n/12 os.chdir(self._startingPath+'/'+self.
 _ProjectName)[] 
  []
 
 [42]
-Overfull \hbox (52.0443pt too wide) in paragraph at lines 722--722
+Overfull \hbox (52.0443pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 self._ProjectName = str(QtGui.QFileDialog.getExis
 tingDirectory(self))[] 
  []
 
 [43]
-Overfull \hbox (64.3943pt too wide) in paragraph at lines 722--722
+Overfull \hbox (64.3943pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 filePathList = [f_ for f_ in filePathList if f_[0
 ] in self._proContent][] 
  []
 
 
-Overfull \hbox (70.5693pt too wide) in paragraph at lines 722--722
+Overfull \hbox (70.5693pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 self._dialogD._model = QtGui.QStandardItemModel(s
 elf._dialogD.uiRunList)[] 
  []
 
 
-Overfull \hbox (21.16928pt too wide) in paragraph at lines 722--722
+Overfull \hbox (21.16928pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 self._dialogD.uiRunList.setEditTriggers(QtGui.QAb
 stractItemView.[] 
  []
 
 
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 722--722
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 self._dialogD.uiRunList.clicked.connect(self.on_i
 tem_select2)[] 
  []
 
 [44]
-Overfull \hbox (33.51929pt too wide) in paragraph at lines 722--722
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 726--726
 []            \T1/lmtt/m/n/12 self.process.setProcessChannelMode(QtCore.QProces
 s.MergedChannels)[] 
  []
 
 [45]
-Overfull \hbox (27.34428pt too wide) in paragraph at lines 809--809
+Overfull \hbox (27.34428pt too wide) in paragraph at lines 813--813
 []        \T1/lmtt/m/n/12 def __init__(self, config_file='mctdh.config', sys_fi
 le='CH3g1.txt'):[] 
  []
 
 [46]
-Overfull \hbox (52.0443pt too wide) in paragraph at lines 809--809
+Overfull \hbox (52.0443pt too wide) in paragraph at lines 813--813
 []                    \T1/lmtt/m/n/12 self.mode_list.append(self.phys.mode()) #
 append Modes to list[] 
  []
 
 
-Overfull \hbox (27.34428pt too wide) in paragraph at lines 809--809
+Overfull \hbox (27.34428pt too wide) in paragraph at lines 813--813
 []            \T1/lmtt/m/n/12 [list(reversed(self.nlayer(b_))) for b_ in self.g
 etBottomlayer()][] 
  []
 
 
-Overfull \hbox (21.16928pt too wide) in paragraph at lines 809--809
+Overfull \hbox (21.16928pt too wide) in paragraph at lines 813--813
 []            \T1/lmtt/m/n/12 self.lay_matr_mode = [["Top"] + l_ for l_ in self
 .lay_matr_mode][] 
  []
 
-
-Overfull \hbox (14.99428pt too wide) in paragraph at lines 809--809
+[47]
+Overfull \hbox (14.99428pt too wide) in paragraph at lines 813--813
 []            \T1/lmtt/m/n/12 self.label_mode = [100 + i for i in range(len(sel
 f.mode_list))][] 
  []
 
-[47]
-Overfull \hbox (21.16928pt too wide) in paragraph at lines 809--809
+
+Overfull \hbox (21.16928pt too wide) in paragraph at lines 813--813
 []            \T1/lmtt/m/n/12 mode_spf = [self.basis.MCTDHnode(i).t_dim().activ
 e(0) for i in \[] 
  []
 
 [48] [49] [50]
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 1209--1209
 []        \T1/lmtt/m/n/12 def __init__(self, tree, paradict, sysFile, filename=
 "InPut.in"):[] 
  []
 
 [51] [52] [53] [54]
-Overfull \hbox (33.51929pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 1209--1209
 []            \T1/lmtt/m/n/12 logical = LogicalNodes(model.lay_matr_mode, mctdh
 Config, sys_file)[] 
  []
 
 
-Overfull \hbox (27.34428pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (27.34428pt too wide) in paragraph at lines 1209--1209
 []            \T1/lmtt/m/n/12 self.addNode(self._elder, str(self._G.nodes[self.
 _elder]['SPF']),[] 
  []
 
-
-Overfull \hbox (64.3943pt too wide) in paragraph at lines 1205--1205
+[55]
+Overfull \hbox (64.3943pt too wide) in paragraph at lines 1209--1209
 []                        \T1/lmtt/m/n/12 self.addNode(brothers, str(self._G.no
 des[brothers]['SPF']),[] 
  []
 
-[55]
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 1205--1205
+
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 1209--1209
 []                        \T1/lmtt/m/n/12 self._dictNodes[suc_[0]]) #Label, SPF
 , parent_obj[] 
  []
 
 [56] [57]
-Overfull \hbox (14.99428pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (14.99428pt too wide) in paragraph at lines 1209--1209
 []                \T1/lmtt/m/n/12 output += self._name + "  " + str(self.childc
 ount()) + "\n"[] 
  []
 
 
-Overfull \hbox (14.99428pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (14.99428pt too wide) in paragraph at lines 1209--1209
 []                \T1/lmtt/m/n/12 output += self._name + " -" + str(self.childc
 ount()) + "\n"[] 
  []
 
 [58]
-Overfull \hbox (14.99428pt too wide) in paragraph at lines 1205--1205
+Overfull \hbox (14.99428pt too wide) in paragraph at lines 1209--1209
 []                \T1/lmtt/m/n/12 output += self._name + " -" + str(self.childc
 ount()) + "\n"[] 
  []
 
 [59]
-Overfull \hbox (21.16928pt too wide) in paragraph at lines 1256--1256
+Overfull \hbox (21.16928pt too wide) in paragraph at lines 1260--1260
 []            \T1/lmtt/m/n/12 nx.draw(G, pos, with_labels=False, arrows=False, 
 node_color='w')[] 
  []
 
 
-Overfull \hbox (52.0443pt too wide) in paragraph at lines 1256--1256
+Overfull \hbox (52.0443pt too wide) in paragraph at lines 1260--1260
 []            \T1/lmtt/m/n/12 nx.draw_networkx_nodes(G, pos, nodelist=top, node
 _color='w', alpha=1)[] 
  []
 
 
-Overfull \hbox (39.69429pt too wide) in paragraph at lines 1256--1256
+Overfull \hbox (39.69429pt too wide) in paragraph at lines 1260--1260
 []            \T1/lmtt/m/n/12 nx.draw_networkx_nodes(G, pos, nodelist=rest_node
 s, node_color='r',[] 
  []
 
 
-Overfull \hbox (45.86229pt too wide) in paragraph at lines 1256--1256
+Overfull \hbox (45.86229pt too wide) in paragraph at lines 1260--1260
 []            \T1/lmtt/m/n/12 nx.draw_networkx_labels(G, pos_lower, self.label_
 mode, font_size=16)[] 
  []
 
 [60]
-Overfull \hbox (45.8693pt too wide) in paragraph at lines 1256--1256
+Overfull \hbox (45.8693pt too wide) in paragraph at lines 1260--1260
 []            \T1/lmtt/m/n/12 nx.draw_networkx_labels(G, pos_higher, self.nodes
 _spf, font_size=12)[] 
  []
 
 [61]
-Overfull \hbox (64.3873pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (64.3873pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 self._dictHamil = {'CH3Quasie_exact': '1', 'CH4_r
 st': '2', 'NOCl': '9'}[] 
  []
 
 [62] [63] [64] [65]
-Overfull \hbox (45.8693pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (45.8693pt too wide) in paragraph at lines 1952--1952
 []                     \T1/lmtt/m/n/12 + self._ProjectName + '/' + self._Sessio
 nName + '/' + DotIn[] 
  []
 
 [66]
-Overfull \hbox (45.8693pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (45.8693pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 msg.setStandardButtons(QtGui.QMessageBox.Yes | Qt
 Gui.QMessageBox.No)[] 
  []
 
 [67]
-Overfull \hbox (8.81927pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (8.81927pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 self.LogicalNodes = LogicalNodes(self.ModelTree.l
 ay_matr_mode,[] 
  []
 
 [68]
-Overfull \hbox (64.3943pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (64.3943pt too wide) in paragraph at lines 1952--1952
 []                    \T1/lmtt/m/n/12 self._ProjectName + '/' + self._SessionNa
 me + '/' + sysTreeFile[] 
  []
 
 
-Overfull \hbox (27.34428pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (27.34428pt too wide) in paragraph at lines 1952--1952
 []                    \T1/lmtt/m/n/12 self._ProjectName + '/' + self._SessionNa
 me + '/' + DotIn[] 
  []
 
 [69] [70]
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 TMPpath = self._startingPath +'/'+ self._ProjectN
 ame + '/tmp'[] 
  []
 
 [71]
-Overfull \hbox (14.99428pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (14.99428pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 pathTMP = self._startingPath + '/' + self._Projec
 tName + '/tmp'[] 
  []
 
 
-Overfull \hbox (70.5693pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (70.5693pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 outobj = OutPut2(self._paradict, self._treeFromLo
 ad, self._TMPinputFile,[] 
  []
 
 [72]
-Overfull \hbox (14.99428pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (14.99428pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 sysPathTMP = self._startingPath +'/'+ self._Proje
 ctName +'/tmp'[] 
  []
 
 [73] [74] [75]
-Overfull \hbox (52.0443pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (52.0443pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 folders = os.walk(self._startingPath+'/'+self._Pr
 ojectName).next()[1][] 
  []
 
 [76]
-Overfull \hbox (52.0443pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (52.0443pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 self.modelPES.removeRows(0, len(self._dictPES), Q
 tCore.QModelIndex())[] 
  []
 
 
-Overfull \hbox (45.8693pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (45.8693pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 self.listPES.setEditTriggers(QtGui.QAbstractItemV
 iew.NoEditTriggers)[] 
  []
 
 [77]
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 #### if SES contains files, these files will be c
 opied to TMP[] 
  []
 
 
-Overfull \hbox (45.8693pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (45.8693pt too wide) in paragraph at lines 1952--1952
 []                \T1/lmtt/m/n/12 filenames = os.walk(self._startingPath+'/'+se
 lf._ProjectName+'/'[] 
  []
 
 [78]
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 self._tree = Tree(self._TMPmctdhConfig, self._TMP
 sysTreeFile)[] 
  []
 
 [79]
-Overfull \hbox (64.3943pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (64.3943pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 """Class OutPut takes all parameters and saves th
 em in File by creating[] 
  []
 
 
-Overfull \hbox (27.34428pt too wide) in paragraph at lines 1948--1948
+Overfull \hbox (27.34428pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 outobj = OutPut(self._tree, self._paradict, self.
 _TMPsysTreeFile,[] 
  []
 
-
-Overfull \hbox (33.51929pt too wide) in paragraph at lines 1948--1948
+[80]
+Overfull \hbox (33.51929pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 self.process.setProcessChannelMode(QtCore.QProces
 s.MergedChannels)[] 
  []
 
-[80]
-Overfull \hbox (2.64427pt too wide) in paragraph at lines 1948--1948
+
+Overfull \hbox (2.64427pt too wide) in paragraph at lines 1952--1952
 []            \T1/lmtt/m/n/12 mctdh = '/home/piet/newRepo2/QuantumDynamics/buil
 d/bin/mctdh'[] 
  []
@@ -1482,13 +1488,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `ma.out' has not changed.
-(rerunfilecheck)             Checksum: 90E72125661C7F19CB310B0F9E2DF35C;719.
+(rerunfilecheck)             Checksum: 73E952D1BBA97845EB570E6B7BEE8A16;738.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
  ) 
 Here is how much of TeX's memory you used:
  12720 strings out of 494820
  190979 string characters out of 3178049
- 312189 words of memory out of 3000000
+ 312331 words of memory out of 3000000
  15423 multiletter control sequences out of 15000+200000
  75192 words of font info for 60 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
@@ -1510,7 +1516,7 @@ ve/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy8.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ma.pdf (89 pages, 4363158 bytes).
+Output written on ma.pdf (89 pages, 4357889 bytes).
 PDF statistics:
  856 PDF objects out of 1000 (max. 8388607)
  705 compressed objects within 8 object streams

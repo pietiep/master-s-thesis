@@ -8,5 +8,5 @@
 \contentsline {section}{\numberline {3.2}Python-Interface f"ur MCTDH}{10}{section.3.2}
 \contentsline {section}{\numberline {3.3}Graphische Benutzeroberfl"ache f"ur MCTDH}{16}{section.3.3}
 \contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{23}{chapter.4}
-\contentsline {chapter}{Anhang}{25}{appendix*.10}
+\contentsline {chapter}{Anhang: Quellcode der GUI}{25}{appendix*.10}
 \contentsline {chapter}{Literaturverzeichnis}{82}{appendix*.11}
