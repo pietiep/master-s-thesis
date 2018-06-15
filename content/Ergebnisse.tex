@@ -7,7 +7,7 @@ Die Python-Schnittstelle f"ur MCTDH wurde in der Programmiersprache Cython \cite
 Cython stellt eine Hybridprogrammiersprache dar,
 die Python und C/C++ kombiniert. Im Gegensatz zu Python
 wird Cython kompiliert, wobei die Cythonsyntax der Pythonsyntax "ahnlich ist.
-In Cython kann C++ Code verwendet werden, der beim Erstellen der Cython-Programme ebenfalls kompiliert wird.
+In Cython kann C++-Code verwendet werden, der beim Erstellen der Cython-Programme ebenfalls kompiliert wird.
 
 Die GUI f"ur die MCTDH-Rechnungen wurde in Python mithilfe der Qt-Bibliothek \cite{Qt} implementiert.
 Der Zugriff auf die Qt-Bibliothek  erfolgt "uber die Python-Bibliothek PyQt4 \cite{PyQt}. 
@@ -22,9 +22,9 @@ Visualisierung des MCTDH-Baums verwendet wurden.
 \label{sec:PyInterface}
 
 Es wurde eine Programmierschnittstelle (von englisch \textit{application programming interface}, API) f"ur das MCTDH-Programmpaket erstellt,
-welche es erlaubt Funktionen des C++ MCTDH-Codes in Python-Skripten zu verwenden.
+welche es erlaubt Funktionen des C++-MCTDH-Codes in Python-Skripten zu verwenden.
 %Die Schnittstelle umfasst Klassen und Methoden, die zur Verwaltung der Darstellung der MCTDH-Wellenfunktion dienen.
-Dazu wurden neue Klassen in Python erstellt, welche stellvertretende Klassen des C++ Codes sind 
+Dazu wurden neue Klassen in Python erstellt, welche stellvertretende Klassen des C++-Codes sind 
 und die einen eingeschr"ankten Satz an Funktionen bereitstellen.
 Im Rahmen dieser Arbeit wurden Klassen erstellt, die der Verwaltung der Darstellung der MCTDH-Wellenfunktion die\-nen.
 Die Erweiterung auf andere Klassen kann nach einem einfachen Schema erfolgen.
@@ -193,13 +193,13 @@ und der restlichen Knoten berechnet und ausgegeben:
 \section{Graphische Benutzeroberfl"ache f"ur MCTDH}
 
 Es wurde eine GUI erstellt, welche die Anwendung der MCTDH-Methode auch Nutzern zug"anglich macht, die wenig oder keine 
-tiefergehende Kenntnis des MCTDH-Algorith\-mus' haben. Hierf"ur steht dem Nutzer der GUI eine Projektverwaltung und 
+tiefergehende Kenntnis des MCTDH-Algorith\-mus' haben. Hierf"ur stehen dem Nutzer der GUI eine Projektverwaltung und 
 Eingabefelder f"ur die Einstellungsparameter, die f"ur eine MCTDH-Simulation ben"otigt werden, zur
 Verf"ugung. 
 Der Quellcode der GUI kann im Anhang eingesehen werden.
 
 Zur Demonstration der graphischen Benutzeroberfl"ache wird im folgenden das Vorgehen zum Starten einer 
-MCTDH Simulation vorgef"uhrt. Als Beispiel dient die Realzeitpro\-pagation eines Wellenpakets auf dem
+MCTDH-Simulation vorgef"uhrt. Als Beispiel dient die Realzeitpro\-pagation eines Wellenpakets auf dem
 ersten elektronisch angeregten Zustand ($S_1$) von NOCl. 
 Diese Rechnung ist zentraler Bestandteil bei der Berechnung der Photodisso\-ziation von NOCl \cite{MMC1}.
 Es werden das gleiche Koordinatensystem, die gleiche Potentialfl"ache, sowie die gleichen numerischen Parameter wie in
@@ -237,7 +237,7 @@ Schaltfl"ache \textbf{6} geladen. Bet"atigung der Schaltfl"ache \textbf{7} beend
 Zum Starten einer neuen Rechnung wird zuerst der Reiter ,,Project'' (Abbildung \ref{fig:workflow1} \textbf{4}) 
 ausgew"ahlt. Zwei neue Buttons erscheinen (Abbildung \ref{fig:workflow3}). Durch Klicken von \textbf{8} 
 erscheint ein neues Fenster mit dem Namen ,,MCTDH calculation'' (siehe Abbildung \ref{fig:workflow4}). 
-In diesem Fenster wird die neue MCTDH Rechnung spezifiziert.
+In diesem Fenster wird die neue MCTDH-Rechnung spezifiziert.
 
 \begin{figure}
     \centering
